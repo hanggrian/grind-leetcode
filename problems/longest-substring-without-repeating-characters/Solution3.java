@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.Set;
 
 public class Solution3 {
   public static int lengthOfLongestSubstring(String s) {
@@ -7,11 +6,11 @@ public class Solution3 {
       return 0;
     }
     // unique characters
-    final Set<Character> characters = new HashSet<>();
+    final var characters = new HashSet<Character>();
 
-    int start = 0;
-    int end = 0;
-    int maxLength = Integer.MIN_VALUE;
+    var start = 0;
+    var end = 0;
+    var maxLength = Integer.MIN_VALUE;
     while (end < s.length()) {
       if (characters.add(s.charAt(end))) {
         maxLength = Math.max(maxLength, characters.size());

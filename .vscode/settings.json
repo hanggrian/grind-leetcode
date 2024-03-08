@@ -1,6 +1,7 @@
 {
   "java.project.sourcePaths": [
-    "concepts/list-node",
+    "concepts/lists",
+    "concepts/trees",
     /* 1 */ "problems/two-sum",
     /* 2 */ "problems/add-two-numbers",
     /* 3 */ "problems/longest-substring-without-repeating-characters",

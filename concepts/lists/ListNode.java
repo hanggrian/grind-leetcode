@@ -13,11 +13,12 @@ public abstract class ListNode<T extends ListNode<T>> {
   public boolean equals(Object o) {
     if (this == o) {
       return true;
-    } else if (o == null || o.getClass().isInstance(getClass())) {
+    }
+    if (o == null || o.getClass().isInstance(getClass())) {
       return false;
     }
-    ListNode<T> node1 = this;
-    ListNode<T> node2 = (ListNode<T>) o;
+    var node1 = this;
+    var node2 = (ListNode<T>) o;
     while (node1 != null && node2 != null) {
       if (node1.getValue() != node2.getValue()) {
         return false;

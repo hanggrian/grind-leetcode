@@ -4,21 +4,21 @@ import java.util.stream.StreamSupport;
 
 public final class DoublyListNode extends ListNode<DoublyListNode>
     implements Iterable<DoublyListNode> {
-  private final int val;
+  private final int value;
   private DoublyListNode prev;
   private DoublyListNode next;
 
   public DoublyListNode() {
-    val = 0;
+    value = 0;
   }
 
   public DoublyListNode(int value) {
-    val = value;
+    this.value = value;
   }
 
   @Override
   public int getValue() {
-    return val;
+    return value;
   }
 
   public DoublyListNode getPrevious() {
@@ -52,11 +52,11 @@ public final class DoublyListNode extends ListNode<DoublyListNode>
     if (values.length == 0) {
       throw new IllegalArgumentException("Can't be empty.");
     }
-    DoublyListNode head = new DoublyListNode(values[0]);
+    final var head = new DoublyListNode(values[0]);
     DoublyListNode prev = null;
-    DoublyListNode next = head;
-    for (int i = 1; i < values.length; i++) {
-      DoublyListNode temp = next;
+    var next = head;
+    for (var i = 1; i < values.length; i++) {
+      final var temp = next;
 
       next.setPrevious(prev);
       next.setNext(new DoublyListNode(values[i]));

@@ -1,13 +1,12 @@
 import java.util.HashSet;
-import java.util.Set;
 
 public class Solution141 {
   public static class RememberVisits {
     public static boolean hasCycle(SinglyListNode head) {
       // visited nodes
-      final Set<SinglyListNode> visits = new HashSet<>();
+      final var visits = new HashSet<SinglyListNode>();
 
-      for (SinglyListNode node : head) {
+      for (var node : head) {
         if (!visits.add(node)) {
           return true;
         }
@@ -21,8 +20,8 @@ public class Solution141 {
       if (head == null || !head.hasNext()) {
         return false;
       }
-      SinglyListNode slow = head.getNext();
-      SinglyListNode fast = head.getNext().getNext();
+      var slow = head.getNext();
+      var fast = head.getNext().getNext();
       while (fast != null && fast.hasNext() && slow != fast) {
         slow = slow.getNext();
         fast = fast.getNext().getNext();

@@ -8,13 +8,13 @@ import com.google.gson.stream.JsonReader;
 public class Test141 {
   @Test
   public void test() throws Exception {
-    final Gson gson = new Gson();
+    final var gson = new Gson();
     final Sample[] json = gson.fromJson(
         new JsonReader(new FileReader("problems/linked-list-cycle/sample.json")),
         Sample[].class);
-    for (int i = 0; i < json.length; i++) {
-      final Sample sample = json[i];
-      final SinglyListNode node = SinglyListNode.of(sample.input.head);
+    for (var i = 0; i < json.length; i++) {
+      final var sample = json[i];
+      final var node = SinglyListNode.of(sample.input.head);
       if (sample.input.pos > -1) {
         Iterables.getLast(node).setNext(Iterables.get(node, sample.input.pos));
       }

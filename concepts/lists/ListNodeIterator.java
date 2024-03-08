@@ -1,21 +1,21 @@
 import java.util.Iterator;
 
 public final class ListNodeIterator<T extends ListNode<T>> implements Iterator<T> {
-  private T curr;
+  private T current;
 
   ListNodeIterator(T node) {
-    curr = node;
+    current = node;
   }
 
   @Override
   public boolean hasNext() {
-    return curr != null;
+    return current != null;
   }
 
   @Override
   public T next() {
-    T temp = curr;
-    curr = curr.getNext();
+    final var temp = current;
+    current = current.getNext();
     return temp;
   }
 }

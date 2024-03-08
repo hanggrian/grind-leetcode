@@ -6,20 +6,20 @@ public final class SinglyListNode extends ListNode<SinglyListNode>
     implements Iterable<SinglyListNode> {
   public static SinglyListNode ZERO = new SinglyListNode(0);
 
-  private final int val;
+  private final int value;
   private SinglyListNode next;
 
   public SinglyListNode() {
-    val = 0;
+    value = 0;
   }
 
   public SinglyListNode(int value) {
-    val = value;
+    this.value = value;
   }
 
   @Override
   public int getValue() {
-    return val;
+    return value;
   }
 
   @Override
@@ -45,9 +45,9 @@ public final class SinglyListNode extends ListNode<SinglyListNode>
     if (values.length == 0) {
       throw new IllegalArgumentException("Can't be empty.");
     }
-    SinglyListNode head = new SinglyListNode(values[0]);
-    SinglyListNode next = head;
-    for (int i = 1; i < values.length; i++) {
+    var head = new SinglyListNode(values[0]);
+    var next = head;
+    for (var i = 1; i < values.length; i++) {
       next.setNext(new SinglyListNode(values[i]));
       next = next.getNext();
     }

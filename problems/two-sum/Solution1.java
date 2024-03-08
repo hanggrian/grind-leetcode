@@ -1,11 +1,10 @@
 import java.util.HashMap;
-import java.util.Map;
 
 public class Solution1 {
   public static class BruteForce {
     public static int[] twoSum(int[] nums, int target) {
-      for (int i = 0; i < nums.length; i++) {
-        for (int j = i + 1; j < nums.length; j++) {
+      for (var i = 0; i < nums.length; i++) {
+        for (var j = i + 1; j < nums.length; j++) {
           if (nums[j] == target - nums[i]) {
             return new int[] {i, j};
           }
@@ -18,7 +17,7 @@ public class Solution1 {
   public static class SinglePass {
     public static int[] twoSum(int[] nums, int target) {
       // remaining to index mapping
-      final Map<Integer, Integer> indices = new HashMap<>();
+      final var indices = new HashMap<Integer, Integer>();
 
       for (int i = 0; i < nums.length; i++) {
         final int num = nums[i];
