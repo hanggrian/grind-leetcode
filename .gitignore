@@ -1,0 +1,20 @@
+# macOS
+**/.DS_Store
+
+# Gradle
+.gradle/
+build/
+local.properties
+
+# IDEA
+*.iml
+.idea/
+out/
+
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# VSCode
+bin/

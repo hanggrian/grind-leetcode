@@ -1,0 +1,17 @@
+[
+  {
+    "input": 121,
+    "output": true,
+    "explanation": "121 reads as 121 from left to right and from right to left."
+  },
+  {
+    "input": -121,
+    "output": false,
+    "explanation": "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome."
+  },
+  {
+    "input": 10,
+    "output": false,
+    "explanation": "Reads 01 from right to left. Therefore it is not a palindrome."
+  }
+]
