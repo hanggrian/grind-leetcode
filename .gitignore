@@ -1,23 +1,20 @@
 # macOS
-**/.DS_Store
+.DS_Store
+._*
 
 # Gradle
 .gradle/
 build/
 local.properties
 
-# IDEA
+# IntelliJ
 *.iml
 .idea/
 out/
 
-# Python
+# PyCharm
 .venv/
 __pycache__/
-.ipynb_checkpoints/
-
-# VSCode
-bin/
-
-# draw.io
-*.drawio.bkp
+.pytest_cache/
+*.egg-info/
+**/.coverage
