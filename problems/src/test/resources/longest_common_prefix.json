@@ -1,0 +1,18 @@
+[
+  {
+    "input": {
+      "strs": ["flower", "flow", "flight"]
+    },
+    "output": "fl",
+    "explanation": []
+  },
+  {
+    "input": {
+      "strs": ["dog", "racecar", "car"]
+    },
+    "output": "",
+    "explanation": [
+      "There is no common prefix among the input strings."
+    ]
+  }
+]

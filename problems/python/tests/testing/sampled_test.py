@@ -18,4 +18,7 @@ class SampledTest(ABC, TestCase):
             'r',
             encoding='UTF-8',
         ) as json:
-            return load(json)
+            samples = load(json)
+            for sample in samples:
+                sample['explanation'] = '\n'.join(sample['explanation'])
+            return samples

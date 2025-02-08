@@ -6,7 +6,7 @@ public enum LinkedListCycle {
         @Override
         public boolean hasCycle(SinglyListNode head) {
             // visited nodes
-            final Set<ListNode<?>> visits = new HashSet<>();
+            Set<ListNode<?>> visits = new HashSet<>();
             for (ListNode<?> node : head) {
                 if (!visits.add(node)) {
                     return true;

@@ -5,7 +5,9 @@
       "pos": 1
     },
     "output": true,
-    "explanation": "There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed)."
+    "explanation": [
+      "There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed)."
+    ]
   },
   {
     "input": {
@@ -13,7 +15,9 @@
       "pos": 0
     },
     "output": true,
-    "explanation": "There is a cycle in the linked list, where the tail connects to the 0th node."
+    "explanation": [
+      "There is a cycle in the linked list, where the tail connects to the 0th node."
+    ]
   },
   {
     "input": {
@@ -21,6 +25,8 @@
       "pos": -1
     },
     "output": false,
-    "explanation": "There is no cycle in the linked list."
+    "explanation": [
+      "There is no cycle in the linked list."
+    ]
   }
 ]

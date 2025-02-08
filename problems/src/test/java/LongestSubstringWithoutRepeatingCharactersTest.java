@@ -1,4 +1,5 @@
 import org.junit.Test;
+import testing.Sample;
 import testing.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
@@ -11,19 +12,19 @@ public class LongestSubstringWithoutRepeatingCharactersTest extends SampledTest 
 
     @Test
     public void test() {
-        for (Sample sample : getSamples(Sample[].class)) {
+        for (TypedSample sample : getSamples(TypedSample[].class)) {
             for (LongestSubstringWithoutRepeatingCharacters solution
                 : LongestSubstringWithoutRepeatingCharacters.values()) {
-                assertWithMessage(sample.explanation)
-                    .that(solution.lengthOfLongestSubstring(sample.input))
+                assertWithMessage(sample.getMessage())
+                    .that(solution.lengthOfLongestSubstring(sample.input.s))
                     .isEqualTo(sample.output);
             }
         }
     }
 
-    public static class Sample {
-        public String input;
-        public int output;
-        public String explanation;
+    public static class TypedSample extends Sample<TypedSample.Input, Integer> {
+        public static class Input {
+            public String s;
+        }
     }
 }

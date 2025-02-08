@@ -1,0 +1,31 @@
+[
+  {
+    "input": {
+      "s": "PAYPALISHIRING",
+      "numRows": 3
+    },
+    "output": "PAHNAPLSIIGYIR",
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "PAYPALISHIRING",
+      "numRows": 4
+    },
+    "output": "PINALSIGYAHRPI",
+    "explanation": [
+      "P     I    N",
+      "A   L S  I G",
+      "Y A   H R",
+      "P     I"
+    ]
+  },
+  {
+    "input": {
+      "s": "A",
+      "numRows": 1
+    },
+    "output": "A",
+    "explanation": []
+  }
+]

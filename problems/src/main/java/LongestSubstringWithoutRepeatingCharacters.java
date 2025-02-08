@@ -9,7 +9,7 @@ public enum LongestSubstringWithoutRepeatingCharacters {
                 return 0;
             }
             // unique characters
-            final Set<Character> characters = new HashSet<>();
+            Set<Character> characters = new HashSet<>();
 
             int start = 0;
             int end = 0;

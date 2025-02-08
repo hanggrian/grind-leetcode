@@ -1,17 +1,30 @@
 [
   {
-    "input": "abcabcbb",
+    "input": {
+      "s": "abcabcbb"
+    },
     "output": 3,
-    "explanation": "The answer is \"abc\", with the length of 3."
+    "explanation": [
+      "The answer is \"abc\", with the length of 3."
+    ]
   },
   {
-    "input": "bbbbb",
+    "input": {
+      "s": "bbbbb"
+    },
     "output": 1,
-    "explanation": "The answer is \"b\", with the length of 1."
+    "explanation": [
+      "The answer is \"b\", with the length of 1."
+    ]
   },
   {
-    "input": "pwwkew",
+    "input": {
+      "s": "pwwkew"
+    },
     "output": 3,
-    "explanation": "The answer is \"wke\", with the length of 3. Notice that the answer must be a substring, \"pwke\" is a subsequence and not a substring."
+    "explanation": [
+      "The answer is \"wke\", with the length of 3.",
+      "Notice that the answer must be a substring, \"pwke\" is a subsequence and not a substring."
+    ]
   }
 ]

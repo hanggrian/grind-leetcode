@@ -19,7 +19,7 @@ public enum TwoSum {
         @Override
         public int[] twoSum(int[] nums, int target) {
             // remaining to index mapping
-            final Map<Integer, Integer> indices = new HashMap<>();
+            Map<Integer, Integer> indices = new HashMap<>();
             for (int i = 0; i < nums.length; i++) {
                 final int num = nums[i];
                 if (indices.containsKey(num)) {

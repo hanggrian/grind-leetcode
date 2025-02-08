@@ -1,4 +1,5 @@
 import org.junit.Test;
+import testing.Sample;
 import testing.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
@@ -11,9 +12,9 @@ public class AddTwoNumbersTest extends SampledTest {
 
     @Test
     public void test() {
-        for (Sample sample : getSamples(Sample[].class)) {
+        for (TypedSample sample : getSamples(TypedSample[].class)) {
             for (AddTwoNumbers solution : AddTwoNumbers.values()) {
-                assertWithMessage(sample.explanation)
+                assertWithMessage(sample.getMessage())
                     .that(
                         solution.addTwoNumbers(
                             SinglyListNode.of(sample.input.l1),
@@ -24,11 +25,7 @@ public class AddTwoNumbersTest extends SampledTest {
         }
     }
 
-    public static class Sample {
-        public Input input;
-        public int[] output;
-        public String explanation;
-
+    public static class TypedSample extends Sample<TypedSample.Input, int[]> {
         public static class Input {
             public int[] l1;
             public int[] l2;

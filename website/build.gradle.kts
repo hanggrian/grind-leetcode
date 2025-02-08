@@ -15,7 +15,7 @@ pages {
     val problems = project(":problems")
     listOf("list_node", "tree_node")
         .forEach { content("concept_$it.html", concepts.file("$it.md")) }
-    listOf(1, 2, 3, 9, 141)
+    ((1..9) + (11..15) + 141)
         .forEach { content("problem$it.html", problems.file("problem$it.md")) }
 
     minimal {

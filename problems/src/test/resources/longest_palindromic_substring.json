@@ -1,0 +1,18 @@
+[
+  {
+    "input": {
+      "s": "babad"
+    },
+    "output": "bab",
+    "explanation": [
+      "\"aba\" is also a valid answer."
+    ]
+  },
+  {
+    "input": {
+      "s": "cbbd"
+    },
+    "output": "bb",
+    "explanation": []
+  }
+]

@@ -1,6 +1,7 @@
 import java.util.Arrays;
-import java.util.stream.Collectors;
+import java.util.List;
 import org.junit.Test;
+import testing.Sample;
 import testing.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
@@ -13,23 +14,18 @@ public class TwoSumTest extends SampledTest {
 
     @Test
     public void test() {
-        for (Sample sample : getSamples(Sample[].class)) {
+        for (TypedSample sample : getSamples(TypedSample[].class)) {
+            List<Integer> output = Arrays.stream(sample.output).boxed().toList();
             for (TwoSum solution : TwoSum.values()) {
-                assertWithMessage(sample.explanation)
+                assertWithMessage(sample.getMessage())
                     .that(solution.twoSum(sample.input.nums, sample.input.target))
                     .asList()
-                    .containsExactlyElementsIn(
-                        Arrays.stream(sample.output).boxed().collect(Collectors.toList())
-                    );
+                    .containsExactlyElementsIn(output);
             }
         }
     }
 
-    public static class Sample {
-        public Input input;
-        public int[] output;
-        public String explanation;
-
+    public static class TypedSample extends Sample<TypedSample.Input, int[]> {
         public static class Input {
             public int[] nums;
             public int target;

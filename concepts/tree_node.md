@@ -1,3 +1,3 @@
 # Tree node
 
-![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/concepts/trees/tree_node.svg)
+![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/concepts/tree_node.svg)

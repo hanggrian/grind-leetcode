@@ -2,7 +2,7 @@ public enum AddTwoNumbers {
     DEFAULT {
         @Override
         public SinglyListNode addTwoNumbers(SinglyListNode l1, SinglyListNode l2) {
-            final SinglyListNode dummy = new SinglyListNode();
+            SinglyListNode dummy = new SinglyListNode();
             SinglyListNode next1 = l1;
             SinglyListNode next2 = l2;
             SinglyListNode node = dummy;

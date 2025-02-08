@@ -15,12 +15,18 @@ class TestTwoSum(SampledTest):
             for solution in SOLUTIONS:
                 self.assertEqual(
                     sample['output'],
-                    solution.two_sum(sample['input']['nums'], sample['input']['target']),
+                    solution.two_sum(
+                        sample['input']['nums'],
+                        sample['input']['target'],
+                    ),
                     sample['explanation'],
                 )
                 self.assertEqual(
                     sample['output'],
-                    solution.two_sum(sample['input']['nums'], sample['input']['target']),
+                    solution.two_sum(
+                        sample['input']['nums'],
+                        sample['input']['target'],
+                    ),
                     sample['explanation'],
                 )
 

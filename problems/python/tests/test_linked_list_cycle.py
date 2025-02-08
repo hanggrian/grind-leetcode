@@ -22,11 +22,6 @@ class TestLinkedListCycle(SampledTest):
                     solution.has_cycle(node),
                     sample['explanation'],
                 )
-                self.assertEqual(
-                    sample['output'],
-                    solution.has_cycle(node),
-                    sample['explanation'],
-                )
 
 
 if __name__ == '__main__':

@@ -5,8 +5,8 @@
 
 ## Reverse string
 
-![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/problems/palindrome-number/figure1.svg)
+![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/problem9_1.svg)
 
 ## Compare half string
 
-![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/problems/palindrome-number/figure2.svg)
+![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/problem9_2.svg)

@@ -15,12 +15,12 @@ class TestPalindromeNumber(SampledTest):
             for solution in SOLUTIONS:
                 self.assertEqual(
                     sample['output'],
-                    solution.is_palindrome(sample['input']),
+                    solution.is_palindrome(sample['input']['x']),
                     sample['explanation'],
                 )
                 self.assertEqual(
                     sample['output'],
-                    solution.is_palindrome(sample['input']),
+                    solution.is_palindrome(sample['input']['x']),
                     sample['explanation'],
                 )
 

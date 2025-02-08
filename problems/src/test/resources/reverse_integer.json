@@ -1,0 +1,23 @@
+[
+  {
+    "input": {
+      "x": 123
+    },
+    "output": 321,
+    "explanation": []
+  },
+  {
+    "input": {
+      "x": -123
+    },
+    "output": -321,
+    "explanation": []
+  },
+  {
+    "input": {
+      "x": 120
+    },
+    "output": 21,
+    "explanation": []
+  }
+]

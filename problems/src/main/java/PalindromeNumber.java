@@ -2,14 +2,14 @@ public enum PalindromeNumber {
     REVERSE_STRING {
         @Override
         public boolean isPalindrome(int x) {
-            final String s = String.valueOf(x);
+            String s = String.valueOf(x);
             return s.contentEquals(new StringBuilder(s).reverse());
         }
     },
     COMPARE_HALF_STRING {
         @Override
         public boolean isPalindrome(int x) {
-            final String s = String.valueOf(x);
+            String s = String.valueOf(x);
             int start = 0;
             int end = s.length() - 1;
             while (start < end) {
