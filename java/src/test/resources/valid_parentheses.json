@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "s": "()"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "()[]{}"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "(]"
+    },
+    "output": false,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "([])"
+    },
+    "output": true,
+    "explanation": []
+  }
+]

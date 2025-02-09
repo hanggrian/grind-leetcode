@@ -11,12 +11,16 @@ plugins {
 }
 
 pages {
-    val concepts = project(":concepts")
-    val problems = project(":problems")
-    listOf("list_node", "tree_node")
-        .forEach { content("concept_$it.html", concepts.file("$it.md")) }
-    ((1..9) + (11..15) + 141)
-        .forEach { content("problem$it.html", problems.file("problem$it.md")) }
+    val docs = rootProject.layout.projectDirectory.dir("docs")
+    docs
+        .dir("concepts")
+        .files("list_node.md", "tree_node.md")
+        .forEach { content("concept_${it.nameWithoutExtension}.html", it) }
+    docs
+        .files("problems1", "problems101")
+        .flatMap { it.listFiles()?.toList() ?: emptyList() }
+        .filter { it.extension == "md" }
+        .forEach { content("${it.nameWithoutExtension}.html", it) }
 
     minimal {
         authorName = developerName

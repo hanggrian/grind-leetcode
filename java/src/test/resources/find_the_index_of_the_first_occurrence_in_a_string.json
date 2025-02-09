@@ -1,0 +1,23 @@
+[
+  {
+    "input": {
+      "haystack": "sadbutsad",
+      "needle": "sad"
+    },
+    "output": 0,
+    "explanation": [
+      "\"sad\" occurs at index 0 and 6.",
+      "The first occurrence is at index 0, so we return 0."
+    ]
+  },
+  {
+    "input": {
+      "haystack": "leetcode",
+      "needle": "leeto"
+    },
+    "output": -1,
+    "explanation": [
+      "\"leeto\" did not occur in \"leetcode\", so we return -1."
+    ]
+  }
+]
