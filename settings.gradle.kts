@@ -4,7 +4,7 @@ pluginManagement.repositories {
 }
 dependencyResolutionManagement.repositories.mavenCentral()
 
-rootProject.name = "leetcode-playground"
+rootProject.name = "grind-leetcode"
 
 include("java")
 include("website")

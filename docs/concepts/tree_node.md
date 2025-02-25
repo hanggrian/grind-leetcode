@@ -1,5 +1,5 @@
-[&larr; Return](https://hanggrian.github.io/leetcode-playground/)
+[&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
 # Tree node
 
-![](https://github.com/hendraanggrian/leetcode-playground/raw/assets/concepts/tree_node.svg)
+![](https://github.com/hanggrian/grind-leetcode/raw/assets/concepts/tree_node.svg)
