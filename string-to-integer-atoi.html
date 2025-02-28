@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>grind-leetcode</title>
+        <meta content="width=device-width" name="viewport">
+        <meta content="chrome=1" http-equiv="X-UA-Compatible">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" rel="stylesheet">
+        <script src="scripts/theme.js"></script>
+        <!--Primary meta tags-->
+        <meta content="grind-leetcode" name="title">
+        <meta content="Solutions and visual explanations to LeetCode problems" name="description">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>grind-leetcode</h1>
+                <p>Solutions and visual explanations to LeetCode problems</p>
+                <p class="view">
+                    <a href="https://github.com/hanggrian/grind-leetcode/">View the Project on GitHub <small>hanggrian/grind-leetcode</small></a>
+                </p>
+            </header>
+            <section>
+                <p>
+                    <a href="https://hanggrian.github.io/grind-leetcode/">&larr; Return</a>
+                </p>
+                
+                <h1>8. String to Integer (Atoi)</h1>
+                
+                <blockquote>
+                    
+                    <p>
+                        Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit
+signed integer.
+                    </p>
+                    
+                    <p>The algorithm for `myAtoi(string s)`` is as follows:</p>
+                    
+                    <ol>
+                        
+                        <li>
+                            <strong>Whitespace:</strong> Ignore any leading whitespace (<code>" "</code>).
+                        </li>
+                        
+                        <li>
+                            <strong>Signedness:</strong> Determine the sign by checking if the next character is
+<code>'-'</code> or <code>'+'</code>, assuming positivity if neither present.
+                        </li>
+                        
+                        <li>
+                            <strong>Conversion:</strong> Read the integer by skipping leading zeros until a
+non-digit character is encountered or the end of the string is reached. If
+no digits were read, then the result is 0.
+                        </li>
+                        
+                        <li>
+                            <strong>Rounding:</strong> If the integer is out of the 32-bit signed integer range
+<code>[-2</code><sup><code>31</code></sup><code>, 2</code><sup><code>31</code></sup><code> - 1]</code>, then round the integer to
+remain in the range. Specifically, integers less than <code>-2</code><sup><code>31</code></sup>
+should be rounded to <code>-2</code><sup><code>31</code></sup>, and integers greater than
+<code>2</code><sup><code>31</code></sup><code> - 1</code> should be rounded to <code>2</code><sup><code>31</code></sup><code> - 1</code>.
+                        </li>
+                        
+                    </ol>
+                    
+                    <p>Return the integer as the final result.</p>
+                    
+                </blockquote>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://leetcode.com/problems/string-to-integer-atoi/">Question sheet</a>
+                    </li>
+                    
+                    <li>
+                        Solutions
+
+                        <ul>
+                            
+                            <li>
+                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/StringToIntegerAtoi.groovy">Groovy</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/StringToIntegerAtoi.java">Java</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/StringToIntegerAtoi.kt">Kotlin</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/string_to_integer_atoi.py">Python</a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                </ul>
+                
+                <p>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi1.svg">
+                </p>
+                
+                <p>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi2.svg">
+                </p>
+                
+                <p>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi3.svg">
+                </p>
+                
+                <p>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi4.svg">
+                </p>
+                
+            </section>
+            <footer>
+                <p>
+                    <button class="material-symbols-sharp" id="theme-toggle" onclick="toggleDarkMode()" title="Toggle dark mode"></button>
+                </p>
+                <p>
+                    This project is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a>
+                </p>
+                <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist/">orderedlist</a></small>
+            </footer>
+        </div>
+        <script src="scripts/scale.fix.js"></script>
+    </body>
+</html>
