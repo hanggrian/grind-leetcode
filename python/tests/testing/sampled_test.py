@@ -16,11 +16,11 @@ class SampledTest(ABC, TestCase):
                 .split('.py')[0] + \
             '.json'
 
-        root_dir: str = 'java'
+        root_dir: str = 'samples'
         if pathlib.Path().resolve().name.startswith('problems'):  # ran locally
             root_dir = '../../../java'
         with open(
-            f'{root_dir}/src/test/resources/{file_name}',
+            f'{root_dir}/src/main/resources/{file_name}',
             'r',
             encoding='UTF-8',
         ) as json:

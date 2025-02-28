@@ -17,13 +17,13 @@ public class ListNode<T extends ListNode<T>> implements Iterable<T> {
         return next != null;
     }
 
+    public Stream<T> stream() {
+        return StreamSupport.stream(spliterator(), false);
+    }
+
     @Override
     public Iterator<T> iterator() {
         return new ListNodeIterator((T) this);
-    }
-
-    public Stream<T> stream() {
-        return StreamSupport.stream(spliterator(), false);
     }
 
     @Override

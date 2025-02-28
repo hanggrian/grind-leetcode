@@ -1,0 +1,19 @@
+package problems1_100
+
+import org.junit.Test
+import testing.SampledTest
+
+import static com.google.common.truth.Truth.assertWithMessage
+
+class LongestCommonPrefixTest extends SampledTest {
+    @Test
+    void test() {
+        for (LongestCommonPrefix solution : LongestCommonPrefix.values()) {
+            for (LongestCommonPrefixSample sample : getSamples(LongestCommonPrefixSample[].class)) {
+                assertWithMessage(sample.getMessage())
+                    .that(solution.longestCommonPrefix(sample.input.strs))
+                    .isEqualTo(sample.output)
+            }
+        }
+    }
+}

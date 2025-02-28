@@ -1,7 +1,6 @@
 package concepts;
 
 public final class SinglyListNode extends ListNode<SinglyListNode> {
-    public static final SinglyListNode MAX = new SinglyListNode(Integer.MAX_VALUE);
     public static final SinglyListNode ZERO = new SinglyListNode(0);
 
     public SinglyListNode() {

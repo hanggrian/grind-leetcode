@@ -20,6 +20,7 @@ class Default(Problem):
             negate = True
         elif s[0] == '+':
             s = s[1:]
+
         result = ''
         for c in s:
             if c.isdigit():

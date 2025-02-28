@@ -11,8 +11,8 @@ Solutions and visual explanations to LeetCode problems.
 
 ## Concepts
 
-- [List node](https://hanggrian.github.io/grind-leetcode/concept_list_node.html)
-- [Tree node](https://hanggrian.github.io/grind-leetcode/concept_tree_node.html)
+- [List node](https://hanggrian.github.io/grind-leetcode/concept-list-node.html)
+- [Tree node](https://hanggrian.github.io/grind-leetcode/concept-tree-node.html)
 
 ## Problems
 
@@ -26,7 +26,7 @@ Solutions and visual explanations to LeetCode problems.
   <tbody>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/two_sum">
+        <a href="https://hanggrian.github.io/grind-leetcode/two-sum">
           1. Two Sum
         </a>
       </td>
@@ -34,7 +34,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/add_two_numbers">
+        <a href="https://hanggrian.github.io/grind-leetcode/add-two-numbers">
           2. Add Two Numbers
         </a>
       </td>
@@ -42,7 +42,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/longest_substring_without_repeating_characters">
+        <a href="https://hanggrian.github.io/grind-leetcode/longest-substring-without-repeating-characters">
           3. Longest Substring Without Repeating Characters
         </a>
       </td>
@@ -50,7 +50,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/median_of_two_sorted_arrays">
+        <a href="https://hanggrian.github.io/grind-leetcode/median-of-two-sorted-arrays">
           4. Median of Two Sorted Arrays
         </a>
       </td>
@@ -58,7 +58,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/longest_palindromic_substring">
+        <a href="https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring">
           5. Longest Palindromic Substring
         </a>
       </td>
@@ -66,7 +66,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/zigzag_conversion">
+        <a href="https://hanggrian.github.io/grind-leetcode/zigzag-conversion">
           6. Zigzag Conversion
         </a>
       </td>
@@ -74,7 +74,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/reverse_integer">
+        <a href="https://hanggrian.github.io/grind-leetcode/reverse-integer">
           7. Reverse Integer
         </a>
       </td>
@@ -82,7 +82,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/string_to_integer_atoi">
+        <a href="https://hanggrian.github.io/grind-leetcode/string-to-integer-atoi">
           8. String to Integer (atoi)
         </a>
       </td>
@@ -90,7 +90,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/palindrome_number">
+        <a href="https://hanggrian.github.io/grind-leetcode/palindrome-number">
           9. Palindrome Number
         </a>
       </td>
@@ -102,7 +102,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/container_with_most_water">
+        <a href="https://hanggrian.github.io/grind-leetcode/container-with-most-water">
           11. Container With Most Water
         </a>
       </td>
@@ -110,7 +110,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/integer_to_roman">
+        <a href="https://hanggrian.github.io/grind-leetcode/integer-to-roman">
           12. Integer to Roman
         </a>
       </td>
@@ -118,7 +118,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/roman_to_integer">
+        <a href="https://hanggrian.github.io/grind-leetcode/roman-to-integer">
           13. Roman to Integer
         </a>
       </td>
@@ -126,7 +126,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/longest_common_prefix">
+        <a href="https://hanggrian.github.io/grind-leetcode/longest-common-prefix">
           14. Longest Common Prefix
         </a>
       </td>
@@ -134,7 +134,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/three_sum">
+        <a href="https://hanggrian.github.io/grind-leetcode/three-sum">
           15. 3Sum
         </a>
       </td>
@@ -154,7 +154,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/remove_nth_node_from_end_of_list">
+        <a href="https://hanggrian.github.io/grind-leetcode/remove-nth-node-from-end-of-list">
           19. Remove Nth Node From End of List
         </a>
       </td>
@@ -162,7 +162,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/valid_parentheses">
+        <a href="https://hanggrian.github.io/grind-leetcode/valid-parentheses">
           20. Valid Parentheses
         </a>
       </td>
@@ -170,7 +170,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/merge_two_sorted_lists">
+        <a href="https://hanggrian.github.io/grind-leetcode/merge-two-sorted-lists">
           21. Merge Two Sorted Lists
         </a>
       </td>
@@ -182,7 +182,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/merge_k_sorted_lists">
+        <a href="https://hanggrian.github.io/grind-leetcode/merge-k-sorted-lists">
           23. Merge k Sorted Lists
         </a>
       </td>
@@ -190,7 +190,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/swap_nodes_in_pairs">
+        <a href="https://hanggrian.github.io/grind-leetcode/swap-nodes-in-pairs">
           24. Swap Nodes in Pairs
         </a>
       </td>
@@ -202,7 +202,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/remove_duplicates_from_sorted_array">
+        <a href="https://hanggrian.github.io/grind-leetcode/remove-duplicates-from-sorted-array">
           26. Remove Duplicates from Sorted Array
         </a>
       </td>
@@ -210,7 +210,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/remove_element">
+        <a href="https://hanggrian.github.io/grind-leetcode/remove-element">
           27. Remove Element
         </a>
       </td>
@@ -218,7 +218,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/find_the_index_of_the_first_occurrence_in_a_string">
+        <a href="https://hanggrian.github.io/grind-leetcode/find-the-index-of-the-first-occurrence-in-a-string">
           28. Find the Index of the First Occurrence in a String
         </a>
       </td>
@@ -250,7 +250,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/search_insert_position">
+        <a href="https://hanggrian.github.io/grind-leetcode/search-insert-position">
           35. Search Insert Position
         </a>
       </td>
@@ -258,7 +258,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/valid_sudoku">
+        <a href="https://hanggrian.github.io/grind-leetcode/valid-sudoku">
           36. Valid Sudoku
         </a>
       </td>
@@ -486,7 +486,7 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/linked_list_cycle">
+        <a href="https://hanggrian.github.io/grind-leetcode/linked-list-cycle">
           141. Linked List Cycle
         </a>
       </td>

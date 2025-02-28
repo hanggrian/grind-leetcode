@@ -1,7 +1,6 @@
 package problems1_100;
 
 import org.junit.Test;
-import testing.Sample;
 import testing.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
@@ -11,7 +10,8 @@ public class FindTheIndexOfTheFirstOccurrenceInAStringTest extends SampledTest {
     public void test() {
         for (FindTheIndexOfTheFirstOccurrenceInAString solution
             : FindTheIndexOfTheFirstOccurrenceInAString.values()) {
-            for (TypedSample sample : getSamples(TypedSample[].class)) {
+            for (FindTheIndexOfTheFirstOccurrenceInAStringSample sample
+                : getSamples(FindTheIndexOfTheFirstOccurrenceInAStringSample[].class)) {
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.strStr(
@@ -20,13 +20,6 @@ public class FindTheIndexOfTheFirstOccurrenceInAStringTest extends SampledTest {
                         )
                     ).isEqualTo(sample.output);
             }
-        }
-    }
-
-    static class TypedSample extends Sample<TypedSample.Input, Integer> {
-        static class Input {
-            String haystack;
-            String needle;
         }
     }
 }

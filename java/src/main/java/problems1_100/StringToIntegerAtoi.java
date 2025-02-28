@@ -17,6 +17,7 @@ enum StringToIntegerAtoi {
             } else if (s.startsWith("+")) {
                 s = s.substring(1);
             }
+
             StringBuilder builder = new StringBuilder();
             for (char c : s.toCharArray()) {
                 if (Character.isDigit(c)) {
@@ -33,6 +34,7 @@ enum StringToIntegerAtoi {
             ) {
                 return 0;
             }
+
             BigInteger result = new BigInteger(builder.toString());
             if (
                 result.compareTo(new BigInteger(String.valueOf(Integer.MIN_VALUE))) < 0

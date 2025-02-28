@@ -4,12 +4,13 @@ enum ReverseInteger {
     DEFAULT {
         @Override
         int reverse(int x) {
-            StringBuilder builder = new StringBuilder(String.valueOf(x));
             boolean negate = false;
+            StringBuilder builder = new StringBuilder(String.valueOf(x));
             if (builder.charAt(0) == '-') {
                 builder.deleteCharAt(0);
                 negate = true;
             }
+
             try {
                 return Integer.parseInt((negate ? "-" : "") + builder.reverse());
             } catch (NumberFormatException e) {

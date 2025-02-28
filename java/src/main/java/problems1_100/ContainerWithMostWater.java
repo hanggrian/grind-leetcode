@@ -6,17 +6,17 @@ enum ContainerWithMostWater {
         int maxArea(int[] height) {
             int start = 0;
             int end = height.length - 1;
-            int max = Integer.MIN_VALUE;
+            int maxArea = Integer.MIN_VALUE;
             while (start < end) {
                 int wall = Math.min(height[start], height[end]);
-                max = Math.max(max, (end - start) * wall);
+                maxArea = Math.max(maxArea, (end - start) * wall);
                 if (height[start] < height[end]) {
                     start++;
                 } else {
                     end--;
                 }
             }
-            return max;
+            return maxArea;
         }
     };
 

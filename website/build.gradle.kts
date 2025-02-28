@@ -14,10 +14,10 @@ pages {
     val docs = rootProject.layout.projectDirectory.dir("docs")
     docs
         .dir("concepts")
-        .files("list_node.md", "tree_node.md")
-        .forEach { content("concept_${it.nameWithoutExtension}.html", it) }
+        .files("list-node.md", "tree-node.md")
+        .forEach { content("concept-${it.nameWithoutExtension}.html", it) }
     docs
-        .files("problems1-100", "problems101-200")
+        .files("problems1_100", "problems101_200")
         .flatMap { it.listFiles()?.toList() ?: emptyList() }
         .filter { it.extension == "md" }
         .forEach { content("${it.nameWithoutExtension}.html", it) }

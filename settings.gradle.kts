@@ -6,5 +6,12 @@ dependencyResolutionManagement.repositories.mavenCentral()
 
 rootProject.name = "grind-leetcode"
 
-include("java")
-include("website")
+include(
+    "groovy",
+    "java",
+    "kotlin",
+)
+include(
+    "samples",
+    "website",
+)
