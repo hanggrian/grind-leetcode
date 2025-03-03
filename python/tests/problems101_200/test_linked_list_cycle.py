@@ -1,14 +1,15 @@
 import unittest
+from unittest import TestCase
 
 from src.concepts.list_nodes import SinglyListNode
 from src.problems101_200.linked_list_cycle import SOLUTIONS
-from tests.testing.sampled_test import SampledTest
+from tests.sample.samples import get_samples
 
 
-class TestLinkedListCycle(SampledTest):
+class TestLinkedListCycle(TestCase):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in self.get_samples():
+            for sample in get_samples():
                 inp = SinglyListNode.of(*sample['input']['head'])
                 if sample['input']['pos'] > -1:
                     inp.iterate_last().next = inp.iterate_to(sample['input']['pos'])

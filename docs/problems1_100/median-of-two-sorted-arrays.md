@@ -11,7 +11,9 @@
 - Solutions
   - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/MedianOfTwoSortedArrays.groovy)
   - [Java](https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/MedianOfTwoSortedArrays.java)
+  - [JavaScript](https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/median-of-two-sorted-arrays.js)
   - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/MedianOfTwoSortedArrays.kt)
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/median_of_two_sorted_arrays.py)
+  - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/median-of-two-sorted-arrays.ts)
 
 ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/median-of-two-sorted-arrays1.svg)

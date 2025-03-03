@@ -9,6 +9,7 @@ enum class LongestPalindromicSubstring {
             var longestPalindrome = ""
             for (i in 0 until s.lastIndex) {
                 var palindrome: String
+
                 // check odd
                 var start = i
                 var end = i
@@ -20,6 +21,7 @@ enum class LongestPalindromicSubstring {
                     start--
                     end++
                 }
+
                 // check even
                 start = i
                 end = i + 1

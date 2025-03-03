@@ -8,9 +8,7 @@ enum class LongestSubstringWithoutRepeatingCharacters {
             if (s.isEmpty()) {
                 return 0
             }
-            // unique characters
             val characters = hashSetOf<Char>()
-
             var start = 0
             var end = 0
             var maxLength = Int.MIN_VALUE

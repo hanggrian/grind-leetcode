@@ -1,14 +1,15 @@
 import unittest
+from unittest import TestCase
 
 from src.concepts.list_nodes import SinglyListNode
 from src.problems1_100.merge_two_sorted_lists import SOLUTIONS
-from tests.testing.sampled_test import SampledTest
+from tests.sample.samples import get_samples
 
 
-class TestMergeTwoSortedLists(SampledTest):
+class TestMergeTwoSortedLists(TestCase):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in self.get_samples():
+            for sample in get_samples():
                 self.assertEqual(
                     SinglyListNode.of(*sample['output']),
                     solution.merge_two_lists(

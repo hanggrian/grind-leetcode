@@ -1,14 +1,15 @@
 import unittest
+from unittest import TestCase
 
 from src.concepts.list_nodes import SinglyListNode
 from src.problems1_100.add_two_numbers import SOLUTIONS
-from tests.testing.sampled_test import SampledTest
+from tests.sample.samples import get_samples
 
 
-class TestAddTwoNumbers(SampledTest):
+class TestAddTwoNumbers(TestCase):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in self.get_samples():
+            for sample in get_samples():
                 self.assertEqual(
                     SinglyListNode.of(*sample['output']),
                     solution.add_two_numbers(

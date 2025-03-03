@@ -3,7 +3,7 @@ package problems1_100;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import org.junit.Test;
-import testing.SampledTest;
+import sample.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

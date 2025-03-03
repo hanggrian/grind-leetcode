@@ -1,13 +1,14 @@
 import unittest
+from unittest import TestCase
 
 from src.problems1_100.zigzag_conversion import SOLUTIONS
-from tests.testing.sampled_test import SampledTest
+from tests.sample.samples import get_samples
 
 
-class TestZigzagConversion(SampledTest):
+class TestZigzagConversion(TestCase):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in self.get_samples():
+            for sample in get_samples():
                 self.assertEqual(
                     sample['output'],
                     solution.convert(

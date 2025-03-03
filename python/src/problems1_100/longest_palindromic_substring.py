@@ -16,6 +16,7 @@ class Default(Problem):
         longest_palindrome = ''
         for i in range(len(s)):
             palindrome: str
+
             # check odd
             start = i
             end = i
@@ -25,6 +26,7 @@ class Default(Problem):
                     longest_palindrome = palindrome
                 start -= 1
                 end += 1
+
             # check even
             start = i
             end = i + 1

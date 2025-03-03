@@ -7,20 +7,18 @@ enum AddTwoNumbers {
         @Override
         SinglyListNode addTwoNumbers(SinglyListNode l1, SinglyListNode l2) {
             SinglyListNode root = new SinglyListNode()
-            SinglyListNode next1 = l1
-            SinglyListNode next2 = l2
             SinglyListNode node = root
             int carry = 0
-            while (next1 != null || next2 != null) {
+            while (l1 != null || l2 != null) {
                 // calculate total and carry
                 int value = carry
-                if (next1 != null) {
-                    value += next1.value
-                    next1 = next1.next
+                if (l1 != null) {
+                    value += l1.value
+                    l1 = l1.next
                 }
-                if (next2 != null) {
-                    value += next2.value
-                    next2 = next2.next
+                if (l2 != null) {
+                    value += l2.value
+                    l2 = l2.next
                 }
                 carry = (value / 10) as int
 

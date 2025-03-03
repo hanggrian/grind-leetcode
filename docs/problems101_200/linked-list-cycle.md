@@ -17,8 +17,10 @@
 - Solutions
   - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems101_200/LinkedListCycle.groovy)
   - [Java](https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems101_200/LinkedListCycle.java)
+  - [JavaScript](https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems101_200/linked-list-cycle.js)
   - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems101_200/LinkedListCycle.kt)
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems101_200/linked_list_cycle.py)
+  - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems101_200/linked-list-cycle.ts)
 
 ## Remember visits
 

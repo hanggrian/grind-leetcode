@@ -28,7 +28,7 @@ class Default(Problem):
                 continue
             break
         if negate:
-            result = '-' + result
+            result = f'-{result}'
         if len(result) == 0 or \
             (len(result) == 1 and (result[0] == '-' or result[0] == '+')):
             return 0

@@ -9,10 +9,12 @@ enum ZigzagConversion {
             if (numRows == 1) {
                 return s
             }
+
             StringBuilder[] builders = new StringBuilder[numRows]
             for (int i = 0; i < numRows; i++) {
                 builders[i] = new StringBuilder()
             }
+
             int i = 0
             int zigzagIndex = 0
             while (!s.isEmpty()) {

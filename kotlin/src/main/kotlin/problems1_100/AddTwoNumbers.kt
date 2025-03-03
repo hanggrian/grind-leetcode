@@ -5,21 +5,22 @@ import concepts.SinglyListNode
 enum class AddTwoNumbers {
     DEFAULT {
         override fun addTwoNumbers(l1: SinglyListNode?, l2: SinglyListNode?): SinglyListNode? {
+            var l1 = l1
+            var l2 = l2
+
             val root = SinglyListNode()
-            var next1 = l1
-            var next2 = l2
             var node = root
             var carry = 0
-            while (next1 != null || next2 != null) {
+            while (l1 != null || l2 != null) {
                 // calculate total and carry
                 var value = carry
-                if (next1 != null) {
-                    value += next1.value
-                    next1 = next1.next
+                if (l1 != null) {
+                    value += l1.value
+                    l1 = l1.next
                 }
-                if (next2 != null) {
-                    value += next2.value
-                    next2 = next2.next
+                if (l2 != null) {
+                    value += l2.value
+                    l2 = l2.next
                 }
                 carry = value / 10
 

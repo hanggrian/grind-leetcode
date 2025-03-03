@@ -12,6 +12,8 @@ include(
     "kotlin",
 )
 include(
-    "samples",
-    "website",
+    "testing:res",
+    "testing:js",
+    "testing:jvm",
 )
+include("website")

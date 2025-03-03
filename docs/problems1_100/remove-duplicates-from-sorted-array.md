@@ -38,8 +38,10 @@
 - Solutions
   - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/RemoveDuplicatesfromSortedArray.groovy)
   - [Java](https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/RemoveDuplicatesfromSortedArray.java)
+  - [JavaScript](https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/remove-duplicates-from-sorted-array.js)
   - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/RemoveDuplicatesfromSortedArray.kt)
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_duplicates_from_sorted_array.py)
+  - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-duplicates-from-sorted-array.ts)
 
 ## Create copy
 

@@ -14,7 +14,7 @@ checkstyle.toolVersion = libs.versions.checkstyle.get()
 dependencies {
     checkstyle(libs.rulebook.checkstyle)
 
-    testImplementation(project(":samples"))
+    testImplementation(project(":testing:jvm"))
 }
 
 tasks {

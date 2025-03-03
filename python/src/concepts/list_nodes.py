@@ -1,14 +1,12 @@
 from collections.abc import Iterable, Iterator
 from sys import maxsize
-from typing import Optional, TypeVar, Generic
-
-T = TypeVar('T', bound='ListNode')
+from typing import Optional
 
 
-class ListNode(Generic[T], Iterable):
+class ListNode(Iterable):
     def __init__(self, value: int):
         self.value: int = value
-        self.next: T | None = None
+        self.next: ListNode | None = None
 
     def has_next(self) -> bool:
         return self.next is not None
@@ -60,7 +58,7 @@ class ListNode(Generic[T], Iterable):
 class SinglyListNode(ListNode):
     def __init__(self, value: int = 0, next2: Optional['SinglyListNode'] = None):
         super().__init__(value)
-        self.next = next2
+        self.next: SinglyListNode | None = next2
 
     @staticmethod
     def of(*values: int) -> Optional['SinglyListNode']:
@@ -82,7 +80,7 @@ class DoublyListNode(ListNode):
         prev2: Optional['DoublyListNode'] = None,
     ):
         super().__init__(value)
-        self.next = next2
+        self.next: DoublyListNode | None = next2
         self.prev: DoublyListNode | None = prev2
 
 

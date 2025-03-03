@@ -10,6 +10,7 @@ enum LongestPalindromicSubstring {
             String longestPalindrome = "";
             for (int i = 0; i < s.length() - 1; i++) {
                 String palindrome;
+
                 // check odd
                 int start = i;
                 int end = i;
@@ -21,6 +22,7 @@ enum LongestPalindromicSubstring {
                     start--;
                     end++;
                 }
+
                 // check even
                 start = i;
                 end = i + 1;

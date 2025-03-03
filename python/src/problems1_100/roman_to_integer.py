@@ -9,25 +9,24 @@ class Problem(ABC):
 
 
 class Default(Problem):
+    ROMANS = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000,
+    }
+
     @override
     def roman_to_int(self, s: str) -> int:
-        romans = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000
-        }
-
         result = 0
-        for i in range(len(s)):
-            c = s[i]
-            if i > 0 and romans[c] > romans[s[i - 1]]:
-                result += romans[c] - 2 * romans[s[i - 1]]
+        for i, c in enumerate(s):
+            if i > 0 and self.ROMANS[c] > self.ROMANS[s[i - 1]]:
+                result += self.ROMANS[c] - 2 * self.ROMANS[s[i - 1]]
             else:
-                result += romans[c]
+                result += self.ROMANS[c]
         return result
 
 

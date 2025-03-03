@@ -16,7 +16,7 @@ dependencies {
 
     implementation(libs.groovy)
 
-    testImplementation(project(":samples"))
+    testImplementation(project(":testing:jvm"))
 }
 
 tasks {

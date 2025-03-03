@@ -3,7 +3,7 @@ package problems101_200
 import com.google.common.collect.Iterables
 import com.google.common.truth.Truth.assertWithMessage
 import concepts.SinglyListNode
-import testing.SampledTest
+import sample.SampledTest
 import kotlin.test.Test
 
 class LinkedListCycleTest : SampledTest() {

@@ -1,13 +1,14 @@
 import unittest
+from unittest import TestCase
 
 from src.problems1_100.container_with_most_water import SOLUTIONS
-from tests.testing.sampled_test import SampledTest
+from tests.sample.samples import get_samples
 
 
-class TestContainerWithMostWater(SampledTest):
+class TestContainerWithMostWater(TestCase):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in self.get_samples():
+            for sample in get_samples():
                 self.assertEqual(
                     sample['output'],
                     solution.max_area(sample['input']['height']),

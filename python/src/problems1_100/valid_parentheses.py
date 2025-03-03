@@ -18,9 +18,9 @@ class Default(Problem):
             if c in {')', '}', ']'}:
                 if len(symbols) > 0 and symbols[-1] == '(' and c == ')':
                     symbols.pop()
-                elif len(symbols) > 0 and symbols[-1] == '[' and c == ']':
-                    symbols.pop()
                 elif len(symbols) > 0 and symbols[-1] == '{' and c == '}':
+                    symbols.pop()
+                elif len(symbols) > 0 and symbols[-1] == '[' and c == ']':
                     symbols.pop()
                 else:
                     return False

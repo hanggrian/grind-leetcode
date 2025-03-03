@@ -1,7 +1,7 @@
 package problems1_100
 
 import org.junit.Test
-import testing.SampledTest
+import sample.SampledTest
 
 import static com.google.common.truth.Truth.assertThat
 import static com.google.common.truth.Truth.assertWithMessage

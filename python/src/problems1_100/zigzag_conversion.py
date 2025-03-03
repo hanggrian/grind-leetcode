@@ -13,13 +13,15 @@ class Default(Problem):
     def convert(self, s: str, num_rows: int) -> str:
         if num_rows == 1:
             return s
+
         results = []
         for _ in range(num_rows):
             results.append('')
+
         i = 0
         zigzag_index = 0
         while len(s) > 0:
-            if zigzag_index == 0 or zigzag_index == i:
+            if zigzag_index in [0, i]:
                 c = s[0:1]
                 s = s[1:]
                 results[i] += c

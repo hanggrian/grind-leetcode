@@ -2,7 +2,7 @@ package problems1_100
 
 import com.google.common.truth.Truth.assertThat
 import com.google.common.truth.Truth.assertWithMessage
-import testing.SampledTest
+import sample.SampledTest
 import kotlin.test.Test
 
 class RemoveDuplicatesFromSortedArrayTest : SampledTest() {

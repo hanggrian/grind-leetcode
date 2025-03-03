@@ -8,10 +8,12 @@ enum class ZigzagConversion {
             if (numRows == 1) {
                 return s
             }
+
             val builders = arrayOfNulls<StringBuilder>(numRows)
             for (i in 0 until numRows) {
                 builders[i] = StringBuilder()
             }
+
             var i = 0
             var zigzagIndex = 0
             while (s.isNotEmpty()) {

@@ -17,7 +17,7 @@ dependencies {
     ktlintRuleset(libs.rulebook.ktlint)
 
     testImplementation(kotlin("test-junit", libs.versions.kotlin.get()))
-    testImplementation(project(":samples"))
+    testImplementation(project(":testing:jvm"))
 }
 
 tasks {

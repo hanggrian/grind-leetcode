@@ -3,7 +3,7 @@ package problems101_200;
 import com.google.common.collect.Iterables;
 import concepts.SinglyListNode;
 import org.junit.Test;
-import testing.SampledTest;
+import sample.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

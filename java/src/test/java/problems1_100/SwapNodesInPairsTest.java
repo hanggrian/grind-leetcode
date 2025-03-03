@@ -2,7 +2,7 @@ package problems1_100;
 
 import concepts.SinglyListNode;
 import org.junit.Test;
-import testing.SampledTest;
+import sample.SampledTest;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 

@@ -7,9 +7,7 @@ enum LongestSubstringWithoutRepeatingCharacters {
             if (s.isEmpty()) {
                 return 0
             }
-            // unique characters
             HashSet<Character> characters = []
-
             int start = 0
             int end = 0
             int maxLength = Integer.MIN_VALUE
