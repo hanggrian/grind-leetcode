@@ -21,14 +21,11 @@
 
 ## Brute force
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_2.svg)
 
 ## Single pass
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_3.svg)

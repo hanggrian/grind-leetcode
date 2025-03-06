@@ -8,7 +8,7 @@ class Problem {
 
 class Default extends Problem {
   mergeKLists(lists) {
-    let nodes = lists.filter(n => n !== undefined);
+    let nodes = lists.filter(n => n);
     if (nodes.length === 0) {
       return undefined;
     }

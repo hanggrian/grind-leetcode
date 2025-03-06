@@ -15,4 +15,4 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/find_the_index_of_the_first_occurrence_in_a_string.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/find-the-index-of-the-first-occurrence-in-a-string.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/find-the-index-of-the-first-occurrence-in-a-string1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/find-the-index-of-the-first-occurrence-in-a-string1.svg)

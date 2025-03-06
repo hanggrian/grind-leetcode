@@ -45,14 +45,11 @@
 
 ## Create copy
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_2.svg)
 
 ## Single pass
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_3.svg)

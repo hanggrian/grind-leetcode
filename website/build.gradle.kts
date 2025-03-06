@@ -22,12 +22,17 @@ pages {
         .filter { it.extension == "md" }
         .forEach { content("${it.nameWithoutExtension}.html", it) }
 
-    minimal {
+    cayman {
         authorName = developerName
         authorUrl = developerUrl
         projectName = releaseArtifact
         projectDescription = releaseDescription
         projectUrl = releaseUrl
+
+        darkMode = true
+        colorPrimary = "#ffa116"
+        colorSecondary = "#1890ff"
+        colorSecondaryContainer = "#1890ff"
     }
 }
 

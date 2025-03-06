@@ -28,6 +28,7 @@ enum class AddTwoNumbers {
                 node.next = SinglyListNode(value % 10)
                 node = node.next!!
             }
+
             // create remaining carry
             if (carry > 0) {
                 node.next = SinglyListNode(carry)

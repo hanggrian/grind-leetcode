@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3+-3776ab)](https://docs.python.org/3/whatsnew/3.13.html)
 [![Node](https://img.shields.io/badge/node-23+-5Fa04e)](https://nodejs.org/en/blog/release/v23.9.0)
 
-# Grind LeetCode
+# Let's grind LeetCode!
 
 ![The project logo.](https://github.com/hanggrian/grind-leetcode/raw/assets/logo.png)
 
@@ -17,6 +17,504 @@ Solutions and visual explanations to LeetCode problems.
 
 ## Problems
 
+### Unofficial listing
+
+<style>
+  details summary {
+    display: list-item;
+  }
+</style>
+
+<blockquote>
+  <details>
+  <summary>Grind 75</summary>
+
+  [Visit problem set](https://www.techinterviewhandbook.org/grind75/)
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center;">Week 1</th>
+        <th style="text-align: center;">Week 2</th>
+        <th style="text-align: center;">Week 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ol>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/two-sum">
+                Two Sum
+              </a>
+            </li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/vaild-parentheses">
+                Valid Parentheses
+              </a>
+            </li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/merge-two-sorted-lists">
+                Merge Two Sorted Lists
+              </a>
+            </li>
+            <li>Best Time to Buy and Sell Stock</li>
+            <li>Valid Palindrome</li>
+            <li>Invert Binary Tree</li>
+            <li>Valid Anagram</li>
+            <li>Binary Search</li>
+            <li>Flood Fill</li>
+            <li>Lowest Common Ancestor of a Binary Search Tree</li>
+            <li>Balanced Binary Tree</li>
+            <li>Linked List Cycle</li>
+            <li>Implement Queue using Stacks</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>First Bad Version</li>
+            <li>Ransom Note</li>
+            <li>Climbing Stairs</li>
+            <li>Longest Palindrome</li>
+            <li>Reverse Linked List</li>
+            <li>Majority Element</li>
+            <li>Add Binary</li>
+            <li>Diameter of Binary Tree</li>
+            <li>Middle of the Linked List</li>
+            <li>Maximum Depth of Binary Tree</li>
+            <li>Contains Duplicate</li>
+            <li>Maximum Subarray</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Insert Interval</li>
+            <li>01 Matrix</li>
+            <li>K Closest Points to Origin</li>
+            <li>Longest Substring Without Repeating Characters</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/three-sum">
+                Three Sum
+              </a>
+            </li>
+            <li>Binary Tree Level Order Traversal</li>
+            <li>Clone Graph</li>
+            <li>Evaluate Reverse Polish Notation</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Week 4</b></td>
+        <td style="text-align: center;"><b>Week 5</b></td>
+        <td style="text-align: center;"><b>Week 6</b></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Course Schedule</li>
+            <li>Implement Trie (Prefix Tree)</li>
+            <li>Coin Change</li>
+            <li>Product of Array Except Self</li>
+            <li>Min Stack</li>
+            <li>Validate Binary Search Tree</li>
+            <li>Number of Islands</li>
+            <li>Rotting Oranges</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Search in Rotated Sorted Array</li>
+            <li>Combination Sum</li>
+            <li>Permutations</li>
+            <li>Merge Intervals</li>
+            <li>Lowest Common Ancestor of a Binary Tree</li>
+            <li>Time Based Key-Value Store</li>
+            <li>Accounts Merge</li>
+            <li>Sort Colors</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Word Break</li>
+            <li>Partition Equal Subset Sum</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/string-to-integer-atoi">
+                String to Integer (atoi)
+              </a>
+            </li>
+            <li>Spiral Matrix</li>
+            <li>Subsets</li>
+            <li>Binary Tree Right Side View</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring">
+                Longest palindromic substring
+              </a>
+            </li>
+            <li>Unique Paths</li>
+            <li>Construct Binary Tree from Preorder and Inorder Traversal</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Week 7</b></td>
+        <td style="text-align: center;"><b>Week 8</b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/container-with-most-water">
+                Container With Most Water
+              </a>
+            </li>
+            <li>Letter Combinations of a Phone Number</li>
+            <li>Word Search</li>
+            <li>Find All Anagrams in a String</li>
+            <li>Minimum Height Trees</li>
+            <li>Task Scheduler</li>
+            <li>LRU Cache</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Kth Smallest Element in a BST</li>
+            <li>Minimum Window Substring</li>
+            <li>Serialize and Deserialize Binary Tree</li>
+            <li>Trapping Rain Water</li>
+            <li>Find Median from Data Stream</li>
+            <li>Word Ladder</li>
+            <li>Basic Calculator</li>
+            <li>Maximum Profit in Job Scheduling</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/merge-k-sorted-lists">
+                Merge k Sorted Lists
+              </a>
+            </li>
+            <li>Largest Rectangle in Histogram</li>
+          </ol>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </details>
+</blockquote>
+
+<blockquote>
+  <details>
+  <summary>Neetcode 150</summary>
+
+  [Visit problem set](https://neetcode.io/practice?tab=neetcode150)
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center;">Arrays &amp; Hashing</th>
+        <th style="text-align: center;">Two Pointers</th>
+        <th style="text-align: center;">Sliding Window</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ol>
+            <li>Contains duplicate</li>
+            <li>Valid Anagram</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/two-sum">
+                Two Sum
+              </a>
+            </li>
+            <li>Group Anagrams</li>
+            <li>Top K Frequent Elements</li>
+            <li>Encode and Decode Strings</li>
+            <li>Product of Array Except Self</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/valid-sudoku">
+                Valid Sudoku
+              </a>
+            </li>
+            <li>Longest Consecutive Sequence</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Valid Palindrome</li>
+            <li>Two Sum II Input Array Is Sorted</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/three-sum">
+                Three Sum
+              </a>
+            </li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/container-with-most-water">
+                Container With Most Water
+              </a>
+            </li>
+            <li>Trapping Rain Water</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Best Time to Buy And Sell Stock</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/longest-substring-without-repeating-characters">
+                Longest Substring Without Repeating Characters
+              </a>
+            </li>
+            <li>Longest Repeating Character Replacement</li>
+            <li>Permutation In String</li>
+            <li>Minimum Window Substring</li>
+            <li>Sliding Window Maximum</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Binary Search</b></td>
+        <td style="text-align: center;"><b>Linked List</b></td>
+        <td style="text-align: center;"><b>Trees</b></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Binary Search</li>
+            <li>Search a 2D Matrix</li>
+            <li>Koko Eating Bananas</li>
+            <li>Find Minimum In Rotated Sorted Array</li>
+            <li>Search In Rotated Sorted Array</li>
+            <li>Time Based Key Value Store</li>
+            <li>Median of Two Sorted Arrays</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Reverse Linked List</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/merge-two-sorted-lists">
+                Merge Two Sorted Lists
+              </a>
+            </li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/linked-list-cycle">
+                Linked List Cycle
+              </a>
+            </li>
+            <li>Reorder List</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/remove-nth-node-from-end-of-list">
+                Remove Nth Node From End of List
+              </a>
+            </li>
+            <li>Copy List With Random Pointer</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/add-two-numbers">
+                Add Two Numbers
+              </a>
+            </li>
+            <li>Find The Duplicate Number</li>
+            <li>LRU Cache</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/merge-k-sorted-lists">
+                Merge k Sorted Lists
+              </a>
+            </li>
+            <li>Reverse Nodes In K Group</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Invert Binary Tree</li>
+            <li>Maximum Depth of Binary Tree</li>
+            <li>Diameter of Binary Tree</li>
+            <li>Balanced Binary Tree</li>
+            <li>Same Tree</li>
+            <li>Subtree of Another Tree</li>
+            <li>Lowest Common Ancestor of a Binary Search Tree</li>
+            <li>Binary Tree Level Order Traversal</li>
+            <li>Binary Tree Right Side View</li>
+            <li>Count Good Nodes In Binary Tree</li>
+            <li>Validate Binary Search Tree</li>
+            <li>Kth Smallest Element In a Bst</li>
+            <li>Construct Binary Tree From Preorder And Inorder Traversal</li>
+            <li>Binary Tree Maximum Path Sum</li>
+            <li>Serialize And Deserialize Binary Tree</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Heap / Priority Queue</b></td>
+        <td style="text-align: center;"><b>Backtracking</b></td>
+        <td style="text-align: center;"><b>Tries</b></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Kth Largest Element In a Stream</li>
+            <li>Last Stone Weight</li>
+            <li>K Closest Points to Origin</li>
+            <li>Kth Largest Element In An Array</li>
+            <li>Task Scheduler</li>
+            <li>Design Twitter</li>
+            <li>Find Median From Data Stream</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Subsets</li>
+            <li>Combination Sum</li>
+            <li>Combination Sum II</li>
+            <li>Permutations</li>
+            <li>Subsets II</li>
+            <li>Word Search</li>
+            <li>Palindrome Partitioning</li>
+            <li>Letter Combinations of a Phone Number</li>
+            <li>N Queens</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Implement Trie Prefix Tree</li>
+            <li>Design Add And Search Words Data Structure</li>
+            <li>Word Search II</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Graphs</b></td>
+        <td style="text-align: center;"><b>Advanced Graphs</b></td>
+        <td style="text-align: center;"><b>1-D Dynamic Programming</b></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Number of Islands</li>
+            <li>Max Area of Island</li>
+            <li>Clone Graph</li>
+            <li>Walls And Gates</li>
+            <li>Rotting Oranges</li>
+            <li>Pacific Atlantic Water Flow</li>
+            <li>Surrounded Regions</li>
+            <li>Course Schedule</li>
+            <li>Course Schedule II</li>
+            <li>Graph Valid Tree</li>
+            <li>Number of Connected Components In An Undirected Graph</li>
+            <li>Redundant Connection</li>
+            <li>Word Ladder</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Network Delay Time</li>
+            <li>Reconstruct Itinerary</li>
+            <li>Min Cost to Connect All Points</li>
+            <li>Swim In Rising Water</li>
+            <li>Alien Dictionary</li>
+            <li>Cheapest Flights Within K Stops</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Climbing Stairs</li>
+            <li>Min Cost Climbing Stairs</li>
+            <li>House Robber</li>
+            <li>House Robber II</li>
+            <li>
+              <a href="https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring">
+                Longest palindromic substring
+              </a>
+            </li>
+            <li>Palindromic Substrings</li>
+            <li>Decode Ways</li>
+            <li>Coin Change</li>
+            <li>Word Break</li>
+            <li>Longest Increasing Subsequence</li>
+            <li>Partition Equal Subset Sum</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>2-D Dynamic Programming</b></td>
+        <td style="text-align: center;"><b>Greedy</b></td>
+        <td style="text-align: center;"><b>Intervals</b></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Unique Paths</li>
+            <li>Longest Common Subsequence</li>
+            <li>Best Time to Buy And Sell Stock With Cooldown</li>
+            <li>Coin Change II</li>
+            <li>Target Sum</li>
+            <li>Interleaving String</li>
+            <li>Longest Increasing Path In a Matrix</li>
+            <li>Distinct Subsequences</li>
+            <li>Edit Distance</li>
+            <li>Burst Balloons</li>
+            <li>Regular Expression Matching</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Maximum Subarray</li>
+            <li>Jump Game</li>
+            <li>Jump Game II</li>
+            <li>Gas Station</li>
+            <li>Hand of Straights</li>
+            <li>Merge Triplets to Form Target Triplet</li>
+            <li>Partition Labels</li>
+            <li>Valid Parenthesis String</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Insert Interval</li>
+            <li>Merge Intervals</li>
+            <li>Non Overlapping Intervals</li>
+            <li>Meeting Rooms</li>
+            <li>Meeting Rooms II</li>
+            <li>Minimum Interval to Include Each Query</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><b>Math &amp; Geometry</b></td>
+        <td style="text-align: center;"><b>Bit Manipulation</b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Rotate Image</li>
+            <li>Spiral Matrix</li>
+            <li>Set Matrix Zeroes</li>
+            <li>Happy Number</li>
+            <li>Plus One</li>
+            <li>Pow(x, n)</li>
+            <li>Multiply Strings</li>
+            <li>Detect Squares</li>
+          </ol>
+        </td>
+        <td>
+          <ol>
+            <li>Single Number</li>
+            <li>Number of 1 Bits</li>
+            <li>Counting Bits</li>
+            <li>Reverse Bits</li>
+            <li>Missing Number</li>
+            <li>Sum of Two Integers</li>
+            <li>Reverse Integer</li>
+          </ol>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </details>
+</blockquote>
+
+### Official listing
+
 <table>
   <thead>
     <tr>
@@ -27,7 +525,7 @@ Solutions and visual explanations to LeetCode problems.
   <tbody>
     <tr>
       <td>
-        <a href="https://hanggrian.github.io/grind-leetcode/two-sum">
+        <a href="https://hanggrian.github.io/grind-leetcode/two-sum/">
           1. Two Sum
         </a>
       </td>

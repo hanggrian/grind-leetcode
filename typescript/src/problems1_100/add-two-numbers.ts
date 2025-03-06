@@ -28,6 +28,7 @@ class Default extends Problem {
       node.next = new SinglyListNode(value % 10);
       node = node.next;
     }
+
     // create remaining carry
     if (carry > 0) {
       node.next = new SinglyListNode(carry);

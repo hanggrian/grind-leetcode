@@ -18,8 +18,6 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/reverse_integer.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/reverse-integer.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/reverse-integer3.svg)

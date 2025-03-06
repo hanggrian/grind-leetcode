@@ -42,12 +42,8 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/integer_to_roman.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/integer-to-roman.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/integer-to-roman5.svg)

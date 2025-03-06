@@ -16,18 +16,11 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/merge_k_sorted_lists.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/merge-k-sorted-lists.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists5.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists6.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists7.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists8.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists6.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists7.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-k-sorted-lists8.svg)

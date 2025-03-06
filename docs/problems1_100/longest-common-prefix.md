@@ -16,12 +16,8 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/longest_common_prefix.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/longest-common-prefix.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-common-prefix5.svg)

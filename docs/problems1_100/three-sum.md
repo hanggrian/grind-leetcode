@@ -17,18 +17,11 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/three_sum.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/three-sum.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum5.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum6.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum7.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum8.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum6.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum7.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/three-sum8.svg)

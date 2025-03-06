@@ -16,8 +16,8 @@
 
 ## Reverse string
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number1.svg)
 
 ## Compare half string
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2.svg)

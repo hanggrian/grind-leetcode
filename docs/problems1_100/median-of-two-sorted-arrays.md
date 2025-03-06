@@ -16,4 +16,4 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/median_of_two_sorted_arrays.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/median-of-two-sorted-arrays.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/median-of-two-sorted-arrays1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/median-of-two-sorted-arrays1.svg)
