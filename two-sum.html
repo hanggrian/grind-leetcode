@@ -4,123 +4,119 @@
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <title>grind-leetcode</title>
-        <meta content="width=device-width" name="viewport">
-        <meta content="chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="#ffa116" name="theme-color">
         <link href="styles/main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" rel="stylesheet">
-        <script src="scripts/theme.js"></script>
+        <link href="styles/dark.css" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
         <!--Primary meta tags-->
         <meta content="grind-leetcode" name="title">
         <meta content="Solutions and visual explanations to LeetCode problems" name="description">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <h1>grind-leetcode</h1>
-                <p>Solutions and visual explanations to LeetCode problems</p>
-                <p class="view">
-                    <a href="https://github.com/hanggrian/grind-leetcode/">View the Project on GitHub <small>hanggrian/grind-leetcode</small></a>
-                </p>
-            </header>
-            <section>
+        <section class="page-header">
+            <h1 class="project-name">grind-leetcode</h1>
+            <h2 class="project-tagline">Solutions and visual explanations to LeetCode problems</h2>
+        </section>
+        <section class="main-content">
+            <p>
+                <a href="https://hanggrian.github.io/grind-leetcode/">&larr; Return</a>
+            </p>
+            
+            <h1>1. Two Sum</h1>
+            
+            <blockquote>
+                
                 <p>
-                    <a href="https://hanggrian.github.io/grind-leetcode/">&larr; Return</a>
-                </p>
-                
-                <h1>1. Two Sum</h1>
-                
-                <blockquote>
-                    
-                    <p>
-                        Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of
+                    Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of
 the two numbers such that they add up to <code>target</code>.</em>
-                    </p>
-                    
-                    <p>
-                        You may assume that each input would have <strong><em>exactly</em> one solution,</strong> and you
+                </p>
+                
+                <p>
+                    You may assume that each input would have <strong><em>exactly</em> one solution,</strong> and you
 may not use the <em>same</em> element twice.
-                    </p>
-                    
-                    <p>You can return the answer in any order.</p>
-                    
-                </blockquote>
+                </p>
                 
-                <ul>
-                    
-                    <li>
-                        <a href="https://leetcode.com/problems/two-sum/">Problem</a>
-                    </li>
-                    
-                    <li>
-                        Solutions
+                <p>You can return the answer in any order.</p>
+                
+            </blockquote>
+            
+            <ul>
+                
+                <li>
+                    <a href="https://leetcode.com/problems/two-sum/">Problem</a>
+                </li>
+                
+                <li>
+                    Solutions
 
-                        <ul>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/TwoSum.groovy">Groovy</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/TwoSum.java">Java</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/two-sum.js">JavaScript</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/TwoSum.kt">Kotlin</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/two_sum.py">Python</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/two-sum.ts">TypeScript</a>
-                            </li>
-                            
-                        </ul>
+                    <ul>
                         
-                    </li>
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/TwoSum.groovy">Groovy</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/TwoSum.java">Java</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/two-sum.js">JavaScript</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/TwoSum.kt">Kotlin</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/two_sum.py">Python</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/two-sum.ts">TypeScript</a>
+                        </li>
+                        
+                    </ul>
                     
-                </ul>
+                </li>
                 
-                <h2>Brute force</h2>
+            </ul>
+            
+            <h2>Brute force</h2>
+            
+            <ol>
                 
-                <p>
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_1.svg">
-                </p>
+                </li>
                 
-                <p>
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum1_2.svg">
-                </p>
+                </li>
                 
-                <h2>Single pass</h2>
+            </ol>
+            
+            <h2>Single pass</h2>
+            
+            <ol>
                 
-                <p>
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_1.svg">
-                </p>
+                </li>
                 
-                <p>
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_2.svg">
-                </p>
+                </li>
                 
-                <p>
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/two-sum2_3.svg">
-                </p>
+                </li>
                 
-            </section>
-            <footer>
-                <p>
-                    <button class="material-symbols-sharp" id="theme-toggle" onclick="toggleDarkMode()" title="Toggle dark mode"></button>
-                </p>
-                <p>
-                    This project is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a>
-                </p>
-                <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist/">orderedlist</a></small>
+            </ol>
+            
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/hanggrian/grind-leetcode/">grind-leetcode</a> is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a></span><span class="site-footer-credits">Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/jasonlong/cayman-theme/">jasonlong</a></span>
             </footer>
-        </div>
-        <script src="scripts/scale.fix.js"></script>
+        </section>
     </body>
 </html>

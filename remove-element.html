@@ -4,65 +4,62 @@
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <title>grind-leetcode</title>
-        <meta content="width=device-width" name="viewport">
-        <meta content="chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="#ffa116" name="theme-color">
         <link href="styles/main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" rel="stylesheet">
-        <script src="scripts/theme.js"></script>
+        <link href="styles/dark.css" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
         <!--Primary meta tags-->
         <meta content="grind-leetcode" name="title">
         <meta content="Solutions and visual explanations to LeetCode problems" name="description">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <h1>grind-leetcode</h1>
-                <p>Solutions and visual explanations to LeetCode problems</p>
-                <p class="view">
-                    <a href="https://github.com/hanggrian/grind-leetcode/">View the Project on GitHub <small>hanggrian/grind-leetcode</small></a>
-                </p>
-            </header>
-            <section>
+        <section class="page-header">
+            <h1 class="project-name">grind-leetcode</h1>
+            <h2 class="project-tagline">Solutions and visual explanations to LeetCode problems</h2>
+        </section>
+        <section class="main-content">
+            <p>
+                <a href="https://hanggrian.github.io/grind-leetcode/">&larr; Return</a>
+            </p>
+            
+            <h1>27. Remove Element</h1>
+            
+            <blockquote>
+                
                 <p>
-                    <a href="https://hanggrian.github.io/grind-leetcode/">&larr; Return</a>
-                </p>
-
-                <h1>27. Remove Element</h1>
-
-                <blockquote>
-
-                    <p>
-                        Given an integer array <code>nums</code> and an integer <code>val</code>, remove all occurrences of
+                    Given an integer array <code>nums</code> and an integer <code>val</code>, remove all occurrences of
 <code>val</code> in <code>nums</code> in-place. The order of the elements may be changed. Then
 return <em>the number of elements in <code>nums</code> which are not equal to <code>val</code>.</em>
-                    </p>
-
-                    <p>
-                        Consider the number of elements in <code>nums</code> which are not equal to <code>val</code> be <code>k</code>,
+                </p>
+                
+                <p>
+                    Consider the number of elements in <code>nums</code> which are not equal to <code>val</code> be <code>k</code>,
 to get accepted, you need to do the following things:
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Change the array <code>nums</code> such that the first <code>k</code> elements of <code>nums</code> contain
+                </p>
+                
+                <ul>
+                    
+                    <li>
+                        Change the array <code>nums</code> such that the first <code>k</code> elements of <code>nums</code> contain
 the elements which are not equal to <code>val</code>. The remaining elements of <code>nums</code>
 are not important as well as the size of <code>nums</code>.
-                        </li>
-
-                        <li>
-                            Return <code>k</code>.
-                        </li>
-
-                    </ul>
-
-                    <p>
-                        <strong>Custom Judge:</strong>
-                    </p>
-
-                    <blockquote>
-
-<pre><code class="language-java">int[] nums = [...]; // Input array
+                    </li>
+                    
+                    <li>
+                        Return <code>k</code>.
+                    </li>
+                    
+                </ul>
+                
+                <p>
+                    <strong>Custom Judge:</strong>
+                </p>
+                
+                <blockquote>
+                    
+                    <pre>
+                        <code class="language-java">int[] nums = [...]; // Input array
 int val = ...; // Value to remove
 int[] expectedNums = [...]; // The expected answer with correct length.
                             // It is sorted with no values equaling val.
@@ -74,85 +71,82 @@ sort(nums, 0, k); // Sort the first k elements of nums
 for (int i = 0; i &lt; actualLength; i++) {
     assert nums[i] == expectedNums[i];
 }
-</code></pre>
-
-                    </blockquote>
-
-                    <p>
-                        The judge will test your solution with the following code:
-If all assertions pass, then your solution will be <strong>accepted.</strong>
-                    </p>
-
+</code>
+                    </pre>
+                    
                 </blockquote>
-
-                <ul>
-
-                    <li>
-                        <a href="https://leetcode.com/problems/remove-element/">Problem</a>
-                    </li>
-
-                    <li>
-                        Solutions
-
-                        <ul>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/RemoveElement.groovy">Groovy</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/RemoveElement.java">Java</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/remove-element.js">JavaScript</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/RemoveElement.kt">Kotlin</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_element.py">Python</a>
-                            </li>
-
-                            <li>
-                                <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-element.ts">TypeScript</a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                </ul>
-
+                
                 <p>
+                    The judge will test your solution with the following code:
+If all assertions pass, then your solution will be <strong>accepted.</strong>
+                </p>
+                
+            </blockquote>
+            
+            <ul>
+                
+                <li>
+                    <a href="https://leetcode.com/problems/remove-element/">Problem</a>
+                </li>
+                
+                <li>
+                    Solutions
+
+                    <ul>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/RemoveElement.groovy">Groovy</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/RemoveElement.java">Java</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/remove-element.js">JavaScript</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/RemoveElement.kt">Kotlin</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_element.py">Python</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-element.ts">TypeScript</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+            <ol>
+                
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element1.svg">
-                </p>
-
-                <p>
+                </li>
+                
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element2.svg">
-                </p>
-
-                <p>
+                </li>
+                
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element3.svg">
-                </p>
-
-                <p>
+                </li>
+                
+                <li>
                     <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element4.svg">
-                </p>
-
-            </section>
-            <footer>
-                <p>
-                    <button class="material-symbols-sharp" id="theme-toggle" onclick="toggleDarkMode()" title="Toggle dark mode"></button>
-                </p>
-                <p>
-                    This project is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a>
-                </p>
-                <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist/">orderedlist</a></small>
+                </li>
+                
+            </ol>
+            
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/hanggrian/grind-leetcode/">grind-leetcode</a> is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a></span><span class="site-footer-credits">Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/jasonlong/cayman-theme/">jasonlong</a></span>
             </footer>
-        </div>
-        <script src="scripts/scale.fix.js"></script>
+        </section>
     </body>
 </html>
