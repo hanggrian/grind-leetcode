@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 27. Remove Element
+# 27. Remove Element<sup>EASY</sup>
 
 > Given an integer array `nums` and an integer `val`, remove all occurrences of
   `val` in `nums` in-place. The order of the elements may be changed. Then
@@ -43,10 +43,7 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_element.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-element.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-element4.svg)

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 26. Remove Duplicates from Sorted Array
+# 26. Remove Duplicates from Sorted Array<sup>EASY</sup>
 
 > Given an integer array `nums` sorted in **non-decreasing order,** remove the
   duplicates in-place such that each unique element appears only **once.** The
@@ -45,14 +45,11 @@
 
 ## Create copy
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array1_2.svg)
 
 ## Single pass
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-duplicates-from-sorted-array2_3.svg)

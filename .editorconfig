@@ -34,3 +34,8 @@ ktlint_standard_package-name = disabled
 ij_groovy_use_single_class_imports = true
 ij_groovy_class_count_to_use_import_on_demand = 99
 ij_groovy_names_count_to_use_import_on_demand = 99
+
+[*.{js,ts}]
+ij_continuation_indent_size = 4
+ij_javascript_imports_wrap = off
+ij_typescript_imports_wrap = off

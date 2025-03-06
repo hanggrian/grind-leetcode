@@ -8,7 +8,7 @@ class Problem {
 
 class Default extends Problem {
   mergeKLists(lists: SinglyListNode[]): SinglyListNode {
-    let nodes = lists.filter(n => n !== undefined);
+    let nodes = lists.filter(n => n);
     if (nodes.length === 0) {
       return undefined;
     }
@@ -18,7 +18,7 @@ class Default extends Problem {
     while (nodes.length > 0) {
       // find lowest
       let lowest =
-        nodes.reduce((previous, current) => current.value < previous.value ? current : previous);
+          nodes.reduce((previous, current) => current.value < previous.value ? current : previous);
 
       // append lowest to current
       current.next = new SinglyListNode(lowest.value);

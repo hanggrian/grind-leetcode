@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 21. Merge Two Sorted Lists
+# 21. Merge Two Sorted Lists<sup>EASY</sup>
 
 > You are given the heads of two sorted linked lists `list1` and `list2`.
 >
@@ -18,14 +18,9 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/merge_two_sorted_lists.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/merge-two-sorted-lists.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists5.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists6.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/merge-two-sorted-lists6.svg)

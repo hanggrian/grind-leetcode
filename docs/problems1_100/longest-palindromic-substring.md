@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 5. Longest Palindromic Substring
+# 5. Longest Palindromic Substring<sup>MEDIUM</sup>
 
 > Given a string `s`, return *the longest palindromic substring* in `s`.
 
@@ -13,10 +13,7 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/longest_palindromic_substring.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/longest-palindromic-substring.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-palindromic-substring4.svg)

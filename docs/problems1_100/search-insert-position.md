@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 35. Search Insert Position
+# 35. Search Insert Position<sup>EASY</sup>
 
 > Given a sorted array of distinct integers and a target value, return the index
   if the target is found. If not, return the index where it would be if it were
@@ -19,18 +19,13 @@
 
 ## Sliding window
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position1_5.svg)
 
 ## Binary search
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position2_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/search-insert-position2_2.svg)

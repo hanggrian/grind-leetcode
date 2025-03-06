@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 3. Longest Substring Without Repeating Characters
+# 3. Longest Substring Without Repeating Characters<sup>MEDIUM</sup>
 
 > Given a string `s`, find the length of the **longest substring** without
   duplicate characters.
@@ -14,10 +14,7 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/longest_substring_without_repeating_characters.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/longest-substring-without-repeating-characters.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/longest-substring-without-repeating-characters4.svg)

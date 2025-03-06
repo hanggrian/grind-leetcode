@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 11. Container With Most Water
+# 11. Container With Most Water<sup>MEDIUM</sup>
 
 > You are given an integer array `height` of length `n`. There are `n` vertical
   lines drawn such that the two endpoints of the `i`<sup>`th`</sup> line are
@@ -22,18 +22,11 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/container_with_most_water.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/container-with-most-water.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water5.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water6.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water7.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water8.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water6.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water7.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/container-with-most-water8.svg)

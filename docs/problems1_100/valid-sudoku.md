@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 36. Valid Sudoku
+# 36. Valid Sudoku<sup>MEDIUM</sup>
 
 > Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be
   validated **according to the following rules:**
@@ -25,8 +25,6 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/valid_sudoku.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/valid-sudoku.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/valid-sudoku3.svg)

@@ -88,9 +88,9 @@ export class DoublyListNode extends ListNode {
   prev: DoublyListNode | undefined;
 
   constructor(
-    value: number = 0,
-    next: DoublyListNode | undefined = undefined,
-    prev: DoublyListNode | undefined = undefined
+      value: number = 0,
+      next: DoublyListNode | undefined = undefined,
+      prev: DoublyListNode | undefined = undefined
   ) {
     super(value);
     this.next = next;

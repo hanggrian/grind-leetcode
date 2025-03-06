@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 12. Roman to Integer
+# 12. Roman to Integer<sup>EASY</sup>
 
 > Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`,
   `C`, `D` and `M`.
@@ -40,10 +40,7 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/roman_to_integer.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/roman-to-integer.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/roman-to-integer4.svg)

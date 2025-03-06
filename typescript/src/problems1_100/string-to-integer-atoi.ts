@@ -30,7 +30,7 @@ class Default extends Problem {
       result = `-${result}`;
     }
     if (result.length === 0 ||
-      (result.length === 1 && (result[0] === '-' || result[0] === '+'))) {
+        (result.length === 1 && (result[0] === '-' || result[0] === '+'))) {
       return 0;
     }
     return parseInt(result);

@@ -16,6 +16,7 @@ enum class MergeTwoSortedLists {
             }
             val root = SinglyListNode()
             var current = root
+
             // when both items are there
             while (l1 != null && l2 != null) {
                 if (l1.value < l2.value) {
@@ -27,6 +28,7 @@ enum class MergeTwoSortedLists {
                 }
                 current = current.next!!
             }
+
             // remaining
             current.next = l1 ?: l2
             return root.next

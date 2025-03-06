@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 8. String to Integer (Atoi)
+# 8. String to Integer (Atoi)<sup>MEDIUM</sup>
 
 > Implement the `myAtoi(string s)` function, which converts a string to a 32-bit
   signed integer.
@@ -30,10 +30,7 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/string_to_integer_atoi.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/string-to-integer-atoi.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/string-to-integer-atoi4.svg)

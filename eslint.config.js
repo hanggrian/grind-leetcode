@@ -1,5 +1,4 @@
 import globals from 'globals';
-
 import eslintJs from '@eslint/js';
 import eslintJsPlugin from '@stylistic/eslint-plugin-js';
 import eslintTsPlugin from '@typescript-eslint/eslint-plugin';

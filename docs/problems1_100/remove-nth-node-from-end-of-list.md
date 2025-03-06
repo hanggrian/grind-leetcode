@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 19. Remove Nth Node From End of List
+# 19. Remove Nth Node From End of List<sup>MEDIUM</sup>
 
 > Given the `head` of a linked list, remove the `n`<sup>`th`</sup> node from the
   end of the list and return its head.
@@ -14,8 +14,6 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_nth_node_from_end_of_list.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-nth-node-from-end-of-list.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/remove-nth-node-from-end-of-list3.svg)

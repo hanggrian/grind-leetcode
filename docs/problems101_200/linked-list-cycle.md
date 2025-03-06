@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 141. Linked List Cycle
+# 141. Linked List Cycle<sup>EASY</sup>
 
 > Given `head`, the head of a linked list, determine if the linked list has a
   cycle in it.
@@ -24,14 +24,11 @@
 
 ## Remember visits
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_3.svg)
 
 ## Fast slow pointers
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_2.svg)

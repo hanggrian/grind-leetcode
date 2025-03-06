@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 2. Add Two Numbers
+# 2. Add Two Numbers<sup>MEDIUM</sup>
 
 > You are given two **non-empty** linked lists representing two non-negative
   integers. The digits are stored in **reverse order,** and each of their nodes
@@ -20,8 +20,6 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/add_two_numbers.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/add-two-numbers.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/add-two-numbers3.svg)

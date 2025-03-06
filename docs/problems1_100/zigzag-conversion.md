@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 6. Zigzag Conversion
+# 6. Zigzag Conversion<sup>MEDIUM</sup>
 
 > The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number
   of rows like this: (you may want to display this pattern in a fixed font for
@@ -30,12 +30,8 @@
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/zigzag_conversion.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/zigzag-conversion.ts)
 
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion1.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion2.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion3.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion4.svg)
-
-![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion5.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion4.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/zigzag-conversion5.svg)
