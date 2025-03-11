@@ -2,15 +2,15 @@ import {SinglyListNode} from '../../src/concepts/list-nodes';
 
 class Problem {
   hasCycle(head: SinglyListNode): boolean {
-    throw new Error(`'Not implemented (${head}).`);
+    throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class RememberVisits extends Problem {
   hasCycle(head: SinglyListNode): boolean {
     // visited nodes
-    let visits = new Set();
-    for (let node of head) {
+    const visits = new Set<SinglyListNode>();
+    for (const node of head) {
       if (visits.has(node)) {
         return true;
       }
@@ -35,4 +35,5 @@ class FastFlowPointer extends Problem {
   }
 }
 
-export const SOLUTIONS = [new RememberVisits(), new FastFlowPointer()];
+const SOLUTIONS = [new RememberVisits(), new FastFlowPointer()];
+export default SOLUTIONS;

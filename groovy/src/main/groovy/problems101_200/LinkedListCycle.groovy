@@ -1,15 +1,14 @@
 package problems101_200
 
-import concepts.ListNode
 import concepts.SinglyListNode
 
 enum LinkedListCycle {
-    REMEMBER_VISITS {
+    REMEMBER_VISITS{
         @Override
         boolean hasCycle(SinglyListNode head) {
             // visited nodes
-            Set<ListNode> visits = []
-            for (ListNode node : head) {
+            Set<SinglyListNode> visits = []
+            for (var node : head) {
                 if (!visits.add(node)) {
                     return true
                 }
@@ -17,14 +16,14 @@ enum LinkedListCycle {
             return false
         }
     },
-    FAST_SLOW_POINTERS {
+    FAST_SLOW_POINTERS{
         @Override
         boolean hasCycle(SinglyListNode head) {
             if (head == null || !head.hasNext()) {
                 return false
             }
-            SinglyListNode slow = head.next
-            SinglyListNode fast = head.next.next
+            var slow = head.next
+            var fast = head.next.next
             while (fast != null && fast.hasNext() && slow != fast) {
                 slow = slow.next
                 fast = fast.next.next

@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class ZigzagConversionTest extends SampledTest {
     @Test
     void test() {
-        for (ZigzagConversion solution : ZigzagConversion.values()) {
-            for (ZigzagConversionSample sample : getSamples(ZigzagConversionSample[].class)) {
+        ZigzagConversion.values().each { solution ->
+            getSamples(ZigzagConversionSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.convert(

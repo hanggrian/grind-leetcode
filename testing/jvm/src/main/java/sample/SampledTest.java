@@ -11,13 +11,13 @@ import java.util.stream.Collectors;
 public abstract class SampledTest {
     private static WeakReference<Gson> gsonRef = new WeakReference<>(null);
 
-    protected <T> T getSamples(Class<T> cls) {
+    protected final <T> T getSamples(Class<T> cls) {
         Gson gson = gsonRef.get();
         if (gson == null) {
             gson = new Gson();
             gsonRef = new WeakReference<>(gson);
         }
-        String fileName = getFileName();
+        String fileName = getSampleFilename();
         try (BufferedReader reader =
                  new BufferedReader(
                      new InputStreamReader(
@@ -35,7 +35,7 @@ public abstract class SampledTest {
         }
     }
 
-    private String getFileName() {
+    protected String getSampleFilename() {
         String clsName = getClass().getSimpleName();
         clsName = clsName.substring(0, clsName.indexOf("Test"));
 

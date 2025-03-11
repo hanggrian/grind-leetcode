@@ -6,12 +6,12 @@ enum AddTwoNumbers {
     DEFAULT{
         @Override
         SinglyListNode addTwoNumbers(SinglyListNode l1, SinglyListNode l2) {
-            SinglyListNode root = new SinglyListNode()
-            SinglyListNode node = root
-            int carry = 0
+            var root = new SinglyListNode()
+            var node = root
+            var carry = 0
             while (l1 != null || l2 != null) {
                 // calculate total and carry
-                int value = carry
+                var value = carry
                 if (l1 != null) {
                     value += l1.value
                     l1 = l1.next

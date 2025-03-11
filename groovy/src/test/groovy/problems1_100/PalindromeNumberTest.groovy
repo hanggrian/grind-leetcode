@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class PalindromeNumberTest extends SampledTest {
     @Test
     void test() {
-        for (PalindromeNumber solution : PalindromeNumber.values()) {
-            for (PalindromeNumberSample sample : getSamples(PalindromeNumberSample[].class)) {
+        PalindromeNumber.values().each { solution ->
+            getSamples(PalindromeNumberSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.isPalindrome(sample.input.x))
                     .isEqualTo(sample.output)

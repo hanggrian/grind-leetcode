@@ -6,8 +6,7 @@ enum SwapNodesInPairs {
     DEFAULT {
         @Override
         SinglyListNode swapPairs(SinglyListNode head) {
-            SinglyListNode root = new SinglyListNode(0);
-            root.next = head;
+            SinglyListNode root = new SinglyListNode(0, head);
             SinglyListNode current = root;
             while (current.next != null && current.next.next != null) {
                 SinglyListNode node1 = current.next;

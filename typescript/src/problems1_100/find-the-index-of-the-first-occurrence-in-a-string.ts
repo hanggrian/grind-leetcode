@@ -1,6 +1,6 @@
 class Problem {
   strStr(haystack: string, needle: string): number {
-    throw new Error(`'Not implemented (${haystack}, ${needle}).`);
+    throw new Error(`Not implemented (${haystack}, ${needle}).`);
   }
 }
 
@@ -10,4 +10,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

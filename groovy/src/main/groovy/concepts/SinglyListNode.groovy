@@ -22,7 +22,7 @@ final class SinglyListNode extends ListNode<SinglyListNode> {
         }
         SinglyListNode head = new SinglyListNode(values[0])
         SinglyListNode next = head
-        for (int i = 1; i < values.length; i++) {
+        for (var i = 1; i < values.length; i++) {
             next.next = new SinglyListNode(values[i])
             next = next.next
         }

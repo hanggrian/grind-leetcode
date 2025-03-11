@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class ValidParenthesesTest extends SampledTest {
     @Test
     void test() {
-        for (ValidParentheses solution : ValidParentheses.values()) {
-            for (ValidParenthesesSample sample : getSamples(ValidParenthesesSample[].class)) {
+        ValidParentheses.values().each { solution ->
+            getSamples(ValidParenthesesSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.isValid(sample.input.s))
                     .isEqualTo(sample.output)

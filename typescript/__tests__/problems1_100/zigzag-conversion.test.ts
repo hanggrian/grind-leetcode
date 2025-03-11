@@ -1,26 +1,33 @@
-import {deepEqual} from 'assert';
-import {SOLUTIONS} from '../../src/problems1_100/zigzag-conversion';
+import {strictEqual} from 'assert';
+import SOLUTIONS from '../../src/problems1_100/zigzag-conversion';
 import getSamples from '../../../testing/js/src/sample/samples';
+
+type Sample = {
+  input: {
+    s: string,
+    numRows: number,
+  },
+  output: string,
+  message: string,
+}
 
 describe(
     'ZigzagConversion',
-    () => {
-      test(
-          'test',
-          () => {
-            for (let solution of SOLUTIONS) {
-              for (let sample of getSamples()) {
-                deepEqual(
-                    sample.output,
-                    solution.convert(
-                        sample.input.s,
-                        sample.input.numRows,
-                    ),
-                    sample.explanation,
-                );
-              }
-            }
-          },
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution => {
+                  getSamples().forEach((sample: Sample) => {
+                    strictEqual(
+                        solution.convert(
+                            sample.input.s,
+                            sample.input.numRows,
+                        ),
+                        sample.output,
+                        sample.message,
+                    );
+                  });
+                }),
+        ),
 );

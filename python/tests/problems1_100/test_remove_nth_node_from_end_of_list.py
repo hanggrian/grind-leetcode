@@ -1,15 +1,14 @@
-import unittest
-from unittest import TestCase
+from unittest import main
 
 from src.concepts.list_nodes import SinglyListNode
 from src.problems1_100.remove_nth_node_from_end_of_list import SOLUTIONS
-from tests.sample.samples import get_samples
+from tests.sample.sampled_test import SampledTest
 
 
-class TestRemoveNthNodeFromEndOfList(TestCase):
+class TestRemoveNthNodeFromEndOfList(SampledTest):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in get_samples():
+            for sample in self.get_samples():
                 self.assertEqual(
                     SinglyListNode.of(*sample['output']),
                     solution.remove_nth_from_end(
@@ -21,4 +20,4 @@ class TestRemoveNthNodeFromEndOfList(TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

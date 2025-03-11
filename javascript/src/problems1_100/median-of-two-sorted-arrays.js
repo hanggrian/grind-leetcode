@@ -1,14 +1,14 @@
 class Problem {
   findMedianSortedArrays(nums1, nums2) {
-    throw new Error(`'Not implemented (${nums1}, ${nums2}).`);
+    throw new Error(`Not implemented (${nums1}, ${nums2}).`);
   }
 }
 
 class Default extends Problem {
   findMedianSortedArrays(nums1, nums2) {
-    let nums = nums1.concat(nums2);
+    const nums = nums1.concat(nums2);
     nums.sort();
-    let center = Math.floor(nums.length / 2);
+    const center = Math.floor(nums.length / 2);
     if (nums.length % 2 === 1) {
       return nums[center];
     }
@@ -16,4 +16,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

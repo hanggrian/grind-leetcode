@@ -1,14 +1,14 @@
 class Problem {
   removeDuplicates(nums: number[]): number {
-    throw new Error(`'Not implemented (${nums}).`);
+    throw new Error(`Not implemented (${nums}).`);
   }
 }
 
 class CreateCopy extends Problem {
   removeDuplicates(nums: number[]): number {
-    let distinct = new Set(nums);
+    const distinct = new Set<number>(nums);
     let i = 0;
-    for (let num of Array.from(distinct)) {
+    for (const num of Array.from(distinct)) {
       nums[i++] = num;
     }
     return distinct.size;
@@ -29,4 +29,5 @@ class SinglePass extends Problem {
   }
 }
 
-export const SOLUTIONS = [new CreateCopy(), new SinglePass()];
+const SOLUTIONS = [new CreateCopy(), new SinglePass()];
+export default SOLUTIONS;

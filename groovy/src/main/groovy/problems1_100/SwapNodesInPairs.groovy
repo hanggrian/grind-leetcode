@@ -6,12 +6,11 @@ enum SwapNodesInPairs {
     DEFAULT{
         @Override
         SinglyListNode swapPairs(SinglyListNode head) {
-            SinglyListNode root = new SinglyListNode(0)
-            root.next = head
-            SinglyListNode current = root
+            var root = new SinglyListNode(0, head)
+            var current = root
             while (current.next != null && current.next.next != null) {
-                SinglyListNode node1 = current.next
-                SinglyListNode node2 = current.next.next
+                var node1 = current.next
+                var node2 = current.next.next
                 node1.next = node2.next
                 current.next = node2
                 current.next.next = node1

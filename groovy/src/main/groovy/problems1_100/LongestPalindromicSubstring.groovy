@@ -7,13 +7,13 @@ enum LongestPalindromicSubstring {
             if (s.length() == 1) {
                 return s
             }
-            String longestPalindrome = ''
-            for (int i = 0; i < s.length() - 1; i++) {
-                String palindrome
+            var longestPalindrome = ''
+            for (var i = 0; i < s.length() - 1; i++) {
+                var palindrome
 
                 // check odd
-                int start = i
-                int end = i
+                var start = i
+                var end = i
                 while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
                     palindrome = s.substring(start, end + 1)
                     if (palindrome.length() > longestPalindrome.length()) {

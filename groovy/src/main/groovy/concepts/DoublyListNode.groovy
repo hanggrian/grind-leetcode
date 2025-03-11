@@ -29,7 +29,7 @@ final class DoublyListNode extends ListNode<DoublyListNode> {
         final DoublyListNode head = new DoublyListNode(values[0])
         DoublyListNode prev = null
         DoublyListNode next = head
-        for (int i = 1; i < values.length; i++) {
+        for (var i = 1; i < values.length; i++) {
             final DoublyListNode temp = next
 
             next.prev = prev

@@ -9,8 +9,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class RemoveNthNodeFromEndOfListTest extends SampledTest {
     @Test
     void test() {
-        for (RemoveNthNodeFromEndOfList solution : RemoveNthNodeFromEndOfList.values()) {
-            for (RemoveNthNodeFromEndOfListSample sample : getSamples(RemoveNthNodeFromEndOfListSample[].class)) {
+        RemoveNthNodeFromEndOfList.values().each { solution ->
+            getSamples(RemoveNthNodeFromEndOfListSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.removeNthFromEnd(

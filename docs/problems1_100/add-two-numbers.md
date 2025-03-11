@@ -10,7 +10,6 @@
 > You may assume the two numbers do not contain any leading zero, except the
   number 0 itself.
 
-
 - [Problem](https://leetcode.com/problems/add-two-numbers/)
 - Solutions
   - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/AddTwoNumbers.groovy)

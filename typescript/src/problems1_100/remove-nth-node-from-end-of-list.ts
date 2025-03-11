@@ -2,7 +2,7 @@ import {SinglyListNode} from '../concepts/list-nodes';
 
 class Problem {
   removeNthFromEnd(head: SinglyListNode, n: number): SinglyListNode {
-    throw new Error(`'Not implemented (${head}, ${n}).`);
+    throw new Error(`Not implemented (${head}, ${n}).`);
   }
 }
 
@@ -11,7 +11,7 @@ class Default extends Problem {
     if (!head.next && n === 1) {
       return undefined;
     }
-    let root = new SinglyListNode(0, head);
+    const root = new SinglyListNode(0, head);
     let left = root;
     let right = root;
     for (let i = 0; i < n; i++) {
@@ -26,4 +26,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

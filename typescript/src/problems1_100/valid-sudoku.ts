@@ -1,14 +1,14 @@
 class Problem {
   isValidSudoku(board: string[][]): boolean {
-    throw new Error(`'Not implemented (${board}).`);
+    throw new Error(`Not implemented (${board}).`);
   }
 }
 
 class Default extends Problem {
   isValidSudoku(board: string[][]): boolean {
-    let rows = new Set();
-    let cols = new Set();
-    let sub_board = new Set();
+    const rows = new Set<string>();
+    const cols = new Set<string>();
+    const subBoard = new Set<string>();
     for (let i = 0; i < 9; i++) {
       rows.clear();
       cols.clear();
@@ -24,10 +24,10 @@ class Default extends Problem {
         if (i % 3 !== 0 || j % 3 !== 0) {
           continue;
         }
-        sub_board.clear();
+        subBoard.clear();
         for (let i2 = i; i2 < i + 3; i2++) {
           for (let j2 = j; j2 < j + 3; j2++) {
-            if (board[i2][j2] !== '.' && sub_board.has(board[i2][j2])) {
+            if (board[i2][j2] !== '.' && subBoard.has(board[i2][j2])) {
               return false;
             }
           }
@@ -38,4 +38,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

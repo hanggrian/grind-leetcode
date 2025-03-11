@@ -3,21 +3,20 @@ package problems1_100
 import com.google.common.truth.Truth.assertWithMessage
 import concepts.SinglyListNode
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class RemoveNthNodeFromEndOfListTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in RemoveNthNodeFromEndOfList.entries) {
-            for (sample in getSamples(Array<RemoveNthNodeFromEndOfListSample>::class.java)) {
-                assertWithMessage(sample.message)
-                    .that(
-                        solution.removeNthFromEnd(
-                            SinglyListNode.of(*sample.input!!.head),
-                            sample.input!!.n,
-                        ),
-                    ).isEqualTo(SinglyListNode.of(*sample.output!!))
-            }
+    fun test() =
+        RemoveNthNodeFromEndOfList.entries.forEach { solution ->
+            getSamples(Array<RemoveNthNodeFromEndOfListSample>::class.java)
+                .forEach { (input, output, message) ->
+                    assertWithMessage(message)
+                        .that(solution.removeNthFromEnd(SinglyListNode.of(*input.head), input.n))
+                        .isEqualTo(SinglyListNode.of(*output))
+                }
         }
-    }
 }

@@ -2,21 +2,20 @@ package problems1_100
 
 import com.google.common.truth.Truth.assertWithMessage
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class SearchInsertPositionTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in SearchInsertPosition.entries) {
-            for (sample in getSamples(Array<SearchInsertPositionSample>::class.java)) {
-                assertWithMessage(sample.message)
-                    .that(
-                        solution.searchInsert(
-                            sample.input!!.nums,
-                            sample.input!!.target,
-                        ),
-                    ).isEqualTo(sample.output)
-            }
+    fun test() =
+        SearchInsertPosition.entries.forEach { solution ->
+            getSamples(Array<SearchInsertPositionSample>::class.java)
+                .forEach { (input, output, message) ->
+                    assertWithMessage(message)
+                        .that(solution.searchInsert(input.nums, input.target))
+                        .isEqualTo(output)
+                }
         }
-    }
 }

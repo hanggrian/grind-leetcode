@@ -69,6 +69,9 @@
     <exclude name="CompileStatic"/>
     <exclude name="NoDouble"/>
     <exclude name="ParameterReassignment"/>
+    <exclude name="NoDef"/>
+    <exclude name="VariableTypeRequired"/>
+    <exclude name="InvertedIfElse"/>
   </ruleset-ref>
   <ruleset-ref path="rulesets/design.xml">
     <exclude name="Instanceof"/>
@@ -86,6 +89,10 @@
     <exclude name="ClassStartsWithBlankLine"/>
     <exclude name="SpaceAfterOpeningBrace"/>
     <exclude name="SpaceBeforeClosingBrace"/>
+    <exclude name="SpaceAroundMapEntryColon"/>
+
+    <!-- Groovy for-each operator cannot be broken into multiline -->
+    <exclude name="LineLength"/>
   </ruleset-ref>
   <ruleset-ref path="rulesets/generic.xml"/>
   <ruleset-ref path="rulesets/grails.xml"/>
@@ -134,10 +141,6 @@
     <!-- Clash with 'UtilityClassInstanceHiding' -->
     <exclude name="UnnecessaryConstructor"/>
   </ruleset-ref>
-
-  <rule class="org.codenarc.rule.formatting.LineLengthRule">
-    <property name="length" value="100"/>
-  </rule>
 
   <rule class="org.codenarc.rule.comments.JavadocConsecutiveEmptyLinesRule"/>
   <rule class="org.codenarc.rule.comments.JavadocEmptyFirstLineRule"/>

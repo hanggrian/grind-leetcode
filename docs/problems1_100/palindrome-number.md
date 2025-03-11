@@ -20,4 +20,5 @@
 
 ## Compare half string
 
-1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_2.svg)

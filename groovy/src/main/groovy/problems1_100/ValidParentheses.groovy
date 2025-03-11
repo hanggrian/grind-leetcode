@@ -8,7 +8,7 @@ enum ValidParentheses {
                 return false
             }
             Stack<Character> symbols = []
-            for (char c : s.toCharArray()) {
+            for (var c : s.toCharArray()) {
                 if (c != ')' as char && c != '}' as char && c != ']' as char) {
                     symbols.push(c)
                     continue

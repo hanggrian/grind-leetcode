@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class StringToIntegerAtoiTest extends SampledTest {
     @Test
     void test() {
-        for (StringToIntegerAtoi solution : StringToIntegerAtoi.values()) {
-            for (StringToIntegerAtoiSample sample : getSamples(StringToIntegerAtoiSample[].class)) {
+        StringToIntegerAtoi.values().each { solution ->
+            getSamples(StringToIntegerAtoiSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.myAtoi(sample.input.s))
                     .isEqualTo(sample.output)

@@ -1,6 +1,6 @@
 class Problem {
   convert(s, numRows) {
-    throw new Error(`'Not implemented (${s}, ${numRows}).`);
+    throw new Error(`Not implemented (${s}, ${numRows}).`);
   }
 }
 
@@ -10,7 +10,7 @@ class Default extends Problem {
       return s;
     }
 
-    let results = [];
+    const results = [];
     for (let i = 0; i < numRows; i++) {
       results.push('');
     }
@@ -19,7 +19,7 @@ class Default extends Problem {
     let zigzagIndex = 0;
     while (s.length > 0) {
       if (zigzagIndex === 0 || zigzagIndex === i) {
-        let c = s.slice(0, 1);
+        const c = s.slice(0, 1);
         s = s.slice(1);
         results[i] += c;
       } else {
@@ -40,4 +40,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

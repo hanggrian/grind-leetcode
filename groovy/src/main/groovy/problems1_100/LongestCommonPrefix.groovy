@@ -10,14 +10,14 @@ enum LongestCommonPrefix {
             if (strs.length == 1) {
                 return strs[0]
             }
-            String longestStr =
+            var longestStr =
                 Arrays.stream(strs).max(Comparator.comparingInt(String::length)).get()
-            int end = -1
+            var end = -1
             loop:
-            for (int i = 0; i < longestStr.length(); i++) {
-                char c = longestStr.charAt(i)
-                for (int j = 0; j < strs.length; j++) {
-                    String str = strs[j]
+            for (var i = 0; i < longestStr.length(); i++) {
+                var c = longestStr.charAt(i)
+                for (var j = 0; j < strs.length; j++) {
+                    var str = strs[j]
                     if (i > str.length() - 1 || c != str.charAt(i)) {
                         break loop
                     } else if (j == strs.length - 1) {

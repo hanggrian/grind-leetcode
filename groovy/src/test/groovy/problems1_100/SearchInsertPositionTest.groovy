@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class SearchInsertPositionTest extends SampledTest {
     @Test
     void test() {
-        for (SearchInsertPosition solution : SearchInsertPosition.values()) {
-            for (SearchInsertPositionSample sample : getSamples(SearchInsertPositionSample[].class)) {
+        SearchInsertPosition.values().each { solution ->
+            getSamples(SearchInsertPositionSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.searchInsert(

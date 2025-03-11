@@ -1,6 +1,5 @@
 package problems101_200;
 
-import concepts.ListNode;
 import concepts.SinglyListNode;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,8 +9,8 @@ enum LinkedListCycle {
         @Override
         boolean hasCycle(SinglyListNode head) {
             // visited nodes
-            Set<ListNode<?>> visits = new HashSet<>();
-            for (ListNode<?> node : head) {
+            Set<SinglyListNode> visits = new HashSet<>();
+            for (SinglyListNode node : head) {
                 if (!visits.add(node)) {
                     return true;
                 }

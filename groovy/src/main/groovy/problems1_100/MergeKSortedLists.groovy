@@ -7,7 +7,7 @@ enum MergeKSortedLists {
     DEFAULT{
         @Override
         SinglyListNode mergeKLists(SinglyListNode[] lists) {
-            List<SinglyListNode> nodes =
+            var nodes =
                 Arrays
                     .stream(lists)
                     .filter(Objects::nonNull)
@@ -16,11 +16,11 @@ enum MergeKSortedLists {
                 return null
             }
 
-            SinglyListNode root = new SinglyListNode()
-            SinglyListNode current = root
+            var root = new SinglyListNode()
+            var current = root
             while (!nodes.isEmpty()) {
                 // find lowest
-                SinglyListNode lowest =
+                var lowest =
                     nodes
                         .stream()
                         .min(Comparator.comparingInt(n -> n.value))
@@ -35,7 +35,7 @@ enum MergeKSortedLists {
                     nodes.remove(lowest)
                     continue
                 }
-                SinglyListNode next = lowest.next
+                var next = lowest.next
                 lowest.value = next.value
                 lowest.next = next.next
             }

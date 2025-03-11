@@ -5,17 +5,17 @@ enum MedianOfTwoSortedArrays {
         @Override
         double findMedianSortedArrays(int[] nums1, int[] nums2) {
             ArrayList<Integer> nums = []
-            for (int num : nums1) {
+            for (var num : nums1) {
                 nums.add(num)
             }
-            for (int num : nums2) {
+            for (var num : nums2) {
                 nums.add(num)
             }
             Collections.sort(nums)
-            int center = (nums.size() / 2) as int
+            var center = (nums.size() / 2) as int
             return nums.size() % 2 == 1
-                ? nums.get(center)
-                : (double) (nums.get(center - 1) + nums.get(center)) / 2
+                ? nums[center]
+                : (double) (nums[center - 1] + nums[center]) / 2
         }
     }
 

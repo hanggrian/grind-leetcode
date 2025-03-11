@@ -4,13 +4,13 @@ enum RomanToInteger {
     DEFAULT{
         @Override
         int romanToInt(String s) {
-            int result = 0
-            for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i)
-                if (i > 0 && ROMANS.get(c) > ROMANS.get(s.charAt(i - 1))) {
-                    result += ROMANS.get(c) - 2 * ROMANS.get(s.charAt(i - 1))
+            var result = 0
+            for (var i = 0; i < s.length(); i++) {
+                var c = s.charAt(i)
+                if (i > 0 && ROMANS[c] > ROMANS[s.charAt(i - 1)]) {
+                    result += ROMANS[c] - 2 * ROMANS[s.charAt(i - 1)]
                 } else {
-                    result += ROMANS.get(c)
+                    result += ROMANS[c]
                 }
             }
             return result
@@ -19,15 +19,13 @@ enum RomanToInteger {
 
     abstract int romanToInt(String s)
 
-    private static final HashMap<Character, Integer> ROMANS = []
-
-    static {
-        ROMANS.put('I' as char, 1)
-        ROMANS.put('V' as char, 5)
-        ROMANS.put('X' as char, 10)
-        ROMANS.put('L' as char, 50)
-        ROMANS.put('C' as char, 100)
-        ROMANS.put('D' as char, 500)
-        ROMANS.put('M' as char, 1000)
-    }
+    private static final HashMap<Character, Integer> ROMANS = [
+        ('I' as char): 1,
+        ('V' as char): 5,
+        ('X' as char): 10,
+        ('L' as char): 50,
+        ('C' as char): 100,
+        ('D' as char): 500,
+        ('M' as char): 1000,
+    ]
 }

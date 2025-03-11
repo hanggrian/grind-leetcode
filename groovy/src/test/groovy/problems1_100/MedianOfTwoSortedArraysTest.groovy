@@ -8,14 +8,14 @@ import static com.google.common.truth.Truth.assertWithMessage
 class MedianOfTwoSortedArraysTest extends SampledTest {
     @Test
     void test() {
-        for (MedianOfTwoSortedArrays solution : MedianOfTwoSortedArrays.values()) {
-            for (MedianOfTwoSortedArraysSample sample : getSamples(MedianOfTwoSortedArraysSample[].class)) {
+        MedianOfTwoSortedArrays.values().each { solution ->
+            getSamples(MedianOfTwoSortedArraysSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.findMedianSortedArrays(
                             sample.input.nums1,
-                            sample.input.nums2
-                        )
+                            sample.input.nums2,
+                        ),
                     ).isEqualTo(sample.output)
             }
         }

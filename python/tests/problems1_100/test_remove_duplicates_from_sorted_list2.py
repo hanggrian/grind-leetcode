@@ -1,0 +1,25 @@
+from typing import override
+from unittest import main
+
+from src.concepts.list_nodes import SinglyListNode
+from src.problems1_100.remove_duplicates_from_sorted_list2 import SOLUTIONS
+from tests.sample.sampled_test import SampledTest
+
+
+class TestRemoveDuplicatesFromSortedList2(SampledTest):
+    @override
+    def get_sample_filename(self):
+        return 'remove-duplicates-from-sorted-list-ii.json'
+
+    def test(self):
+        for solution in SOLUTIONS:
+            for sample in self.get_samples():
+                self.assertEqual(
+                    SinglyListNode.of(*sample['output']),
+                    solution.delete_duplicates(SinglyListNode.of(*sample['input']['head'])),
+                    sample['explanation'],
+                )
+
+
+if __name__ == '__main__':
+    main()

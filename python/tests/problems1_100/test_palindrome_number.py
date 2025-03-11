@@ -1,14 +1,13 @@
-import unittest
-from unittest import TestCase
+from unittest import main
 
 from src.problems1_100.palindrome_number import SOLUTIONS
-from tests.sample.samples import get_samples
+from tests.sample.sampled_test import SampledTest
 
 
-class TestPalindromeNumber(TestCase):
+class TestPalindromeNumber(SampledTest):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in get_samples():
+            for sample in self.get_samples():
                 self.assertEqual(
                     sample['output'],
                     solution.is_palindrome(sample['input']['x']),
@@ -17,4 +16,4 @@ class TestPalindromeNumber(TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

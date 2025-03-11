@@ -4,8 +4,8 @@ enum ReverseInteger {
     DEFAULT{
         @Override
         int reverse(int x) {
-            boolean negate = false
-            StringBuilder builder = new StringBuilder(String.valueOf(x))
+            var negate = false
+            var builder = new StringBuilder(String.valueOf(x))
             if (builder.charAt(0) == '-' as char) {
                 builder.deleteCharAt(0)
                 negate = true

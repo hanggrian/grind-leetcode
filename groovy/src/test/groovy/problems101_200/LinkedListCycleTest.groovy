@@ -10,8 +10,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class LinkedListCycleTest extends SampledTest {
     @Test
     void test() {
-        for (LinkedListCycle solution : LinkedListCycle.values()) {
-            for (LinkedListCycleSample sample : getSamples(LinkedListCycleSample[].class)) {
+        LinkedListCycle.values().each { solution ->
+            getSamples(LinkedListCycleSample[].class).each { sample ->
                 SinglyListNode input = SinglyListNode.of(sample.input.head)
                 if (sample.input.pos > -1) {
                     Iterables.getLast(input).next = Iterables.get(input, sample.input.pos)

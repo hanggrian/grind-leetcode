@@ -9,8 +9,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class AddTwoNumbersTest extends SampledTest {
     @Test
     void test() {
-        for (AddTwoNumbers solution : AddTwoNumbers.values()) {
-            for (AddTwoNumbersSample sample : getSamples(AddTwoNumbersSample[].class)) {
+        AddTwoNumbers.values().each { solution ->
+            getSamples(AddTwoNumbersSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.addTwoNumbers(

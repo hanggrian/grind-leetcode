@@ -1,6 +1,6 @@
 class Problem {
   longestPalindrome(s) {
-    throw new Error(`'Not implemented (${s}).`);
+    throw new Error(`Not implemented (${s}).`);
   }
 }
 
@@ -41,4 +41,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

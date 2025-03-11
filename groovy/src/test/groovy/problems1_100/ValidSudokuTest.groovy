@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class ValidSudokuTest extends SampledTest {
     @Test
     void test() {
-        for (ValidSudoku solution : ValidSudoku.values()) {
-            for (ValidSudokuSample sample : getSamples(ValidSudokuSample[].class)) {
+        ValidSudoku.values().each { solution ->
+            getSamples(ValidSudokuSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.isValidSudoku(sample.input.board))
                     .isEqualTo(sample.output)

@@ -1,14 +1,13 @@
-import unittest
-from unittest import TestCase
+from unittest import main
 
 from src.problems1_100.remove_duplicates_from_sorted_array import SOLUTIONS
-from tests.sample.samples import get_samples
+from tests.sample.sampled_test import SampledTest
 
 
-class TestRemoveDuplicatesFromSortedArray(TestCase):
+class TestRemoveDuplicatesFromSortedArray(SampledTest):
     def test(self):
         for solution in SOLUTIONS:
-            for sample in get_samples():
+            for sample in self.get_samples():
                 self.assertEqual(
                     sample['output'],
                     solution.remove_duplicates(sample['input']['nums']),
@@ -20,4 +19,4 @@ class TestRemoveDuplicatesFromSortedArray(TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

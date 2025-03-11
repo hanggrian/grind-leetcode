@@ -9,10 +9,10 @@ enum RemoveNthNodeFromEndOfList {
             if (head.next == null && n == 1) {
                 return null
             }
-            SinglyListNode root = new SinglyListNode(0, head)
-            SinglyListNode left = root
-            SinglyListNode right = root
-            for (int i = 0; i < n; i++) {
+            var root = new SinglyListNode(0, head)
+            var left = root
+            var right = root
+            for (var i = 0; i < n; i++) {
                 left = left.next
             }
             while (left.next != null) {

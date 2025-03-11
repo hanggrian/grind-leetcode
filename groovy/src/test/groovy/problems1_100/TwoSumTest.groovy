@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class TwoSumTest extends SampledTest {
     @Test
     void test() {
-        for (TwoSum solution : TwoSum.values()) {
-            for (TwoSumSample sample : getSamples(TwoSumSample[].class)) {
+        TwoSum.values().each { solution ->
+            getSamples(TwoSumSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.twoSum(

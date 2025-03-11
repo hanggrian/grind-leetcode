@@ -23,7 +23,7 @@ enum TwoSum {
             // remaining to index mapping
             Map<Integer, Integer> indices = new HashMap<>();
             for (int i = 0; i < nums.length; i++) {
-                final int num = nums[i];
+                int num = nums[i];
                 if (indices.containsKey(num)) {
                     return new int[]{indices.get(num), i};
                 }

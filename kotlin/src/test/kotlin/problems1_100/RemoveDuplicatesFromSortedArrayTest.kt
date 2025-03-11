@@ -3,23 +3,22 @@ package problems1_100
 import com.google.common.truth.Truth.assertThat
 import com.google.common.truth.Truth.assertWithMessage
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class RemoveDuplicatesFromSortedArrayTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in RemoveDuplicatesFromSortedArray.entries) {
-            for (sample in getSamples(Array<RemoveDuplicatesFromSortedArraySample>::class.java)) {
-                assertWithMessage(sample.message)
-                    .that(solution.removeDuplicates(sample.input!!.nums))
-                    .isEqualTo(sample.output)
-                assertThat(
-                    sample.input!!
-                        .nums
-                        .toList()
-                        .subList(0, sample.output!!),
-                ).containsNoDuplicates()
-            }
+    fun test() =
+        RemoveDuplicatesFromSortedArray.entries.forEach { solution ->
+            getSamples(Array<RemoveDuplicatesFromSortedArraySample>::class.java)
+                .forEach { (input, output, message) ->
+                    assertWithMessage(message)
+                        .that(solution.removeDuplicates(input.nums))
+                        .isEqualTo(output)
+                    assertThat(input.nums.toList().subList(0, output))
+                        .containsNoDuplicates()
+                }
         }
-    }
 }

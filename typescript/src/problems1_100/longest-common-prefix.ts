@@ -1,6 +1,6 @@
 class Problem {
   longestCommonPrefix(strs: string[]): string {
-    throw new Error(`'Not implemented (${strs}).`);
+    throw new Error(`Not implemented (${strs}).`);
   }
 }
 
@@ -17,9 +17,9 @@ class Default extends Problem {
     let end = -1;
     loop:
         for (let i = 0; i < longestStr.length; i++) {
-          let c = longestStr.charAt(i);
+          const c = longestStr.charAt(i);
           for (let j = 0; j < strs.length; j++) {
-            let str = strs[j];
+            const str = strs[j];
             if (i > str.length - 1 || c !== str.charAt(i)) {
               break loop;
             } else if (j === strs.length - 1) {
@@ -31,4 +31,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

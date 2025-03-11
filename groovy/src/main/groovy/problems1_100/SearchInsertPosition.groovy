@@ -4,10 +4,10 @@ enum SearchInsertPosition {
     SLIDING_WINDOW{
         @Override
         int searchInsert(int[] nums, int target) {
-            int start = 0
-            int end = nums.length - 1
+            var start = 0
+            var end = nums.length - 1
             while (start <= end) {
-                int center = (start + end) / 2 as int
+                var center = (start + end) / 2 as int
                 if (nums[center] < target) {
                     start = center + 1
                 } else if (nums[center] > target) {
@@ -33,7 +33,7 @@ enum SearchInsertPosition {
             if (start > end) {
                 return end + 1
             }
-            int center = (start + end) / 2 as int
+            var center = (start + end) / 2 as int
             if (nums[center] < target) {
                 return binarySearch(nums, target, center + 1, end)
             }

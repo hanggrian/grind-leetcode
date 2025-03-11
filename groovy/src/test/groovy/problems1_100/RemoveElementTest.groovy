@@ -9,8 +9,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class RemoveElementTest extends SampledTest {
     @Test
     void test() {
-        for (RemoveElement solution : RemoveElement.values()) {
-            for (RemoveElementSample sample : getSamples(RemoveElementSample[].class)) {
+        RemoveElement.values().each { solution ->
+            getSamples(RemoveElementSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.removeElement(

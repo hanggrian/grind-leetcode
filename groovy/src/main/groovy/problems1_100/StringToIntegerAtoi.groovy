@@ -8,7 +8,7 @@ enum StringToIntegerAtoi {
                 return 0
             }
             s = s.trim()
-            boolean negate = false
+            var negate = false
             if (s.startsWith('-')) {
                 s = s.substring(1)
                 negate = true
@@ -16,8 +16,8 @@ enum StringToIntegerAtoi {
                 s = s.substring(1)
             }
 
-            StringBuilder builder = new StringBuilder()
-            for (char c : s.toCharArray()) {
+            var builder = new StringBuilder()
+            for (var c : s.toCharArray()) {
                 if (Character.isDigit(c)) {
                     builder.append(c)
                     continue
@@ -33,7 +33,7 @@ enum StringToIntegerAtoi {
                 return 0
             }
 
-            BigInteger result = new BigInteger(builder.toString())
+            var result = new BigInteger(builder.toString())
             if (result < new BigInteger(String.valueOf(Integer.MIN_VALUE))) {
                 return Integer.MIN_VALUE
             } else if (result > new BigInteger(String.valueOf(Integer.MAX_VALUE))) {

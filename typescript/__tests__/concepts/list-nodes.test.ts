@@ -8,13 +8,13 @@ describe(
           'sum',
           () => {
             let total = 0;
-            for (let n of SINGLY_LIST_NODE_ZERO) {
+            for (const n of SINGLY_LIST_NODE_ZERO) {
               total += n.value;
             }
             strictEqual(0, total);
 
             total = 0;
-            for (let n of SinglyListNode.of(1, 3, 5, 7)) {
+            for (const n of SinglyListNode.of(1, 3, 5, 7)) {
               total += n.value;
             }
             strictEqual(16, total);

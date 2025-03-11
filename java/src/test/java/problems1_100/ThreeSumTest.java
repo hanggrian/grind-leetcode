@@ -17,8 +17,12 @@ public class ThreeSumTest extends SampledTest {
                     .containsExactlyElementsIn(
                         Arrays
                             .stream(sample.output)
-                            .map(ints -> Arrays.stream(ints).boxed().collect(Collectors.toList()))
-                            .toList()
+                            .map(ints ->
+                                Arrays
+                                    .stream(ints)
+                                    .boxed()
+                                    .collect(Collectors.toList())
+                            ).toList()
                     );
             }
         }

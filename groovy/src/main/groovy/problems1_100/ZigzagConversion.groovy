@@ -10,16 +10,16 @@ enum ZigzagConversion {
                 return s
             }
 
-            StringBuilder[] builders = new StringBuilder[numRows]
-            for (int i = 0; i < numRows; i++) {
+            var builders = new StringBuilder[numRows]
+            for (var i = 0; i < numRows; i++) {
                 builders[i] = new StringBuilder()
             }
 
-            int i = 0
-            int zigzagIndex = 0
+            var i = 0
+            var zigzagIndex = 0
             while (!s.isEmpty()) {
                 if (zigzagIndex == 0 || zigzagIndex == i) {
-                    String c = s.substring(0, 1)
+                    var c = s.substring(0, 1)
                     s = s.substring(1)
                     builders[i].append(c)
                 } else {

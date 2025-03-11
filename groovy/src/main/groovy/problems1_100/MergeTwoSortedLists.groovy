@@ -12,8 +12,8 @@ enum MergeTwoSortedLists {
             if (l2 == null) {
                 return l1
             }
-            SinglyListNode root = new SinglyListNode()
-            SinglyListNode current = root
+            var root = new SinglyListNode()
+            var current = root
 
             // when both items are there
             while (l1 != null && l2 != null) {

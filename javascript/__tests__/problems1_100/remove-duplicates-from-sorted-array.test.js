@@ -1,5 +1,5 @@
 import {strictEqual} from 'assert';
-import {SOLUTIONS} from '../../src/problems1_100/remove-duplicates-from-sorted-array';
+import SOLUTIONS from '../../src/problems1_100/remove-duplicates-from-sorted-array';
 import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
@@ -7,20 +7,19 @@ describe(
     () => {
       test(
           'test',
-          () => {
-            for (let solution of SOLUTIONS) {
-              for (let sample of getSamples()) {
-                strictEqual(
-                    sample.output,
-                    solution.removeDuplicates(sample.input.nums),
-                    sample.explanation,
-                );
+          () =>
+              SOLUTIONS.forEach(solution => {
+                getSamples().forEach(sample => {
+                  strictEqual(
+                      solution.removeDuplicates(sample.input.nums),
+                      sample.output,
+                      sample.message,
+                  );
 
-                let sub_list = sample.input.nums.slice(0, sample.output);
-                strictEqual(new Set(sub_list).size, sub_list.length);
-              }
-            }
-          },
+                  const subList = sample.input.nums.slice(0, sample.output);
+                  strictEqual(new Set(subList).size, subList.length);
+                });
+              }),
       );
     },
 );

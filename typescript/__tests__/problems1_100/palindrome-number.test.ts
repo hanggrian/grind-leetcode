@@ -1,23 +1,30 @@
 import {strictEqual} from 'assert';
-import {SOLUTIONS} from '../../src/problems1_100/palindrome-number';
+import SOLUTIONS from '../../src/problems1_100/palindrome-number';
 import getSamples from '../../../testing/js/src/sample/samples';
+
+type Sample = {
+  input: {
+    x: number,
+  },
+  output: boolean,
+  message: string,
+}
 
 describe(
     'PalindromeNumber',
     () => {
       test(
           'test',
-          () => {
-            for (let solution of SOLUTIONS) {
-              for (let sample of getSamples()) {
-                strictEqual(
-                    sample.output,
-                    solution.isPalindrome(sample.input.x),
-                    sample.explanation,
-                );
-              }
-            }
-          },
+          () =>
+              SOLUTIONS.forEach(solution => {
+                getSamples().forEach((sample: Sample) => {
+                  strictEqual(
+                      solution.isPalindrome(sample.input.x),
+                      sample.output,
+                      sample.message,
+                  );
+                });
+              }),
       );
     },
 );

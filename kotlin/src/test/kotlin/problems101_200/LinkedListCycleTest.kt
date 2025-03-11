@@ -4,21 +4,24 @@ import com.google.common.collect.Iterables
 import com.google.common.truth.Truth.assertWithMessage
 import concepts.SinglyListNode
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class LinkedListCycleTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in LinkedListCycle.entries) {
-            for (sample in getSamples(Array<LinkedListCycleSample>::class.java)) {
-                val input = SinglyListNode.of(*sample.input!!.head)!!
-                if (sample.input!!.pos > -1) {
-                    Iterables.getLast(input).next = Iterables.get(input, sample.input!!.pos)
+    fun test() =
+        LinkedListCycle.entries.forEach { solution ->
+            getSamples(Array<LinkedListCycleSample>::class.java)
+                .forEach { (input, output, message) ->
+                    val inp = SinglyListNode.of(*input!!.head)!!
+                    if (input.pos > -1) {
+                        Iterables.getLast(inp).next = Iterables.get(inp, input.pos)
+                    }
+                    assertWithMessage(message)
+                        .that(solution.hasCycle(inp))
+                        .isEqualTo(output)
                 }
-                assertWithMessage(sample.message)
-                    .that(solution.hasCycle(input))
-                    .isEqualTo(sample.output)
-            }
         }
-    }
 }

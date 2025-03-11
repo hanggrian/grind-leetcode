@@ -9,8 +9,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class MergeTwoSortedListsTest extends SampledTest {
     @Test
     void test() {
-        for (MergeTwoSortedLists solution : MergeTwoSortedLists.values()) {
-            for (MergeTwoSortedListsSample sample : getSamples(MergeTwoSortedListsSample[].class)) {
+        MergeTwoSortedLists.values().each { solution ->
+            getSamples(MergeTwoSortedListsSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.mergeTwoLists(

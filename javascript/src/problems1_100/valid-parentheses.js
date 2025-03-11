@@ -1,6 +1,6 @@
 class Problem {
   isValid(s) {
-    throw new Error(`'Not implemented (${s}).`);
+    throw new Error(`Not implemented (${s}).`);
   }
 }
 
@@ -9,8 +9,8 @@ class Default extends Problem {
     if (s.length % 2 === 1) {
       return false;
     }
-    let symbols = [];
-    for (let c of s) {
+    const symbols = [];
+    for (const c of s) {
       if (c === ')' || c === '}' || c === ']') {
         if (symbols.length > 0 && symbols[symbols.length - 1] === '(' && c === ')') {
           symbols.pop();
@@ -27,4 +27,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

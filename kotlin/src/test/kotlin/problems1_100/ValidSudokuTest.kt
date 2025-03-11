@@ -2,17 +2,19 @@ package problems1_100
 
 import com.google.common.truth.Truth.assertWithMessage
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class ValidSudokuTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in ValidSudoku.entries) {
-            for (sample in getSamples(Array<ValidSudokuSample>::class.java)) {
-                assertWithMessage(sample.message)
-                    .that(solution.isValidSudoku(sample.input!!.board))
-                    .isEqualTo(sample.output)
+    fun test() =
+        ValidSudoku.entries.forEach { solution ->
+            getSamples(Array<ValidSudokuSample>::class.java).forEach { (input, output, message) ->
+                assertWithMessage(message)
+                    .that(solution.isValidSudoku(input.board))
+                    .isEqualTo(output)
             }
         }
-    }
 }

@@ -2,7 +2,7 @@ import {floorKey} from '../util/dicts';
 
 class Problem {
   intToRoman(num: number): string {
-    throw new Error(`'Not implemented (${num}).`);
+    throw new Error(`Not implemented (${num}).`);
   }
 }
 
@@ -28,7 +28,7 @@ class Default extends Problem {
   }
 
   recurse(romans: object, num: number) {
-    let floor = floorKey(romans, num);
+    const floor = floorKey(romans, num);
     if (num === floor) {
       return romans[num];
     }
@@ -36,4 +36,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

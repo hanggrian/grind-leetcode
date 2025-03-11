@@ -2,13 +2,13 @@ import {SinglyListNode} from '../concepts/list-nodes';
 
 class Problem {
   addTwoNumbers(l1, l2) {
-    throw new Error(`'Not implemented (${l1}, ${l2}).`);
+    throw new Error(`Not implemented (${l1}, ${l2}).`);
   }
 }
 
 class Default extends Problem {
   addTwoNumbers(l1, l2) {
-    let root = new SinglyListNode();
+    const root = new SinglyListNode();
     let node = root;
     let carry = 0;
     while (l1 || l2) {
@@ -37,4 +37,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

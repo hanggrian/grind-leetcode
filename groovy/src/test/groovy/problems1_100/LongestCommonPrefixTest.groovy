@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class LongestCommonPrefixTest extends SampledTest {
     @Test
     void test() {
-        for (LongestCommonPrefix solution : LongestCommonPrefix.values()) {
-            for (LongestCommonPrefixSample sample : getSamples(LongestCommonPrefixSample[].class)) {
+        LongestCommonPrefix.values().each { solution ->
+            getSamples(LongestCommonPrefixSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.longestCommonPrefix(sample.input.strs))
                     .isEqualTo(sample.output)

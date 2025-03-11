@@ -1,6 +1,6 @@
 class Problem {
   reverse(x: number): number {
-    throw new Error(`'Not implemented (${x}).`);
+    throw new Error(`Not implemented (${x}).`);
   }
 }
 
@@ -20,4 +20,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

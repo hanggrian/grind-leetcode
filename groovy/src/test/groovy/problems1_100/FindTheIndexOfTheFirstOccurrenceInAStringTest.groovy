@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class FindTheIndexOfTheFirstOccurrenceInAStringTest extends SampledTest {
     @Test
     void test() {
-        for (FindTheIndexOfTheFirstOccurrenceInAString solution : FindTheIndexOfTheFirstOccurrenceInAString.values()) {
-            for (FindTheIndexOfTheFirstOccurrenceInAStringSample sample : getSamples(FindTheIndexOfTheFirstOccurrenceInAStringSample[].class)) {
+        FindTheIndexOfTheFirstOccurrenceInAString.values().each { solution ->
+            getSamples(FindTheIndexOfTheFirstOccurrenceInAStringSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.strStr(

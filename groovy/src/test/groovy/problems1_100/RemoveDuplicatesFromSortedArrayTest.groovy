@@ -9,8 +9,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class RemoveDuplicatesFromSortedArrayTest extends SampledTest {
     @Test
     void test() {
-        for (RemoveDuplicatesFromSortedArray solution : RemoveDuplicatesFromSortedArray.values()) {
-            for (RemoveDuplicatesFromSortedArraySample sample : getSamples(RemoveDuplicatesFromSortedArraySample[].class)) {
+        RemoveDuplicatesFromSortedArray.values().each { solution ->
+            getSamples(RemoveDuplicatesFromSortedArraySample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.removeDuplicates(sample.input.nums))
                     .isEqualTo(sample.output)

@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class LongestSubstringWithoutRepeatingCharactersTest extends SampledTest {
     @Test
     void test() {
-        for (LongestSubstringWithoutRepeatingCharacters solution : LongestSubstringWithoutRepeatingCharacters.values()) {
-            for (LongestSubstringWithoutRepeatingCharactersSample sample : getSamples(LongestSubstringWithoutRepeatingCharactersSample[].class)) {
+        LongestSubstringWithoutRepeatingCharacters.values().each { solution ->
+            getSamples(LongestSubstringWithoutRepeatingCharactersSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.lengthOfLongestSubstring(sample.input.s))
                     .isEqualTo(sample.output)

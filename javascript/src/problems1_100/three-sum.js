@@ -1,12 +1,12 @@
 class Problem {
   threeSum(nums) {
-    throw new Error(`'Not implemented (${nums}).`);
+    throw new Error(`Not implemented (${nums}).`);
   }
 }
 
 class Default extends Problem {
   threeSum(nums) {
-    let result = [];
+    const result = [];
     if (nums.length < 3) {
       return result;
     }
@@ -18,7 +18,7 @@ class Default extends Problem {
       let j = i + 1;
       let k = nums.length - 1;
       while (j < k) {
-        let threeSum = nums[i] + nums[j] + nums[k];
+        const threeSum = nums[i] + nums[j] + nums[k];
         if (threeSum === 0) {
           result.push([nums[i], nums[j], nums[k]]);
           j++;
@@ -40,4 +40,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

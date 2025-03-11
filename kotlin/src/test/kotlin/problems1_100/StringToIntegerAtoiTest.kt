@@ -2,17 +2,20 @@ package problems1_100
 
 import com.google.common.truth.Truth.assertWithMessage
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class StringToIntegerAtoiTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in StringToIntegerAtoi.entries) {
-            for (sample in getSamples(Array<StringToIntegerAtoiSample>::class.java)) {
-                assertWithMessage(sample.message)
-                    .that(solution.myAtoi(sample.input!!.s))
-                    .isEqualTo(sample.output)
-            }
+    fun test() =
+        StringToIntegerAtoi.entries.forEach { solution ->
+            getSamples(Array<StringToIntegerAtoiSample>::class.java)
+                .forEach { (input, output, message) ->
+                    assertWithMessage(message)
+                        .that(solution.myAtoi(input.s))
+                        .isEqualTo(output)
+                }
         }
-    }
 }

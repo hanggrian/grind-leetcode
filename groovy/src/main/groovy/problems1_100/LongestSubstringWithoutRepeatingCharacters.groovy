@@ -8,9 +8,9 @@ enum LongestSubstringWithoutRepeatingCharacters {
                 return 0
             }
             HashSet<Character> characters = []
-            int start = 0
-            int end = 0
-            int maxLength = Integer.MIN_VALUE
+            var start = 0
+            var end = 0
+            var maxLength = Integer.MIN_VALUE
             while (end < s.length()) {
                 if (characters.add(s.charAt(end))) {
                     maxLength = Math.max(maxLength, characters.size())

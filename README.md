@@ -19,6 +19,7 @@ Solutions and visual explanations to LeetCode problems.
 
 ### Unofficial listing
 
+<!-- Hotfix to show arrow toggle on 'block' layout. -->
 <style>
   details summary {
     display: list-item;
@@ -35,8 +36,8 @@ Solutions and visual explanations to LeetCode problems.
     1.  [Two Sum<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/two-sum)
     1.  [Valid Parentheses<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/valid-parentheses)
     1.  [Merge Two Sorted Lists<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/merge-two-sorted-lists)
-    1.  Best Time to Buy and Sell Stock
-    1.  Valid Palindrome
+    1.  [Best Time to Buy and Sell Stock<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/best-time-to-buy-and-sell-stock)
+    1.  [Valid Palindrome<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/valid-palindrome)
     1.  Invert Binary Tree
     1.  Valid Anagram
     1.  Binary Search
@@ -48,7 +49,7 @@ Solutions and visual explanations to LeetCode problems.
   - Week 2
     1.  First Bad Version
     1.  Ransom Note
-    1.  Climbing Stairs
+    1.  [Climbing Stairs<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/climbing-stairs)
     1.  Longest Palindrome
     1.  Reverse Linked List
     1.  Majority Element
@@ -57,7 +58,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Middle of the Linked List
     1.  Maximum Depth of Binary Tree
     1.  Contains Duplicate
-    1.  Maximum Subarray
+    1.  [Maximum Subarray<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/maximum-subarray)
   - Week 3
     1.  Insert Interval
     1.  01 Matrix
@@ -72,19 +73,19 @@ Solutions and visual explanations to LeetCode problems.
     1.  Implement Trie (Prefix Tree)
     1.  Coin Change
     1.  Product of Array Except Self
-    1.  Min Stack
+    1.  [Min Stack<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/min-stack)
     1.  Validate Binary Search Tree
     1.  Number of Islands
     1.  Rotting Oranges
   - Week 5
     1.  Search in Rotated Sorted Array
     1.  Combination Sum
-    1.  Permutations
-    1.  Merge Intervals
+    1.  [Permutations<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/permutations)
+    1.  [Merge Intervals<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/merge-intervals)
     1.  Lowest Common Ancestor of a Binary Tree
     1.  Time Based Key-Value Store
     1.  Accounts Merge
-    1.  Sort Colors
+    1.  [Sort Colors<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/sort-colors)
   - Week 6
     1.  Word Break
     1.  Partition Equal Subset Sum
@@ -98,18 +99,18 @@ Solutions and visual explanations to LeetCode problems.
   - Week 7
     1.  [Container With Most Water<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/container-with-most-water)
     1.  Letter Combinations of a Phone Number
-    1.  Word Search
+    1.  [Word Search<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/word-search)
     1.  Find All Anagrams in a String
     1.  Minimum Height Trees
     1.  Task Scheduler
-    1.  LRU Cache
+    1.  [LRU Cache<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/lru-cache)
   - Week 8
     1.  Kth Smallest Element in a BST
     1.  Minimum Window Substring
     1.  Serialize and Deserialize Binary Tree
-    1.  Trapping Rain Water
+    1.  [Trapping Rain Water<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/trapping-rain-water)
     1.  Find Median from Data Stream
-    1.  Word Ladder
+    1.  [Word Ladder<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/word-ladder)
     1.  Basic Calculator
     1.  Maximum Profit in Job Scheduling
     1.  [Merge k Sorted Lists<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/merge-k-sorted-lists)
@@ -134,13 +135,13 @@ Solutions and visual explanations to LeetCode problems.
     1.  [Valid Sudoku<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/valid-sudoku)
     1.  Longest Consecutive Sequence
   - Two Pointers
-    1.  Valid Palindrome
+    1.  [Valid Palindrome<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/valid-palindrome)
     1.  Two Sum II - Input Array Is Sorted
     1.  [Three Sum<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/three-sum)
     1.  [Container With Most Water<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/container-with-most-water)
-    1.  Trapping Rain Water
+    1.  [Trapping Rain Water<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/trapping-rain-water)
   - Sliding Window
-    1.  Best Time to Buy And Sell Stock
+    1.  [Best Time to Buy and Sell Stock<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/best-time-to-buy-and-sell-stock)
     1.  [Longest Substring Without Repeating Characters<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/longest-substring-without-repeating-characters)
     1.  Longest Repeating Character Replacement
     1.  Permutation In String
@@ -150,7 +151,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Binary Search
     1.  Search in Rotated Sorted Array
     1.  Find Minimum in Rotated Sorted Array
-    1.  Search a 2D Matrix
+    1.  [Search a 2D Matrix<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/search-a-2d-matrix)
     1.  Search a 2D Matrix II
     1.  Kth Smallest Element in a Sorted Matrix
     1.  Find Peak Element
@@ -159,12 +160,12 @@ Solutions and visual explanations to LeetCode problems.
     1.  Reverse Linked List
     1.  [Merge Two Sorted Lists<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/merge-two-sorted-lists)
     1.  [Linked List Cycle<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/linked-list-cycle)
-    1.  Reorder List
+    1.  [Reorder List<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/reorder-list)
     1.  [Remove Nth Node From End of List<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/remove-nth-node-from-end-of-list)
     1.  Copy List With Random Pointer
     1.  [Add Two Numbers<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/add-two-numbers)
     1.  Find The Duplicate Number
-    1.  LRU Cache
+    1.  [LRU Cache<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/lru-cache)
     1.  [Merge k Sorted Lists<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/merge-k-sorted-lists)
     1.  Reverse Nodes In K Group
   - Trees
@@ -195,9 +196,9 @@ Solutions and visual explanations to LeetCode problems.
     1.  Subsets
     1.  Combination Sum
     1.  Combination Sum II
-    1.  Permutations
+    1.  [Permutations<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/permutations)
     1.  Subsets II
-    1.  Word Search
+    1.  [Word Search<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/word-search)
     1.  Palindrome Partitioning
     1.  Letter Combinations of a Phone Number
     1.  N Queens
@@ -218,7 +219,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Graph Valid Tree
     1.  Number of Connected Components In An Undirected Graph
     1.  Redundant Connection
-    1.  Word Ladder
+    1.  [Word Ladder<sup>HARD</sup>](https://hanggrian.github.io/grind-leetcode/word-ladder)
   - Advanced Graphs
     1.  Network Delay Time
     1.  Reconstruct Itinerary
@@ -227,7 +228,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Alien Dictionary
     1.  Cheapest Flights Within K Stops
   - 1-D Dynamic Programming
-    1.  Climbing Stairs
+    1.  [Climbing Stairs<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/climbing-stairs)
     1.  Min Cost Climbing Stairs
     1.  House Robber
     1.  House Robber II
@@ -235,7 +236,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Palindromic Substrings
     1.  Decode Ways
     1.  Coin Change
-    1.  Maximum Product Subarray
+    1.  [Maximum Product Subarray<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/maximum-product-subarray)
     1.  Word Break
     1.  Longest Increasing Subsequence
     1.  Partition Equal Subset Sum
@@ -252,9 +253,9 @@ Solutions and visual explanations to LeetCode problems.
     1.  Burst Balloons
     1.  Regular Expression Matching
   - Greedy
-    1.  Maximum Subarray
-    1.  Jump Game
-    1.  Jump Game II
+    1.  [Maximum Subarray<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/maximum-subarray)
+    1.  [Jump Game<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/jump-game)
+    1.  [Jump Game II<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/jump-game-ii)
     1.  Gas Station
     1.  Hand of Straights
     1.  Merge Triplets to Form Target Triplet
@@ -262,7 +263,7 @@ Solutions and visual explanations to LeetCode problems.
     1.  Valid Parenthesis String
   - Intervals
     1.  Insert Interval
-    1.  Merge Intervals
+    1.  [Merge Intervals<sup>MEDIUM</sup>](https://hanggrian.github.io/grind-leetcode/merge-intervals)
     1.  Non Overlapping Intervals
     1.  Meeting Rooms
     1.  Meeting Rooms II
@@ -272,11 +273,12 @@ Solutions and visual explanations to LeetCode problems.
     1.  Spiral Matrix
     1.  Set Matrix Zeroes
     1.  Happy Number
-    1.  Plus One
+    1.  [Plus One<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/plus-one)
     1.  Pow(x, n)
     1.  Multiply Strings
     1.  Detect Squares
-  - Bit ManipulationSingle Number
+  - Bit Manipulation
+    1.  [Single Number<sup>EASY</sup>](https://hanggrian.github.io/grind-leetcode/single-number)
     1.  Number of 1 Bits
     1.  Counting Bits
     1.  Reverse Bits
@@ -318,7 +320,11 @@ Solutions and visual explanations to LeetCode problems.
           3. Longest Substring Without Repeating Characters<sup>MEDIUM</sup>
         </a>
       </td>
-      <td>53. Maximum Subarray</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/maximum-subarray">
+          53. Maximum Subarray<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -334,7 +340,11 @@ Solutions and visual explanations to LeetCode problems.
           5. Longest Palindromic Substring<sup>MEDIUM</sup>
         </a>
       </td>
-      <td>55. Jump Game</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/jump-game">
+          55. Jump Game<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -342,7 +352,11 @@ Solutions and visual explanations to LeetCode problems.
           6. Zigzag Conversion<sup>MEDIUM</sup>
         </a>
       </td>
-      <td>56. Merge Intervals</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/merge-intervals">
+          56. Merge Intervals<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -358,7 +372,11 @@ Solutions and visual explanations to LeetCode problems.
           8. String to Integer (atoi)<sup>MEDIUM</sup>
         </a>
       </td>
-      <td>58. Length of Last Word</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/length-of-last-word">
+          58. Length of Last Word<sup>EASY</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -414,7 +432,11 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>16. Three Sum Closest</td>
-      <td>66. Plus One</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/plus-one">
+          66. Plus One<sup>EASY</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>17. Letter Combinations of a Phone Number</td>
@@ -438,7 +460,11 @@ Solutions and visual explanations to LeetCode problems.
           20. Valid Parentheses<sup>EASY</sup>
         </a>
       </td>
-      <td>70. Climbing Stairs</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/climbing-stairs">
+          70. Climbing Stairs<sup>EASY</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -466,11 +492,19 @@ Solutions and visual explanations to LeetCode problems.
           24. Swap Nodes in Pairs<sup>MEDIUM</sup>
         </a>
       </td>
-      <td>74. Search a 2D Matrix</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/search-a-2d-matrix">
+          74. Search a 2D Matrix<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>25. Reverse Nodes in k-Group</td>
-      <td>75. Sort Colors</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/sort-colors">
+          75. Sort Colors<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>
@@ -498,7 +532,11 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>29. Divide Two Integers</td>
-      <td>79. Word Search</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/word-search">
+          79. Word Search<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>30. Substring with Concatenation of All Words</td>
@@ -510,11 +548,19 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>32. Longest Valid Parentheses</td>
-      <td>82. Remove Duplicates from Sorted List II</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/remove-duplicates-from-sorted-list-ii">
+          82. Remove Duplicates from Sorted List II<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>33. Search in Rotated Sorted Array</td>
-      <td>83. Remove Duplicates from Sorted List</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/remove-duplicates-from-sorted-list">
+          83. Remove Duplicates from Sorted List<sup>EASY</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>34. Find First and Last Position of Element in Sorted Array</td>
@@ -542,7 +588,11 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>38. Count and Say</td>
-      <td>88. Merge Sorted Array</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/merge-sorted-array">
+          88. Merge Sorted Array<sup>EASY</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>39. Combination Sum</td>
@@ -557,8 +607,16 @@ Solutions and visual explanations to LeetCode problems.
       <td>91. Decode Ways</td>
     </tr>
     <tr>
-      <td>42. Trapping Rain Water</td>
-      <td>92. Reverse Linked List II</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/trapping-rain-water">
+          42. Trapping Rain Water<sup>HARD</sup>
+        </a>
+      </td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/reverse-linked-list-ii">
+          92. Reverse Linked List II<sup>HARD</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>43. Multiply Strings</td>
@@ -569,11 +627,19 @@ Solutions and visual explanations to LeetCode problems.
       <td>94. Binary Tree Inorder Traversal</td>
     </tr>
     <tr>
-      <td>45. Jump Game II</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/jump-game-ii">
+          45. Jump Game II<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>95. Unique Binary Search Trees II</td>
     </tr>
     <tr>
-      <td>46. Permutations</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/trapping-rain-water">
+          46. Permutations<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>96. Unique Binary Search Trees</td>
     </tr>
     <tr>
@@ -602,7 +668,11 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>102. Binary Tree Level Order Traversal</td>
-      <td>152. Maximum Product Subarray</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/maximum-product-subarray">
+          152. Maximum Product Subarray<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>103. Binary Tree Zigzag Level Order Traversal</td>
@@ -614,7 +684,11 @@ Solutions and visual explanations to LeetCode problems.
     </tr>
     <tr>
       <td>105. Construct Binary Tree from Preorder and Inorder Traversal</td>
-      <td>155. Min Stack</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/min-stack">
+          155. Min Stack<sup>MEDIUM</sup>
+        </a>
+      </td>
     </tr>
     <tr>
       <td>106. Construct Binary Tree from Inorder and Postorder Traversal</td>
@@ -665,11 +739,19 @@ Solutions and visual explanations to LeetCode problems.
       <td>167. Two Sum II - Input Array Is Sorted</td>
     </tr>
     <tr>
-      <td>118. Pascal's Triangle</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/pascals-triangle">
+          118. Pascal's Triangle<sup>EASY</sup>
+        </a>
+      </td>
       <td>168. Excel Sheet Column Title</td>
     </tr>
     <tr>
-      <td>119. Pascal's Triangle II</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/pascals-triangle-ii">
+          119. Pascal's Triangle II<sup>EASY</sup>
+        </a>
+      </td>
       <td>169. Majority Element</td>
     </tr>
     <tr>
@@ -677,11 +759,19 @@ Solutions and visual explanations to LeetCode problems.
       <td>170. Two Sum III - Data structure design</td>
     </tr>
     <tr>
-      <td>121. Best Time to Buy and Sell Stock</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/best-time-to-buy-and-sell-stock">
+          121. Best Time to Buy and Sell Stock<sup>EASY</sup>
+        </a>
+      </td>
       <td>171. Excel Sheet Column Number</td>
     </tr>
     <tr>
-      <td>122. Best Time to Buy and Sell Stock II</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/best-time-to-buy-and-sell-stock-ii">
+          122. Best Time to Buy and Sell Stock<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>172. Factorial Trailing Zeroes</td>
     </tr>
     <tr>
@@ -693,7 +783,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>174. Dungeon Game</td>
     </tr>
     <tr>
-      <td>125. Valid Palindrome</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/valid-palindrome">
+          125. Valid Palindrome<sup>EASY</sup>
+        </a>
+      </td>
       <td>175. Combine Two Tables</td>
     </tr>
     <tr>
@@ -701,7 +795,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>176. Second Highest Salary</td>
     </tr>
     <tr>
-      <td>127. Word Ladder</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/word-ladder">
+          127. Word Ladder<sup>HARD</sup>
+        </a>
+      </td>
       <td>177. Nth Highest Salary</td>
     </tr>
     <tr>
@@ -737,7 +835,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>185. Department Top Three Salaries</td>
     </tr>
     <tr>
-      <td>136. Single Number</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/single-number">
+          136. Single Number<sup>EASY</sup>
+        </a>
+      </td>
       <td>186. Reverse Words in a String II</td>
     </tr>
     <tr>
@@ -769,7 +871,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>192. Word Frequency</td>
     </tr>
     <tr>
-      <td>143. Reorder List</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/reorder-list">
+          143. Reorder List<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>193. Valid Phone Numbers</td>
     </tr>
     <tr>
@@ -781,7 +887,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>195. Tenth Line</td>
     </tr>
     <tr>
-      <td>146. LRU Cache</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/lru-cache">
+          146. LRU Cache<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>196. Delete Duplicate Emails</td>
     </tr>
     <tr>
@@ -789,7 +899,11 @@ Solutions and visual explanations to LeetCode problems.
       <td>197. Rising Temperature</td>
     </tr>
     <tr>
-      <td>148. Sort List</td>
+      <td>
+        <a href="https://hanggrian.github.io/grind-leetcode/sort-list">
+          148. Sort List<sup>MEDIUM</sup>
+        </a>
+      </td>
       <td>198. House Robber</td>
     </tr>
     <tr>

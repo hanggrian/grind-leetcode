@@ -3,21 +3,23 @@ package problems1_100
 import com.google.common.truth.Truth.assertWithMessage
 import concepts.SinglyListNode
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
 import kotlin.test.Test
 
 class AddTwoNumbersTest : SampledTest() {
     @Test
-    fun test() {
-        for (solution in AddTwoNumbers.entries) {
-            for (sample in getSamples(Array<AddTwoNumbersSample>::class.java)) {
-                assertWithMessage(sample.message)
+    fun test() =
+        AddTwoNumbers.entries.forEach { solution ->
+            getSamples(Array<AddTwoNumbersSample>::class.java).forEach { (input, output, message) ->
+                assertWithMessage(message)
                     .that(
                         solution.addTwoNumbers(
-                            SinglyListNode.of(*sample.input!!.l1),
-                            SinglyListNode.of(*sample.input!!.l2),
+                            SinglyListNode.of(*input.l1),
+                            SinglyListNode.of(*input.l2),
                         ),
-                    ).isEqualTo(SinglyListNode.of(*sample.output!!))
+                    ).isEqualTo(SinglyListNode.of(*output!!))
             }
         }
-    }
 }

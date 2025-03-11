@@ -5,8 +5,7 @@ import concepts.SinglyListNode
 enum class SwapNodesInPairs {
     DEFAULT {
         override fun swapPairs(head: SinglyListNode?): SinglyListNode? {
-            val root = SinglyListNode(0)
-            root.next = head
+            val root = SinglyListNode(0, head)
             var current = root
             while (current.next != null && current.next!!.next != null) {
                 val node1 = current.next!!

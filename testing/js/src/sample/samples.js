@@ -2,24 +2,26 @@ import fs from 'fs';
 import {resolve, dirname} from 'path';
 import {fileURLToPath} from 'url';
 
-export default function getSamples(file_name) {
-  let parts = _getCallerFile().split('/');
-  let filename = parts[parts.length - 1];
-  parts = filename.split('.');
-  file_name = `${parts[0]}.json`;
+export default function getSamples(sampleFilename) {
+  if (!sampleFilename) {
+    let parts = _getCallerFile().split('/');
+    let filename = parts[parts.length - 1];
+    parts = filename.split('.');
+    sampleFilename = `${parts[0]}.json`;
+  }
 
   let samples =
     JSON.parse(
       fs.readFileSync(
         resolve(
           dirname(fileURLToPath(import.meta.url)),
-          `../../../res/src/main/resources/${file_name}`,
+          `../../../res/src/main/resources/${sampleFilename}`,
         ),
         'utf8',
       ),
     );
   for (let sample of samples) {
-    sample.explanation = sample.explanation.join('\n');
+    sample.message = sample.explanation.join('\n');
   }
   return samples;
 }
@@ -47,6 +49,7 @@ function _getCallerFile() {
       }
     }
   } catch (e) {
+    console.error(e);
   }
   Error.prepareStackTrace = _pst;
   return filename;

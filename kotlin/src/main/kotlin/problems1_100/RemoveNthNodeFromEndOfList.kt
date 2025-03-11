@@ -8,7 +8,7 @@ enum class RemoveNthNodeFromEndOfList {
             if (head?.next == null && n == 1) {
                 return null
             }
-            val root = SinglyListNode(0, head!!)
+            val root = SinglyListNode(0, head)
             var left: SinglyListNode? = root
             var right: SinglyListNode? = root
             for (i in 0 until n) {

@@ -1,6 +1,6 @@
 class Problem {
   maxArea(height) {
-    throw new Error(`'Not implemented (${height}).`);
+    throw new Error(`Not implemented (${height}).`);
   }
 }
 
@@ -10,7 +10,7 @@ class Default extends Problem {
     let end = height.length - 1;
     let maxArea = Number.MIN_SAFE_INTEGER - 1;
     while (start < end) {
-      let wall = Math.min(height[start], height[end]);
+      const wall = Math.min(height[start], height[end]);
       maxArea = Math.max(maxArea, (end - start) * wall);
       if (height[start] < height[end]) {
         start++;
@@ -22,4 +22,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

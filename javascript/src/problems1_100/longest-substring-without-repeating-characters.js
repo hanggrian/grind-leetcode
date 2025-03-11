@@ -1,6 +1,6 @@
 class Problem {
   lengthOfLongestSubstring(s) {
-    throw new Error(`'Not implemented (${s}).`);
+    throw new Error(`Not implemented (${s}).`);
   }
 }
 
@@ -9,7 +9,7 @@ class Default extends Problem {
     if (!s) {
       return 0;
     }
-    let characters = new Set();
+    const characters = new Set();
     let start = 0;
     let end = 0;
     let maxLength = Number.MIN_SAFE_INTEGER;
@@ -27,4 +27,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

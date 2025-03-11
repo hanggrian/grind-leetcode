@@ -1,0 +1,38 @@
+[
+  {
+    "input": {
+      "board": [
+        ["A", "B", "C", "E"],
+        ["S", "F", "C", "S"],
+        ["A", "D", "E", "E"]
+      ],
+      "word": "ABCCED"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "board": [
+        ["A", "B", "C", "E"],
+        ["S", "F", "C", "S"],
+        ["A", "D", "E", "E"]
+      ],
+      "word": "SEE"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "board": [
+        ["A", "B", "C", "E"],
+        ["S", "F", "C", "S"],
+        ["A", "D", "E", "E"]
+      ],
+      "word": "ABCB"
+    },
+    "output": false,
+    "explanation": []
+  }
+]

@@ -8,8 +8,8 @@ import static com.google.common.truth.Truth.assertWithMessage
 class LongestPalindromicSubstringTest extends SampledTest {
     @Test
     void test() {
-        for (LongestPalindromicSubstring solution : LongestPalindromicSubstring.values()) {
-            for (LongestPalindromicSubstringSample sample : getSamples(LongestPalindromicSubstringSample[].class)) {
+        LongestPalindromicSubstring.values().each { solution ->
+            getSamples(LongestPalindromicSubstringSample[].class).each { sample ->
                 assertWithMessage(sample.getMessage())
                     .that(solution.longestPalindrome(sample.input.s))
                     .isEqualTo(sample.output)

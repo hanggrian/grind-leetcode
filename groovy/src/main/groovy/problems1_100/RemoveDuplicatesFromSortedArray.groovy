@@ -8,8 +8,8 @@ enum RemoveDuplicatesFromSortedArray {
         int removeDuplicates(int[] nums) {
             Set<Integer> distinct =
                 Arrays.stream(nums).boxed().collect(Collectors.toCollection(TreeSet::new))
-            int i = 0
-            for (int num : distinct) {
+            var i = 0
+            for (var num : distinct) {
                 nums[i++] = num
             }
             return distinct.size()
@@ -18,8 +18,8 @@ enum RemoveDuplicatesFromSortedArray {
     SINGLE_PASS{
         @Override
         int removeDuplicates(int[] nums) {
-            int start = 1
-            int end = 1
+            var start = 1
+            var end = 1
             while (end < nums.length) {
                 if (nums[end] != nums[end - 1]) {
                     nums[start] = nums[end]

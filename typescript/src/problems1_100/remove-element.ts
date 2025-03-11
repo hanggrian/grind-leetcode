@@ -1,6 +1,6 @@
 class Problem {
   removeElement(nums: number[], val: number): number {
-    throw new Error(`'Not implemented (${nums}, ${val}).`);
+    throw new Error(`Not implemented (${nums}, ${val}).`);
   }
 }
 
@@ -18,4 +18,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

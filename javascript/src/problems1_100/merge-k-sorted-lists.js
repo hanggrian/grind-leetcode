@@ -2,22 +2,22 @@ import {SinglyListNode} from '../concepts/list-nodes';
 
 class Problem {
   mergeKLists(lists) {
-    throw new Error(`'Not implemented (${lists}).`);
+    throw new Error(`Not implemented (${lists}).`);
   }
 }
 
 class Default extends Problem {
   mergeKLists(lists) {
-    let nodes = lists.filter(n => n);
+    const nodes = lists.filter(n => n);
     if (nodes.length === 0) {
       return undefined;
     }
 
-    let root = new SinglyListNode();
+    const root = new SinglyListNode();
     let current = root;
     while (nodes.length > 0) {
       // find lowest
-      let lowest =
+      const lowest =
           nodes.reduce((previous, current) => current.value < previous.value ? current : previous);
 
       // append lowest to current
@@ -29,7 +29,7 @@ class Default extends Problem {
         nodes.splice(nodes.indexOf(lowest), 1);
         continue;
       }
-      let nxt = lowest.next;
+      const nxt = lowest.next;
       lowest.value = nxt.value;
       lowest.next = nxt.next;
     }
@@ -37,4 +37,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

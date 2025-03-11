@@ -1,6 +1,6 @@
 class Problem {
   myAtoi(s: string): number {
-    throw new Error(`'Not implemented (${s}).`);
+    throw new Error(`Not implemented (${s}).`);
   }
 }
 
@@ -19,7 +19,7 @@ class Default extends Problem {
     }
 
     let result = '';
-    for (let c of s) {
+    for (const c of s) {
       if (c >= '0' && c <= '9') {
         result += c;
         continue;
@@ -37,4 +37,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;

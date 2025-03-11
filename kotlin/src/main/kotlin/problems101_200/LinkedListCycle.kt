@@ -1,13 +1,12 @@
 package problems101_200
 
-import concepts.ListNode
 import concepts.SinglyListNode
 
 enum class LinkedListCycle {
     REMEMBER_VISITS {
         override fun hasCycle(head: SinglyListNode?): Boolean {
             // visited nodes
-            val visits = hashSetOf<ListNode<*>>()
+            val visits = hashSetOf<SinglyListNode>()
             for (node in head!!) {
                 if (!visits.add(node)) {
                     return true

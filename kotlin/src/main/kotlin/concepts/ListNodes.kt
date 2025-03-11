@@ -5,7 +5,7 @@ class SinglyListNode : ListNode<SinglyListNode> {
 
     constructor(value: Int) : super(value)
 
-    constructor(value: Int, next: SinglyListNode) : super(value) {
+    constructor(value: Int, next: SinglyListNode?) : super(value) {
         this.next = next
     }
 

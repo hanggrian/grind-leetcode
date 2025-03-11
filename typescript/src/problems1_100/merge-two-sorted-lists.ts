@@ -2,7 +2,7 @@ import {SinglyListNode} from '../concepts/list-nodes';
 
 class Problem {
   mergeTwoLists(l1: SinglyListNode, l2: SinglyListNode) {
-    throw new Error(`'Not implemented (${l1}, ${l2}).`);
+    throw new Error(`Not implemented (${l1}, ${l2}).`);
   }
 }
 
@@ -14,7 +14,7 @@ class Default extends Problem {
     if (l2 === undefined) {
       return l1;
     }
-    let root = new SinglyListNode();
+    const root = new SinglyListNode();
     let current = root;
 
     // when both items are there
@@ -35,4 +35,5 @@ class Default extends Problem {
   }
 }
 
-export const SOLUTIONS = [new Default()];
+const SOLUTIONS = [new Default()];
+export default SOLUTIONS;
