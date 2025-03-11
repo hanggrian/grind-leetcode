@@ -24,14 +24,36 @@
             </p>
             
             <h1>
-                9. Palindrome Number<sup>EASY</sup>
+                127. Word Ladder<sup>HARD</sup>
             </h1>
             
             <blockquote>
                 
                 <p>
-                    Given an integer <code>x</code>, return <code>true</code> <em>if <code>x</code> is a palindrome, and <code>false</code>
-otherwise.</em>
+                    A <strong>transformation sequence</strong> from word <code>beginWord</code> to word <code>endWord</code> using a
+dictionary <code>wordList</code> is a sequence of words
+<code>beginWord -&gt; s</code><sup><code>1</code></sup><code> -&gt; s</code><sup><code>2</code></sup><code> -&gt; ... -&gt; sk</code> such that:
+                </p>
+                
+                <ul>
+                    
+                    <li>Every adjacent pair of words differs by a single letter.</li>
+                    
+                    <li>
+                        Every <code>s</code><sup><code>i</code></sup> for <code>1 &lt;= i &lt;= k</code> is in wordList. Note that
+<code>beginWord</code> does not need to be in <code>wordList</code>.
+                    </li>
+                    
+                    <li>
+                        <code>s</code><sup><code>k</code></sup><code> == endWord</code>
+                    </li>
+                    
+                </ul>
+                
+                <p>
+                    Given two words, <code>beginWord</code> and <code>endWord</code>, and a dictionary <code>wordList</code>,
+return <em>the <strong>number of words</strong> in the <strong>shortest transformation sequence</strong>
+from <code>beginWord</code> to <code>endWord</code>, or <code>0</code> if no such sequence exists.</em>
                 </p>
                 
             </blockquote>
@@ -39,7 +61,7 @@ otherwise.</em>
             <ul>
                 
                 <li>
-                    <a href="https://leetcode.com/problems/palindrome-number/">Problem</a>
+                    <a href="https://leetcode.com/problems/word-ladder/">Problem</a>
                 </li>
                 
                 <li>
@@ -48,27 +70,27 @@ otherwise.</em>
                     <ul>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/PalindromeNumber.groovy">Groovy</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems101_200/WordLadder.groovy">Groovy</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/PalindromeNumber.java">Java</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems101_200/WordLadder.java">Java</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/palindrome-number.js">JavaScript</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems101_200/word-ladder.js">JavaScript</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/PalindromeNumber.kt">Kotlin</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems101_200/WordLadder.kt">Kotlin</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/palindrome_number.py">Python</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems101_200/word_ladder.py">Python</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/palindrome-number.ts">TypeScript</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems101_200/word-ladder.ts">TypeScript</a>
                         </li>
                         
                     </ul>
@@ -76,30 +98,6 @@ otherwise.</em>
                 </li>
                 
             </ul>
-            
-            <h2>Reverse string</h2>
-            
-            <ol>
-                
-                <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number1.svg">
-                </li>
-                
-            </ol>
-            
-            <h2>Compare half string</h2>
-            
-            <ol>
-                
-                <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_1.svg">
-                </li>
-                
-                <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_2.svg">
-                </li>
-                
-            </ol>
             
             <footer class="site-footer">
                 <span class="site-footer-owner"><a href="https://github.com/hanggrian/grind-leetcode/">grind-leetcode</a> is maintained by <a href="https://github.com/hanggrian/">Hendra Anggrian</a></span><span class="site-footer-credits">Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/jasonlong/cayman-theme/">jasonlong</a></span>
