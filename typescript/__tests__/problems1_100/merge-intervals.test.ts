@@ -12,19 +12,18 @@ type Sample = {
 
 describe(
     'MergeIntervals',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  deepEqual(
-                      solution.merge(sample.input.intervals),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        deepEqual(
+                            solution.merge(sample.input.intervals),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

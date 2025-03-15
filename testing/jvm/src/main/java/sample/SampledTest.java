@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public abstract class SampledTest {
     private static WeakReference<Gson> gsonRef = new WeakReference<>(null);
 
-    protected final <T> T getSamples(Class<T> cls) {
+    public final <T> T getSamples(Class<T> cls) {
         Gson gson = gsonRef.get();
         if (gson == null) {
             gson = new Gson();

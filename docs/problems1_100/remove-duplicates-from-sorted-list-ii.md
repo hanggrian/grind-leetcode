@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 82. Remove Duplicates from Sorted List II<sup>MEDIUM</sup>
+# 82. Remove Duplicates from Sorted List II<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given the `head` of a sorted linked list, *delete all nodes that have
   duplicate numbers, leaving only distinct numbers from the original list.*

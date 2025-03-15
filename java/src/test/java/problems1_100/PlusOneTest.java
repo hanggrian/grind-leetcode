@@ -19,7 +19,7 @@ public class PlusOneTest extends SampledTest {
                             .stream(sample.output)
                             .boxed()
                             .toList()
-                    );
+                    ).inOrder();
             }
         }
     }

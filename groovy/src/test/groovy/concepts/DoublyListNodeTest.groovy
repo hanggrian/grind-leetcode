@@ -26,10 +26,13 @@ class DoublyListNodeTest {
     void traverse() {
         DoublyListNode node = DoublyListNode.of(2, 4, 6, 8)
         assertThat(node.value).isEqualTo(2)
+
         node = node.next.next
         assertThat(node.value).isEqualTo(6)
+
         node = node.prev
         assertThat(node.value).isEqualTo(4)
+
         node = node.next.next
         assertThat(node.value).isEqualTo(8)
     }

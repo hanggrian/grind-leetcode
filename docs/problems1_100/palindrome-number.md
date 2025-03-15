@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 9. Palindrome Number<sup>EASY</sup>
+# 9. Palindrome Number<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an integer `x`, return `true` *if `x` is a palindrome, and `false`
   otherwise.*
@@ -20,5 +20,4 @@
 
 ## Compare half string
 
-1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_1.svg)
-1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems1_100/palindrome-number2.svg)

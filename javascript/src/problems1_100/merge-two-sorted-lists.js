@@ -1,4 +1,4 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
   mergeTwoLists(l1, l2) {

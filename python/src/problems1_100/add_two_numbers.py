@@ -1,18 +1,26 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def add_two_numbers(self, l1: SinglyListNode, l2: SinglyListNode) -> SinglyListNode:
+    def add_two_numbers(
+        self,
+        l1: SinglyListNode | None,
+        l2: SinglyListNode | None,
+    ) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def add_two_numbers(self, l1: SinglyListNode, l2: SinglyListNode) -> SinglyListNode:
+    def add_two_numbers(
+        self,
+        l1: SinglyListNode | None,
+        l2: SinglyListNode | None,
+    ) -> SinglyListNode | None:
         root = SinglyListNode()
         node = root
         carry = 0

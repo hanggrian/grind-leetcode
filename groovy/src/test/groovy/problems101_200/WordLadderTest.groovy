@@ -15,7 +15,7 @@ class WordLadderTest extends SampledTest {
                         solution.ladderLength(
                             sample.input.beginWord,
                             sample.input.endWord,
-                            Arrays.asList(sample.input.wordList),
+                            sample.input.wordList.toList(),
                         ),
                     ).isEqualTo(sample.output)
             }

@@ -9,19 +9,23 @@ class Default extends Problem {
     if (s.length % 2 === 1) {
       return false;
     }
+
     const symbols = [];
     for (const c of s) {
-      if (c === ')' || c === '}' || c === ']') {
-        if (symbols.length > 0 && symbols[symbols.length - 1] === '(' && c === ')') {
-          symbols.pop();
-        } else if (symbols.length > 0 && symbols[symbols.length - 1] === '{' && c === '}') {
-          symbols.pop();
-        } else if (symbols.length > 0 && symbols[symbols.length - 1] === '[' && c === ']') {
-          symbols.pop();
-        }
-      } else {
+      if (!(c === ')' || c === '}' || c === ']')) {
         symbols.push(c);
+        continue;
       }
+
+      if (symbols.length > 0 &&
+          ((symbols[symbols.length - 1] === '(' && c === ')') ||
+              (symbols[symbols.length - 1] === '{' && c === '}') ||
+              (symbols[symbols.length - 1] === '[' && c === ']'))
+      ) {
+        symbols.pop();
+        continue;
+      }
+      return false;
     }
     return symbols.length === 0;
   }

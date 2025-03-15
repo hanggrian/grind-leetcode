@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 92. Reverse Linked List II<sup>MEDIUM</sup>
+# 92. Reverse Linked List II<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given the `head` of a singly linked list and two integers `left` and `right`
   where `left <= right`, reverse the nodes of the list from position `left` to

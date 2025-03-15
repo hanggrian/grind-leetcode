@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 70. Climbing Stairs<sup>EASY</sup>
+# 70. Climbing Stairs<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > You are climbing a staircase. It takes `n` steps to reach the top.
 >

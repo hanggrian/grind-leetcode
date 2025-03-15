@@ -1,6 +1,5 @@
 package problems101_200
 
-import java.util.stream.Collectors
 import org.junit.Test
 import sample.SampledTest
 
@@ -14,15 +13,10 @@ class PascalsTriangleTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(solution.generate(sample.input.numRows))
                     .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .map(ints ->
-                                Arrays
-                                    .stream(ints)
-                                    .boxed()
-                                    .collect(Collectors.toList()),
-                            ).collect(Collectors.toList())
-                    )
+                        sample.output
+                            .collect { ints -> ints.toList() }
+                            .toList(),
+                    ).inOrder()
             }
         }
     }

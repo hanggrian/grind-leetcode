@@ -12,19 +12,18 @@ type Sample = {
 
 describe(
     'Permutations',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  deepEqual(
-                      solution.permute(sample.input.nums),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        deepEqual(
+                            solution.permute(sample.input.nums),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

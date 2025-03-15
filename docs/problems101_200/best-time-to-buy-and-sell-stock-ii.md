@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 122. Best Time to Buy and Sell Stock<sup>MEDIUM</sup>
+# 122. Best Time to Buy and Sell Stock II<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given an integer array `prices` where `prices[i]` is the price of a
   given stock on the `i`<sup>`th`</sup> day.

@@ -14,7 +14,7 @@ class TestMergeSortedArray(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     nums1,
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

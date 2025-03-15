@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 143. Reorder List<sup>MEDIUM</sup>
+# 143. Reorder List<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given the head of a singly linked-list. The list can be represented
   as:

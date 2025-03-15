@@ -23,7 +23,7 @@ public class ThreeSumTest extends SampledTest {
                                     .boxed()
                                     .collect(Collectors.toList())
                             ).toList()
-                    );
+                    ).inOrder();
             }
         }
     }

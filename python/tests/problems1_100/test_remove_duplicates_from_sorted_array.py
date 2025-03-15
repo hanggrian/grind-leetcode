@@ -11,7 +11,7 @@ class TestRemoveDuplicatesFromSortedArray(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.remove_duplicates(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
                 sub_list = sample['input']['nums'][0:sample['output']]

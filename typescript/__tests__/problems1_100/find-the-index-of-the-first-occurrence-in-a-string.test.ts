@@ -13,22 +13,21 @@ type Sample = {
 
 describe(
     'FindTheIndexOfTheFirstOccurrenceInAString',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.strStr(
-                          sample.input.haystack,
-                          sample.input.needle,
-                      ),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.strStr(
+                                sample.input.haystack,
+                                sample.input.needle,
+                            ),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

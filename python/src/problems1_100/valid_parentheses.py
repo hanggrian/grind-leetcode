@@ -13,19 +13,20 @@ class Default(Problem):
     def is_valid(self, s: str) -> bool:
         if len(s) % 2 == 1:
             return False
+
         symbols = []
         for c in s:
-            if c in {')', '}', ']'}:
-                if len(symbols) > 0 and symbols[-1] == '(' and c == ')':
-                    symbols.pop()
-                elif len(symbols) > 0 and symbols[-1] == '{' and c == '}':
-                    symbols.pop()
-                elif len(symbols) > 0 and symbols[-1] == '[' and c == ']':
-                    symbols.pop()
-                else:
-                    return False
-            else:
+            if c not in {')', '}', ']'}:
                 symbols.append(c)
+                continue
+
+            if len(symbols) > 0 and \
+                ((symbols[-1] == '(' and c == ')') or
+                 (symbols[-1] == '{' and c == '}') or
+                 (symbols[-1] == '[' and c == ']')):
+                symbols.pop()
+                continue
+            return False
         return len(symbols) == 0
 
 

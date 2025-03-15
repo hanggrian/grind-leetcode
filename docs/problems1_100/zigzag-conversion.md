@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 6. Zigzag Conversion<sup>MEDIUM</sup>
+# 6. Zigzag Conversion<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number
   of rows like this: (you may want to display this pattern in a fixed font for

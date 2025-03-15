@@ -5,16 +5,18 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class ThreeSumTest : SampledTest() {
     @Test
     fun test() =
         ThreeSum.entries.forEach { solution ->
-            getSamples(Array<ThreeSumSample>::class.java).forEach { (input, output, message) ->
+            getSamples<Array<ThreeSumSample>>().forEach { (input, output, message) ->
                 assertWithMessage(message)
                     .that(solution.threeSum(input.nums))
                     .containsExactlyElementsIn(output.map { it.toList() })
+                    .inOrder()
             }
         }
 }

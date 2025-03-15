@@ -6,6 +6,7 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class RemoveDuplicatesFromSortedList2Test : SampledTest() {
@@ -14,7 +15,7 @@ class RemoveDuplicatesFromSortedList2Test : SampledTest() {
     @Test
     fun test() =
         RemoveDuplicatesFromSortedList2.entries.forEach { solution ->
-            getSamples(Array<RemoveDuplicatesFromSortedList2Sample>::class.java)
+            getSamples<Array<RemoveDuplicatesFromSortedList2Sample>>()
                 .forEach { (input, output, message) ->
                     assertWithMessage(message)
                         .that(solution.deleteDuplicates(SinglyListNode.of(*input.head)))

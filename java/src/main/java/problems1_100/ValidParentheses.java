@@ -9,21 +9,23 @@ enum ValidParentheses {
             if (s.length() % 2 == 1) {
                 return false;
             }
+
             Stack<Character> symbols = new Stack<>();
             for (char c : s.toCharArray()) {
                 if (c != ')' && c != '}' && c != ']') {
                     symbols.push(c);
                     continue;
                 }
-                if (!symbols.isEmpty() && symbols.peek() == '(' && c == ')') {
+
+                if (!symbols.isEmpty()
+                    && ((symbols.peek() == '(' && c == ')')
+                    || (symbols.peek() == '{' && c == '}')
+                    || (symbols.peek() == '[' && c == ']'))
+                ) {
                     symbols.pop();
-                } else if (!symbols.isEmpty() && symbols.peek() == '{' && c == '}') {
-                    symbols.pop();
-                } else if (!symbols.isEmpty() && symbols.peek() == '[' && c == ']') {
-                    symbols.pop();
-                } else {
-                    return false;
+                    continue;
                 }
+                return false;
             }
             return symbols.isEmpty();
         }

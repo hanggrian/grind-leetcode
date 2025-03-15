@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  deleteDuplicates(head: SinglyListNode): SinglyListNode {
+  deleteDuplicates(head: SinglyListNode | undefined): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class Default extends Problem {
-  deleteDuplicates(head: SinglyListNode): SinglyListNode {
+  deleteDuplicates(head: SinglyListNode | undefined): SinglyListNode | undefined {
     const root = new SinglyListNode(-101, head);
     let previous = root;
     let current = head;

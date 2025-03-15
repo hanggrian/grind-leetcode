@@ -1,0 +1,33 @@
+[
+  {
+    "input": {
+      "s": "ADOBECODEBANC",
+      "t": "ABC"
+    },
+    "output": "BANC",
+    "explanation": [
+      "The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t."
+    ]
+  },
+  {
+    "input": {
+      "s": "a",
+      "t": "a"
+    },
+    "output": "a",
+    "explanation": [
+      "The entire string s is the minimum window."
+    ]
+  },
+  {
+    "input": {
+      "s": "a",
+      "t": "aa"
+    },
+    "output": "",
+    "explanation": [
+      "Both 'a's from t must be included in the window.",
+      "Since the largest window of s only has one 'a', return empty string."
+    ]
+  }
+]

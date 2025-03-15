@@ -1,7 +1,7 @@
 from typing import override
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems1_100.remove_duplicates_from_sorted_list2 import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -17,7 +17,7 @@ class TestRemoveDuplicatesFromSortedList2(SampledTest):
                 self.assertEqual(
                     SinglyListNode.of(*sample['output']),
                     solution.delete_duplicates(SinglyListNode.of(*sample['input']['head'])),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

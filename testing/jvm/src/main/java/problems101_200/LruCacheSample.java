@@ -4,7 +4,7 @@ import sample.Sample;
 
 class LruCacheSample extends Sample<LruCacheSample.Input, Integer[]> {
     static class Input {
-        String[] cache;
-        int[][] moves;
+        String[] moveNames;
+        int[][] moveValues;
     }
 }

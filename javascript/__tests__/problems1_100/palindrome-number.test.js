@@ -4,19 +4,18 @@ import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
     'PalindromeNumber',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  strictEqual(
-                      solution.isPalindrome(sample.input.x),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.isPalindrome(sample.input.x),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

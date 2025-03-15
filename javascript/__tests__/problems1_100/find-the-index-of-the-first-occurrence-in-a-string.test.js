@@ -4,22 +4,21 @@ import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
     'FindTheIndexOfTheFirstOccurrenceInAString',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  strictEqual(
-                      solution.strStr(
-                          sample.input.haystack,
-                          sample.input.needle,
-                      ),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.strStr(
+                                sample.input.haystack,
+                                sample.input.needle,
+                            ),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

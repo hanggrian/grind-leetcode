@@ -29,8 +29,8 @@ class CompareHalfString extends Problem {
     let start = 0;
     let end = s.length - 1;
     while (start < end) {
-      if (s.charAt(start++).toLowerCase() !==
-          s.charAt(end--).toLowerCase()) {
+      if (s[start++].toLowerCase() !==
+          s[end--].toLowerCase()) {
         return false;
       }
     }

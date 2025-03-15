@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 53. Maximum Subarray<sup>MEDIUM</sup>
+# 53. Maximum Subarray<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an integer array `nums`, find the subarray with the largest sum, and
   return its sum.

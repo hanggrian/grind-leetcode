@@ -15,7 +15,7 @@ class Default extends Problem {
           visited[i] = new Array(cols);
         }
 
-        if (board[row][col] === word.charAt(0)
+        if (board[row][col] === word[0]
             && this.dfs(board, visited, word, row, col)) {
           return true;
         }
@@ -27,10 +27,10 @@ class Default extends Problem {
   dfs(board, visited, word, row, col) {
     if (row < 0 || row > board.length - 1
         || col < 0 || col > board[0].length - 1
-        || visited[row][col] || word.length === 0 || word.charAt(0) !== board[row][col]) {
+        || visited[row][col] || word.length === 0 || word[0] !== board[row][col]) {
       return word.length === 0;
     }
-    word = word.substring(1);
+    word = word.slice(1);
     visited[row][col] = true;
     if (this.dfs(board, visited, word, row - 1, col) ||
         this.dfs(board, visited, word, row + 1, col) ||

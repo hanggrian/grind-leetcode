@@ -7,6 +7,11 @@ import sample.SampledTest
 import static com.google.common.truth.Truth.assertWithMessage
 
 class ReverseLinkedList2Test extends SampledTest {
+    @Override
+    protected String getSampleFilename() {
+        return 'reverse-linked-list-ii.json'
+    }
+
     @Test
     void test() {
         ReverseLinkedList2.values().each { solution ->
@@ -21,10 +26,5 @@ class ReverseLinkedList2Test extends SampledTest {
                     ).isEqualTo(SinglyListNode.of(sample.output))
             }
         }
-    }
-
-    @Override
-    protected String getSampleFilename() {
-        return 'reverse-linked-list-ii.json'
     }
 }

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 136. Single Number<sup>EASY</sup>
+# 136. Single Number<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given a **non-empty** array of integers `nums`, every element appears *twice*
   except for one. Find that single one.

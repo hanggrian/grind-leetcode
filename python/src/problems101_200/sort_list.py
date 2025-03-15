@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def sort_list(self, head: SinglyListNode) -> SinglyListNode:
+    def sort_list(self, head: SinglyListNode | None) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def sort_list(self, head: SinglyListNode) -> SinglyListNode:
+    def sort_list(self, head: SinglyListNode | None) -> SinglyListNode | None:
         if not head or not head.next:
             return head
         mid = self.split(head)
@@ -21,7 +21,11 @@ class Default(Problem):
             self.sort_list(mid),
         )
 
-    def merge(self, node1: SinglyListNode, node2: SinglyListNode) -> SinglyListNode:
+    def merge(
+        self,
+        node1: SinglyListNode | None,
+        node2: SinglyListNode | None,
+    ) -> SinglyListNode | None:
         root = SinglyListNode()
         current = root
         while node1 and node2:
@@ -38,7 +42,7 @@ class Default(Problem):
             current.next = node2
         return root.next
 
-    def split(self, node: SinglyListNode) -> SinglyListNode:
+    def split(self, node: SinglyListNode | None) -> SinglyListNode | None:
         slow_orev = None
         slow = node
         fast = node

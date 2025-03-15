@@ -11,7 +11,7 @@ class TestLongestSubstringWithoutRepeatingCharacters(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.length_of_longest_substring(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

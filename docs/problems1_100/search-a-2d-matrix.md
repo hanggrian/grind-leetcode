@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 74. Search a 2D Matrix<sup>MEDIUM</sup>
+# 74. Search a 2D Matrix<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given an `m x n` integer `matrix` matrix with the following two
   properties:

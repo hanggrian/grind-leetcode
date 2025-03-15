@@ -1,6 +1,6 @@
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems101_200.reorder_list import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -14,7 +14,7 @@ class TestReorderList(SampledTest):
                 self.assertEqual(
                     SinglyListNode.of(*sample['output']),
                     inp,
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -6,6 +6,11 @@ import sample.SampledTest
 import static com.google.common.truth.Truth.assertWithMessage
 
 class SearchA2dMatrixTest extends SampledTest {
+    @Override
+    protected String getSampleFilename() {
+        return 'search-a-2d-matrix.json'
+    }
+
     @Test
     void test() {
         SearchA2dMatrix.values().each { solution ->
@@ -15,10 +20,5 @@ class SearchA2dMatrixTest extends SampledTest {
                     .isEqualTo(sample.output)
             }
         }
-    }
-
-    @Override
-    protected String getSampleFilename() {
-        return 'search-a-2d-matrix.json'
     }
 }

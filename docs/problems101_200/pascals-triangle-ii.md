@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 119. Pascal's Triangle II<sup>EASY</sup>
+# 119. Pascal's Triangle II<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an integer `rowIndex`, return the `rowIndex`<sup>`th`</sup>
   (**0-indexed**) row of the **Pascal's triangle.**

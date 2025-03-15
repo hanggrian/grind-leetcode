@@ -1,28 +1,40 @@
-import {deepEqual, strictEqual} from 'assert';
-import LruCache from '../../src/problems101_200/lru-cache';
+import {strictEqual} from 'assert';
+import getSamples from "../../../testing/js/src/sample/samples";
+import LruCache from "../../src/problems101_200/lru-cache";
+
+type Sample = {
+  input: {
+    moveNames: string[],
+    moveValues: number[][],
+  },
+  output: number[],
+  message: string,
+}
 
 describe(
     'LruCache',
-    () => {
-      test(
-          'test',
-          () => {
-            const cache = new LruCache(2);
-            cache.put(1, 1);
-            cache.put(2, 2);
-            deepEqual(Object.fromEntries(cache.cache), {'1': 1, '2': 2});
-            strictEqual(cache.get(1), 1);
-
-            cache.put(3, 3);
-            deepEqual(Object.fromEntries(cache.cache), {'1': 1, '3': 3});
-            strictEqual(cache.get(2), -1);
-
-            cache.put(4, 4);
-            deepEqual(Object.fromEntries(cache.cache), {'3': 3, '4': 4});
-            strictEqual(cache.get(1), -1);
-            strictEqual(cache.get(3), 3);
-            strictEqual(cache.get(4), 4);
-          },
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                getSamples().forEach((sample: Sample) => {
+                  let cache = undefined;
+                  for (let i = 0; i < sample.input.moveNames.length; i++) {
+                    const values = sample.input.moveValues[i];
+                    switch (sample.input.moveNames[i]) {
+                      case 'LRUCache':
+                        cache = new LruCache(values[0]);
+                        strictEqual(null, sample.output[i]);
+                        break;
+                      case 'put':
+                        cache.set(values[0], values[1]);
+                        strictEqual(null, sample.output[i]);
+                        break;
+                      case 'get':
+                        strictEqual(cache.get(values[0]), sample.output[i]);
+                        break;
+                    }
+                  }
+                }),
+        ),
 );

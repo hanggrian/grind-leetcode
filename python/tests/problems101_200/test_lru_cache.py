@@ -1,25 +1,30 @@
-from unittest import TestCase, main
+from unittest import main
 
 from src.problems101_200.lru_cache import LruCache
+from tests.sample.sampled_test import SampledTest
 
 
-class TestLruCache(TestCase):
+class TestLruCache(SampledTest):
     def test(self):
-        cache = LruCache(2)
-        cache.put(1, 1)
-        cache.put(2, 2)
-        self.assertDictEqual({1: 1, 2: 2}, cache.cache)
-        self.assertEqual(1, cache.get(1))
-
-        cache.put(3, 3)
-        self.assertDictEqual({1: 1, 3: 3}, cache.cache)
-        self.assertEqual(-1, cache.get(2))
-
-        cache.put(4, 4)
-        self.assertDictEqual({3: 3, 4: 4}, cache.cache)
-        self.assertEqual(-1, cache.get(1))
-        self.assertEqual(3, cache.get(3))
-        self.assertEqual(4, cache.get(4))
+        for sample in self.get_samples():
+            cache = None
+            for i, move_name in enumerate(sample['input']['moveNames']):
+                values = sample['input']['moveValues'][i]
+                match move_name:
+                    case 'LRUCache':
+                        cache = LruCache(values[0])
+                        self.assertIsNone(sample['output'][i])
+                        break
+                    case 'put':
+                        cache.set(values[0], values[1])
+                        self.assertIsNone(sample['output'][i])
+                        break
+                    case 'get':
+                        self.assertEqual(
+                            sample['output'][i],
+                            cache.get(values[0]),
+                        )
+                        break
 
 
 if __name__ == '__main__':

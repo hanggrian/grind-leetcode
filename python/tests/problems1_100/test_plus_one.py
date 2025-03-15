@@ -11,7 +11,7 @@ class TestPlusOne(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.plus_one(sample['input']['digits']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

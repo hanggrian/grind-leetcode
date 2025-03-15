@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 class LruCache {
-    int capacity;
-    Map<Integer, Integer> cache = new LinkedHashMap<>();
+    final int capacity;
+    final Map<Integer, Integer> cache = new LinkedHashMap<>();
 
     LruCache(int capacity) {
         this.capacity = capacity;
@@ -20,7 +20,7 @@ class LruCache {
         return value;
     }
 
-    void put(int key, int value) {
+    void set(int key, int value) {
         if (cache.containsKey(key)) {
             cache.remove(key);
         } else if (cache.size() == capacity) {

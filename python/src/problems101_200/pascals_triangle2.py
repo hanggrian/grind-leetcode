@@ -19,13 +19,13 @@ class Default(Problem):
             num_columns = i + 1
             columns = [0] * num_columns
             for j in range(num_columns):
-                if j == 0 or j == num_columns - 1:
+                if j in {0, num_columns - 1}:
                     columns[j] = 1
                     continue
                 prev_columns = rows[i - 1]
                 columns[j] = prev_columns[j - 1] + prev_columns[j]
             rows[i] = columns
-        return rows[len(rows) - 1]
+        return rows[-1]
 
 
 SOLUTIONS: list[Problem] = [Default()]

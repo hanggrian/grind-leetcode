@@ -11,7 +11,7 @@ class TestContainerWithMostWater(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.max_area(sample['input']['height']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

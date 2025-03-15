@@ -11,7 +11,7 @@ class TestWordSearch(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.exist(sample['input']['board'], sample['input']['word']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

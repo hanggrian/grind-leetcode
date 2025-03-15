@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def delete_duplicates(self, head: SinglyListNode) -> SinglyListNode:
+    def delete_duplicates(self, head: SinglyListNode | None) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def delete_duplicates(self, head: SinglyListNode) -> SinglyListNode:
+    def delete_duplicates(self, head: SinglyListNode | None) -> SinglyListNode | None:
         root = SinglyListNode(-101, head)
         previous = root
         current = head

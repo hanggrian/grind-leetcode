@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 83. Remove Duplicates from Sorted List<sup>EASY</sup>
+# 83. Remove Duplicates from Sorted List<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given the `head` of a sorted linked list, *delete all duplicates such that
   each element appears only once.* Return _the linked list **sorted** as well._

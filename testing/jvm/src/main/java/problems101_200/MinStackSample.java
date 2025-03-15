@@ -2,8 +2,9 @@ package problems101_200;
 
 import sample.Sample;
 
-class MinStackSample extends Sample<MinStackSample.Input, int[]> {
+class MinStackSample extends Sample<MinStackSample.Input, Integer[]> {
     static class Input {
-        int[][] moves;
+        String[] moveNames;
+        int[][] moveValues;
     }
 }

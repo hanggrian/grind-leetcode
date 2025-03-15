@@ -11,7 +11,7 @@ class TestTrappingRainWater(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.trap(sample['input']['height']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

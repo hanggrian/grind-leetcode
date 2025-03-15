@@ -15,9 +15,7 @@ class RemoveDuplicatesFromSortedArrayTest extends SampledTest {
                     .that(solution.removeDuplicates(sample.input.nums))
                     .isEqualTo(sample.output)
                 assertThat(
-                    Arrays
-                        .stream(sample.input.nums)
-                        .boxed()
+                    sample.input.nums
                         .toList()
                         .subList(0, sample.output),
                 ).containsNoDuplicates()

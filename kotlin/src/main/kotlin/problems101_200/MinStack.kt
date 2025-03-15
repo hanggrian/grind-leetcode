@@ -6,24 +6,24 @@ class MinStack {
     var main = Stack<Int>()
     var mins = Stack<Int>()
 
-    fun push(`val`: Int) {
-        main.push(`val`)
-        if (`val` <= minimum) {
-            mins.push(`val`)
+    fun push(value: Int) {
+        main.push(value)
+        if (value <= minimum) {
+            mins.push(value)
         }
     }
 
     val minimum: Int
-        get() {
+        get() =
             if (mins.isEmpty()) {
-                return Int.MAX_VALUE
+                Int.MAX_VALUE
+            } else {
+                mins.peek()
             }
-            return mins.peek()
-        }
 
     fun pop() {
-        val `val` = main.pop()
-        if (`val` == minimum) {
+        val value = main.pop()
+        if (value == minimum) {
             mins.pop()
         }
     }

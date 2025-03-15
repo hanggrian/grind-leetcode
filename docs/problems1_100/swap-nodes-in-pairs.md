@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 24. Swap Nodes in Pairs<sup>MEDIUM</sup>
+# 24. Swap Nodes in Pairs<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given a linked list, swap every two adjacent nodes and return its head. You
   must solve the problem without modifying the values in the list's nodes (i.e.,

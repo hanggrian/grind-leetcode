@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 152. Maximum Product Subarray<sup>MEDIUM</sup>
+# 152. Maximum Product Subarray<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an integer array `nums`, find a subarray that has the largest product,
   and return *the product.*

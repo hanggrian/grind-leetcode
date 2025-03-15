@@ -17,17 +17,17 @@ class Default extends Problem {
     let end = -1;
     loop:
         for (let i = 0; i < longestStr.length; i++) {
-          const c = longestStr.charAt(i);
+          const c = longestStr[i];
           for (let j = 0; j < strs.length; j++) {
             const str = strs[j];
-            if (i > str.length - 1 || c !== str.charAt(i)) {
+            if (i > str.length - 1 || c !== str[i]) {
               break loop;
             } else if (j === strs.length - 1) {
               end = i;
             }
           }
         }
-    return longestStr.substring(0, end + 1);
+    return longestStr.slice(0, end + 1);
   }
 }
 

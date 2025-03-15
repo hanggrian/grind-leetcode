@@ -46,5 +46,5 @@ enum Triangle {
         }
     }
 
-    abstract int minimumTotal(List<List<Integer>> triangle);
+    abstract int minimumTotal(List<List<Integer>> triangle)
 }

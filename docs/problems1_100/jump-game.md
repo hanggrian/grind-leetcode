@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 55. Jump Game<sup>MEDIUM</sup>
+# 55. Jump Game<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given an integer array `nums`. You are initially positioned at the
   array's **first index,** and each element in the array represents your maximum

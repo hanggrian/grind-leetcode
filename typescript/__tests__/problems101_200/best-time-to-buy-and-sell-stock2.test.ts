@@ -12,19 +12,19 @@ type Sample = {
 
 describe(
     'BestTimeToBuyAndSellStock2',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples('best-time-to-buy-and-sell-stock-ii.json').forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.maxProfit(sample.input.prices),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples('best-time-to-buy-and-sell-stock-ii.json')
+                        .forEach((sample: Sample) =>
+                            strictEqual(
+                                solution.maxProfit(sample.input.prices),
+                                sample.output,
+                                sample.message,
+                            ),
+                        ),
+                ),
+        ),
 );

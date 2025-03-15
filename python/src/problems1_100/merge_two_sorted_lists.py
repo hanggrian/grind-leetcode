@@ -1,18 +1,26 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def merge_two_lists(self, l1: SinglyListNode, l2: SinglyListNode) -> SinglyListNode:
+    def merge_two_lists(
+        self,
+        l1: SinglyListNode | None,
+        l2: SinglyListNode | None,
+    ) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def merge_two_lists(self, l1: SinglyListNode, l2: SinglyListNode) -> SinglyListNode:
+    def merge_two_lists(
+        self,
+        l1: SinglyListNode | None,
+        l2: SinglyListNode | None,
+    ) -> SinglyListNode | None:
         if not l1:
             return l2
         if not l2:

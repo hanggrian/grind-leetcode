@@ -11,7 +11,7 @@ class TestValidParentheses(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.is_valid(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

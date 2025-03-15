@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../../src/concepts/list-nodes';
+import SinglyListNode from '../../src/concepts/singly-list-node';
 
 class Problem {
-  hasCycle(head: SinglyListNode): boolean {
+  hasCycle(head: SinglyListNode | undefined): boolean {
     throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class RememberVisits extends Problem {
-  hasCycle(head: SinglyListNode): boolean {
+  hasCycle(head: SinglyListNode | undefined): boolean {
     // visited nodes
     const visits = new Set<SinglyListNode>();
     for (const node of head) {
@@ -21,7 +21,7 @@ class RememberVisits extends Problem {
 }
 
 class FastFlowPointer extends Problem {
-  hasCycle(head: SinglyListNode): boolean {
+  hasCycle(head: SinglyListNode | undefined): boolean {
     if (!head || !head.hasNext()) {
       return false;
     }

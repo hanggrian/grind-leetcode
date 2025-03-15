@@ -1,0 +1,32 @@
+[
+  {
+    "input": {
+      "head": [3, 2, 0, -4],
+      "pos": 1
+    },
+    "output": 1,
+    "explanation": [
+      "There is a cycle in the linked list, where tail connects to the second node."
+    ]
+  },
+  {
+    "input": {
+      "head": [1, 2],
+      "pos": 0
+    },
+    "output": 0,
+    "explanation": [
+      "There is a cycle in the linked list, where tail connects to the first node."
+    ]
+  },
+  {
+    "input": {
+      "head": [1],
+      "pos": -1
+    },
+    "output": -1,
+    "explanation": [
+      "There is no cycle in the linked list."
+    ]
+  }
+]

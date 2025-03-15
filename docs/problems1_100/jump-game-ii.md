@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 45. Jump Game II<sup>MEDIUM</sup>
+# 45. Jump Game II<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given a **0-indexed** array of integers `nums` of length `n`. You are
   initially positioned at `nums[0]`.

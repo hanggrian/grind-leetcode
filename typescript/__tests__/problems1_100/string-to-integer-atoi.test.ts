@@ -16,14 +16,14 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach((sample: Sample) => {
-                    strictEqual(
-                        solution.myAtoi(sample.input.s),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.myAtoi(sample.input.s),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
         ),
 );

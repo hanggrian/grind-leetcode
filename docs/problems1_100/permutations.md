@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 46. Permutations<sup>MEDIUM</sup>
+# 46. Permutations<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an array `nums` of distinct integers, return all the possible
   permutations. You can return the answer in **any order.**

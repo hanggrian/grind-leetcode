@@ -11,7 +11,7 @@ class TestMergeIntervals(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.merge(sample['input']['intervals']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

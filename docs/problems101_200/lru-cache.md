@@ -1,9 +1,9 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 146. LRU Cache<sup>MEDIUM</sup>
+# 146. LRU Cache<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Design a data structure that follows the constraints of a
-  [Least Recently Used (LRU) cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU.
+  [Least Recently Used (LRU) cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).
 >
 > Implement the `LRUCache` class:
 >

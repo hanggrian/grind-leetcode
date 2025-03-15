@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 1. Two Sum<sup>EASY</sup>
+# 1. Two Sum<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an array of integers `nums` and an integer `target`, return *indices of
   the two numbers such that they add up to `target`.*

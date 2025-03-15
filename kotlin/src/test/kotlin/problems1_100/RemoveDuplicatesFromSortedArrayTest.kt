@@ -6,13 +6,14 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class RemoveDuplicatesFromSortedArrayTest : SampledTest() {
     @Test
     fun test() =
         RemoveDuplicatesFromSortedArray.entries.forEach { solution ->
-            getSamples(Array<RemoveDuplicatesFromSortedArraySample>::class.java)
+            getSamples<Array<RemoveDuplicatesFromSortedArraySample>>()
                 .forEach { (input, output, message) ->
                     assertWithMessage(message)
                         .that(solution.removeDuplicates(input.nums))

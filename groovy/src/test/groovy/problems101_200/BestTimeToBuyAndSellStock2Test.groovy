@@ -6,6 +6,11 @@ import sample.SampledTest
 import static com.google.common.truth.Truth.assertWithMessage
 
 class BestTimeToBuyAndSellStock2Test extends SampledTest {
+    @Override
+    protected String getSampleFilename() {
+        return 'best-time-to-buy-and-sell-stock-ii.json'
+    }
+
     @Test
     void test() {
         BestTimeToBuyAndSellStock2.values().each { solution ->
@@ -15,10 +20,5 @@ class BestTimeToBuyAndSellStock2Test extends SampledTest {
                     .isEqualTo(sample.output)
             }
         }
-    }
-
-    @Override
-    protected String getSampleFilename() {
-        return 'best-time-to-buy-and-sell-stock-ii.json'
     }
 }

@@ -5,12 +5,11 @@ import java.util.Objects;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-public class ListNode<T extends ListNode<T>> implements Iterable<T> {
-    public int value;
+public abstract class ListNode<T extends ListNode<T>> extends Node implements Iterable<T> {
     public T next;
 
     public ListNode(int value) {
-        this.value = value;
+        super(value);
     }
 
     public final boolean hasNext() {
@@ -27,12 +26,12 @@ public class ListNode<T extends ListNode<T>> implements Iterable<T> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof ListNode<?>)) {
+    public boolean equals(Object other) {
+        if (!(other instanceof ListNode<?>)) {
             return false;
         }
         ListNode<T> node1 = this;
-        ListNode<T> node2 = (ListNode<T>) o;
+        ListNode<T> node2 = (ListNode<T>) other;
         while (node1 != null && node2 != null) {
             if (node1.value != node2.value) {
                 return false;

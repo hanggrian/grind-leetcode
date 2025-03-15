@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 162. Find Peak Element<sup>MEDIUM</sup>
+# 162. Find Peak Element<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > A peak element is an element that is strictly greater than its neighbors.
 >

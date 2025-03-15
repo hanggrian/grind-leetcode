@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 28. Find the Index of the First Occurrence in a String<sup>EASY</sup>
+# 28. Find the Index of the First Occurrence in a String<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given two strings `needle` and `haystack`, return the index of the first
   occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of

@@ -1,6 +1,6 @@
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems1_100.rotate_list import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -15,7 +15,7 @@ class TestRotateList(SampledTest):
                         SinglyListNode.of(*sample['input']['head']),
                         sample['input']['k'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -11,7 +11,7 @@ class TestStringToIntegerAtoi(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.my_atoi(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

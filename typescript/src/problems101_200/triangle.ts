@@ -9,7 +9,7 @@ class Default extends Problem {
     let maxRow = triangle.length;
     let maxCol = 2;
 
-    const dp = new Array(maxRow);
+    const dp = new Array<number[]>(maxRow);
     for (let i = 0; i < maxRow; i++) {
       dp[i] = [];
     }

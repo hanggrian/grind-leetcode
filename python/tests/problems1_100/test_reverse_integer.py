@@ -11,7 +11,7 @@ class TestReverseInteger(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.reverse(sample['input']['x']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

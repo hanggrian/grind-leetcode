@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 79. Word Search<sup>MEDIUM</sup>
+# 79. Word Search<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an `m x n` grid of characters `board` and a string `word`, return
   *`true` if `word` exists in the grid.*

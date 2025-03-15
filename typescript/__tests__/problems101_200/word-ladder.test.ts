@@ -14,23 +14,22 @@ type Sample = {
 
 describe(
     'WordLadder',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  strictEqual(
-                      solution.ladderLength(
-                          sample.input.beginWord,
-                          sample.input.endWord,
-                          sample.input.wordList,
-                      ),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.ladderLength(
+                                sample.input.beginWord,
+                                sample.input.endWord,
+                                sample.input.wordList,
+                            ),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

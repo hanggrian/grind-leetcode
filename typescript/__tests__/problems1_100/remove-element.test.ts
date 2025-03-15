@@ -13,23 +13,22 @@ type Sample = {
 
 describe(
     'RemoveElement',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.removeElement(
-                          sample.input.nums,
-                          sample.input.val,
-                      ),
-                      sample.output,
-                      sample.message,
-                  );
-                  ok(!sample.input.nums.slice(0, sample.output).includes(sample.input.val));
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) => {
+                      strictEqual(
+                          solution.removeElement(
+                              sample.input.nums,
+                              sample.input.val,
+                          ),
+                          sample.output,
+                          sample.message,
+                      );
+                      ok(!sample.input.nums.slice(0, sample.output).includes(sample.input.val));
+                    }),
+                ),
+        ),
 );

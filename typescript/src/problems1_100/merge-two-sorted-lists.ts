@@ -1,13 +1,19 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  mergeTwoLists(l1: SinglyListNode, l2: SinglyListNode) {
+  mergeTwoLists(
+      l1: SinglyListNode | undefined,
+      l2: SinglyListNode | undefined,
+  ): SinglyListNode | undefined {
     throw new Error(`Not implemented (${l1}, ${l2}).`);
   }
 }
 
 class Default extends Problem {
-  mergeTwoLists(l1: SinglyListNode, l2: SinglyListNode) {
+  mergeTwoLists(
+      l1: SinglyListNode | undefined,
+      l2: SinglyListNode | undefined,
+  ): SinglyListNode | undefined {
     if (l1 === undefined) {
       return l2;
     }

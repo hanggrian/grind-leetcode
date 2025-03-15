@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 15. Three Sum<sup>MEDIUM</sup>
+# 15. Three Sum<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an integer array nums, return all the triplets
   `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and

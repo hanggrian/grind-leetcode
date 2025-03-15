@@ -23,7 +23,7 @@ public class PermutationsTest extends SampledTest {
                                     .boxed()
                                     .collect(Collectors.toList())
                             ).collect(Collectors.toList())
-                    );
+                    ).inOrder();
             }
         }
     }

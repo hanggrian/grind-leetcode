@@ -17,17 +17,17 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach((sample: Sample) => {
-                    strictEqual(
-                        solution.convert(
-                            sample.input.s,
-                            sample.input.numRows,
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.convert(
+                                sample.input.s,
+                                sample.input.numRows,
+                            ),
+                            sample.output,
+                            sample.message,
                         ),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                    ),
+                ),
         ),
 );

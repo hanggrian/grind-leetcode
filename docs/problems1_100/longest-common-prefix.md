@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 12. Longest Common Prefix<sup>EASY</sup>
+# 12. Longest Common Prefix<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Write a function to find the longest common prefix string amongst an array of
   strings.

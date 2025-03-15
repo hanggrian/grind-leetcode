@@ -34,5 +34,5 @@ class SampledTest(ABC, TestCase):
         ) as json:
             samples = load(json)
             for sample in samples:
-                sample['explanation'] = '\n'.join(sample['explanation'])
+                sample['message'] = '\n'.join(sample['explanation'])
             return samples

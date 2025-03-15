@@ -4,23 +4,22 @@ class MinStack {
     Stack<Integer> main = []
     Stack<Integer> mins = []
 
-    void push(int val) {
-        main.push(val)
-        if (val <= getMinimum()) {
-            mins.push(val)
+    void push(int value) {
+        main.push(value)
+        if (value <= getMinimum()) {
+            mins.push(value)
         }
     }
 
     int getMinimum() {
-        if (mins.isEmpty()) {
-            return Integer.MAX_VALUE
-        }
-        return mins.peek()
+        return mins.isEmpty()
+            ? Integer.MAX_VALUE
+            : mins.peek()
     }
 
     void pop() {
-        var val = main.pop()
-        if (val == getMinimum()) {
+        var value = main.pop()
+        if (value == getMinimum()) {
             mins.pop()
         }
     }

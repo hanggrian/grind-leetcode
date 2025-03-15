@@ -2,39 +2,35 @@ package problems101_200
 
 import com.google.common.truth.Truth.assertThat
 import sample.SampledTest
+import sample.component1
+import sample.component2
+import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class LruCacheTest : SampledTest() {
     @Test
     fun test() {
-        val cache = LruCache(2)
-        cache.put(1, 1)
-        cache.put(2, 2)
-        assertThat(cache.cache)
-            .containsEntry(1, 1)
-        assertThat(cache.cache)
-            .containsEntry(2, 2)
-        assertThat(cache.get(1))
-            .isEqualTo(1)
-
-        cache.put(3, 3)
-        assertThat(cache.cache)
-            .containsEntry(1, 1)
-        assertThat(cache.cache)
-            .containsEntry(3, 3)
-        assertThat(cache.get(2))
-            .isEqualTo(-1)
-
-        cache.put(4, 4)
-        assertThat(cache.cache)
-            .containsEntry(4, 4)
-        assertThat(cache.cache)
-            .containsEntry(3, 3)
-        assertThat(cache.get(1))
-            .isEqualTo(-1)
-        assertThat(cache.get(3))
-            .isEqualTo(3)
-        assertThat(cache.get(4))
-            .isEqualTo(4)
+        getSamples<Array<LruCacheSample>>().forEach { (input, output, _) ->
+            var cache: LruCache? = null
+            for (i in input.moveNames.indices) {
+                val values = input.moveValues[i]
+                when (input.moveNames[i]) {
+                    "LRUCache" -> {
+                        cache = LruCache(values[0])
+                        assertThat(output[i])
+                            .isNull()
+                    }
+                    "put" -> {
+                        cache!![values[0]] = values[1]
+                        assertThat(output[i])
+                            .isNull()
+                    }
+                    "get" ->
+                        assertThat(output[i])
+                            .isEqualTo(cache!![values[0]])
+                }
+            }
+        }
     }
 }

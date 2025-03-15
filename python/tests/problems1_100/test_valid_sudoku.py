@@ -11,7 +11,7 @@ class TestValidSudoku(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.is_valid_sudoku(sample['input']['board']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

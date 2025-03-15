@@ -1,7 +1,7 @@
 from typing import override
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems1_100.reverse_linked_list2 import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -21,7 +21,7 @@ class TestReverseLinkedList2(SampledTest):
                         sample['input']['left'],
                         sample['input']['right'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

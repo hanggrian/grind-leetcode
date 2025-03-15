@@ -16,14 +16,14 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach((sample: Sample) => {
-                    strictEqual(
-                        solution.isValidSudoku(sample.input.board),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.isValidSudoku(sample.input.board),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
         ),
 );

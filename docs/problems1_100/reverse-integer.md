@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 7. Reverse Integer<sup>MEDIUM</sup>
+# 7. Reverse Integer<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given a signed 32-bit integer `x`, return `x` *with its digits reversed.* If
   reversing `x` causes the value to go outside the signed 32-bit integer range

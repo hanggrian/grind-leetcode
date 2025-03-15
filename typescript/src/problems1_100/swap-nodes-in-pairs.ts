@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  swapPairs(head: SinglyListNode): SinglyListNode {
+  swapPairs(head: SinglyListNode | undefined): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class Default extends Problem {
-  swapPairs(head: SinglyListNode): SinglyListNode {
+  swapPairs(head: SinglyListNode | undefined): SinglyListNode | undefined {
     const root = new SinglyListNode(0, head);
     let current = root;
     while (current.next && current.next.next) {

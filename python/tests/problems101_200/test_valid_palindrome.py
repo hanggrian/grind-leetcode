@@ -11,7 +11,7 @@ class TestValidPalindrome(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.is_palindrome(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

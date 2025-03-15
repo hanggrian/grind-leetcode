@@ -12,19 +12,18 @@ type Sample = {
 
 describe(
     'LongestSubstringWithoutRepeatingCharacters',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.lengthOfLongestSubstring(sample.input.s),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.lengthOfLongestSubstring(sample.input.s),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 19. Remove Nth Node From End of List<sup>MEDIUM</sup>
+# 19. Remove Nth Node From End of List<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given the `head` of a linked list, remove the `n`<sup>`th`</sup> node from the
   end of the list and return its head.

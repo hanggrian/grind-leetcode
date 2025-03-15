@@ -6,6 +6,11 @@ import sample.SampledTest
 import static com.google.common.truth.Truth.assertWithMessage
 
 class JumpGame2Test extends SampledTest {
+    @Override
+    protected String getSampleFilename() {
+        return 'jump-game-ii.json'
+    }
+
     @Test
     void test() {
         JumpGame2.values().each { solution ->
@@ -15,10 +20,5 @@ class JumpGame2Test extends SampledTest {
                     .isEqualTo(sample.output)
             }
         }
-    }
-
-    @Override
-    protected String getSampleFilename() {
-        return 'jump-game-ii.json'
     }
 }

@@ -3,12 +3,11 @@ package concepts
 import java.util.stream.Stream
 import java.util.stream.StreamSupport
 
-class ListNode<T extends ListNode<T>> implements Iterable<T> {
-    int value
+class ListNode<T extends ListNode<T>> extends Node implements Iterable<T> {
     T next
 
     ListNode(int value) {
-        this.value = value
+        super(value)
     }
 
     final boolean hasNext() {
@@ -25,12 +24,12 @@ class ListNode<T extends ListNode<T>> implements Iterable<T> {
     }
 
     @Override
-    boolean equals(Object o) {
-        if (!(o instanceof ListNode)) {
+    boolean equals(Object other) {
+        if (!(other instanceof ListNode)) {
             return false
         }
         ListNode<T> node1 = this
-        ListNode<T> node2 = (ListNode<T>) o
+        ListNode<T> node2 = (ListNode<T>) other
         while (node1 != null && node2 != null) {
             if (node1.value != node2.value) {
                 return false

@@ -1,0 +1,28 @@
+[
+  {
+    "input": {
+      "s": "catsanddog",
+      "wordDict": ["cat", "cats", "and", "sand", "dog"]
+    },
+    "output": ["cats and dog", "cat sand dog"],
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "pineapplepenapple",
+      "wordDict": ["apple", "pen", "applepen", "pine", "pineapple"]
+    },
+    "output": ["pine apple pen apple", "pineapple pen apple", "pine applepen apple"],
+    "explanation": [
+      "Note that you are allowed to reuse a dictionary word."
+    ]
+  },
+  {
+    "input": {
+      "s": "catsandog",
+      "wordDict": ["cats", "dog", "sand", "and", "cat"]
+    },
+    "output": [],
+    "explanation": []
+  }
+]

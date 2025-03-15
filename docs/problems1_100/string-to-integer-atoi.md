@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 8. String to Integer (Atoi)<sup>MEDIUM</sup>
+# 8. String to Integer (atoi)<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Implement the `myAtoi(string s)` function, which converts a string to a 32-bit
   signed integer.

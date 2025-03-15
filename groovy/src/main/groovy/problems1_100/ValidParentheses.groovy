@@ -7,32 +7,23 @@ enum ValidParentheses {
             if (s.length() % 2 == 1) {
                 return false
             }
+
             Stack<Character> symbols = []
             for (var c : s.toCharArray()) {
                 if (c != ')' as char && c != '}' as char && c != ']' as char) {
                     symbols.push(c)
                     continue
                 }
-                if (
-                    !symbols.isEmpty() &&
-                        symbols.peek() == '(' as char &&
-                        c == ')' as char
+
+                if (!symbols.isEmpty() &&
+                    ((symbols.peek() == '(' as char && c == ')' as char) ||
+                        (symbols.peek() == '{' as char && c == '}' as char) ||
+                        (symbols.peek() == '[' as char && c == ']' as char))
                 ) {
                     symbols.pop()
-                } else if (
-                    !symbols.isEmpty() &&
-                        symbols.peek() == '{' as char &&
-                        c == '}' as char
-                ) {
-                    symbols.pop()
-                } else if (
-                    !symbols.isEmpty() &&
-                        symbols.peek() == '[' as char &&
-                        c == ']' as char) {
-                    symbols.pop()
-                } else {
-                    return false
+                    continue
                 }
+                return false
             }
             return symbols.isEmpty()
         }

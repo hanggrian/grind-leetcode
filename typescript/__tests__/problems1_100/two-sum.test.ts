@@ -17,17 +17,17 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach((sample: Sample) => {
-                    deepEqual(
-                        solution.twoSum(
-                            sample.input.nums,
-                            sample.input.target,
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        deepEqual(
+                            solution.twoSum(
+                                sample.input.nums,
+                                sample.input.target,
+                            ),
+                            sample.output,
+                            sample.message,
                         ),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                    ),
+                ),
         ),
 );

@@ -11,7 +11,7 @@ class TestThreeSum(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.three_sum(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -1,21 +1,21 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  reorderList(head: SinglyListNode) {
+  reorderList(head: SinglyListNode | undefined) {
     throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class Default extends Problem {
-  reorderList(head: SinglyListNode) {
+  reorderList(head: SinglyListNode | undefined) {
     const mid = this.getMid(head);
     let right = this.reverse(mid);
-    mid.next = null;
+    mid.next = undefined;
     let left = head;
 
     let current = new SinglyListNode();
     let flag = true;
-    while (left != null && right != null) {
+    while (left && right) {
       if (flag) {
         current.next = left;
         left = left.next;
@@ -28,8 +28,8 @@ class Default extends Problem {
     }
   }
 
-  reverse(node: SinglyListNode): SinglyListNode {
-    let previous = null;
+  reverse(node: SinglyListNode | undefined): SinglyListNode | undefined {
+    let previous = undefined;
     let current = node;
     while (current) {
       let temp = current.next;
@@ -40,7 +40,7 @@ class Default extends Problem {
     return previous;
   }
 
-  getMid(node: SinglyListNode): SinglyListNode {
+  getMid(node: SinglyListNode | undefined): SinglyListNode | undefined {
     let slow = node;
     let fast = node;
     while (fast && fast.next) {

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode, SINGLY_LIST_NODE_MAX
+from src.concepts.singly_list_node import SinglyListNode, SINGLY_LIST_NODE_MAX
 
 
 class Problem(ABC):
@@ -13,7 +13,7 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def merge_k_lists(self, lists: list[SinglyListNode]) -> SinglyListNode | None:
-        nodes = [n for n in lists if n is not None]
+        nodes = [n for n in lists if n]
         if len(nodes) == 0:
             return None
 

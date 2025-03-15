@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  removeNthFromEnd(head: SinglyListNode, n: number): SinglyListNode {
+  removeNthFromEnd(head: SinglyListNode | undefined, n: number): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}, ${n}).`);
   }
 }
 
 class Default extends Problem {
-  removeNthFromEnd(head: SinglyListNode, n: number): SinglyListNode {
+  removeNthFromEnd(head: SinglyListNode | undefined, n: number): SinglyListNode | undefined {
     if (!head.next && n === 1) {
       return undefined;
     }

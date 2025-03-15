@@ -19,9 +19,7 @@ class RemoveElementTest extends SampledTest {
                         ),
                     ).isEqualTo(sample.output)
                 assertThat(
-                    Arrays
-                        .stream(sample.input.nums)
-                        .boxed()
+                    sample.input.nums
                         .toList()
                         .subList(0, sample.output),
                 ).doesNotContain(sample.input.val)

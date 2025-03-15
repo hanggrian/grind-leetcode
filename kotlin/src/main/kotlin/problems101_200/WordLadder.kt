@@ -3,18 +3,18 @@ package problems101_200
 import java.util.LinkedList
 import java.util.TreeSet
 
-internal enum class WordLadder {
+enum class WordLadder {
     DEFAULT {
         override fun ladderLength(beginWord: String, endWord: String, wordList: List<String>): Int {
-            if (!wordList.contains(endWord)) {
+            if (endWord !in wordList) {
                 return 0
             }
 
             // `TreeSet.contains` operates at O(log n)
-            val wordSet = TreeSet<String>(wordList)
+            val wordSet = TreeSet(wordList)
 
             val queue = LinkedList<String>()
-            queue.add(beginWord)
+            queue += beginWord
             var steps = 0
             while (!queue.isEmpty()) {
                 for (i in 0 until queue.size) {
@@ -28,12 +28,12 @@ internal enum class WordLadder {
                         while (c <= 'z') {
                             word[j] = c
                             val newWord = String(word)
-                            if (s == newWord || !wordSet.contains(newWord)) {
+                            if (s == newWord || newWord !in wordSet) {
                                 c++
                                 continue
                             }
-                            queue.add(newWord)
-                            wordSet.remove(newWord)
+                            queue += newWord
+                            wordSet -= newWord
                             c++
                         }
                     }

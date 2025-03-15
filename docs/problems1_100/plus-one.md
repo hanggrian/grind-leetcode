@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 66. Plus One<sup>EASY</sup>
+# 66. Plus One<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > You are given a **large integer** represented as an integer array `digits`,
   where each `digits[i]` is the `i`<sup>`th`</sup> digit of the integer. The

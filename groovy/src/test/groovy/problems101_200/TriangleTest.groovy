@@ -1,6 +1,5 @@
 package problems101_200
 
-import java.util.stream.Collectors
 import org.junit.Test
 import sample.SampledTest
 
@@ -14,15 +13,10 @@ class TriangleTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.minimumTotal(
-                            Arrays
-                                .stream(sample.input.triangle)
-                                .map(ints ->
-                                    Arrays
-                                        .stream(ints)
-                                        .boxed()
-                                        .collect(Collectors.toList()),
-                                ).collect(Collectors.toList()),
-                        )
+                            sample.input.triangle
+                                .collect { ints -> ints.toList() }
+                                .toList(),
+                        ),
                     ).isEqualTo(sample.output)
             }
         }

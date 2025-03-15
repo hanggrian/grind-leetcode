@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 35. Search Insert Position<sup>EASY</sup>
+# 35. Search Insert Position<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given a sorted array of distinct integers and a target value, return the index
   if the target is found. If not, return the index where it would be if it were

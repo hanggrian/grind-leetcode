@@ -17,7 +17,7 @@ class Default extends Problem {
       let start = i;
       let end = i;
       while (start >= 0 && end < s.length && s[start] === s[end]) {
-        palindrome = s.substring(start, end + 1);
+        palindrome = s.slice(start, end + 1);
         if (palindrome.length > longestPalindrome.length) {
           longestPalindrome = palindrome;
         }
@@ -29,7 +29,7 @@ class Default extends Problem {
       start = i;
       end = i + 1;
       while (start >= 0 && end < s.length && s[start] === s[end]) {
-        palindrome = s.substring(start, end + 1);
+        palindrome = s.slice(start, end + 1);
         if (palindrome.length > longestPalindrome.length) {
           longestPalindrome = palindrome;
         }

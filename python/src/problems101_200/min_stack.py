@@ -7,12 +7,12 @@ class MinStack:
         self.main = deque()
         self.mins = deque()
 
-    def push(self, val):
-        self.main.append(val)
-        if val <= self.get_minimum():
-            self.mins.append(val)
+    def push(self, value: int):
+        self.main.append(value)
+        if value <= self.get_minimum():
+            self.mins.append(value)
 
-    def get_minimum(self):
+    def get_minimum(self) -> int:
         if len(self.mins) == 0:
             return maxsize
         return self.mins[-1]
@@ -22,5 +22,5 @@ class MinStack:
         if val == self.get_minimum():
             self.mins.pop()
 
-    def top(self):
+    def top(self) -> int:
         return self.main[-1]

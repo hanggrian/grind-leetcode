@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 88. Merge Sorted Array<sup>EASY</sup>
+# 88. Merge Sorted Array<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > You are given two integer arrays `nums1` and `nums2`, sorted in
   **non-decreasing order,** and two integers `m` and `n`, representing the

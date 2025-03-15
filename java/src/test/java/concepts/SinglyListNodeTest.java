@@ -32,8 +32,10 @@ public class SinglyListNodeTest {
     public void traverse() {
         ListNode<SinglyListNode> node = SinglyListNode.of(2, 4, 6, 8);
         assertThat(node.value).isEqualTo(2);
+
         node = node.next.next;
         assertThat(node.value).isEqualTo(6);
+
         node = node.next;
         assertThat(node.value).isEqualTo(8);
     }

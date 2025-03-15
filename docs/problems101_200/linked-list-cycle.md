@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 141. Linked List Cycle<sup>EASY</sup>
+# 141. Linked List Cycle<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given `head`, the head of a linked list, determine if the linked list has a
   cycle in it.

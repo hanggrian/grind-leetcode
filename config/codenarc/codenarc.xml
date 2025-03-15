@@ -72,6 +72,9 @@
     <exclude name="NoDef"/>
     <exclude name="VariableTypeRequired"/>
     <exclude name="InvertedIfElse"/>
+    <exclude name="AbstractClassWithPublicConstructor"/>
+    <exclude name="PublicMethodsBeforeNonPublicMethods"/>
+    <exclude name="StaticMethodsBeforeInstanceMethods"/>
   </ruleset-ref>
   <ruleset-ref path="rulesets/design.xml">
     <exclude name="Instanceof"/>

@@ -4,19 +4,18 @@ import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
     'PlusOne',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  deepEqual(
-                      solution.plusOne(sample.input.digits),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        deepEqual(
+                            solution.plusOne(sample.input.digits),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

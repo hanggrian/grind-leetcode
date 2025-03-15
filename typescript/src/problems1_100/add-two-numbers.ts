@@ -1,13 +1,19 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  addTwoNumbers(l1: SinglyListNode, l2: SinglyListNode): SinglyListNode {
+  addTwoNumbers(
+      l1: SinglyListNode | undefined,
+      l2: SinglyListNode | undefined,
+  ): SinglyListNode | undefined {
     throw new Error(`Not implemented (${l1}, ${l2}).`);
   }
 }
 
 class Default extends Problem {
-  addTwoNumbers(l1: SinglyListNode, l2: SinglyListNode): SinglyListNode {
+  addTwoNumbers(
+      l1: SinglyListNode | undefined,
+      l2: SinglyListNode | undefined,
+  ): SinglyListNode | undefined {
     const root = new SinglyListNode();
     let node = root;
     let carry = 0;

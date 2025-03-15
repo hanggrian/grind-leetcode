@@ -1,7 +1,8 @@
 [
   {
     "input": {
-      "moves": [
+      "moveNames": ["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"],
+      "moveValues": [
         [],
         [-2],
         [0],

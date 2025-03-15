@@ -13,13 +13,13 @@ enum class MaximumProductSubarray {
             var result = nums[0]
             for (i in 1 until nums.size) {
                 if (nums[i] > 0) {
-                    maxs[i] = max((maxs[i - 1] * nums[i]).toDouble(), nums[i].toDouble()).toInt()
-                    mins[i] = min((mins[i - 1] * nums[i]).toDouble(), nums[i].toDouble()).toInt()
+                    maxs[i] = max((maxs[i - 1] * nums[i]), nums[i])
+                    mins[i] = min((mins[i - 1] * nums[i]), nums[i])
                 } else {
-                    maxs[i] = max((mins[i - 1] * nums[i]).toDouble(), nums[i].toDouble()).toInt()
-                    mins[i] = min((maxs[i - 1] * nums[i]).toDouble(), nums[i].toDouble()).toInt()
+                    maxs[i] = max((mins[i - 1] * nums[i]), nums[i])
+                    mins[i] = min((maxs[i - 1] * nums[i]), nums[i])
                 }
-                result = max(maxs[i].toDouble(), result.toDouble()).toInt()
+                result = max(maxs[i], result)
             }
             return result
         }

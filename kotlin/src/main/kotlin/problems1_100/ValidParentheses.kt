@@ -8,21 +8,27 @@ enum class ValidParentheses {
             if (s.length % 2 == 1) {
                 return false
             }
+
             val symbols = Stack<Char>()
             for (c in s.toCharArray()) {
                 if (c != ')' && c != '}' && c != ']') {
                     symbols.push(c)
                     continue
                 }
-                if (!symbols.isEmpty() && symbols.peek() == '(' && c == ')') {
+
+                if (!symbols.isEmpty() &&
+                    symbols.peek().let {
+                        (
+                            (it == '(' && c == ')') ||
+                                (it == '{' && c == '}') ||
+                                (it == '[' && c == ']')
+                        )
+                    }
+                ) {
                     symbols.pop()
-                } else if (!symbols.isEmpty() && symbols.peek() == '{' && c == '}') {
-                    symbols.pop()
-                } else if (!symbols.isEmpty() && symbols.peek() == '[' && c == ']') {
-                    symbols.pop()
-                } else {
-                    return false
+                    continue
                 }
+                return false
             }
             return symbols.isEmpty()
         }

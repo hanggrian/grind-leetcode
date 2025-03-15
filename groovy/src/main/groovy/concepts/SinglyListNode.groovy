@@ -1,7 +1,7 @@
 package concepts
 
 final class SinglyListNode extends ListNode<SinglyListNode> {
-    public static final SinglyListNode ZERO = new SinglyListNode(0)
+    static final SinglyListNode ZERO = new SinglyListNode(0)
 
     SinglyListNode() {
         super(0)

@@ -1,9 +1,9 @@
 package problems101_200
 
-class LruCache(var capacity: Int) {
-    var cache = linkedMapOf<Int, Int>()
+class LruCache(val capacity: Int) {
+    val cache = linkedMapOf<Int, Int>()
 
-    fun get(key: Int): Int {
+    operator fun get(key: Int): Int {
         if (!cache.containsKey(key)) {
             return -1
         }
@@ -12,7 +12,7 @@ class LruCache(var capacity: Int) {
         return value
     }
 
-    fun put(key: Int, value: Int) {
+    operator fun set(key: Int, value: Int) {
         if (cache.containsKey(key)) {
             cache -= key
         } else if (cache.size == capacity) {
