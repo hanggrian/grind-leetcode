@@ -14,7 +14,7 @@ class TestSearchInsertPosition(SampledTest):
                         sample['input']['nums'],
                         sample['input']['target'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

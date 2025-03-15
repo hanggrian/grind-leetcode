@@ -2,7 +2,7 @@ package problems101_200
 
 class LruCache {
     int capacity
-    LinkedHashMap<Integer, Integer> cache = []
+    LinkedHashMap<Integer, Integer> cache = [:]
 
     LruCache(int capacity) {
         this.capacity = capacity
@@ -17,7 +17,7 @@ class LruCache {
         return value
     }
 
-    void put(int key, int value) {
+    void set(int key, int value) {
         if (cache.containsKey(key)) {
             cache.remove(key)
         } else if (cache.size() == capacity) {

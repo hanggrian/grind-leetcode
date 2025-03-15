@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 155. Min Stack<sup>MEDIUM</sup>
+# 155. Min Stack<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Design a stack that supports push, pop, top, and retrieving the minimum
   element in constant time.

@@ -38,5 +38,5 @@ enum ValidPalindrome {
         }
     }
 
-    abstract boolean isPalindrome(String s);
+    abstract boolean isPalindrome(String s)
 }

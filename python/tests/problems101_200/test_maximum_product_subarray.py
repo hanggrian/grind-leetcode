@@ -11,7 +11,7 @@ class TestMaximumProductSubarray(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.max_product(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

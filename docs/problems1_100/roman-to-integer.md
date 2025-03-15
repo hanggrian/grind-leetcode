@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 12. Roman to Integer<sup>EASY</sup>
+# 12. Roman to Integer<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`,
   `C`, `D` and `M`.

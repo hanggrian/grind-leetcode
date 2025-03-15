@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def reorder_list(self, head: SinglyListNode):
+    def reorder_list(self, head: SinglyListNode | None):
         pass
 
 
 class Default(Problem):
     @override
-    def reorder_list(self, head: SinglyListNode):
+    def reorder_list(self, head: SinglyListNode | None):
         mid = self.get_mind(head)
         right = self.reverse(mid)
         mid.next = None
@@ -30,7 +30,7 @@ class Default(Problem):
             curent = curent.next
             flag = not flag
 
-    def reverse(self, node: SinglyListNode) -> SinglyListNode:
+    def reverse(self, node: SinglyListNode | None) -> SinglyListNode | None:
         previous = None
         current = node
         while current:
@@ -40,7 +40,7 @@ class Default(Problem):
             current = temp
         return previous
 
-    def get_mind(self, node: SinglyListNode) -> SinglyListNode:
+    def get_mind(self, node: SinglyListNode | None) -> SinglyListNode | None:
         slow = node
         fast = node
         while fast and fast.next:

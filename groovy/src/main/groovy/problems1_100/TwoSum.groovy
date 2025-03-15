@@ -18,7 +18,7 @@ enum TwoSum {
         @Override
         int[] twoSum(int[] nums, int target) {
             // remaining to index mapping
-            HashMap<Integer, Integer> indices = []
+            HashMap<Integer, Integer> indices = [:]
             for (var i = 0; i < nums.length; i++) {
                 var num = nums[i]
                 if (indices.containsKey(num)) {

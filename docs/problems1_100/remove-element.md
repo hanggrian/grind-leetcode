@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 27. Remove Element<sup>EASY</sup>
+# 27. Remove Element<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an integer array `nums` and an integer `val`, remove all occurrences of
   `val` in `nums` in-place. The order of the elements may be changed. Then

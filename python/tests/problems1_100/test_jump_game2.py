@@ -16,7 +16,7 @@ class TestJumpGame2(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.jump(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -4,19 +4,18 @@ import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
     'ContainerWithMostWater',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  strictEqual(
-                      solution.maxArea(sample.input.height),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.maxArea(sample.input.height),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

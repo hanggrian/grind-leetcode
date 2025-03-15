@@ -1,14 +1,14 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  rotateRight(head: SinglyListNode, k: number): SinglyListNode {
+  rotateRight(head: SinglyListNode | undefined, k: number): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}, ${k}).`);
   }
 }
 
 class Default extends Problem {
-  rotateRight(head: SinglyListNode, k: number): SinglyListNode {
-    if (head == null || k === 0) {
+  rotateRight(head: SinglyListNode | undefined, k: number): SinglyListNode | undefined {
+    if (!head || k === 0) {
       return head;
     }
     const root = new SinglyListNode(0, head);
@@ -24,7 +24,7 @@ class Default extends Problem {
 
     // get n-th from last, keeping previous node
     let right = root;
-    let previousRight = null;
+    let previousRight = undefined;
     while (left) {
       left = left.next;
       let nextRight = right.next;
@@ -33,7 +33,7 @@ class Default extends Problem {
     }
 
     // sever middle, set last of right to start of left
-    previousRight.next = null;
+    previousRight.next = undefined;
     let lastRight = right;
     while (lastRight.next) {
       lastRight = lastRight.next;

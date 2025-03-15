@@ -13,8 +13,8 @@ class Default(Problem):
     def max_profit(self, prices: list[int]) -> int:
         profit = 0
         hold = False
-        for i in range(len(prices)):
-            if i != len(prices) - 1 and prices[i + 1] > prices[i]:
+        for i, price in enumerate(prices):
+            if i != len(prices) - 1 and prices[i + 1] > price:
                 if not hold:
                     hold = True
                     profit -= prices[i]

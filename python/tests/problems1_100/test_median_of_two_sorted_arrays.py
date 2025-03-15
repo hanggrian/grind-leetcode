@@ -14,7 +14,7 @@ class TestMedianOfTwoSortedArrays(SampledTest):
                         sample['input']['nums1'],
                         sample['input']['nums2'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

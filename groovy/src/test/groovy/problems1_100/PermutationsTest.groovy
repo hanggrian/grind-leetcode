@@ -1,6 +1,5 @@
 package problems1_100
 
-import java.util.stream.Collectors
 import org.junit.Test
 import sample.SampledTest
 
@@ -14,15 +13,11 @@ class PermutationsTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(solution.permute(sample.input.nums))
                     .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .map(ints ->
-                                Arrays
-                                    .stream(ints)
-                                    .boxed()
-                                    .collect(Collectors.toList()),
-                            ).collect(Collectors.toList()),
-                    )
+                        sample
+                            .output
+                            .collect { ints -> ints.toList() }
+                            .toList(),
+                    ).inOrder()
             }
         }
     }

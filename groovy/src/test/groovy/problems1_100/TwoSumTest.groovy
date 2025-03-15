@@ -17,12 +17,8 @@ class TwoSumTest extends SampledTest {
                             sample.input.target,
                         ),
                     ).asList()
-                    .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .boxed()
-                            .toList(),
-                    )
+                    .containsExactlyElementsIn(sample.output.toList())
+                    .inOrder()
             }
         }
     }

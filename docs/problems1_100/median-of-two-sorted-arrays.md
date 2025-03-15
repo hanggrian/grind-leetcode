@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 4. Median of Two Sorted Arrays<sup>HARD</sup>
+# 4. Median of Two Sorted Arrays<sup style="color: rgb(255, 55, 95);">Hard</sup>
 
 > Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively,
   return **the median** of the two sorted arrays.

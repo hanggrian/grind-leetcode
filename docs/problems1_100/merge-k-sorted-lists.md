@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 23. Merge k Sorted Lists<sup>HARD</sup>
+# 23. Merge k Sorted Lists<sup style="color: rgb(255, 55, 95);">Hard</sup>
 
 > You are given an array of `k` linked-lists `lists`, each linked-list is sorted
   in ascending order.

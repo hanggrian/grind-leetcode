@@ -4,23 +4,22 @@ export default class MinStack {
   main = new Stack();
   mins = new Stack();
 
-  push(val) {
-    this.main.push(val);
-    if (val <= this.getMinimum()) {
-      this.mins.push(val);
+  push(value) {
+    this.main.push(value);
+    if (value <= this.getMinimum()) {
+      this.mins.push(value);
     }
   }
 
   getMinimum() {
-    if (this.mins.isEmpty()) {
-      return Number.MAX_SAFE_INTEGER;
-    }
-    return this.mins.peek();
+    return this.mins.isEmpty()
+        ? Number.MAX_SAFE_INTEGER
+        : this.mins.peek();
   }
 
   pop() {
-    const val = this.main.pop();
-    if (val === this.getMinimum()) {
+    const value = this.main.pop();
+    if (value === this.getMinimum()) {
       this.mins.pop();
     }
   }

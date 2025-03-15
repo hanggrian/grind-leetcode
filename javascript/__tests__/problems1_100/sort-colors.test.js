@@ -8,16 +8,16 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach(sample => {
-                    const nums = sample.input.nums;
-                    solution.sortColors(nums);
-                    deepEqual(
-                        nums,
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample => {
+                      const nums = sample.input.nums;
+                      solution.sortColors(nums);
+                      deepEqual(
+                          nums,
+                          sample.output,
+                          sample.message,
+                      );
+                    }),
+                ),
         ),
 );

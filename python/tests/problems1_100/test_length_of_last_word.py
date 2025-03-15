@@ -11,7 +11,7 @@ class TestLengthOfLastWord(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.length_of_last_word(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

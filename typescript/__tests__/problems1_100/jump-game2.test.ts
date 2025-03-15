@@ -12,19 +12,18 @@ type Sample = {
 
 describe(
     'JumpGame2',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples('jump-game-ii.json').forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.jump(sample.input.nums),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples('jump-game-ii.json').forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.jump(sample.input.nums),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

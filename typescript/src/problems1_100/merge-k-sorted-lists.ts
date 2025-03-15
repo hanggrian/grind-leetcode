@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  mergeKLists(lists: SinglyListNode[]): SinglyListNode {
+  mergeKLists(lists: SinglyListNode[]): SinglyListNode | undefined {
     throw new Error(`Not implemented (${lists}).`);
   }
 }
 
 class Default extends Problem {
-  mergeKLists(lists: SinglyListNode[]): SinglyListNode {
+  mergeKLists(lists: SinglyListNode[]): SinglyListNode | undefined {
     const nodes = lists.filter(n => n);
     if (nodes.length === 0) {
       return undefined;

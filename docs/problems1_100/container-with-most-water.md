@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 11. Container With Most Water<sup>MEDIUM</sup>
+# 11. Container With Most Water<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given an integer array `height` of length `n`. There are `n` vertical
   lines drawn such that the two endpoints of the `i`<sup>`th`</sup> line are

@@ -17,12 +17,12 @@ enum class Triangle {
             while (row < maxRow) {
                 val columns = arrayListOf<Int>()
                 if (col > 0) {
-                    columns.add(triangle[row][col] + dp[row - 1][col - 1])
+                    columns += triangle[row][col] + dp[row - 1][col - 1]
                 }
                 if (col < maxCol - 1) {
-                    columns.add(triangle[row][col] + dp[row - 1][col])
+                    columns += triangle[row][col] + dp[row - 1][col]
                 }
-                dp[row].add(getMinimum(columns))
+                dp[row] += getMinimum(columns)
                 col++
                 if (col != maxCol) {
                     continue

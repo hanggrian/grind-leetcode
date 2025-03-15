@@ -4,19 +4,18 @@ import getSamples from '../../../testing/js/src/sample/samples';
 
 describe(
     'LengthOfLastWord',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach(sample => {
-                  strictEqual(
-                      solution.lengthOfLastWord(sample.input.s),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.lengthOfLastWord(sample.input.s),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

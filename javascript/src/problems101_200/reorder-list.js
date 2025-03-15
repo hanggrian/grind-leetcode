@@ -1,4 +1,4 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
   reorderList(head) {
@@ -29,7 +29,7 @@ class Default extends Problem {
   }
 
   reverse(node) {
-    let previous = null;
+    let previous = undefined;
     let current = node;
     while (current) {
       let temp = current.next;

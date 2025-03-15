@@ -1,18 +1,28 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def reverse_between(self, head: SinglyListNode, left: int, right: int) -> SinglyListNode:
+    def reverse_between(
+        self,
+        head: SinglyListNode | None,
+        left: int,
+        right: int,
+    ) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def reverse_between(self, head: SinglyListNode, left: int, right: int) -> SinglyListNode:
+    def reverse_between(
+        self,
+        head: SinglyListNode | None,
+        left: int,
+        right: int,
+    ) -> SinglyListNode | None:
         if left == right:
             return head
 
@@ -41,13 +51,13 @@ class Default(Problem):
         current.next = excess
         return head
 
-    def traverse_until_end(self, node: SinglyListNode):
+    def traverse_until_end(self, node: SinglyListNode | None) -> SinglyListNode | None:
         current = node
         while current.next:
             current = current.next
         return current
 
-    def reverse(self, node: SinglyListNode):
+    def reverse(self, node: SinglyListNode) -> SinglyListNode:
         current = node
         previous = None
         while current:

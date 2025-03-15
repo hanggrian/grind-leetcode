@@ -11,7 +11,7 @@ class TestPascalsTriangle(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.generate(sample['input']['numRows']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

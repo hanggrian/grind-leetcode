@@ -17,7 +17,7 @@ enum class LinkedListCycle {
     },
     FAST_SLOW_POINTERS {
         override fun hasCycle(head: SinglyListNode?): Boolean {
-            if (head == null || !head.hasNext()) {
+            if (head?.next == null) {
                 return false
             }
             var slow = head.next

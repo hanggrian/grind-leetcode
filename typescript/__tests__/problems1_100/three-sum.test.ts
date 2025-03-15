@@ -16,14 +16,14 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach((sample: Sample) => {
-                    deepEqual(
-                        solution.threeSum(sample.input.nums),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        deepEqual(
+                            solution.threeSum(sample.input.nums),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
         ),
 );

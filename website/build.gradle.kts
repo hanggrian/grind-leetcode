@@ -17,7 +17,9 @@ pages {
         .files("list-node.md", "tree-node.md")
         .forEach { content("concept-${it.nameWithoutExtension}.html", it) }
     docs
-        .files("problems1_100", "problems101_200")
+        .asFile
+        .listFiles()
+        .filter { it.name != "concepts" }
         .flatMap { it.listFiles()?.toList() ?: emptyList() }
         .filter { it.extension == "md" }
         .forEach { content("${it.nameWithoutExtension}.html", it) }

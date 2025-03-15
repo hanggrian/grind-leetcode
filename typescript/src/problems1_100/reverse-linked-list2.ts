@@ -1,13 +1,21 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  reverseBetween(head: SinglyListNode, left: number, right: number): SinglyListNode {
+  reverseBetween(
+      head: SinglyListNode | undefined,
+      left: number,
+      right: number,
+  ): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}, ${left}, ${right}).`);
   }
 }
 
 class Default extends Problem {
-  reverseBetween(head: SinglyListNode, left: number, right: number): SinglyListNode {
+  reverseBetween(
+      head: SinglyListNode | undefined,
+      left: number,
+      right: number,
+  ): SinglyListNode | undefined {
     if (left === right) {
       return head;
     }

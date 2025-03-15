@@ -11,7 +11,7 @@ class TestClimbingStairs(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.climb_stairs(sample['input']['n']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

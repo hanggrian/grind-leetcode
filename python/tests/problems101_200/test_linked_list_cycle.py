@@ -1,6 +1,6 @@
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems101_200.linked_list_cycle import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -15,7 +15,7 @@ class TestLinkedListCycle(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.has_cycle(inp),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -11,7 +11,7 @@ class TestSingleNumber(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.single_number(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

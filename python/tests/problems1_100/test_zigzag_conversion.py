@@ -14,7 +14,7 @@ class TestZigzagConversion(SampledTest):
                         sample['input']['s'],
                         sample['input']['numRows'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

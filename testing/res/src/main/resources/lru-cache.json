@@ -1,7 +1,8 @@
 [
   {
     "input": {
-      "moves": [
+      "moveNames": ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"],
+      "moveValues": [
         [2],
         [1, 1],
         [2, 2],

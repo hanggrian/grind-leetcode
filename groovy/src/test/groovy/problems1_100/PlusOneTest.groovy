@@ -13,12 +13,8 @@ class PlusOneTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(solution.plusOne(sample.input.digits))
                     .asList()
-                    .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .boxed()
-                            .toList(),
-                    )
+                    .containsExactlyElementsIn(sample.output.toList())
+                    .inOrder()
             }
         }
     }

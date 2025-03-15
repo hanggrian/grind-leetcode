@@ -22,7 +22,7 @@ public class MergeSortedArrayTest extends SampledTest {
                             .stream(sample.output)
                             .boxed()
                             .toList()
-                    );
+                    ).inOrder();
             }
         }
     }

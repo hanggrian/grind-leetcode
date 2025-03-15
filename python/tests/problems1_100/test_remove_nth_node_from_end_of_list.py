@@ -1,6 +1,6 @@
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems1_100.remove_nth_node_from_end_of_list import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -15,7 +15,7 @@ class TestRemoveNthNodeFromEndOfList(SampledTest):
                         SinglyListNode.of(*sample['input']['head']),
                         sample['input']['n'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

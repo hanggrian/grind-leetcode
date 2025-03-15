@@ -5,10 +5,10 @@ enum class SingleNumber {
         override fun singleNumber(nums: IntArray): Int {
             val result = arrayListOf<Int>()
             for (num in nums) {
-                if (!result.contains(num)) {
-                    result.add(num)
+                if (num !in result) {
+                    result += num
                 } else {
-                    result.remove(num)
+                    result -= num
                 }
             }
             return result[0]

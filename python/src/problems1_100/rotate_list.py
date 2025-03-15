@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 from typing import override
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 
 
 class Problem(ABC):
     @abstractmethod
-    def rotate_right(self, head: SinglyListNode, k: int) -> SinglyListNode:
+    def rotate_right(self, head: SinglyListNode | None, k: int) -> SinglyListNode | None:
         pass
 
 
 class Default(Problem):
     @override
-    def rotate_right(self, head: SinglyListNode, k: int) -> SinglyListNode:
+    def rotate_right(self, head: SinglyListNode | None, k: int) -> SinglyListNode | None:
         if not head or k == 0:
             return head
         root = SinglyListNode(0, head)

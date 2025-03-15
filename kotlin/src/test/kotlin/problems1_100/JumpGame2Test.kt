@@ -5,6 +5,7 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class JumpGame2Test : SampledTest() {
@@ -13,7 +14,7 @@ class JumpGame2Test : SampledTest() {
     @Test
     fun test() =
         JumpGame2.entries.forEach { solution ->
-            getSamples(Array<JumpGame2Sample>::class.java).forEach { (input, output, message) ->
+            getSamples<Array<JumpGame2Sample>>().forEach { (input, output, message) ->
                 assertWithMessage(message)
                     .that(solution.jump(input.nums))
                     .isEqualTo(output)

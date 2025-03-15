@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 75. Sort Colors<sup>MEDIUM</sup>
+# 75. Sort Colors<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an array `nums` with `n` objects colored red, white, or blue, sort them
   in-place so that objects of the same color are adjacent, with the colors in

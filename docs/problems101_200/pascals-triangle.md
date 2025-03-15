@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 118. Pascal's Triangle<sup>EASY</sup>
+# 118. Pascal's Triangle<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an integer `numRows`, return the first numRows of **Pascal's triangle.**
 >

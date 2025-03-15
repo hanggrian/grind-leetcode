@@ -16,12 +16,8 @@ class MergeSortedArrayTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(nums1)
                     .asList()
-                    .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .boxed()
-                            .toList(),
-                    )
+                    .containsExactlyElementsIn(sample.output.toList())
+                    .inOrder()
             }
         }
     }

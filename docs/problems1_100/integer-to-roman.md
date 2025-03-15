@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 12. Integer to Roman<sup>MEDIUM</sup>
+# 12. Integer to Roman<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Seven different symbols represent Roman numerals with the following values:
 >

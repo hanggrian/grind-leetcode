@@ -23,7 +23,7 @@ public class PascalsTriangleTest extends SampledTest {
                                     .boxed()
                                     .collect(Collectors.toList())
                             ).collect(Collectors.toList())
-                    );
+                    ).inOrder();
             }
         }
     }

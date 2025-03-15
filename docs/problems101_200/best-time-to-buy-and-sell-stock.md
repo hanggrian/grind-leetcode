@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 121. Best Time to Buy and Sell Stock<sup>EASY</sup>
+# 121. Best Time to Buy and Sell Stock<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > You are given an array `prices` where` prices[i]` is the price of a given
   stock on the `i`<sup>`th`</sup> day.

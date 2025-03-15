@@ -18,7 +18,7 @@ enum class MergeIntervals {
                 newIntervals +=
                     intArrayOf(
                         last[0],
-                        max(last[1].toDouble(), intervals[i][1].toDouble()).toInt(),
+                        max(last[1], intervals[i][1]),
                     )
             }
 

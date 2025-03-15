@@ -11,7 +11,7 @@ class TestRomanToInteger(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.roman_to_int(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

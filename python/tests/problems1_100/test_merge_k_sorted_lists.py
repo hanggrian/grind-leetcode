@@ -1,6 +1,6 @@
 from unittest import main
 
-from src.concepts.list_nodes import SinglyListNode
+from src.concepts.singly_list_node import SinglyListNode
 from src.problems1_100.merge_k_sorted_lists import SOLUTIONS
 from tests.sample.sampled_test import SampledTest
 
@@ -14,7 +14,7 @@ class TestMergeKSortedLists(SampledTest):
                     solution.merge_k_lists(
                         [SinglyListNode.of(*lst) for lst in sample['input']['lists']],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -1,6 +1,5 @@
 package problems1_100
 
-import java.util.stream.Collectors
 import org.junit.Test
 import sample.SampledTest
 
@@ -14,16 +13,12 @@ class MergeIntervalsTest extends SampledTest {
                 // for some reason, single command assert doesn't work
                 String message = sample.getMessage()
                 int[][] actual = solution.merge(sample.input.intervals)
-                for (int i = 0; i < actual.length; i++) {
+                for (var i = 0; i < actual.length; i++) {
                     assertWithMessage(message)
                         .that(actual[i])
                         .asList()
-                        .containsExactlyElementsIn(
-                            Arrays
-                                .stream(sample.output[i])
-                                .boxed()
-                                .collect(Collectors.toList())
-                        )
+                        .containsExactlyElementsIn(sample.output[i].toList())
+                        .inOrder()
                 }
             }
         }

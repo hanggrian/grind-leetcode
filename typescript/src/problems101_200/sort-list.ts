@@ -1,13 +1,13 @@
-import {SinglyListNode} from '../concepts/list-nodes';
+import SinglyListNode from '../concepts/singly-list-node';
 
 class Problem {
-  sortList(head: SinglyListNode): SinglyListNode {
+  sortList(head: SinglyListNode | undefined): SinglyListNode | undefined {
     throw new Error(`Not implemented (${head}).`);
   }
 }
 
 class Default extends Problem {
-  sortList(head: SinglyListNode): SinglyListNode {
+  sortList(head: SinglyListNode | undefined): SinglyListNode | undefined {
     if (!head || !head.next) {
       return head;
     }
@@ -19,7 +19,10 @@ class Default extends Problem {
   }
 
 
-  merge(node1: SinglyListNode, node2: SinglyListNode): SinglyListNode {
+  merge(
+      node1: SinglyListNode | undefined,
+      node2: SinglyListNode | undefined,
+  ): SinglyListNode | undefined {
     const root = new SinglyListNode();
     let current = root;
     while (node1 && node2) {
@@ -40,7 +43,7 @@ class Default extends Problem {
     return root.next;
   }
 
-  split(node: SinglyListNode): SinglyListNode {
+  split(node: SinglyListNode | undefined): SinglyListNode | undefined {
     let slowPrev = undefined;
     let slow = node;
     let fast = node;

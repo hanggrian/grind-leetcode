@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 21. Merge Two Sorted Lists<sup>EASY</sup>
+# 21. Merge Two Sorted Lists<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > You are given the heads of two sorted linked lists `list1` and `list2`.
 >

@@ -1,22 +1,38 @@
 import {strictEqual} from 'assert';
 import MinStack from '../../src/problems101_200/min-stack';
+import getSamples from "../../../testing/js/src/sample/samples.js";
 
 describe(
     'MinStack',
-    () => {
-      test(
-          'test',
-          () => {
-            const stack = new MinStack();
-            stack.push(-2);
-            stack.push(0);
-            stack.push(-3);
-            strictEqual(stack.getMinimum(), -3);
-
-            stack.pop();
-            strictEqual(stack.top(), 0);
-            strictEqual(stack.getMinimum(), -2);
-          },
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                getSamples().forEach(sample => {
+                  let stack = undefined;
+                  for (let i = 0; i < sample.input.moveNames.length; i++) {
+                    let values = sample.input.moveValues[i];
+                    switch (sample.input.moveNames[i]) {
+                      case "MinStack":
+                        stack = new MinStack();
+                        strictEqual(null, sample.output[i]);
+                        break;
+                      case "push":
+                        stack.push(values[0]);
+                        strictEqual(null, sample.output[i]);
+                        break;
+                      case "getMininimum":
+                        strictEqual(stack.getMinimum(), sample.output[i]);
+                        break;
+                      case "pop":
+                        stack.pop();
+                        strictEqual(null, sample.output[i]);
+                        break;
+                      case "top":
+                        strictEqual(stack.top(), sample.output[i]);
+                        break;
+                    }
+                  }
+                }),
+        ),
 );

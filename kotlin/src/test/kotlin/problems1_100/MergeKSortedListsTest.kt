@@ -6,22 +6,22 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class MergeKSortedListsTest : SampledTest() {
     @Test
     fun test() =
         MergeKSortedLists.entries.forEach { solution ->
-            getSamples(Array<MergeKSortedListsSample>::class.java)
-                .forEach { (input, output, message) ->
-                    assertWithMessage(message)
-                        .that(
-                            solution.mergeKLists(
-                                input.lists
-                                    .map { SinglyListNode.of(*it) }
-                                    .toTypedArray<SinglyListNode?>(),
-                            ),
-                        ).isEqualTo(SinglyListNode.of(*output))
-                }
+            getSamples<Array<MergeKSortedListsSample>>().forEach { (input, output, message) ->
+                assertWithMessage(message)
+                    .that(
+                        solution.mergeKLists(
+                            input.lists
+                                .map { SinglyListNode.of(*it) }
+                                .toTypedArray<SinglyListNode?>(),
+                        ),
+                    ).isEqualTo(SinglyListNode.of(*output))
+            }
         }
 }

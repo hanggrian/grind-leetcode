@@ -6,6 +6,7 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class ReverseLinkedList2Test : SampledTest() {
@@ -14,16 +15,15 @@ class ReverseLinkedList2Test : SampledTest() {
     @Test
     fun test() =
         ReverseLinkedList2.entries.forEach { solution ->
-            getSamples(Array<ReverseLinkedList2Sample>::class.java)
-                .forEach { (input, output, message) ->
-                    assertWithMessage(message)
-                        .that(
-                            solution.reverseBetween(
-                                SinglyListNode.of(*input.head),
-                                input.left,
-                                input.right,
-                            ),
-                        ).isEqualTo(SinglyListNode.of(*output))
-                }
+            getSamples<Array<ReverseLinkedList2Sample>>().forEach { (input, output, message) ->
+                assertWithMessage(message)
+                    .that(
+                        solution.reverseBetween(
+                            SinglyListNode.of(*input.head),
+                            input.left,
+                            input.right,
+                        ),
+                    ).isEqualTo(SinglyListNode.of(*output))
+            }
         }
 }

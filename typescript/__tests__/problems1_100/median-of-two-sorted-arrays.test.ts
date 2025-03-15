@@ -13,22 +13,21 @@ type Sample = {
 
 describe(
     'MedianOfTwoSortedArrays',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.findMedianSortedArrays(
-                          sample.input.nums1,
-                          sample.input.nums2,
-                      ),
-                      sample.output,
-                      sample.message,
-                  );
-                });
-              }),
-      );
-    },
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) =>
+                        strictEqual(
+                            solution.findMedianSortedArrays(
+                                sample.input.nums1,
+                                sample.input.nums2,
+                            ),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
+        ),
 );

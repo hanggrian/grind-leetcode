@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 58. Length of Last Word<sup>EASY</sup>
+# 58. Length of Last Word<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given a string `s` consisting of words and spaces, return _the length of the
   **last** word in the string._

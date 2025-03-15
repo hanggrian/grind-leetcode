@@ -11,7 +11,7 @@ class TestLongestCommonPrefix(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.longest_common_prefix(sample['input']['strs']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

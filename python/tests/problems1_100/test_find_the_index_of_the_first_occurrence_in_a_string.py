@@ -14,7 +14,7 @@ class TestFindTheIndexOfTheFirstOccurrenceInAString(SampledTest):
                         sample['input']['haystack'],
                         sample['input']['needle'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

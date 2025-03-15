@@ -5,17 +5,17 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class IntegerToRomanTest : SampledTest() {
     @Test
     fun test() =
         IntegerToRoman.entries.forEach { solution ->
-            getSamples(Array<IntegerToRomanSample>::class.java)
-                .forEach { (input, output, message) ->
-                    assertWithMessage(message)
-                        .that(solution.intToRoman(input.num))
-                        .isEqualTo(output)
-                }
+            getSamples<Array<IntegerToRomanSample>>().forEach { (input, output, message) ->
+                assertWithMessage(message)
+                    .that(solution.intToRoman(input.num))
+                    .isEqualTo(output)
+            }
         }
 }

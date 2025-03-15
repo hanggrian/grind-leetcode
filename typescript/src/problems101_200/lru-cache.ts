@@ -16,7 +16,7 @@ export default class LruCache {
     return value;
   }
 
-  put(key: number, value: number) {
+  set(key: number, value: number) {
     if (this.cache.has(key)) {
       this.cache.delete(key);
     } else if (this.cache.size === this.capacity) {

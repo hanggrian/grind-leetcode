@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 5. Longest Palindromic Substring<sup>MEDIUM</sup>
+# 5. Longest Palindromic Substring<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given a string `s`, return *the longest palindromic substring* in `s`.
 

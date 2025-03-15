@@ -19,7 +19,7 @@ class TestSearchA2dMatrix(SampledTest):
                         sample['input']['matrix'],
                         sample['input']['target'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 61. Rotate List<sup>MEDIUM</sup>
+# 61. Rotate List<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given the `head` of a linked list, rotate the list to the right by `k` places.
 

@@ -14,10 +14,8 @@ class MergeKSortedListsTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(
                         solution.mergeKLists(
-                            Arrays
-                                .stream(sample.input.lists)
-                                .map(SinglyListNode::of)
-                                .toList()
+                            sample.input.lists
+                                .collect { list -> SinglyListNode.of(list) }
                                 .toArray(new SinglyListNode[sample.input.lists.length]),
                         ),
                     ).isEqualTo(SinglyListNode.of(sample.output))

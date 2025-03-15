@@ -15,7 +15,7 @@ class TestWordLadder(SampledTest):
                         sample['input']['endWord'],
                         sample['input']['wordList'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

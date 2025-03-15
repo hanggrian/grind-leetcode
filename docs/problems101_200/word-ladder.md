@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 127. Word Ladder<sup>HARD</sup>
+# 127. Word Ladder<sup style="color: rgb(255, 55, 95);">Hard</sup>
 
 > A **transformation sequence** from word `beginWord` to word `endWord` using a
   dictionary `wordList` is a sequence of words

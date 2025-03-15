@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 56. Merge Intervals<sup>MEDIUM</sup>
+# 56. Merge Intervals<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given an array of `intervals` where
 > `intervals[i] = [start`<sub>`i`</sub>`, end`<sub>`i`</sub>`]`, merge all

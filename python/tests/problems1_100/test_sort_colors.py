@@ -13,7 +13,7 @@ class TestSortColors(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     nums,
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

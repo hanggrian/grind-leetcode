@@ -14,7 +14,7 @@ class TestRemoveElement(SampledTest):
                         sample['input']['nums'],
                         sample['input']['val'],
                     ),
-                    sample['explanation'],
+                    sample['message'],
                 )
                 self.assertTrue(
                     sample['input']['val'] not in sample['input']['nums'][:sample['output']],

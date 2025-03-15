@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 20. Valid Parentheses<sup>EASY</sup>
+# 20. Valid Parentheses<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`,
   `'['` and `']'`, determine if the input string is valid.

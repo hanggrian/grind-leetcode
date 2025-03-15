@@ -11,7 +11,7 @@ class TestTriangle(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.minimum_total(sample['input']['triangle']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

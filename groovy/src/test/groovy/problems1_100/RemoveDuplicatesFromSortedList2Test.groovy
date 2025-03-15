@@ -7,6 +7,11 @@ import sample.SampledTest
 import static com.google.common.truth.Truth.assertWithMessage
 
 class RemoveDuplicatesFromSortedList2Test extends SampledTest {
+    @Override
+    protected String getSampleFilename() {
+        return 'remove-duplicates-from-sorted-list-ii.json'
+    }
+
     @Test
     void test() {
         RemoveDuplicatesFromSortedList2.values().each { solution ->
@@ -16,10 +21,5 @@ class RemoveDuplicatesFromSortedList2Test extends SampledTest {
                     .isEqualTo(SinglyListNode.of(sample.output))
             }
         }
-    }
-
-    @Override
-    protected String getSampleFilename() {
-        return 'remove-duplicates-from-sorted-list-ii.json'
     }
 }

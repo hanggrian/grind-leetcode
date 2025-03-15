@@ -8,14 +8,14 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach(sample => {
-                    strictEqual(
-                        solution.isValid(sample.input.s),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.isValid(sample.input.s),
+                            sample.output,
+                            sample.message,
+                        ),
+                    ),
+                ),
         ),
 );

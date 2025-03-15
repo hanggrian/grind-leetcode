@@ -11,7 +11,7 @@ class TestLongestPalindromicSubstring(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.longest_palindrome(sample['input']['s']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

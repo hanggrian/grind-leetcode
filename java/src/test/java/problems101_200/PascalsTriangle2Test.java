@@ -24,7 +24,7 @@ public class PascalsTriangle2Test extends SampledTest {
                             .stream(sample.output)
                             .boxed()
                             .collect(Collectors.toList())
-                    );
+                    ).inOrder();
             }
         }
     }

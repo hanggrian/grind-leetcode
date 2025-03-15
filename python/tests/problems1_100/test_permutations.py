@@ -11,7 +11,7 @@ class TestPermutations(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.permute(sample['input']['nums']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

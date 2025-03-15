@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 26. Remove Duplicates from Sorted Array<sup>EASY</sup>
+# 26. Remove Duplicates from Sorted Array<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > Given an integer array `nums` sorted in **non-decreasing order,** remove the
   duplicates in-place such that each unique element appears only **once.** The

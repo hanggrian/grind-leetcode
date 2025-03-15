@@ -24,7 +24,7 @@ public class MergeIntervalsTest extends SampledTest {
                                 .stream(sample.output[i])
                                 .boxed()
                                 .collect(Collectors.toList())
-                        );
+                        ).inOrder();
                 }
             }
         }

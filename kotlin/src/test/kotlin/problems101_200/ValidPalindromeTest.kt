@@ -5,17 +5,17 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class ValidPalindromeTest : SampledTest() {
     @Test
     fun test() =
         ValidPalindrome.entries.forEach { solution ->
-            getSamples(Array<ValidPalindromeSample>::class.java)
-                .forEach { (input, output, message) ->
-                    assertWithMessage(message)
-                        .that(solution.isPalindrome(input.s))
-                        .isEqualTo(output)
-                }
+            getSamples<Array<ValidPalindromeSample>>().forEach { (input, output, message) ->
+                assertWithMessage(message)
+                    .that(solution.isPalindrome(input.s))
+                    .isEqualTo(output)
+            }
         }
 }

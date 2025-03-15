@@ -6,23 +6,22 @@ class MinStack {
     Stack<Integer> main = new Stack<>();
     Stack<Integer> mins = new Stack<>();
 
-    void push(int val) {
-        main.push(val);
-        if (val <= getMinimum()) {
-            mins.push(val);
+    void push(int value) {
+        main.push(value);
+        if (value <= getMinimum()) {
+            mins.push(value);
         }
     }
 
     int getMinimum() {
-        if (mins.isEmpty()) {
-            return Integer.MAX_VALUE;
-        }
-        return mins.peek();
+        return mins.isEmpty()
+            ? Integer.MAX_VALUE
+            : mins.peek();
     }
 
     void pop() {
-        int val = main.pop();
-        if (val == getMinimum()) {
+        int value = main.pop();
+        if (value == getMinimum()) {
             mins.pop();
         }
     }

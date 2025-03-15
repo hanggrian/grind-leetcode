@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 125. Valid Palindrome<sup>EASY</sup>
+# 125. Valid Palindrome<sup style="color: rgb(0, 184, 163);">Easy</sup>
 
 > A phrase is a **palindrome** if, after converting all uppercase letters into
   lowercase letters and removing all non-alphanumeric characters, it reads the
@@ -17,3 +17,14 @@
   - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems101_200/ValidPalindrome.kt)
   - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems101_200/valid_palindrome.py)
   - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems101_200/valid-palindrome.ts)
+
+## Reverse string
+
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/valid-palindrome1.svg)
+
+## Compare half string
+
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/valid-palindrome2_1.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/valid-palindrome2_2.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/valid-palindrome2_3.svg)
+1.  ![](https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/valid-palindrome2_4.svg)

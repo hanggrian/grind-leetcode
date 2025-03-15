@@ -12,22 +12,21 @@ type Sample = {
 
 describe(
     'RemoveDuplicatesFromSortedArray',
-    () => {
-      test(
-          'test',
-          () =>
-              SOLUTIONS.forEach(solution => {
-                getSamples().forEach((sample: Sample) => {
-                  strictEqual(
-                      solution.removeDuplicates(sample.input.nums),
-                      sample.output,
-                      sample.message,
-                  );
+    () =>
+        test(
+            'test',
+            () =>
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach((sample: Sample) => {
+                      strictEqual(
+                          solution.removeDuplicates(sample.input.nums),
+                          sample.output,
+                          sample.message,
+                      );
 
-                  const subList = sample.input.nums.slice(0, sample.output);
-                  strictEqual(new Set<number>(subList).size, subList.length);
-                });
-              }),
-      );
-    },
+                      const subList = sample.input.nums.slice(0, sample.output);
+                      strictEqual(new Set<number>(subList).size, subList.length);
+                    }),
+                ),
+        ),
 );

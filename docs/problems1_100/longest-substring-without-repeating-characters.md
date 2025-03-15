@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 3. Longest Substring Without Repeating Characters<sup>MEDIUM</sup>
+# 3. Longest Substring Without Repeating Characters<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given a string `s`, find the length of the **longest substring** without
   duplicate characters.

@@ -8,17 +8,17 @@ describe(
         test(
             'test',
             () =>
-                SOLUTIONS.forEach(solution => {
-                  getSamples().forEach(sample => {
-                    strictEqual(
-                        solution.exist(
-                            sample.input.board,
-                            sample.input.word,
+                SOLUTIONS.forEach(solution =>
+                    getSamples().forEach(sample =>
+                        strictEqual(
+                            solution.exist(
+                                sample.input.board,
+                                sample.input.word,
+                            ),
+                            sample.output,
+                            sample.message,
                         ),
-                        sample.output,
-                        sample.message,
-                    );
-                  });
-                }),
+                    ),
+                ),
         ),
 );

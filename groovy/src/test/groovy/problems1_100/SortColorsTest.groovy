@@ -15,12 +15,8 @@ class SortColorsTest extends SampledTest {
                 assertWithMessage(sample.getMessage())
                     .that(nums)
                     .asList()
-                    .containsExactlyElementsIn(
-                        Arrays
-                            .stream(sample.output)
-                            .boxed()
-                            .toList()
-                    )
+                    .containsExactlyElementsIn(sample.output.toList())
+                    .inOrder()
             }
         }
     }

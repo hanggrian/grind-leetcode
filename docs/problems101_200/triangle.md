@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 120. Triangle<sup>MEDIUM</sup>
+# 120. Triangle<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given a `triangle` array, return *the minimum path sum from top to bottom.*
 >

@@ -20,7 +20,7 @@ class Default(Problem):
         queue = [begin_word]
         steps = 0
         while queue:
-            for i in range(len(queue)):
+            for _ in range(len(queue)):
                 s = queue.pop(0)
                 if s == end_word:
                     return steps + 1

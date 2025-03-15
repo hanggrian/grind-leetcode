@@ -16,7 +16,7 @@ class TestBestTimeToBuyAndSellStock2(SampledTest):
                 self.assertEqual(
                     sample['output'],
                     solution.max_profit(sample['input']['prices']),
-                    sample['explanation'],
+                    sample['message'],
                 )
 
 

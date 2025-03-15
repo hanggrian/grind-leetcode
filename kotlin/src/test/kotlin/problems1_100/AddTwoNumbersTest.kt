@@ -6,13 +6,14 @@ import sample.SampledTest
 import sample.component1
 import sample.component2
 import sample.component3
+import sample.getSamples
 import kotlin.test.Test
 
 class AddTwoNumbersTest : SampledTest() {
     @Test
     fun test() =
         AddTwoNumbers.entries.forEach { solution ->
-            getSamples(Array<AddTwoNumbersSample>::class.java).forEach { (input, output, message) ->
+            getSamples<Array<AddTwoNumbersSample>>().forEach { (input, output, message) ->
                 assertWithMessage(message)
                     .that(
                         solution.addTwoNumbers(

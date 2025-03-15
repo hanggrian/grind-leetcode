@@ -8,34 +8,27 @@ import static com.google.common.truth.Truth.assertThat
 class LruCacheTest extends SampledTest {
     @Test
     void test() {
-        var cache = new LruCache(2)
-        cache.put(1, 1)
-        cache.put(2, 2)
-        assertThat(cache.cache)
-            .containsEntry(1, 1)
-        assertThat(cache.cache)
-            .containsEntry(2, 2)
-        assertThat(cache.get(1))
-            .isEqualTo(1)
-
-        cache.put(3, 3)
-        assertThat(cache.cache)
-            .containsEntry(1, 1)
-        assertThat(cache.cache)
-            .containsEntry(3, 3)
-        assertThat(cache.get(2))
-            .isEqualTo(-1)
-
-        cache.put(4, 4)
-        assertThat(cache.cache)
-            .containsEntry(4, 4)
-        assertThat(cache.cache)
-            .containsEntry(3, 3)
-        assertThat(cache.get(1))
-            .isEqualTo(-1)
-        assertThat(cache.get(3))
-            .isEqualTo(3)
-        assertThat(cache.get(4))
-            .isEqualTo(4)
+        getSamples(LruCacheSample[].class).each { sample ->
+            LruCache cache = null
+            for (int i = 0; i < sample.input.moveNames.length; i++) {
+                int[] values = sample.input.moveValues[i]
+                switch (sample.input.moveNames[i]) {
+                    case "LRUCache":
+                        cache = new LruCache(values[0])
+                        assertThat(sample.output[i])
+                            .isNull()
+                        break
+                    case "put":
+                        Objects.requireNonNull(cache).set(values[0], values[1])
+                        assertThat(sample.output[i])
+                            .isNull()
+                        break
+                    case "get":
+                        assertThat(sample.output[i])
+                            .isEqualTo(Objects.requireNonNull(cache).get(values[0]))
+                        break
+                }
+            }
+        }
     }
 }
