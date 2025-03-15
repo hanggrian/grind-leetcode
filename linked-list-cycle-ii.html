@@ -24,26 +24,26 @@
             </p>
             
             <h1>
-                141. Linked List Cycle<sup style="color: rgb(0, 184, 163);">Easy</sup>
+                142. Linked List Cycle II<sup style="color: rgb(255, 192, 30);">Medium</sup>
             </h1>
             
             <blockquote>
                 
                 <p>
-                    Given <code>head</code>, the head of a linked list, determine if the linked list has a
-cycle in it.
+                    Given the <code>head</code> of a linked list, return <em>the node where the cycle begins. If
+there is no cycle, return <code>null</code>.</em>
                 </p>
                 
                 <p>
                     There is a cycle in a linked list if there is some node in the list that can
 be reached again by continuously following the <code>next</code> pointer. Internally,
-<code>pos</code> is used to denote the index of the node that tail's next pointer is
-connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</strong>
+<code>pos</code> is used to denote the index of the node that tail's <code>next</code> pointer is
+connected to (<strong>0-indexed</strong>). It is <code>-1</code> if there is no cycle. <strong>Note that
+<code>pos</code> is not passed as a parameter.</strong>
                 </p>
                 
                 <p>
-                    Return <code>true</code> <em>if there is a cycle in the linked list.</em> Otherwise, return
-<code>false</code>.
+                    <strong>Do not modify</strong> the linked list.
                 </p>
                 
             </blockquote>
@@ -51,7 +51,7 @@ connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</
             <ul>
                 
                 <li>
-                    <a href="https://leetcode.com/problems/linked-list-cycle/">Problem</a>
+                    <a href="https://leetcode.com/problems/linked-list-cycle-ii/">Problem</a>
                 </li>
                 
                 <li>
@@ -60,27 +60,27 @@ connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</
                     <ul>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems101_200/LinkedListCycle.groovy">Groovy</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems101_200/LinkedListCycle2.groovy">Groovy</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems101_200/LinkedListCycle.java">Java</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems101_200/LinkedListCycle2.java">Java</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems101_200/linked-list-cycle.js">JavaScript</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems101_200/linked-list-cycle2.js">JavaScript</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems101_200/LinkedListCycle.kt">Kotlin</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems101_200/LinkedListCycle2.kt">Kotlin</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems101_200/linked_list_cycle.py">Python</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems101_200/linked_list_cycle2.py">Python</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems101_200/linked-list-cycle.ts">TypeScript</a>
+                            <a href="https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems101_200/linked-list-cycle2.ts">TypeScript</a>
                         </li>
                         
                     </ul>
@@ -94,15 +94,23 @@ connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</
             <ol>
                 
                 <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_1.svg">
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii1_1.svg">
                 </li>
                 
                 <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_2.svg">
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii1_2.svg">
                 </li>
                 
                 <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle1_3.svg">
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii1_3.svg">
+                </li>
+                
+                <li>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii1_4.svg">
+                </li>
+                
+                <li>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii1_5.svg">
                 </li>
                 
             </ol>
@@ -112,11 +120,23 @@ connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</
             <ol>
                 
                 <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_1.svg">
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii2_1.svg">
                 </li>
                 
                 <li>
-                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle2_2.svg">
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii2_2.svg">
+                </li>
+                
+                <li>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii2_3.svg">
+                </li>
+                
+                <li>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii2_4.svg">
+                </li>
+                
+                <li>
+                    <img alt="" src="https://github.com/hanggrian/grind-leetcode/raw/assets/problems101_200/linked-list-cycle-ii2_5.svg">
                 </li>
                 
             </ol>
