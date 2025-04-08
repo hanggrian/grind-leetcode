@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 148. Sort List<sup style="color: rgb(0, 184, 163);">Easy</sup>
+# 148. Sort List<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > Given the head of a linked list, return _the list after sorting it in
   **ascending order.**_

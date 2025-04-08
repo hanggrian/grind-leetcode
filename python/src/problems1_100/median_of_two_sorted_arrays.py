@@ -11,9 +11,9 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def find_median_sorted_arrays(self, nums1: list[int], nums2: list[int]) -> float:
-        nums = nums1 + nums2
+        nums: list[int] = nums1 + nums2
         nums.sort()
-        center = len(nums) // 2
+        center: int = len(nums) // 2
         if len(nums) % 2 == 1:
             return nums[center]
         return (nums[center - 1] + nums[center]) / 2

@@ -6,9 +6,9 @@ class Problem {
 
 class Default extends Problem {
   singleNumber(nums: number[]): number {
-    const result = [];
+    const result: number[] = [];
     for (const num of nums) {
-      const index = result.indexOf(num);
+      const index: number = result.indexOf(num);
       if (index === -1) {
         result.push(num);
       } else {

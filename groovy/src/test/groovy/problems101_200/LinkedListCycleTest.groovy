@@ -12,12 +12,12 @@ class LinkedListCycleTest extends SampledTest {
     void test() {
         LinkedListCycle.values().each { solution ->
             getSamples(LinkedListCycleSample[].class).each { sample ->
-                SinglyListNode input = SinglyListNode.of(sample.input.head)
+                var head = SinglyListNode.of(sample.input.head)
                 if (sample.input.pos > -1) {
-                    Iterables.getLast(input).next = Iterables.get(input, sample.input.pos)
+                    Iterables.getLast(head).next = Iterables.get(head, sample.input.pos)
                 }
                 assertWithMessage(sample.getMessage())
-                    .that(solution.hasCycle(input))
+                    .that(solution.hasCycle(head))
                     .isEqualTo(sample.output)
             }
         }

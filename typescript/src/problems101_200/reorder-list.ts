@@ -8,13 +8,13 @@ class Problem {
 
 class Default extends Problem {
   reorderList(head: SinglyListNode | undefined) {
-    const mid = this.getMid(head);
-    let right = this.reverse(mid);
+    const mid: SinglyListNode = this.getMid(head);
+    let right: SinglyListNode = this.reverse(mid);
     mid.next = undefined;
-    let left = head;
+    let left: SinglyListNode = head;
 
-    let current = new SinglyListNode();
-    let flag = true;
+    let current: SinglyListNode = new SinglyListNode();
+    let flag: boolean = true;
     while (left && right) {
       if (flag) {
         current.next = left;
@@ -29,8 +29,8 @@ class Default extends Problem {
   }
 
   reverse(node: SinglyListNode | undefined): SinglyListNode | undefined {
-    let previous = undefined;
-    let current = node;
+    let previous: SinglyListNode | undefined = undefined;
+    let current: SinglyListNode | undefined = node;
     while (current) {
       let temp = current.next;
       current.next = previous;

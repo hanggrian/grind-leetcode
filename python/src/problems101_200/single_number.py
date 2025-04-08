@@ -11,7 +11,7 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def single_number(self, nums: list[int]) -> int:
-        result = []
+        result: list[int] = []
         for num in nums:
             if num not in result:
                 result.append(num)

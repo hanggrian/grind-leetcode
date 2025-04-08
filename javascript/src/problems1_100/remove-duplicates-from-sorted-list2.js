@@ -12,8 +12,8 @@ class Default extends Problem {
     let previous = root;
     let current = head;
     while (current) {
-      if (current.next && current.value === current.next.value) {
-        while (current.next && current.value === current.next.value) {
+      if (current.next && current.val === current.next.val) {
+        while (current.next && current.val === current.next.val) {
           current = current.next;
         }
         previous.next = current.next;

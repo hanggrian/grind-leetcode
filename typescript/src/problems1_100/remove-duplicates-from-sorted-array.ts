@@ -6,8 +6,8 @@ class Problem {
 
 class CreateCopy extends Problem {
   removeDuplicates(nums: number[]): number {
-    const distinct = new Set<number>(nums);
-    let i = 0;
+    const distinct: Set<number> = new Set(nums);
+    let i: number = 0;
     for (const num of Array.from(distinct)) {
       nums[i++] = num;
     }
@@ -17,8 +17,8 @@ class CreateCopy extends Problem {
 
 class SinglePass extends Problem {
   removeDuplicates(nums: number[]): number {
-    let start = 1;
-    let end = 1;
+    let start: number = 1;
+    let end: number = 1;
     while (end < nums.length) {
       if (nums[end] !== nums[end - 1]) {
         nums[start++] = nums[end];

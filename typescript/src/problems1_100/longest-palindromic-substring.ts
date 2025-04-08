@@ -9,13 +9,13 @@ class Default extends Problem {
     if (s.length === 1) {
       return s;
     }
-    let longestPalindrome = '';
+    let longestPalindrome: string = '';
     for (let i = 0; i < s.length; i++) {
-      let palindrome;
+      let palindrome: string;
 
       // check odd
-      let start = i;
-      let end = i;
+      let start: number = i;
+      let end: number = i;
       while (start >= 0 && end < s.length && s[start] === s[end]) {
         palindrome = s.slice(start, end + 1);
         if (palindrome.length > longestPalindrome.length) {

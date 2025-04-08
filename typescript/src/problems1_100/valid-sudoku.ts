@@ -6,9 +6,9 @@ class Problem {
 
 class Default extends Problem {
   isValidSudoku(board: string[][]): boolean {
-    const rows = new Set<string>();
-    const cols = new Set<string>();
-    const subBoard = new Set<string>();
+    const rows: Set<string> = new Set();
+    const cols: Set<string> = new Set();
+    const subBoard: Set<string> = new Set();
     for (let i = 0; i < 9; i++) {
       rows.clear();
       cols.clear();

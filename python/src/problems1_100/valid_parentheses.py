@@ -14,7 +14,7 @@ class Default(Problem):
         if len(s) % 2 == 1:
             return False
 
-        symbols = []
+        symbols: list[str] = []
         for c in s:
             if c not in {')', '}', ']'}:
                 symbols.append(c)

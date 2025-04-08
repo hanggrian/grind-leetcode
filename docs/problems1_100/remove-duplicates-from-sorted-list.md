@@ -7,9 +7,9 @@
 
 - [Problem](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 - Solutions
-  - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/RemoveDuplicatesFromSortedList2.groovy)
-  - [Java](https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/RemoveDuplicatesFromSortedList2.java)
-  - [JavaScript](https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/remove-duplicates-from-sorted-list2.js)
-  - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/RemoveDuplicatesFromSortedList2.kt)
-  - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_duplicates_from_sorted_list2.py)
-  - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-duplicates-from-sorted-list2.ts)
+  - [Groovy](https://github.com/hanggrian/grind-leetcode/blob/main/groovy/src/main/groovy/problems1_100/RemoveDuplicatesFromSortedList.groovy)
+  - [Java](https://github.com/hanggrian/grind-leetcode/blob/main/java/src/main/java/problems1_100/RemoveDuplicatesFromSortedList.java)
+  - [JavaScript](https://github.com/hanggrian/grind-leetcode/blob/main/javascript/src/problems1_100/remove-duplicates-from-sorted-list.js)
+  - [Kotlin](https://github.com/hanggrian/grind-leetcode/blob/main/kotlin/src/main/kotlin/problems1_100/RemoveDuplicatesFromSortedList.kt)
+  - [Python](https://github.com/hanggrian/grind-leetcode/blob/main/python/src/problems1_100/remove_duplicates_from_sorted_list.py)
+  - [TypeScript](https://github.com/hanggrian/grind-leetcode/blob/main/typescript/src/problems1_100/remove-duplicates-from-sorted-list.ts)

@@ -21,7 +21,7 @@ class BruteForce(Problem):
     def climb_stairs(self, n: int) -> int:
         if n <= 2:
             return n
-        results = [0] * n
+        results: list[int] = [0] * n
         results[0] = 1
         results[1] = 2
         for i in range(2, n):

@@ -13,9 +13,9 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def delete_duplicates(self, head: SinglyListNode | None) -> SinglyListNode | None:
-        current = head
+        current: SinglyListNode | None = head
         while current and current.next:
-            if current.value == current.next.value:
+            if current.val == current.next.val:
                 current.next = current.next.next
             else:
                 current = current.next

@@ -9,10 +9,10 @@ class Default extends Problem {
     if (!s) {
       return 0;
     }
-    const characters = new Set<string>();
-    let start = 0;
-    let end = 0;
-    let maxLength = Number.MIN_SAFE_INTEGER;
+    const characters: Set<string> = new Set();
+    let start: number = 0;
+    let end: number = 0;
+    let maxLength: number = Number.MIN_SAFE_INTEGER;
     while (end < s.length) {
       if (!characters.has(s[end])) {
         characters.add(s[end]);

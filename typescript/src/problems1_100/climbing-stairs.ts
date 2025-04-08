@@ -18,7 +18,7 @@ class DynamicProgramming extends Problem {
     if (n <= 2) {
       return n;
     }
-    const results = new Array<number>(n);
+    const results: number[] = new Array<number>(n);
     results[0] = 1;
     results[1] = 2;
     for (let i = 2; i < n; i++) {

@@ -14,10 +14,10 @@ class Default(Problem):
     def length_of_longest_substring(self, s: str) -> int:
         if not s:
             return 0
-        characters = set()
-        start = 0
-        end = 0
-        max_length = -maxsize
+        characters: set[str] = set()
+        start: int = 0
+        end: int = 0
+        max_length: int = -maxsize
         while end < len(s):
             if s[end] not in characters:
                 characters.add(s[end])

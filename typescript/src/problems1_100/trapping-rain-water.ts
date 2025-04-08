@@ -11,8 +11,8 @@ class Default extends Problem {
     }
 
     // create two arrays of increasing height for each end
-    const ltrHeight = new Array<number>(height.length);
-    const rtlHeight = new Array<number>(height.length);
+    const ltrHeight: number[] = new Array<number>(height.length);
+    const rtlHeight: number[] = new Array<number>(height.length);
     ltrHeight[0] = height[0];
     rtlHeight[height.length - 1] = height[height.length - 1];
     for (let i = 1; i < height.length; i++) {
@@ -23,7 +23,7 @@ class Default extends Problem {
     }
 
     // the overlap between two heights is the water
-    let water = 0;
+    let water: number = 0;
     for (let i = 0; i < height.length; i++) {
       water += Math.min(ltrHeight[i], rtlHeight[i]) - height[i];
     }

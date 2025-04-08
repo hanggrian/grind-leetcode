@@ -17,15 +17,15 @@ public class LinkedListCycle2Test extends SampledTest {
     public void test() {
         for (LinkedListCycle2 solution : LinkedListCycle2.values()) {
             for (LinkedListCycle2Sample sample : getSamples(LinkedListCycle2Sample[].class)) {
-                SinglyListNode input = SinglyListNode.of(sample.input.head);
-                SinglyListNode output = null;
+                SinglyListNode head = SinglyListNode.of(sample.input.head);
+                SinglyListNode result = null;
                 if (sample.input.pos > -1) {
-                    output = Iterables.get(input, sample.input.pos);
-                    Iterables.getLast(input).next = output;
+                    result = Iterables.get(head, sample.input.pos);
+                    Iterables.getLast(head).next = result;
                 }
                 assertWithMessage(sample.getMessage())
-                    .that(solution.detectCycle(input))
-                    .isEqualTo(output);
+                    .that(solution.detectCycle(head))
+                    .isEqualTo(result);
             }
         }
     }

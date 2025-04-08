@@ -21,8 +21,8 @@ class Default extends Problem {
     if (!node) {
       return depth;
     }
-    const leftDepth = this.maxDepth(node.left, depth + 1);
-    const rightDepth = this.maxDepth(node.right, depth + 1);
+    const leftDepth: number = this.maxDepth(node.left, depth + 1);
+    const rightDepth: number = this.maxDepth(node.right, depth + 1);
     return Math.max(leftDepth, rightDepth);
   }
 }

@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def exist(self, board: list[list[str]], word: str) -> bool:
-        rows = len(board)
-        cols = len(board[0])
+        rows: int = len(board)
+        cols: int = len(board[0])
         for row in range(rows):
             for col in range(cols):
                 if board[row][col] == word[0] and \

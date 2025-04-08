@@ -6,7 +6,7 @@ class Problem {
 
 class BruteForce extends Problem {
   isPalindrome(s: string): boolean {
-    let builder = '';
+    let builder: string = '';
     for (const c of s) {
       if (/[a-zA-Z0-9]/.test(c)) {
         builder += c;
@@ -19,15 +19,15 @@ class BruteForce extends Problem {
 
 class CompareHalfString extends Problem {
   isPalindrome(s: string): boolean {
-    let builder = '';
+    let builder: string = '';
     for (const c of s) {
       if (/[a-zA-Z0-9]/.test(c)) {
         builder += c;
       }
     }
     s = builder;
-    let start = 0;
-    let end = s.length - 1;
+    let start: number = 0;
+    let end: number = s.length - 1;
     while (start < end) {
       if (s[start++].toLowerCase() !==
           s[end--].toLowerCase()) {

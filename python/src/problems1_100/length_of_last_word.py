@@ -13,12 +13,12 @@ class Default(Problem):
     def length_of_last_word(self, s: str) -> bool:
         chars: list[str] = list(s)
         for i in range(len(chars) // 2):
-            temp = chars[i]
+            temp: str = chars[i]
             chars[i] = chars[len(chars) - 1 - i]
             chars[len(chars) - 1 - i] = temp
 
-        count = 0
-        start_counting = False
+        count: int = 0
+        start_counting: bool = False
         for c in chars:
             if c == ' ':
                 if start_counting:

@@ -18,12 +18,12 @@ class Default(Problem):
     def recursive_valid(self, node: TreeNode | None, left: int | None, right: int | None) -> bool:
         if not node:
             return True
-        if left and node.value <= left:
+        if left and node.val <= left:
             return False
-        if right and node.value >= right:
+        if right and node.val >= right:
             return False
-        return self.recursive_valid(node.left, left, node.value) and \
-            self.recursive_valid(node.right, node.value, right)
+        return self.recursive_valid(node.left, left, node.val) and \
+            self.recursive_valid(node.right, node.val, right)
 
 
 SOLUTIONS: list[Problem] = [Default()]

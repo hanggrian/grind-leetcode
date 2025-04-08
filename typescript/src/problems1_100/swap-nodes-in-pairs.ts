@@ -8,8 +8,8 @@ class Problem {
 
 class Default extends Problem {
   swapPairs(head: SinglyListNode | undefined): SinglyListNode | undefined {
-    const root = new SinglyListNode(0, head);
-    let current = root;
+    const root: SinglyListNode = new SinglyListNode(0, head);
+    let current: SinglyListNode = root;
     while (current.next && current.next.next) {
       const node1 = current.next;
       const node2 = current.next.next;

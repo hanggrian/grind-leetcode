@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def max_sub_array(self, nums: list[int]) -> int:
-        current = 0
-        array_sum = nums[0]
+        current: int = 0
+        array_sum: int = nums[0]
         for num in nums:
             current = max(current, 0)
             current += num

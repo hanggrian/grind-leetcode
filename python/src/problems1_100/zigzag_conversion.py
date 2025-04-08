@@ -14,12 +14,12 @@ class Default(Problem):
         if num_rows == 1:
             return s
 
-        results = []
+        results: list[str] = []
         for _ in range(num_rows):
             results.append('')
 
-        i = 0
-        zigzag_index = 0
+        i: int = 0
+        zigzag_index: int = 0
         while len(s) > 0:
             if zigzag_index in [0, i]:
                 c = s[0:1]

@@ -3,19 +3,19 @@ import ListNode from './list-node';
 export default class SinglyListNode extends ListNode {
   next: SinglyListNode | undefined;
 
-  constructor(value: number = 0, next: SinglyListNode | undefined = undefined) {
-    super(value);
+  constructor(val: number = 0, next: SinglyListNode | undefined = undefined) {
+    super(val);
     this.next = next;
   }
 
-  static of(...values: number[]): SinglyListNode | undefined {
-    if (values.length === 0) {
+  static of(...vals: number[]): SinglyListNode | undefined {
+    if (vals.length === 0) {
       return undefined;
     }
-    let head: SinglyListNode = new SinglyListNode(values[0]);
+    const head: SinglyListNode = new SinglyListNode(vals[0]);
     let current: SinglyListNode = head;
-    for (let i = 1; i < values.length; i++) {
-      current.next = new SinglyListNode(values[i]);
+    for (let i = 1; i < vals.length; i++) {
+      current.next = new SinglyListNode(vals[i]);
       current = current.next;
     }
     return head;

@@ -11,24 +11,24 @@ class SinglyListNodeTest {
     fun sum() {
         assertThat(
             SinglyListNode.ZERO
-                .sumOf { it.value },
+                .sumOf { it.`val` },
         ).isEqualTo(0)
         assertThat(
             SinglyListNode
                 .of(1, 3, 5, 7)!!
-                .sumOf { it.value },
+                .sumOf { it.`val` },
         ).isEqualTo(16)
     }
 
     @Test
     fun traverse() {
         var node: SinglyListNode? = SinglyListNode.of(2, 4, 6, 8)!!
-        assertThat(node!!.value).isEqualTo(2)
+        assertThat(node!!.`val`).isEqualTo(2)
 
         node = node.next?.next
-        assertThat(node!!.value).isEqualTo(6)
+        assertThat(node!!.`val`).isEqualTo(6)
 
         node = node.next
-        assertThat(node!!.value).isEqualTo(8)
+        assertThat(node!!.`val`).isEqualTo(8)
     }
 }

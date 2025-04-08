@@ -18,10 +18,10 @@ class Default extends Problem {
     while (nodes.length > 0) {
       // find lowest
       const lowest =
-          nodes.reduce((previous, current) => current.value < previous.value ? current : previous);
+          nodes.reduce((previous, current) => current.val < previous.val ? current : previous);
 
       // append lowest to current
-      current.next = new SinglyListNode(lowest.value);
+      current.next = new SinglyListNode(lowest.val);
       current = current.next;
 
       // remove the lowest node within list
@@ -30,7 +30,7 @@ class Default extends Problem {
         continue;
       }
       const nxt = lowest.next;
-      lowest.value = nxt.value;
+      lowest.val = nxt.val;
       lowest.next = nxt.next;
     }
     return root.next;

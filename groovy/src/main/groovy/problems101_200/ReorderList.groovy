@@ -13,7 +13,7 @@ enum ReorderList {
 
             var current = new SinglyListNode()
             boolean flag = true
-            while (left != null && right != null) {
+            while (left && right) {
                 if (flag) {
                     current.next = left
                     left = left.next
@@ -29,7 +29,7 @@ enum ReorderList {
         SinglyListNode reverse(SinglyListNode node) {
             var previous = null
             var current = node
-            while (current != null) {
+            while (current) {
                 var temp = current.next
                 current.next = previous
                 previous = current
@@ -41,7 +41,7 @@ enum ReorderList {
         SinglyListNode getMid(SinglyListNode node) {
             var slow = node
             var fast = node
-            while (fast != null && fast.next != null) {
+            while (fast && fast.next) {
                 slow = slow.next
                 fast = fast.next.next
             }

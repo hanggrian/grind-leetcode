@@ -16,9 +16,9 @@ class Default extends Problem {
   };
 
   romanToInt(s: string): number {
-    let result = 0;
+    let result: number = 0;
     for (let i = 0; i < s.length; i++) {
-      const c = s[i];
+      const c: string = s[i];
       if (i > 0 && this.ROMANS[c] > this.ROMANS[s[i - 1]]) {
         result += this.ROMANS[c] - 2 * this.ROMANS[s[i - 1]];
       } else {

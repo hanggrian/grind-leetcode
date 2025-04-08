@@ -6,7 +6,7 @@ class Problem {
 
 class Default extends Problem {
   threeSum(nums: number[]): number[][] {
-    const result = [];
+    const result: number[][] = [];
     if (nums.length < 3) {
       return result;
     }
@@ -15,10 +15,10 @@ class Default extends Problem {
       if (i > 0 && nums[i] === nums[i - 1]) {
         continue; // skip same result
       }
-      let j = i + 1;
-      let k = nums.length - 1;
+      let j: number = i + 1;
+      let k: number = nums.length - 1;
       while (j < k) {
-        const threeSum = nums[i] + nums[j] + nums[k];
+        const threeSum: number = nums[i] + nums[j] + nums[k];
         if (threeSum === 0) {
           result.push([nums[i], nums[j], nums[k]]);
           j++;

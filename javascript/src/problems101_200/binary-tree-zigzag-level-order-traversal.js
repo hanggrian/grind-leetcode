@@ -17,7 +17,7 @@ class Default extends Problem {
       const level = [];
       for (let i = 0; i < size; i++) {
         const current = queue.shift();
-        level.push(current.value);
+        level.push(current.val);
         if (current.left) {
           queue.push(current.left);
         }

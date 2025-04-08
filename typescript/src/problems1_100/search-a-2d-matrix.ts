@@ -6,7 +6,7 @@ class Problem {
 
 class Default extends Problem {
   searchMatrix(matrix: number[][], target: number): boolean {
-    let row = 0;
+    let row: number = 0;
     if (matrix.length > 1) {
       for (let i = matrix.length - 1; i >= 0; i--) {
         if (matrix[i][0] > target) {
@@ -16,7 +16,7 @@ class Default extends Problem {
         break;
       }
     }
-    let col = 0;
+    let col: number = 0;
     while (col < matrix[0].length && matrix[row][col] <= target) {
       if (matrix[row][col] === target) {
         return true;

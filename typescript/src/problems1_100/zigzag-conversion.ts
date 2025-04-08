@@ -10,7 +10,7 @@ class Default extends Problem {
       return s;
     }
 
-    const results = [];
+    const results: string[] = [];
     for (let i = 0; i < numRows; i++) {
       results.push('');
     }

@@ -6,10 +6,10 @@ class Problem {
 
 class SlidingWindow extends Problem {
   searchInsert(nums: number[], target: number): number {
-    let start = 0;
-    let end = nums.length - 1;
+    let start: number = 0;
+    let end: number = nums.length - 1;
     while (start <= end) {
-      const center = Math.floor((start + end) / 2);
+      const center: number = Math.floor((start + end) / 2);
       if (nums[center] < target) {
         start = center + 1;
       } else if (nums[center] > target) {
@@ -28,7 +28,7 @@ class BinarySearch extends Problem {
   }
 
   binarySearch(nums: number[], target: number, start: number, end: number) {
-    const center = Math.floor((start + end) / 2);
+    const center: number = Math.floor((start + end) / 2);
     if (start > end) {
       return end + 1;
     }

@@ -1,0 +1,18 @@
+[
+  {
+    "input": {
+      "s": "anagram",
+      "t": "nagaram"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "rat",
+      "t": "car"
+    },
+    "output": false,
+    "explanation": []
+  }
+]

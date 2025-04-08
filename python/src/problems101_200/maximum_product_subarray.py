@@ -11,11 +11,11 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def max_product(self, nums: list[int]) -> int:
-        maxs = [0] * len(nums)
-        mins = [0] * len(nums)
+        maxs: list[int] = [0] * len(nums)
+        mins: list[int] = [0] * len(nums)
         maxs[0] = nums[0]
         mins[0] = nums[0]
-        result = nums[0]
+        result: int = nums[0]
         for i in range(1, len(nums)):
             if nums[i] > 0:
                 maxs[i] = max(maxs[i - 1] * nums[i], nums[i])

@@ -10,7 +10,7 @@ class SortColorsTest extends SampledTest {
     void test() {
         SortColors.values().each { solution ->
             getSamples(SortColorsSample[].class).each { sample ->
-                int[] nums = sample.input.nums
+                var nums = sample.input.nums
                 solution.sortColors(nums)
                 assertWithMessage(sample.getMessage())
                     .that(nums)

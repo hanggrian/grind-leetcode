@@ -15,8 +15,8 @@ class Default extends Problem {
     if (!node) {
       return depth;
     }
-    const leftDepth = this.recursiveMaxDepth(node.left, depth + 1);
-    const rightDepth = this.recursiveMaxDepth(node.right, depth + 1);
+    const leftDepth: number = this.recursiveMaxDepth(node.left, depth + 1);
+    const rightDepth: number = this.recursiveMaxDepth(node.right, depth + 1);
     return Math.max(leftDepth, rightDepth);
   }
 }

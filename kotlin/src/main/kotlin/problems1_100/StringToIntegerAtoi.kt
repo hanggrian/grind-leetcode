@@ -1,7 +1,5 @@
 package problems1_100
 
-import java.math.BigInteger
-
 enum class StringToIntegerAtoi {
     DEFAULT {
         override fun myAtoi(s: String): Int {
@@ -38,10 +36,10 @@ enum class StringToIntegerAtoi {
                     }
                 }
 
-            val result = BigInteger(s)
-            if (result < BigInteger(Int.MIN_VALUE.toString())) {
+            val result = s.toBigInteger()
+            if (result < Int.MIN_VALUE.toBigInteger()) {
                 return Int.MIN_VALUE
-            } else if (result > BigInteger(Int.MAX_VALUE.toString())) {
+            } else if (result > Int.MAX_VALUE.toBigInteger()) {
                 return Int.MAX_VALUE
             }
             return result.toInt()

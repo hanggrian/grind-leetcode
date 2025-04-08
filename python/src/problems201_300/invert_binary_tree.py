@@ -15,7 +15,7 @@ class Default(Problem):
     def invert_tree(self, root: TreeNode | None) -> TreeNode | None:
         if not root:
             return None
-        temp = root.left
+        temp: TreeNode | None = root.left
         root.left = self.invert_tree(root.right)
         root.right = self.invert_tree(temp)
         return root

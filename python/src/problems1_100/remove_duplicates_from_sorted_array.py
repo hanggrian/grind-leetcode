@@ -11,8 +11,8 @@ class Problem(ABC):
 class CreateCopy(Problem):
     @override
     def remove_duplicates(self, nums: list[int]) -> int:
-        distinct = set(nums)
-        i = 0
+        distinct: set[int] = set(nums)
+        i: int = 0
         for num in distinct:
             nums[i] = num
             i += 1
@@ -22,8 +22,8 @@ class CreateCopy(Problem):
 class SinglePass(Problem):
     @override
     def remove_duplicates(self, nums: list[int]) -> int:
-        start = 1
-        end = 1
+        start: int = 1
+        end: int = 1
         while end < len(nums):
             if nums[end] != nums[end - 1]:
                 nums[start] = nums[end]

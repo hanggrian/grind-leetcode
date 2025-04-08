@@ -15,7 +15,7 @@ class Default extends Problem {
 
     let count = 0;
     let startCounting = false;
-    for (let c of chars) {
+    for (const c of chars) {
       if (c === ' ') {
         if (startCounting) {
           break;

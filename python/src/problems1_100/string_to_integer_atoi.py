@@ -14,14 +14,14 @@ class Default(Problem):
         if not s:
             return 0
         s = s.strip()
-        negate = False
+        negate: bool = False
         if s[0] == '-':
             s = s[1:]
             negate = True
         elif s[0] == '+':
             s = s[1:]
 
-        result = ''
+        result: str = ''
         for c in s:
             if c.isdigit():
                 result += c

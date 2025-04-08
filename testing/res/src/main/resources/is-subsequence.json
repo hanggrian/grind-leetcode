@@ -1,0 +1,18 @@
+[
+  {
+    "input": {
+      "s": "abc",
+      "t": "ahbgdc"
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "axc",
+      "t": "ahbgdc"
+    },
+    "output": false,
+    "explanation": []
+  }
+]

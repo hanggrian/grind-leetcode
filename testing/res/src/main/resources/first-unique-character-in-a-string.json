@@ -1,0 +1,23 @@
+[
+  {
+    "input": {
+      "s": "leetcode"
+    },
+    "output": 0,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "loveleetcode"
+    },
+    "output": 2,
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "aabb"
+    },
+    "output": -1,
+    "explanation": []
+  }
+]

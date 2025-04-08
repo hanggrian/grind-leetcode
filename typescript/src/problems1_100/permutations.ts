@@ -21,11 +21,11 @@ class Default extends Problem {
       return;
     }
     for (let i = 0; i < nums.length; i++) {
-      const remove = [];
+      const remove: number[] = [];
       remove.push(...nums.slice(0, i));
       remove.push(...nums.slice(i + 1, nums.length));
 
-      const newPrefix = [...prefix];
+      const newPrefix: number[] = [...prefix];
       newPrefix.push(nums[i]);
       this.permutation(result, remove, newPrefix);
     }

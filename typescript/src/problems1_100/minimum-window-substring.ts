@@ -16,11 +16,11 @@ class Default extends Problem {
       tMap[c] = (tMap[c] || 0) + 1;
     }
 
-    let left = 0;
-    let right = 0;
-    let result = '';
+    let left: number = 0;
+    let right: number = 0;
+    let result: string = '';
     while (right < s.length) {
-      let c = s[right];
+      const c: string = s[right];
       sMap[c] = (sMap[c] || 0) + 1;
       right++;
       while (left <= right && this.contains(sMap, tMap)) {
@@ -39,7 +39,7 @@ class Default extends Problem {
   }
 
   contains(sMap: object, tMap: object): boolean {
-    for (let key in tMap) {
+    for (const key in tMap) {
       if ((sMap[key] || 0) < tMap[key]) {
         return false;
       }

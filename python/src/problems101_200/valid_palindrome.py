@@ -11,7 +11,7 @@ class Problem(ABC):
 class ReverseString(Problem):
     @override
     def is_palindrome(self, s: str) -> bool:
-        builder = ''
+        builder: str = ''
         for c in s:
             if c.isalnum():
                 builder += c
@@ -22,14 +22,14 @@ class ReverseString(Problem):
 class CompareHalfString(Problem):
     @override
     def is_palindrome(self, s: str) -> bool:
-        builder = ''
+        builder: str = ''
         for c in s:
             if c.isalnum():
                 builder += c
 
-        s = builder
-        start = 0
-        end = len(s) - 1
+        s: str = builder
+        start: int = 0
+        end: int = len(s) - 1
         while start < end:
             if s[start].lower() != s[end].lower():
                 return False

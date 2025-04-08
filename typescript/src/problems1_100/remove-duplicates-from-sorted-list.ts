@@ -8,9 +8,9 @@ class Problem {
 
 class Default extends Problem {
   deleteDuplicates(head: SinglyListNode | undefined): SinglyListNode | undefined {
-    let current = head;
+    let current: SinglyListNode | undefined = head;
     while (current && current.next) {
-      if (current.value == current.next.value) {
+      if (current.val == current.next.val) {
         current.next = current.next.next;
       } else {
         current = current.next;

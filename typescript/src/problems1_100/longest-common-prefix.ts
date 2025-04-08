@@ -12,14 +12,14 @@ class Default extends Problem {
     if (strs.length === 1) {
       return strs[0];
     }
-    let longestStr =
+    const longestStr: string =
         strs.reduce((previous, current) => current.length > previous.length ? current : previous);
-    let end = -1;
+    let end: number = -1;
     loop:
         for (let i = 0; i < longestStr.length; i++) {
-          const c = longestStr[i];
+          const c: string = longestStr[i];
           for (let j = 0; j < strs.length; j++) {
-            const str = strs[j];
+            const str: string = strs[j];
             if (i > str.length - 1 || c !== str[i]) {
               break loop;
             } else if (j === strs.length - 1) {

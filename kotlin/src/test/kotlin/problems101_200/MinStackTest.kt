@@ -12,7 +12,7 @@ class MinStackTest : SampledTest() {
     @Test
     fun test() =
         getSamples<Array<MinStackSample>>().forEach { (input, output, _) ->
-            var stack: MinStack? = null
+            lateinit var stack: MinStack
             for (i in input.moveNames.indices) {
                 val values = input.moveValues[i]
                 when (input.moveNames[i]) {
@@ -21,22 +21,26 @@ class MinStackTest : SampledTest() {
                         assertThat(output[i])
                             .isNull()
                     }
+
                     "push" -> {
-                        stack!!.push(values[0])
+                        stack.push(values[0])
                         assertThat(output[i])
                             .isNull()
                     }
+
                     "getMininimum" ->
                         assertThat(output[i])
-                            .isEqualTo(stack!!.minimum)
+                            .isEqualTo(stack.minimum)
+
                     "pop" -> {
-                        stack!!.pop()
+                        stack.pop()
                         assertThat(output[i])
                             .isNull()
                     }
+
                     "top" ->
                         assertThat(output[i])
-                            .isEqualTo(stack!!.top())
+                            .isEqualTo(stack.top())
                 }
             }
         }

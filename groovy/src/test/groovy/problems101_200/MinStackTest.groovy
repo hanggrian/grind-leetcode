@@ -10,8 +10,8 @@ class MinStackTest extends SampledTest {
     void test() {
         getSamples(MinStackSample[].class).each { sample ->
             MinStack stack = null
-            for (int i = 0; i < sample.input.moveNames.length; i++) {
-                int[] values = sample.input.moveValues[i]
+            for (var i = 0; i < sample.input.moveNames.length; i++) {
+                var values = sample.input.moveValues[i]
                 switch (sample.input.moveNames[i]) {
                     case 'MinStack':
                         stack = new MinStack()

@@ -14,10 +14,8 @@ class ReorderListTest : SampledTest() {
     fun test() =
         ReorderList.entries.forEach { solution ->
             getSamples<Array<ReorderListSample>>().forEach { (input, output, message) ->
-                val inp = SinglyListNode.of(*input.head)
-                solution.reorderList(inp)
                 assertWithMessage(message)
-                    .that(inp)
+                    .that(SinglyListNode.of(*input.head).also { solution.reorderList(it) })
                     .isEqualTo(SinglyListNode.of(*output))
             }
         }

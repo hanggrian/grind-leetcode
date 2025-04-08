@@ -19,12 +19,12 @@ enum LinkedListCycle {
     FAST_SLOW_POINTERS{
         @Override
         boolean hasCycle(SinglyListNode head) {
-            if (head == null || !head.hasNext()) {
+            if (!head || !head.next) {
                 return false
             }
             var slow = head.next
             var fast = head.next.next
-            while (fast != null && fast.hasNext() && slow != fast) {
+            while (fast && fast.next && slow != fast) {
                 slow = slow.next
                 fast = fast.next.next
             }

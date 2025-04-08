@@ -6,18 +6,18 @@ class Problem {
 
 class Default extends Problem {
   minimumTotal(triangle: number[][]): number {
-    let maxRow = triangle.length;
-    let maxCol = 2;
+    let maxRow: number = triangle.length;
+    let maxCol: number = 2;
 
-    const dp = new Array<number[]>(maxRow);
+    const dp: number[][] = new Array(maxRow);
     for (let i = 0; i < maxRow; i++) {
       dp[i] = [];
     }
     dp[0].push(triangle[0][0]);
-    let row = 1;
-    let col = 0;
+    let row: number = 1;
+    let col: number = 0;
     while (row < maxRow) {
-      const columns = [];
+      const columns: number[] = [];
       if (col > 0) {
         columns.push(triangle[row][col] + dp[row - 1][col - 1]);
       }
@@ -37,7 +37,7 @@ class Default extends Problem {
   }
 
   getMinimum(columns: number[]): number {
-    let minimum = columns[0];
+    let minimum: number = columns[0];
     for (let i = 1; i < columns.length; i++) {
       if (columns[i] < minimum) {
         minimum = columns[i];

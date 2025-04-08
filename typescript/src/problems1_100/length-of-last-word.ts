@@ -6,16 +6,16 @@ class Problem {
 
 class Default extends Problem {
   lengthOfLastWord(s: string): number {
-    const chars = s.split('');
+    const chars: string[] = s.split('');
     for (let i = 0; i < chars.length / 2; i++) {
-      const temp = chars[i];
+      const temp: string = chars[i];
       chars[i] = chars[chars.length - 1 - i];
       chars[chars.length - 1 - i] = temp;
     }
 
-    let count = 0;
-    let startCounting = false;
-    for (let c of chars) {
+    let count: number = 0;
+    let startCounting: boolean = false;
+    for (const c of chars) {
       if (c === ' ') {
         if (startCounting) {
           break;

@@ -13,14 +13,14 @@ enum ValidateBinarySearchTree {
             if (node == null) {
                 return true;
             }
-            if (left != null && node.value <= left) {
+            if (left != null && node.val <= left) {
                 return false;
             }
-            if (right != null && node.value >= right) {
+            if (right != null && node.val >= right) {
                 return false;
             }
-            return recursiveValid(node.left, left, node.value)
-                && recursiveValid(node.right, node.value, right);
+            return recursiveValid(node.left, left, node.val)
+                && recursiveValid(node.right, node.val, right);
         }
     };
 

@@ -11,10 +11,10 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def two_sum(self, numbers: list[int], target: int) -> list[int]:
-        start = 0
-        end = len(numbers) - 1
+        start: int = 0
+        end: int = len(numbers) - 1
         while start < end:
-            two_sum = numbers[start] + numbers[end]
+            two_sum: int = numbers[start] + numbers[end]
             if two_sum > target:
                 end -= 1
             elif two_sum < target:

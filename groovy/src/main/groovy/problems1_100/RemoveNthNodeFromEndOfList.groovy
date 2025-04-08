@@ -6,7 +6,7 @@ enum RemoveNthNodeFromEndOfList {
     DEFAULT{
         @Override
         SinglyListNode removeNthFromEnd(SinglyListNode head, int n) {
-            if (head.next == null && n == 1) {
+            if (!head.next && n == 1) {
                 return null
             }
             var root = new SinglyListNode(0, head)
@@ -15,7 +15,7 @@ enum RemoveNthNodeFromEndOfList {
             for (var i = 0; i < n; i++) {
                 left = left.next
             }
-            while (left.next != null) {
+            while (left.next) {
                 left = left.next
                 right = right.next
             }

@@ -10,7 +10,7 @@ class LruCache:
         self.cache[key] = value  # put on end
         return value
 
-    def set(self, key: int, value: int):
+    def set(self, key: int, value: int) -> None:
         if key in self.cache:
             self.cache.pop(key)
         elif len(self.cache) == self.capacity:

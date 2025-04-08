@@ -21,11 +21,11 @@ class Default(Problem):
     ) -> list[str]:
         if s in map_dict:
             return map_dict[s]
-        result = []
+        result: list[str] = []
         for word in word_dict:
             if not s.startswith(word):
                 continue
-            next_s = s[len(word):]
+            next_s: str = s[len(word):]
             if not next_s:
                 result.append(word)
                 continue

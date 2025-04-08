@@ -3,8 +3,8 @@ import Node from './node';
 export default class ListNode extends Node {
   next: ListNode | undefined;
 
-  constructor(value: number) {
-    super(value);
+  constructor(val: number) {
+    super(val);
     this.next = undefined;
   }
 
@@ -42,6 +42,14 @@ export default class ListNode extends Node {
     };
   }
 
+  toArray(): ListNode[] {
+    const array: ListNode[] = [];
+    for (const element of this) {
+      array.push(element);
+    }
+    return array;
+  }
+
   equals(other: ListNode): boolean {
     if (this === other) {
       return true;
@@ -52,7 +60,7 @@ export default class ListNode extends Node {
     let node1: ListNode | undefined = this;
     let node2: ListNode | undefined = other;
     while (node1 && node2) {
-      if (node1.value !== node2.value) {
+      if (node1.val !== node2.val) {
         return false;
       }
       node1 = node1.next;

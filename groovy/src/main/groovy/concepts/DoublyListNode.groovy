@@ -7,33 +7,33 @@ final class DoublyListNode extends ListNode<DoublyListNode> {
         super(0)
     }
 
-    DoublyListNode(int value) {
-        super(value)
+    DoublyListNode(int val) {
+        super(val)
     }
 
-    DoublyListNode(int value, DoublyListNode next) {
-        super(value)
+    DoublyListNode(int val, DoublyListNode next) {
+        super(val)
         this.next = next
     }
 
-    DoublyListNode(int value, DoublyListNode next, DoublyListNode prev) {
-        super(value)
+    DoublyListNode(int val, DoublyListNode next, DoublyListNode prev) {
+        super(val)
         this.next = next
         this.prev = prev
     }
 
-    static DoublyListNode of(int ... values) {
-        if (values == null || values.length == 0) {
+    static DoublyListNode of(int ... vals) {
+        if (!vals || vals.length == 0) {
             return null
         }
-        final DoublyListNode head = new DoublyListNode(values[0])
-        DoublyListNode prev = null
-        DoublyListNode next = head
-        for (var i = 1; i < values.length; i++) {
+        final DoublyListNode head = new DoublyListNode(vals[0])
+        var prev = null
+        var next = head
+        for (var i = 1; i < vals.length; i++) {
             final DoublyListNode temp = next
 
             next.prev = prev
-            next.next = new DoublyListNode(values[i])
+            next.next = new DoublyListNode(vals[i])
             next = next.next
 
             prev = temp

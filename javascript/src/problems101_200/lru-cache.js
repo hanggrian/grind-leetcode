@@ -17,7 +17,6 @@ export default class LruCache {
   }
 
   set(key, value) {
-    console.log(this.cache.size + ' ' + this.capacity);
     if (this.cache.has(key)) {
       this.cache.delete(key);
     } else if (this.cache.size === this.capacity) {

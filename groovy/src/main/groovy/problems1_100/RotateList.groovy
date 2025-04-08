@@ -6,7 +6,7 @@ enum RotateList {
     DEFAULT{
         @Override
         SinglyListNode rotateRight(SinglyListNode head, int k) {
-            if (head == null || k == 0) {
+            if (!head || k == 0) {
                 return head
             }
             var root = new SinglyListNode(0, head)
@@ -14,16 +14,13 @@ enum RotateList {
             // move left pointer, resetting if reached end
             var left = root
             for (var i = 0; i < k; i++) {
-                left = left.next
-                if (left == null) {
-                    left = root.next
-                }
+                left = left.next ?: root.next
             }
 
             // get n-th from last, keeping previous node
             var right = root
             var previousRight = null
-            while (left != null) {
+            while (left) {
                 left = left.next
                 var nextRight = right.next
                 previousRight = right
@@ -33,7 +30,7 @@ enum RotateList {
             // sever middle, set last of right to start of left
             previousRight.next = null
             var lastRight = right
-            while (lastRight.next != null) {
+            while (lastRight.next) {
                 lastRight = lastRight.next
             }
             lastRight.next = root.next

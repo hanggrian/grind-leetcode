@@ -21,12 +21,12 @@ enum LinkedListCycle {
     FAST_SLOW_POINTERS {
         @Override
         boolean hasCycle(SinglyListNode head) {
-            if (head == null || !head.hasNext()) {
+            if (head == null || head.next == null) {
                 return false;
             }
             SinglyListNode slow = head.next;
             SinglyListNode fast = head.next.next;
-            while (fast != null && fast.hasNext() && slow != fast) {
+            while (fast != null && fast.next != null && slow != fast) {
                 slow = slow.next;
                 fast = fast.next.next;
             }

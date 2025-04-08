@@ -8,36 +8,28 @@ class TreeNode extends Node {
         super(0)
     }
 
-    TreeNode(int value) {
-        super(value)
+    TreeNode(int val) {
+        super(val)
     }
 
-    TreeNode(int value, TreeNode left, TreeNode right) {
-        super(value)
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        super(val)
         this.left = left
         this.right = right
     }
 
-    final boolean hasLeft() {
-        return left != null
-    }
-
-    final boolean hasRight() {
-        return right != null
-    }
-
     final boolean isLeaf() {
-        return left == null && right == null
+        return !left && !right
     }
 
     private boolean recursiveEquals(TreeNode node1, TreeNode node2) {
-        if (node1 == null && node2 == null) {
+        if (!node1 && !node2) {
             return true
         }
-        if (node1 == null || node2 == null) {
+        if (!node1 || !node2) {
             return false
         }
-        return node1.value == node2.value
+        return node1.val == node2.val
             && recursiveEquals(node1.left, node2.left)
             && recursiveEquals(node1.right, node2.right)
     }
@@ -52,27 +44,31 @@ class TreeNode extends Node {
 
     @Override
     int hashCode() {
-        return Objects.hashCode(value)
+        return Objects.hashCode(val)
     }
 
-    static TreeNode of(Integer... values) {
-        if (values == null || values.length == 0) {
+    static TreeNode of(Integer... vals) {
+        if (!vals || vals.length == 0) {
             return null
         }
-        TreeNode root = new TreeNode(values[0])
+        var root = new TreeNode(vals[0])
         LinkedList<TreeNode> queue = []
         queue.add(root)
         int i = 1
-        while (!queue.isEmpty() && i < values.length) {
-            TreeNode node = queue.poll()
-            if (i < values.length && values[i] != null) {
-                node.left = new TreeNode(values[i])
+        while (!queue.isEmpty() && i < vals.length) {
+            var node = queue.poll()
+            var val = vals[i]
+            if (val) {
+                node.left = new TreeNode(val)
                 queue.add(node.left)
             }
             i++
-            if (i < values.length && values[i] != null) {
-                node.right = new TreeNode(values[i])
-                queue.add(node.right)
+            if (i < vals.length) {
+                val = vals[i]
+                if (val) {
+                    node.right = new TreeNode(val)
+                    queue.add(node.right)
+                }
             }
             i++
         }

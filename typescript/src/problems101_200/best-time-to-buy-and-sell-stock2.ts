@@ -6,8 +6,8 @@ class Problem {
 
 class Default extends Problem {
   maxProfit(prices: number[]): number {
-    let profit = 0;
-    let hold = false;
+    let profit: number = 0;
+    let hold: boolean = false;
     for (let i = 0; i < prices.length; i++) {
       if (i !== prices.length - 1 && prices[i + 1] > prices[i]) {
         if (!hold) {

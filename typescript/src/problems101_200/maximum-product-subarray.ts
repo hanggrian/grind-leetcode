@@ -6,11 +6,11 @@ class Problem {
 
 class Default extends Problem {
   maxProduct(nums: number[]): number {
-    const maxs = new Array<number>(nums.length);
-    const mins = new Array<number>(nums.length);
+    const maxs: number[] = new Array<number>(nums.length);
+    const mins: number[] = new Array<number>(nums.length);
     maxs[0] = nums[0];
     mins[0] = nums[0];
-    let result = nums[0];
+    let result: number = nums[0];
     for (let i = 1; i < nums.length; i++) {
       if (nums[i] > 0) {
         maxs[i] = Math.max(maxs[i - 1] * nums[i], nums[i]);

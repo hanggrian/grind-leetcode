@@ -11,9 +11,9 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def is_valid_sudoku(self, board: list[list[str]]) -> bool:
-        rows = set()
-        cols = set()
-        sub_board = set()
+        rows: set[str] = set()
+        cols: set[str] = set()
+        sub_board: set[set[str]] = set()
         for i in range(9):
             rows.clear()
             cols.clear()

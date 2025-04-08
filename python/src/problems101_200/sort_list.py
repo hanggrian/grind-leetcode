@@ -15,7 +15,7 @@ class Default(Problem):
     def sort_list(self, head: SinglyListNode | None) -> SinglyListNode | None:
         if not head or not head.next:
             return head
-        mid = self.split(head)
+        mid: SinglyListNode | None = self.split(head)
         return self.merge(
             self.sort_list(head),
             self.sort_list(mid),
@@ -26,10 +26,10 @@ class Default(Problem):
         node1: SinglyListNode | None,
         node2: SinglyListNode | None,
     ) -> SinglyListNode | None:
-        root = SinglyListNode()
-        current = root
+        root: SinglyListNode = SinglyListNode()
+        current: SinglyListNode = root
         while node1 and node2:
-            if node1.value < node2.value:
+            if node1.val < node2.val:
                 current.next = node1
                 node1 = node1.next
             else:
@@ -43,14 +43,14 @@ class Default(Problem):
         return root.next
 
     def split(self, node: SinglyListNode | None) -> SinglyListNode | None:
-        slow_orev = None
-        slow = node
-        fast = node
+        slow_prev: SinglyListNode | None = None
+        slow: SinglyListNode = node
+        fast: SinglyListNode = node
         while fast and fast.next:
-            slow_orev = slow
+            slow_prev = slow
             slow = slow.next
             fast = fast.next.next
-        slow_orev.next = None
+        slow_prev.next = None
         return slow
 
 

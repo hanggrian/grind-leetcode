@@ -4,8 +4,8 @@ from sys import maxsize
 
 class MinStack:
     def __init__(self):
-        self.main = deque()
-        self.mins = deque()
+        self.main: deque[int] = deque()
+        self.mins: deque[int] = deque()
 
     def push(self, value: int):
         self.main.append(value)
@@ -17,8 +17,8 @@ class MinStack:
             return maxsize
         return self.mins[-1]
 
-    def pop(self):
-        val = self.main.pop()
+    def pop(self) -> None:
+        val: int = self.main.pop()
         if val == self.get_minimum():
             self.mins.pop()
 

@@ -11,15 +11,15 @@ describe(
             () =>
                 SOLUTIONS.forEach(solution =>
                     getSamples('linked-list-cycle-ii.json').forEach(sample => {
-                      const inp = SinglyListNode.of(...sample.input.head);
-                      let out = undefined;
+                      const head = SinglyListNode.of(...sample.input.head);
+                      let result = undefined;
                       if (sample.input.pos > -1) {
-                        out = inp.iterateTo(sample.input.pos);
-                        inp.iterateLast().next = out;
+                        result = head.iterateTo(sample.input.pos);
+                        head.iterateLast().next = result;
                       }
                       strictEqual(
-                          solution.detectCycle(inp),
-                          out,
+                          solution.detectCycle(head),
+                          result,
                           sample.message,
                       );
                     }),

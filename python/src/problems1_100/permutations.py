@@ -11,16 +11,16 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def permute(self, nums: list[int]) -> list[list[int]]:
-        result = []
+        result: list[list[int]] = []
         self.permutation(result, nums, [])
         return result
 
-    def permutation(self, result: list[list[int]], nums: list[int], prefix: list[int]):
+    def permutation(self, result: list[list[int]], nums: list[int], prefix: list[int]) -> None:
         if len(nums) == 0:
             result.append(prefix)
             return
         for i, num in enumerate(nums):
-            new_prefix = prefix.copy()
+            new_prefix: list[int] = prefix.copy()
             new_prefix.append(num)
             self.permutation(
                 result,

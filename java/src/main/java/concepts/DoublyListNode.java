@@ -22,18 +22,18 @@ public final class DoublyListNode extends ListNode<DoublyListNode> {
         this.prev = prev;
     }
 
-    public static DoublyListNode of(int... values) {
-        if (values == null || values.length == 0) {
+    public static DoublyListNode of(int... vals) {
+        if (vals == null || vals.length == 0) {
             return null;
         }
-        final DoublyListNode head = new DoublyListNode(values[0]);
+        final DoublyListNode head = new DoublyListNode(vals[0]);
         DoublyListNode prev = null;
         DoublyListNode next = head;
-        for (int i = 1; i < values.length; i++) {
+        for (int i = 1; i < vals.length; i++) {
             final DoublyListNode temp = next;
 
             next.prev = prev;
-            next.next = new DoublyListNode(values[i]);
+            next.next = new DoublyListNode(vals[i]);
             next = next.next;
 
             prev = temp;

@@ -5,14 +5,14 @@ enum ReverseInteger {
         @Override
         int reverse(int x) {
             var negate = false
-            var builder = new StringBuilder(String.valueOf(x))
+            var builder = new StringBuilder(x.toString())
             if (builder.charAt(0) == '-' as char) {
                 builder.deleteCharAt(0)
                 negate = true
             }
 
             try {
-                return Integer.parseInt((negate ? '-' : '') + builder.reverse())
+                return ((negate ? '-' : '') + builder.reverse()).toInteger()
             } catch (NumberFormatException e) {
                 return 0
             }

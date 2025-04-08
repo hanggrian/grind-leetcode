@@ -10,7 +10,7 @@ class Default extends Problem {
       return 0;
     }
     s = s.trim();
-    let negate = false;
+    let negate: boolean = false;
     if (s[0] === '-') {
       s = s.slice(1);
       negate = true;
@@ -18,7 +18,7 @@ class Default extends Problem {
       s = s.slice(1);
     }
 
-    let result = '';
+    let result: string = '';
     for (const c of s) {
       if (c >= '0' && c <= '9') {
         result += c;

@@ -10,7 +10,7 @@ enum MaximumDepthOfBinaryTree {
         }
 
         int recursiveMaxDepth(TreeNode node, int depth) {
-            if (node == null) {
+            if (!node) {
                 return depth
             }
             var leftDepth = recursiveMaxDepth(node.left, depth + 1)

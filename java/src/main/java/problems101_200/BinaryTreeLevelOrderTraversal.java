@@ -22,7 +22,7 @@ enum BinaryTreeLevelOrderTraversal {
                 List<Integer> level = new ArrayList<>();
                 for (int i = 0; i < size; i++) {
                     TreeNode current = queue.remove();
-                    level.add(current.value);
+                    level.add(current.val);
                     if (current.left != null) {
                         queue.add(current.left);
                     }

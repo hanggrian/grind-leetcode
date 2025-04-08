@@ -11,12 +11,12 @@ describe(
             () =>
                 SOLUTIONS.forEach(solution =>
                     getSamples().forEach(sample => {
-                      const inp = SinglyListNode.of(...sample.input.head);
+                      const head = SinglyListNode.of(...sample.input.head);
                       if (sample.input.pos > -1) {
-                        inp.iterateLast().next = inp.iterateTo(sample.input.pos);
+                        head.iterateLast().next = head.iterateTo(sample.input.pos);
                       }
                       strictEqual(
-                          solution.hasCycle(inp),
+                          solution.hasCycle(head),
                           sample.output,
                           sample.message,
                       );

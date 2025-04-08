@@ -11,10 +11,10 @@ class Problem(ABC):
 class SlidingWindow(Problem):
     @override
     def search_insert(self, nums: list[int], target: int) -> int:
-        start = 0
-        end = len(nums) - 1
+        start: int = 0
+        end: int = len(nums) - 1
         while start <= end:
-            center = (start + end) // 2
+            center: int = (start + end) // 2
             if nums[center] < target:
                 start = center + 1
             elif nums[center] > target:
@@ -30,7 +30,7 @@ class BinarySearch(Problem):
         return self.binary_search(nums, target, 0, len(nums) - 1)
 
     def binary_search(self, nums: list[int], target: int, start: int, end: int) -> int:
-        center = (start + end) // 2
+        center: int = (start + end) // 2
         if start > end:
             return end + 1
         if nums[center] < target:

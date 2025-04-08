@@ -1,7 +1,7 @@
 export default class Node {
-  value: number;
+  val: number;
 
-  constructor(value: number) {
-    this.value = value;
+  constructor(val: number) {
+    this.val = val;
   }
 }

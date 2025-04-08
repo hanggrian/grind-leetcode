@@ -21,7 +21,7 @@ class Default(Problem):
             return True
         if not node1 or not node2:
             return False
-        return node1.value == node2.value and \
+        return node1.val == node2.val and \
             self.recursive_is_symmetric(node1.left, node2.right) and \
             self.recursive_is_symmetric(node1.right, node2.left)
 

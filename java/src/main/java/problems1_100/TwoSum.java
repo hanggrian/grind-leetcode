@@ -14,7 +14,7 @@ enum TwoSum {
                     }
                 }
             }
-            return null;
+            return new int[]{-1, -1};
         }
     },
     SINGLE_PASS {

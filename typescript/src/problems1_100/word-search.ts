@@ -6,11 +6,11 @@ class Problem {
 
 class Default extends Problem {
   exist(board: string[][], word: string): boolean {
-    const rows = board.length;
-    const cols = board[0].length;
+    const rows: number = board.length;
+    const cols: number = board[0].length;
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        const visited = new Array<boolean[]>(rows);
+        const visited: boolean[][] = new Array<boolean[]>(rows);
         for (let i = 0; i < rows; i++) {
           visited[i] = new Array<boolean>(cols);
         }

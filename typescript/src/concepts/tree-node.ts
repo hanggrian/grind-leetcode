@@ -5,11 +5,11 @@ export default class TreeNode extends Node {
   right: TreeNode = undefined;
 
   constructor(
-      value: number,
+      val: number,
       left: TreeNode | undefined = undefined,
       right: TreeNode | undefined = undefined,
   ) {
-    super(value);
+    super(val);
     this.left = left;
     this.right = right;
   }
@@ -33,7 +33,7 @@ export default class TreeNode extends Node {
     if (!node1 || !node2) {
       return false;
     }
-    return node1.value === node2.value
+    return node1.val === node2.val
         && this.recursiveEquals(node1.left, node2.left)
         && this.recursiveEquals(node1.right, node2.right);
   }
@@ -48,22 +48,22 @@ export default class TreeNode extends Node {
     return this.recursiveEquals(this, other);
   }
 
-  static of(...values: number[]): TreeNode | undefined {
-    if (values.length === 0) {
+  static of(...vals: number[]): TreeNode | undefined {
+    if (vals.length === 0) {
       return undefined;
     }
-    const root = new TreeNode(values[0]);
+    const root = new TreeNode(vals[0]);
     const queue = [root];
     let i = 1;
     while (queue.length > 0) {
       const node = queue.shift();
-      if (i < values.length && values[i]) {
-        node.left = new TreeNode(values[i]);
+      if (i < vals.length && vals[i]) {
+        node.left = new TreeNode(vals[i]);
         queue.push(node.left);
       }
       i++;
-      if (i < values.length && values[i]) {
-        node.right = new TreeNode(values[i]);
+      if (i < vals.length && vals[i]) {
+        node.right = new TreeNode(vals[i]);
         queue.push(node.right);
       }
       i++;

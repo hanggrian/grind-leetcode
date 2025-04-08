@@ -11,8 +11,8 @@ class Default extends Problem {
     if (preorder.length === 0 || inorder.length === 0) {
       return undefined;
     }
-    const root = new TreeNode(preorder[0]);
-    let mid = -1;
+    const root: TreeNode = new TreeNode(preorder[0]);
+    let mid: number = -1;
     for (let i = 0; i < inorder.length; i++) {
       if (inorder[i] !== preorder[0]) {
         continue;

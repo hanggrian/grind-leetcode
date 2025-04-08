@@ -1,10 +1,10 @@
 export function floorKey(dictionary, target) {
-  let keys =
+  const keys =
       Object
           .keys(dictionary)
           .map(key => +key)
           .sort((a, b) => a < b ? -1 : a > b ? 1 : 0);
-  let index = _bisectRight(keys, target);
+  const index = _bisectRight(keys, target);
   return index > 0
       ? keys[index - 1]
       : undefined;
@@ -14,7 +14,7 @@ function _bisectRight(arr, target) {
   let lo = 0;
   let hi = arr.length;
   while (lo < hi) {
-    let mid = Math.floor((lo + hi) / 2);
+    const mid = Math.floor((lo + hi) / 2);
     if (arr[mid] <= target) {
       lo = mid + 1;
     } else {

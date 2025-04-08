@@ -17,7 +17,7 @@ enum SymmetricTree {
             if (node1 == null || node2 == null) {
                 return false;
             }
-            return node1.value == node2.value
+            return node1.val == node2.val
                 && recursiveIsSymmetric(node1.left, node2.right)
                 && recursiveIsSymmetric(node1.right, node2.left);
         }

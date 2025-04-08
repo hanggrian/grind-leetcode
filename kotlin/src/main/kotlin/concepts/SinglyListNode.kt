@@ -3,23 +3,23 @@ package concepts
 class SinglyListNode : ListNode<SinglyListNode> {
     constructor() : super(0)
 
-    constructor(value: Int) : super(value)
+    constructor(`val`: Int) : super(`val`)
 
-    constructor(value: Int, next: SinglyListNode?) : super(value) {
+    constructor(`val`: Int, next: SinglyListNode?) : super(`val`) {
         this.next = next
     }
 
     companion object {
         val ZERO = SinglyListNode(0)
 
-        fun of(vararg values: Int): SinglyListNode? {
-            if (values.isEmpty()) {
+        fun of(vararg vals: Int): SinglyListNode? {
+            if (vals.isEmpty()) {
                 return null
             }
-            val head = SinglyListNode(values[0])
+            val head = SinglyListNode(vals[0])
             var next = head
-            for (i in 1 until values.size) {
-                next.next = SinglyListNode(values[i])
+            for (i in 1 until vals.size) {
+                next.next = SinglyListNode(vals[i])
                 next = next.next!!
             }
             return head

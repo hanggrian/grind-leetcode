@@ -18,8 +18,8 @@ class Default(Problem):
     def recursive_max_depth(self, node: TreeNode | None, depth: int) -> int:
         if not node:
             return depth
-        left_depth = self.recursive_max_depth(node.left, depth + 1)
-        right_depth = self.recursive_max_depth(node.right, depth + 1)
+        left_depth: int = self.recursive_max_depth(node.left, depth + 1)
+        right_depth: int = self.recursive_max_depth(node.right, depth + 1)
         return max(left_depth, right_depth)
 
 

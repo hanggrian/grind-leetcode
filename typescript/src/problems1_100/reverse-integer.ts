@@ -6,8 +6,8 @@ class Problem {
 
 class Default extends Problem {
   reverse(x: number): number {
-    let negate = false;
-    let s = x.toString();
+    let negate: boolean = false;
+    let s: string = x.toString();
     if (s[0] === '-') {
       s = s.slice(1);
       negate = true;

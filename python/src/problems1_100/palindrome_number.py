@@ -11,16 +11,16 @@ class Problem(ABC):
 class ReverseString(Problem):
     @override
     def is_palindrome(self, x: int) -> bool:
-        s = str(x)
+        s: str = str(x)
         return s == s[::-1]
 
 
 class CompareHalfString(Problem):
     @override
     def is_palindrome(self, x: int) -> bool:
-        s = str(x)
-        start = 0
-        end = len(s) - 1
+        s: str = str(x)
+        start: int = 0
+        end: int = len(s) - 1
         while start < end:
             if s[start] != s[end]:
                 return False

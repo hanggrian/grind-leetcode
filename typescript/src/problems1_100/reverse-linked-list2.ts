@@ -20,10 +20,10 @@ class Default extends Problem {
       return head;
     }
 
-    const root = new SinglyListNode(0, head);
-    let centerStart = root;
-    let centerStartPrevious = undefined;
-    let centerEnd = root;
+    const root: SinglyListNode = new SinglyListNode(0, head);
+    let centerStart: SinglyListNode | undefined = root;
+    let centerStartPrevious: SinglyListNode | undefined = undefined;
+    let centerEnd: SinglyListNode | undefined = root;
     for (let i = 0; i < right; i++) {
       if (i < left) {
         centerStartPrevious = centerStart;
@@ -32,11 +32,11 @@ class Default extends Problem {
       centerEnd = centerEnd.next;
     }
 
-    const excess = centerEnd.next;
+    const excess: SinglyListNode = centerEnd.next;
     centerStartPrevious.next = undefined;
     centerEnd.next = undefined;
 
-    let current: SinglyListNode;
+    let current: SinglyListNode | undefined;
     if (left === 1) {
       head = this.reverse(centerStart);
       current = head;
@@ -50,7 +50,7 @@ class Default extends Problem {
   }
 
   traverseUntilEnd(node: SinglyListNode) {
-    let current = node;
+    let current: SinglyListNode = node;
     while (current.next) {
       current = current.next;
     }
@@ -58,10 +58,10 @@ class Default extends Problem {
   }
 
   reverse(node: SinglyListNode) {
-    let current = node;
-    let previous = undefined;
+    let current: SinglyListNode | undefined = node;
+    let previous: SinglyListNode | undefined = undefined;
     while (current) {
-      const temp = current.next;
+      const temp: SinglyListNode = current.next;
       current.next = previous;
       previous = current;
       current = temp;

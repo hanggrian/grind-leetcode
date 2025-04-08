@@ -6,9 +6,9 @@ class Problem {
 
 class Default extends Problem {
   findMedianSortedArrays(nums1: number[], nums2: number[]): number {
-    const nums = nums1.concat(nums2);
+    const nums: number[] = nums1.concat(nums2);
     nums.sort();
-    const center = Math.floor(nums.length / 2);
+    const center: number = Math.floor(nums.length / 2);
     if (nums.length % 2 === 1) {
       return nums[center];
     }

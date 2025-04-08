@@ -15,9 +15,9 @@ class Default(Problem):
     def remove_nth_from_end(self, head: SinglyListNode | None, n: int) -> SinglyListNode | None:
         if not head.next and n == 1:
             return None
-        root = SinglyListNode(0, head)
-        left = root
-        right = root
+        root: SinglyListNode = SinglyListNode(0, head)
+        left: SinglyListNode | None = root
+        right: SinglyListNode | None = root
         for _ in range(n):
             left = left.next
         while left.next:

@@ -11,7 +11,7 @@ class Default extends Problem {
         if (nums[j] >= nums[i]) {
           continue;
         }
-        const temp = nums[j];
+        const temp: number = nums[j];
         nums[j] = nums[i];
         nums[i] = temp;
       }

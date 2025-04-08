@@ -1,6 +1,6 @@
 [&larr; Return](https://hanggrian.github.io/grind-leetcode/)
 
-# 2. Add Two Numbers<sup style="color: rgb(0, 184, 163);">Easy</sup>
+# 2. Add Two Numbers<sup style="color: rgb(255, 192, 30);">Medium</sup>
 
 > You are given two **non-empty** linked lists representing two non-negative
   integers. The digits are stored in **reverse order,** and each of their nodes

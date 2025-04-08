@@ -4,14 +4,14 @@ enum PalindromeNumber {
     REVERSE_STRING{
         @Override
         boolean isPalindrome(int x) {
-            var s = String.valueOf(x)
+            var s = x.toString()
             return s.contentEquals(new StringBuilder(s).reverse())
         }
     },
     COMPARE_HALF_STRING{
         @Override
         boolean isPalindrome(int x) {
-            var s = String.valueOf(x)
+            var s = x.toString()
             var start = 0
             var end = s.length() - 1
             while (start < end) {

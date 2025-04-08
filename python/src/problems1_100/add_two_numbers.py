@@ -21,17 +21,17 @@ class Default(Problem):
         l1: SinglyListNode | None,
         l2: SinglyListNode | None,
     ) -> SinglyListNode | None:
-        root = SinglyListNode()
-        node = root
-        carry = 0
+        root: SinglyListNode = SinglyListNode()
+        node: SinglyListNode = root
+        carry: int = 0
         while l1 or l2:
             # calculate total and carry
-            val = carry
+            val: int = carry
             if l1:
-                val += l1.value
+                val += l1.val
                 l1 = l1.next
             if l2:
-                val += l2.value
+                val += l2.val
                 l2 = l2.next
             carry = val // 10
 

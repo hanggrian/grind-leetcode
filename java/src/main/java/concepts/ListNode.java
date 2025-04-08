@@ -12,10 +12,6 @@ public abstract class ListNode<T extends ListNode<T>> extends Node implements It
         super(value);
     }
 
-    public final boolean hasNext() {
-        return next != null;
-    }
-
     public Stream<T> stream() {
         return StreamSupport.stream(spliterator(), false);
     }
@@ -33,7 +29,7 @@ public abstract class ListNode<T extends ListNode<T>> extends Node implements It
         ListNode<T> node1 = this;
         ListNode<T> node2 = (ListNode<T>) other;
         while (node1 != null && node2 != null) {
-            if (node1.value != node2.value) {
+            if (node1.val != node2.val) {
                 return false;
             }
             node1 = node1.next;
@@ -44,7 +40,7 @@ public abstract class ListNode<T extends ListNode<T>> extends Node implements It
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(value);
+        return Objects.hashCode(val);
     }
 
     private class ListNodeIterator implements Iterator<T> {

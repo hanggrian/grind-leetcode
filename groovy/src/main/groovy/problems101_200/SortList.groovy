@@ -6,7 +6,7 @@ enum SortList {
     DEFAULT{
         @Override
         SinglyListNode sortList(SinglyListNode head) {
-            if (head == null || head.next == null) {
+            if (!head || !head.next) {
                 return head
             }
             var mid = split(head)
@@ -19,8 +19,8 @@ enum SortList {
         SinglyListNode merge(SinglyListNode node1, SinglyListNode node2) {
             var root = new SinglyListNode()
             var current = root
-            while (node1 != null && node2 != null) {
-                if (node1.value < node2.value) {
+            while (node1 && node2) {
+                if (node1.val < node2.val) {
                     current.next = node1
                     node1 = node1.next
                 } else {
@@ -29,9 +29,9 @@ enum SortList {
                 }
                 current = current.next
             }
-            if (node1 != null) {
+            if (node1) {
                 current.next = node1
-            } else if (node2 != null) {
+            } else if (node2) {
                 current.next = node2
             }
             return root.next
@@ -41,7 +41,7 @@ enum SortList {
             var slowPrev = null
             var slow = node
             var fast = node
-            while (fast != null && fast.next != null) {
+            while (fast && fast.next) {
                 slowPrev = slow
                 slow = slow.next
                 fast = fast.next.next

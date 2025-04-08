@@ -1,5 +1,7 @@
 package problems1_100;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 enum ValidParentheses {
@@ -12,16 +14,12 @@ enum ValidParentheses {
 
             Stack<Character> symbols = new Stack<>();
             for (char c : s.toCharArray()) {
-                if (c != ')' && c != '}' && c != ']') {
+                if (!PARENTHESES.containsValue(c)) {
                     symbols.push(c);
                     continue;
                 }
 
-                if (!symbols.isEmpty()
-                    && ((symbols.peek() == '(' && c == ')')
-                    || (symbols.peek() == '{' && c == '}')
-                    || (symbols.peek() == '[' && c == ']'))
-                ) {
+                if (!symbols.isEmpty() && PARENTHESES.get(symbols.peek()) == c) {
                     symbols.pop();
                     continue;
                 }
@@ -32,4 +30,12 @@ enum ValidParentheses {
     };
 
     abstract boolean isValid(String s);
+
+    private static final Map<Character, Character> PARENTHESES = new HashMap<>();
+
+    static {
+        PARENTHESES.put('(', ')');
+        PARENTHESES.put('{', '}');
+        PARENTHESES.put('[', ']');
+    }
 }

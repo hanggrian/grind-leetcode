@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def remove_element(self, nums: list[int], val: int) -> int:
-        start = 0
-        end = 0
+        start: int = 0
+        end: int = 0
         while start < len(nums):
             if nums[start] != val:
                 nums[end] = nums[start]

@@ -1,0 +1,34 @@
+[
+  {
+    "input": {
+      "grid": [
+        [0, 1, 0, 0],
+        [1, 1, 1, 0],
+        [0, 1, 0, 0],
+        [1, 1, 0, 0]
+      ]
+    },
+    "output": 16,
+    "explanation": [
+      "The perimeter is the 16 yellow stripes in the image above."
+    ]
+  },
+  {
+    "input": {
+      "grid": [
+        [1]
+      ]
+    },
+    "output": 4,
+    "explanation": []
+  },
+  {
+    "input": {
+      "grid": [
+        [1, 0]
+      ]
+    },
+    "output": 4,
+    "explanation": []
+  }
+]

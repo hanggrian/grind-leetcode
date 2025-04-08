@@ -10,16 +10,12 @@ class TreeNode : Node {
 
     constructor() : super(0)
 
-    constructor(value: Int) : super(value)
+    constructor(`val`: Int) : super(`val`)
 
-    constructor(value: Int, left: TreeNode?, right: TreeNode?) : super(value) {
+    constructor(`val`: Int, left: TreeNode?, right: TreeNode?) : super(`val`) {
         this.left = left
         this.right = right
     }
-
-    fun hasLeft(): Boolean = left != null
-
-    fun hasRight(): Boolean = right != null
 
     fun isLeaf(): Boolean = left == null && right == null
 
@@ -30,7 +26,7 @@ class TreeNode : Node {
         if (node1 == null || node2 == null) {
             return false
         }
-        return node1.value == node2.value &&
+        return node1.`val` == node2.`val` &&
             recursiveEquals(node1.left, node2.left) &&
             recursiveEquals(node1.right, node2.right)
     }
@@ -42,27 +38,31 @@ class TreeNode : Node {
         return recursiveEquals(this, other)
     }
 
-    override fun hashCode(): Int = Objects.hashCode(value)
+    override fun hashCode(): Int = Objects.hashCode(`val`)
 
     companion object {
-        fun of(vararg values: Int?): TreeNode? {
-            if (values.isEmpty()) {
+        fun of(vararg vals: Int?): TreeNode? {
+            if (vals.isEmpty()) {
                 return null
             }
-            val root = TreeNode(values[0]!!)
+            val root = TreeNode(vals[0]!!)
             val queue: Queue<TreeNode> = LinkedList()
             queue += root
             var i = 1
-            while (!queue.isEmpty() && i < values.size) {
+            while (!queue.isEmpty() && i < vals.size) {
                 val node = queue.poll()
-                if (i < values.size && values[i] != null) {
-                    node!!.left = TreeNode(values[i]!!)
-                    queue += node.left
+                var `val` = vals[i]
+                if (`val` != null) {
+                    node.left = TreeNode(`val`)
+                    queue.add(node.left)
                 }
                 i++
-                if (i < values.size && values[i] != null) {
-                    node!!.right = TreeNode(values[i]!!)
-                    queue += node.right
+                if (i < vals.size) {
+                    `val` = vals[i]
+                    if (`val` != null) {
+                        node.right = TreeNode(`val`)
+                        queue.add(node.right)
+                    }
                 }
                 i++
             }

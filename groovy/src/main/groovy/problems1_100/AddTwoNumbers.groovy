@@ -9,15 +9,15 @@ enum AddTwoNumbers {
             var root = new SinglyListNode()
             var node = root
             var carry = 0
-            while (l1 != null || l2 != null) {
+            while (l1 || l2) {
                 // calculate total and carry
                 var value = carry
-                if (l1 != null) {
-                    value += l1.value
+                if (l1) {
+                    value += l1.val
                     l1 = l1.next
                 }
-                if (l2 != null) {
-                    value += l2.value
+                if (l2) {
+                    value += l2.val
                     l2 = l2.next
                 }
                 carry = (value / 10) as int

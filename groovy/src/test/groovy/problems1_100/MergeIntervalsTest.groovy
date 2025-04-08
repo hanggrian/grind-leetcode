@@ -11,8 +11,8 @@ class MergeIntervalsTest extends SampledTest {
         MergeIntervals.values().each { solution ->
             getSamples(MergeIntervalsSample[].class).each { sample ->
                 // for some reason, single command assert doesn't work
-                String message = sample.getMessage()
-                int[][] actual = solution.merge(sample.input.intervals)
+                var message = sample.getMessage()
+                var actual = solution.merge(sample.input.intervals)
                 for (var i = 0; i < actual.length; i++) {
                     assertWithMessage(message)
                         .that(actual[i])

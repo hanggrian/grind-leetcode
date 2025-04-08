@@ -11,10 +11,10 @@ class Default extends Problem {
     if (!head || k === 0) {
       return head;
     }
-    const root = new SinglyListNode(0, head);
+    const root: SinglyListNode = new SinglyListNode(0, head);
 
     // move left pointer, resetting if reached end
-    let left = root;
+    let left: SinglyListNode = root;
     for (let i = 0; i < k; i++) {
       left = left.next;
       if (!left) {
@@ -23,8 +23,8 @@ class Default extends Problem {
     }
 
     // get n-th from last, keeping previous node
-    let right = root;
-    let previousRight = undefined;
+    let right: SinglyListNode | undefined = root;
+    let previousRight: SinglyListNode | undefined;
     while (left) {
       left = left.next;
       let nextRight = right.next;
@@ -34,7 +34,7 @@ class Default extends Problem {
 
     // sever middle, set last of right to start of left
     previousRight.next = undefined;
-    let lastRight = right;
+    let lastRight: SinglyListNode = right;
     while (lastRight.next) {
       lastRight = lastRight.next;
     }

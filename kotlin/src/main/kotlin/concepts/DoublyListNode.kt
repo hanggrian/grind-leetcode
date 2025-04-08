@@ -5,30 +5,30 @@ class DoublyListNode : ListNode<DoublyListNode> {
 
     constructor() : super(0)
 
-    constructor(value: Int) : super(value)
+    constructor(`val`: Int) : super(`val`)
 
-    constructor(value: Int, next: DoublyListNode) : super(value) {
+    constructor(`val`: Int, next: DoublyListNode) : super(`val`) {
         this.next = next
     }
 
-    constructor(value: Int, next: DoublyListNode, prev: DoublyListNode) : super(value) {
+    constructor(`val`: Int, next: DoublyListNode, prev: DoublyListNode) : super(`val`) {
         this.next = next
         this.prev = prev
     }
 
     companion object {
-        fun of(vararg values: Int): DoublyListNode? {
-            if (values.isEmpty()) {
+        fun of(vararg vals: Int): DoublyListNode? {
+            if (vals.isEmpty()) {
                 return null
             }
-            val head = DoublyListNode(values[0])
+            val head = DoublyListNode(vals[0])
             var prev: DoublyListNode? = null
             var next = head
-            for (i in 1 until values.size) {
+            for (i in 1 until vals.size) {
                 val temp = next
 
                 next.prev = prev
-                next.next = DoublyListNode(values[i])
+                next.next = DoublyListNode(vals[i])
                 next = next.next!!
 
                 prev = temp

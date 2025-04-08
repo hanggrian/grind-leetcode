@@ -14,8 +14,8 @@ class RememberVisits(Problem):
     @override
     def detect_cycle(self, head: SinglyListNode | None) -> SinglyListNode | None:
         # visited nodes
-        visits = set()
-        current = head
+        visits: set[SinglyListNode] = set()
+        current: SinglyListNode = head
         for node in head:
             if node in visits:
                 return current
@@ -29,8 +29,8 @@ class FastSlowPointers(Problem):
     def detect_cycle(self, head: SinglyListNode | None) -> SinglyListNode | None:
         if not head or not head.has_next():
             return None
-        slow = head.next
-        fast = head.next.next
+        slow: SinglyListNode | None = head.next
+        fast: SinglyListNode | None = head.next.next
         while fast and fast.next and slow != fast:
             slow = slow.next
             fast = fast.next.next
@@ -39,8 +39,8 @@ class FastSlowPointers(Problem):
 
         if not slow or not slow.next:
             return None
-        left = head
-        right = slow
+        left: SinglyListNode = head
+        right: SinglyListNode = slow
         while left != right:
             left = left.next
             right = right.next

@@ -27,16 +27,17 @@ enum StringToIntegerAtoi {
             if (negate) {
                 builder.insert(0, '-')
             }
-            if (builder.length() == 0
-                || (builder.length() == 1 && (builder.charAt(0) == '-' || builder.charAt(0) == '+'))
+            if (builder.length() == 0 ||
+                (builder.length() == 1 &&
+                    (builder.charAt(0) == '-' as char || builder.charAt(0) == '+' as char))
             ) {
                 return 0
             }
 
-            var result = new BigInteger(builder.toString())
-            if (result < new BigInteger(String.valueOf(Integer.MIN_VALUE))) {
+            var result = builder.toString().toBigInteger()
+            if (result < Integer.MIN_VALUE.toString().toBigInteger()) {
                 return Integer.MIN_VALUE
-            } else if (result > new BigInteger(String.valueOf(Integer.MAX_VALUE))) {
+            } else if (result > Integer.MAX_VALUE.toString().toBigInteger()) {
                 return Integer.MAX_VALUE
             }
             return result.intValue()

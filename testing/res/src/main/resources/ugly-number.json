@@ -1,0 +1,29 @@
+[
+  {
+    "input": {
+      "n": 6
+    },
+    "output": true,
+    "explanation": [
+      "6 = 2 × 3"
+    ]
+  },
+  {
+    "input": {
+      "n": 1
+    },
+    "output": true,
+    "explanation": [
+      "1 has no prime factors."
+    ]
+  },
+  {
+    "input": {
+      "n": 14
+    },
+    "output": false,
+    "explanation": [
+      "14 is not ugly since it includes the prime factor 7."
+    ]
+  }
+]

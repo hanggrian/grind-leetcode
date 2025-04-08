@@ -15,8 +15,8 @@ class Default(Problem):
             return ''
         if len(strs) == 1:
             return strs[0]
-        longest_str = max(strs, key=len)
-        end = -1
+        longest_str: str = max(strs, key=len)
+        end: int = -1
         for i, c in enumerate(longest_str):
             for j, s in enumerate(strs):
                 if i >= len(s) or c != s[i]:

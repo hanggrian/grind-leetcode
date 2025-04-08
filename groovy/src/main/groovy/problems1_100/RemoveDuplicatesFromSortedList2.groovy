@@ -9,9 +9,9 @@ enum RemoveDuplicatesFromSortedList2 {
             var root = new SinglyListNode(-101, head)
             var previous = root
             var current = head
-            while (current != null) {
-                if (current.next != null && current.value == current.next.value) {
-                    while (current.next != null && current.value == current.next.value) {
+            while (current) {
+                if (current.next && current.next.val == current.val) {
+                    while (current.next && current.next.val == current.val) {
                         current = current.next
                     }
                     previous.next = current.next

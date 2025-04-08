@@ -10,17 +10,17 @@ enum ValidateBinarySearchTree {
         }
 
         boolean recursiveValid(TreeNode node, Integer left, Integer right) {
-            if (node == null) {
+            if (!node) {
                 return true
             }
-            if (left != null && node.value <= left) {
+            if (left && node.val <= left) {
                 return false
             }
-            if (right != null && node.value >= right) {
+            if (right && node.val >= right) {
                 return false
             }
-            return recursiveValid(node.left, left, node.value) &&
-                recursiveValid(node.right, node.value, right)
+            return recursiveValid(node.left, left, node.val) &&
+                recursiveValid(node.right, node.val, right)
         }
     }
 

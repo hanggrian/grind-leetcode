@@ -7,7 +7,7 @@ enum class RemoveDuplicatesFromSortedList {
         override fun deleteDuplicates(head: SinglyListNode?): SinglyListNode? {
             var current = head
             while (current?.next != null) {
-                if (current.value == current.next!!.value) {
+                if (current.`val` == current.next!!.`val`) {
                     current.next = current.next!!.next
                 } else {
                     current = current.next

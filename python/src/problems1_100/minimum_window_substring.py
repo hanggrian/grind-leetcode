@@ -14,14 +14,14 @@ class Default(Problem):
         if len(t) > len(s):
             return ''
 
-        s_map = [0] * 128
-        t_map = [0] * 128
+        s_map: list[int] = [0] * 128
+        t_map: list[int] = [0] * 128
         for c in t:
             t_map[ord(c)] += 1
 
-        left = 0
-        right = 0
-        result = ''
+        left: int = 0
+        right: int = 0
+        result: str = ''
         while right < len(s):
             s_map[ord(s[right])] += 1
             right += 1

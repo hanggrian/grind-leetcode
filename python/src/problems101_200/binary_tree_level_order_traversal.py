@@ -14,17 +14,17 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def level_order(self, root: TreeNode | None) -> list[list[int]]:
-        lists = []
+        lists: list[list[int]] = []
         if not root:
             return lists
 
-        queue = deque([root])
+        queue: deque[TreeNode] = deque([root])
         while len(queue) > 0:
-            size = len(queue)
-            level = []
+            size: int = len(queue)
+            level: list[int] = []
             for _ in range(size):
                 current = queue.popleft()
-                level.append(current.value)
+                level.append(current.val)
                 if current.left:
                     queue.append(current.left)
                 if current.right:

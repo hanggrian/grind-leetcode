@@ -6,7 +6,7 @@ enum BalancedBinaryTree {
     DEFAULT{
         @Override
         boolean isBalanced(TreeNode root) {
-            if (root == null) {
+            if (!root) {
                 return true
             }
             if (Math.abs(maxDepth(root.left, 1) - maxDepth(root.right, 1)) > 1) {
@@ -16,7 +16,7 @@ enum BalancedBinaryTree {
         }
 
         int maxDepth(TreeNode node, int depth) {
-            if (node == null) {
+            if (!node) {
                 return depth
             }
             var leftDepth = maxDepth(node.left, depth + 1)

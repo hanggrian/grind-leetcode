@@ -7,10 +7,10 @@ class Problem {
 class Default extends Problem {
   merge(intervals: number[][]): number[][] {
     intervals.sort((a, b) => a[0] - b[0]);
-    const newIntervals = [];
+    const newIntervals: number[][] = [];
     newIntervals.push(intervals[0]);
     for (let i = 1; i < intervals.length; i++) {
-      const last = newIntervals[newIntervals.length - 1];
+      const last: number[] = newIntervals[newIntervals.length - 1];
       if (last[1] < intervals[i][0]) {
         newIntervals.push(intervals[i]);
         continue;
@@ -24,7 +24,7 @@ class Default extends Problem {
       );
     }
 
-    const result = new Array<number[]>(newIntervals.length);
+    const result: number[][] = new Array<number[]>(newIntervals.length);
     for (let i = 0; i < newIntervals.length; i++) {
       result[i] = newIntervals[i];
     }

@@ -7,23 +7,23 @@ final class SinglyListNode extends ListNode<SinglyListNode> {
         super(0)
     }
 
-    SinglyListNode(int value) {
-        super(value)
+    SinglyListNode(int val) {
+        super(val)
     }
 
-    SinglyListNode(int value, SinglyListNode next) {
-        super(value)
+    SinglyListNode(int val, SinglyListNode next) {
+        super(val)
         this.next = next
     }
 
-    static SinglyListNode of(int ... values) {
-        if (values == null || values.length == 0) {
+    static SinglyListNode of(int ... vals) {
+        if (!vals || vals.length == 0) {
             return null
         }
-        SinglyListNode head = new SinglyListNode(values[0])
-        SinglyListNode next = head
-        for (var i = 1; i < values.length; i++) {
-            next.next = new SinglyListNode(values[i])
+        var head = new SinglyListNode(vals[0])
+        var next = head
+        for (var i = 1; i < vals.length; i++) {
+            next.next = new SinglyListNode(vals[i])
             next = next.next
         }
         return head

@@ -20,7 +20,7 @@ class Default extends Problem {
     let right = 0;
     let result = '';
     while (right < s.length) {
-      let c = s[right];
+      const c = s[right];
       sMap[c] = (sMap[c] || 0) + 1;
       right++;
       while (left <= right && this.contains(sMap, tMap)) {
@@ -39,7 +39,7 @@ class Default extends Problem {
   }
 
   contains(sMap, tMap) {
-    for (let key in tMap) {
+    for (const key in tMap) {
       if ((sMap[key] || 0) < tMap[key]) {
         return false;
       }

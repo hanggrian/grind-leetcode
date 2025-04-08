@@ -1,6 +1,6 @@
 import {strictEqual} from 'assert';
-import getSamples from "../../../testing/js/src/sample/samples";
-import LruCache from "../../src/problems101_200/lru-cache";
+import getSamples from '../../../testing/js/src/sample/samples';
+import LruCache from '../../src/problems101_200/lru-cache';
 
 describe(
     'LruCache',

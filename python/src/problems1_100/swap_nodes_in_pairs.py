@@ -13,11 +13,11 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def swap_pairs(self, head: SinglyListNode | None) -> SinglyListNode | None:
-        root = SinglyListNode(0, head)
-        current = root
+        root: SinglyListNode = SinglyListNode(0, head)
+        current: SinglyListNode = root
         while current.next and current.next.next:
-            node1 = current.next
-            node2 = current.next.next
+            node1: SinglyListNode = current.next
+            node2: SinglyListNode = current.next.next
             node1.next = node2.next
             current.next = node2
             current.next.next = node1

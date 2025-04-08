@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def max_profit(self, prices: list[int]) -> int:
-        profit = 0
-        hold = False
+        profit: int = 0
+        hold: bool = False
         for i, price in enumerate(prices):
             if i != len(prices) - 1 and prices[i + 1] > price:
                 if not hold:

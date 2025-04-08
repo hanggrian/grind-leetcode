@@ -11,7 +11,7 @@ enum TwoSum {
                     }
                 }
             }
-            return []
+            return [-1, -1]
         }
     },
     SINGLE_PASS{

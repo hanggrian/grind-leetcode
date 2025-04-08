@@ -1,9 +1,9 @@
 package concepts
 
 class Node {
-    int value
+    int val
 
-    Node(int value) {
-        this.value = value
+    Node(int val) {
+        this.val = val
     }
 }

@@ -22,7 +22,7 @@ enum class LinkedListCycle {
             }
             var slow = head.next
             var fast = head.next!!.next
-            while (fast != null && fast.hasNext() && slow !== fast) {
+            while (fast?.next != null && slow !== fast) {
                 slow = slow!!.next
                 fast = fast.next!!.next
             }

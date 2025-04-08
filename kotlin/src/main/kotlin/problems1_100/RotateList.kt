@@ -32,10 +32,10 @@ enum class RotateList {
             // sever middle, set last of right to start of left
             previousRight!!.next = null
             var lastRight = right
-            while (lastRight!!.next != null) {
+            while (lastRight?.next != null) {
                 lastRight = lastRight.next
             }
-            lastRight.next = root.next
+            lastRight!!.next = root.next
 
             return right
         }

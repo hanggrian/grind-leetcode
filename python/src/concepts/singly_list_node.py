@@ -7,19 +7,19 @@ from .list_node import ListNode
 class SinglyListNode(ListNode):
     def __init__(
         self,
-        value: int = 0,
+        val: int = 0,
         next2: Optional['SinglyListNode'] = None,
     ):
-        super().__init__(value)
+        super().__init__(val)
         self.next: SinglyListNode | None = next2
 
     @staticmethod
-    def of(*values: int) -> Optional['SinglyListNode']:
-        if len(values) == 0:
+    def of(*vals: int) -> Optional['SinglyListNode']:
+        if len(vals) == 0:
             return None
-        head: SinglyListNode = SinglyListNode(values[0])
+        head: SinglyListNode = SinglyListNode(vals[0])
         next2: SinglyListNode = head
-        for val in values[1:]:
+        for val in vals[1:]:
             next2.next = SinglyListNode(val)
             next2 = next2.next
         return head

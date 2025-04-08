@@ -17,15 +17,19 @@ class LinkedListCycle2Test : SampledTest() {
     fun test() =
         LinkedListCycle2.entries.forEach { solution ->
             getSamples<Array<LinkedListCycle2Sample>>().forEach { (input, _, message) ->
-                val inp = SinglyListNode.of(*input.head)!!
-                var out: SinglyListNode? = null
-                if (input.pos > -1) {
-                    out = Iterables.get(inp, input.pos)
-                    Iterables.getLast(inp).next = out
-                }
+                var result: SinglyListNode? = null
                 assertWithMessage(message)
-                    .that(solution.detectCycle(inp))
-                    .isEqualTo(out)
+                    .that(
+                        solution.detectCycle(
+                            SinglyListNode.of(*input.head)!!.also {
+                                if (input.pos <= -1) {
+                                    return@also
+                                }
+                                result = Iterables.get(it, input.pos)
+                                Iterables.getLast(it).next = result
+                            },
+                        ),
+                    ).isEqualTo(result)
             }
         }
 }

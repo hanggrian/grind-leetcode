@@ -8,18 +8,18 @@ class Problem {
 
 class Default extends Problem {
   zigzagLevelOrder(root: TreeNode | undefined): number[][] {
-    const lists = [];
+    const lists: number[][] = [];
     if (!root) {
       return lists;
     }
 
-    const queue = [root];
+    const queue: TreeNode[] = [root];
     while (queue.length > 0) {
-      const size = queue.length;
-      const level = [];
+      const size: number = queue.length;
+      const level: number[] = [];
       for (let i = 0; i < size; i++) {
-        const current = queue.shift();
-        level.push(current.value);
+        const current: TreeNode = queue.shift();
+        level.push(current.val);
         if (current.left) {
           queue.push(current.left);
         }

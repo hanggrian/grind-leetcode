@@ -23,7 +23,7 @@ enum BinaryTreeZigzagLevelOrderTraversal {
                 List<Integer> level = new ArrayList<>();
                 for (int i = 0; i < size; i++) {
                     TreeNode node = queue.remove();
-                    level.add(node.value);
+                    level.add(node.val);
                     if (node.left != null) {
                         queue.add(node.left);
                     }

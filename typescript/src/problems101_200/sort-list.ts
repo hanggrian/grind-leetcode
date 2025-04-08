@@ -11,7 +11,7 @@ class Default extends Problem {
     if (!head || !head.next) {
       return head;
     }
-    const mid = this.split(head);
+    const mid: SinglyListNode | undefined = this.split(head);
     return this.merge(
         this.sortList(head),
         this.sortList(mid),
@@ -23,10 +23,10 @@ class Default extends Problem {
       node1: SinglyListNode | undefined,
       node2: SinglyListNode | undefined,
   ): SinglyListNode | undefined {
-    const root = new SinglyListNode();
-    let current = root;
+    const root: SinglyListNode = new SinglyListNode();
+    let current: SinglyListNode = root;
     while (node1 && node2) {
-      if (node1.value < node2.value) {
+      if (node1.val < node2.val) {
         current.next = node1;
         node1 = node1.next;
       } else {
@@ -44,9 +44,9 @@ class Default extends Problem {
   }
 
   split(node: SinglyListNode | undefined): SinglyListNode | undefined {
-    let slowPrev = undefined;
-    let slow = node;
-    let fast = node;
+    let slowPrev: SinglyListNode | undefined = undefined;
+    let slow: SinglyListNode = node;
+    let fast: SinglyListNode | undefined = node;
     while (fast && fast.next) {
       slowPrev = slow;
       slow = slow.next;

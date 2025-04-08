@@ -1,19 +1,19 @@
 import ListNode from './list-node';
 
 export default class SinglyListNode extends ListNode {
-  constructor(value = 0, next = undefined) {
-    super(value);
+  constructor(val = 0, next = undefined) {
+    super(val);
     this.next = next;
   }
 
-  static of(...values) {
-    if (values.length === 0) {
+  static of(...vals) {
+    if (vals.length === 0) {
       return undefined;
     }
-    let head = new SinglyListNode(values[0]);
+    const head = new SinglyListNode(vals[0]);
     let current = head;
-    for (let i = 1; i < values.length; i++) {
-      current.next = new SinglyListNode(values[i]);
+    for (let i = 1; i < vals.length; i++) {
+      current.next = new SinglyListNode(vals[i]);
       current = current.next;
     }
     return head;

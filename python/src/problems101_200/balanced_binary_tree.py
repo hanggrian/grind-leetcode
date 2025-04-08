@@ -22,8 +22,8 @@ class Default(Problem):
     def max_depth(self, node: TreeNode | None, depth: int) -> int:
         if not node:
             return depth
-        left_depth = self.max_depth(node.left, depth + 1)
-        right_depth = self.max_depth(node.right, depth + 1)
+        left_depth: int = self.max_depth(node.left, depth + 1)
+        right_depth: int = self.max_depth(node.right, depth + 1)
         return max(left_depth, right_depth)
 
 

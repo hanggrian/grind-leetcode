@@ -11,7 +11,7 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def plus_one(self, digits: list[int]) -> list[int]:
-        carry = 0
+        carry: int = 0
         for i in range(len(digits) - 1, -1, -1):
             if i == len(digits) - 1:
                 digits[i] = digits[i] + 1
@@ -19,7 +19,7 @@ class Default(Problem):
             carry = digits[i] // 10
             digits[i] = digits[i] % 10
         if carry == 1:
-            digits2 = [0] * (len(digits) + 1)
+            digits2: list[int] = [0] * (len(digits) + 1)
             digits2[0] = 1
             digits2[1:] = digits[0:len(digits)]
             return digits2

@@ -11,7 +11,7 @@ class Problem(ABC):
 
 
 class Default(Problem):
-    ROMANS = {
+    ROMANS: dict[int, str] = {
         1000: 'M',
         900: 'CM',
         500: 'D',
@@ -32,7 +32,7 @@ class Default(Problem):
         return self.recurse(self.ROMANS, num)
 
     def recurse(self, romans: dict[int, str], num: int) -> str:
-        floor = floor_key(romans, num)
+        floor: int = floor_key(romans, num)
         if num == floor:
             return romans[num]
         return romans[floor] + self.recurse(romans, num - floor)

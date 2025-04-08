@@ -11,9 +11,9 @@ class Default extends Problem {
     if (!head.next && n === 1) {
       return undefined;
     }
-    const root = new SinglyListNode(0, head);
-    let left = root;
-    let right = root;
+    const root: SinglyListNode = new SinglyListNode(0, head);
+    let left: SinglyListNode = root;
+    let right: SinglyListNode = root;
     for (let i = 0; i < n; i++) {
       left = left.next;
     }

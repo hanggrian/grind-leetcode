@@ -14,7 +14,7 @@ enum class RemoveNthNodeFromEndOfList {
             for (i in 0 until n) {
                 left = left!!.next
             }
-            while (left!!.next != null) {
+            while (left?.next != null) {
                 left = left.next
                 right = right!!.next
             }

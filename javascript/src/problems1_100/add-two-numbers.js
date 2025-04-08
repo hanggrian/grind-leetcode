@@ -15,11 +15,11 @@ class Default extends Problem {
       // calculate total and carry
       let value = carry;
       if (l1) {
-        value += l1.value;
+        value += l1.val;
         l1 = l1.next;
       }
       if (l2) {
-        value += l2.value;
+        value += l2.val;
         l2 = l2.next;
       }
       carry = Math.floor(value / 10);

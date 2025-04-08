@@ -23,7 +23,7 @@ class Default extends Problem {
     const root = new SinglyListNode();
     let current = root;
     while (node1 && node2) {
-      if (node1.value < node2.value) {
+      if (node1.val < node2.val) {
         current.next = node1;
         node1 = node1.next;
       } else {

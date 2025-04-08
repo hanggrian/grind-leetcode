@@ -22,7 +22,7 @@ enum class SortList {
             val root = SinglyListNode()
             var current = root
             while (node1 != null && node2 != null) {
-                if (node1.value < node2.value) {
+                if (node1.`val` < node2.`val`) {
                     current.next = node1
                     node1 = node1.next
                 } else {

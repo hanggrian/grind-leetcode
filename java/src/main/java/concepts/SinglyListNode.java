@@ -16,14 +16,14 @@ public final class SinglyListNode extends ListNode<SinglyListNode> {
         this.next = next;
     }
 
-    public static SinglyListNode of(int... values) {
-        if (values == null || values.length == 0) {
+    public static SinglyListNode of(int... vals) {
+        if (vals == null || vals.length == 0) {
             return null;
         }
-        SinglyListNode head = new SinglyListNode(values[0]);
+        SinglyListNode head = new SinglyListNode(vals[0]);
         SinglyListNode next = head;
-        for (int i = 1; i < values.length; i++) {
-            next.next = new SinglyListNode(values[i]);
+        for (int i = 1; i < vals.length; i++) {
+            next.next = new SinglyListNode(vals[i]);
             next = next.next;
         }
         return head;

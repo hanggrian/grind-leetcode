@@ -13,17 +13,17 @@ class Default extends Problem {
     if (s in map) {
       return map[s];
     }
-    let result = [];
-    for (let word of wordDict) {
+    let result: string[] = [];
+    for (const word of wordDict) {
       if (!s.startsWith(word)) {
         continue;
       }
-      let next = s.slice(word.length);
+      let next: string = s.slice(word.length);
       if (next.length === 0) {
         result.push(word);
         continue;
       }
-      for (let sub of this.recursiveWordBreak(next, wordDict, map)) {
+      for (const sub of this.recursiveWordBreak(next, wordDict, map)) {
         result.push(word + ' ' + sub);
       }
     }

@@ -19,11 +19,11 @@ enum class MergeTwoSortedLists {
 
             // when both items are there
             while (l1 != null && l2 != null) {
-                if (l1.value < l2.value) {
-                    current.next = SinglyListNode(l1.value)
+                if (l1.`val` < l2.`val`) {
+                    current.next = SinglyListNode(l1.`val`)
                     l1 = l1.next
                 } else {
-                    current.next = SinglyListNode(l2.value)
+                    current.next = SinglyListNode(l2.`val`)
                     l2 = l2.next
                 }
                 current = current.next!!

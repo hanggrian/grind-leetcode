@@ -11,7 +11,7 @@ enum class SameTree {
             if (p == null || q == null) {
                 return false
             }
-            if (p.value != q.value) {
+            if (p.`val` != q.`val`) {
                 return false
             }
             return isSameTree(p.left, q.left) &&

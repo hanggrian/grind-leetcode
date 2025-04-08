@@ -15,18 +15,18 @@ class Default(Problem):
     def rotate_right(self, head: SinglyListNode | None, k: int) -> SinglyListNode | None:
         if not head or k == 0:
             return head
-        root = SinglyListNode(0, head)
+        root: SinglyListNode = SinglyListNode(0, head)
 
         # move left pointer, resetting if reached end
-        left = root
+        left: SinglyListNode | None = root
         for _ in range(k):
             left = left.next
             if not left:
                 left = root.next
 
         # get n-th from last, keeping previous node
-        right = root
-        previous_right = None
+        right: SinglyListNode | None = root
+        previous_right: SinglyListNode | None = None
         while left:
             left = left.next
             next_right = right.next

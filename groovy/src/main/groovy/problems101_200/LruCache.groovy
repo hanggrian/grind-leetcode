@@ -12,7 +12,7 @@ class LruCache {
         if (!cache.containsKey(key)) {
             return -1
         }
-        int value = cache.remove(key)
+        var value = cache.remove(key)
         cache.put(key, value) // put on end
         return value
     }

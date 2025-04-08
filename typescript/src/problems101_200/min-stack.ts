@@ -18,7 +18,7 @@ export default class MinStack {
   }
 
   pop() {
-    const value = this.main.pop();
+    const value: number = this.main.pop();
     if (value === this.getMinimum()) {
       this.mins.pop();
     }

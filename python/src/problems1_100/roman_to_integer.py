@@ -9,7 +9,7 @@ class Problem(ABC):
 
 
 class Default(Problem):
-    ROMANS = {
+    ROMANS: dict[str, int] = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -21,7 +21,7 @@ class Default(Problem):
 
     @override
     def roman_to_int(self, s: str) -> int:
-        result = 0
+        result: int = 0
         for i, c in enumerate(s):
             if i > 0 and self.ROMANS[c] > self.ROMANS[s[i - 1]]:
                 result += self.ROMANS[c] - 2 * self.ROMANS[s[i - 1]]

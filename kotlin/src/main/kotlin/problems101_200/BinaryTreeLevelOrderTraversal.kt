@@ -18,7 +18,7 @@ enum class BinaryTreeLevelOrderTraversal {
                 val level = arrayListOf<Int>()
                 for (i in 0 until size) {
                     val current = queue.remove()
-                    level += current!!.value
+                    level += current!!.`val`
                     if (current!!.left != null) {
                         queue += current.left
                     }

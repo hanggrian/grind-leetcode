@@ -15,20 +15,20 @@ class Default(Problem):
             return 0
 
         # Python's set has O(1) lookup time
-        word_set = set(word_list)
+        word_set: set[str] = set(word_list)
 
-        queue = [begin_word]
-        steps = 0
+        queue: list[str] = [begin_word]
+        steps: int = 0
         while queue:
             for _ in range(len(queue)):
-                s = queue.pop(0)
+                s: str = queue.pop(0)
                 if s == end_word:
                     return steps + 1
                 for j in range(len(s)):
-                    word = list(s)
+                    word: list[str] = list(s)
                     for c in range(ord('a'), ord('z') + 1):
                         word[j] = chr(c)
-                        new_word = ''.join(word)
+                        new_word: str = ''.join(word)
                         if s == new_word or new_word not in word_set:
                             continue
                         queue.append(new_word)

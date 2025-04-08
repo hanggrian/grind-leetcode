@@ -19,10 +19,10 @@ enum class MergeKSortedLists {
                 // find lowest
                 val lowest =
                     nodes
-                        .minBy { it.value }
+                        .minBy { it.`val` }
 
                 // append lowest to current
-                current.next = SinglyListNode(lowest.value)
+                current.next = SinglyListNode(lowest.`val`)
                 current = current.next!!
 
                 // remove the lowest node within list
@@ -31,7 +31,7 @@ enum class MergeKSortedLists {
                     continue
                 }
                 val next = lowest.next!!
-                lowest.value = next.value
+                lowest.`val` = next.`val`
                 lowest.next = next.next
             }
             return root.next

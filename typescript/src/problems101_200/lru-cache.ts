@@ -10,7 +10,7 @@ export default class LruCache {
     if (!this.cache.has(key)) {
       return -1;
     }
-    const value = this.cache.get(key);
+    const value: number = this.cache.get(key);
     this.cache.delete(key);
     this.cache.set(key, value); // put on end
     return value;

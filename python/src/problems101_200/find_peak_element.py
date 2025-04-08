@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def find_peak_element(self, nums: list[int]) -> int:
-        start = 0
-        end = len(nums) - 1
+        start: int = 0
+        end: int = len(nums) - 1
         while start < end:
             if nums[start] > nums[end]:
                 end -= 1

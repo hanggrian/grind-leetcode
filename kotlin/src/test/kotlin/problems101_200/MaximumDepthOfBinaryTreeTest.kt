@@ -11,7 +11,7 @@ import kotlin.test.Test
 
 class MaximumDepthOfBinaryTreeTest : SampledTest() {
     @Test
-    fun test() {
+    fun test() =
         MaximumDepthOfBinaryTree.values().forEach { solution ->
             getSamples<Array<MaximumDepthOfBinaryTreeSample>>()
                 .forEach { (input, output, message) ->
@@ -20,5 +20,4 @@ class MaximumDepthOfBinaryTreeTest : SampledTest() {
                         .isEqualTo(output)
                 }
         }
-    }
 }

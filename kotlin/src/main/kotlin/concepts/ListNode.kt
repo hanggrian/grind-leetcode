@@ -5,8 +5,6 @@ open class ListNode<T : ListNode<T>>(value: Int) :
     Iterable<T> {
     var next: T? = null
 
-    fun hasNext(): Boolean = next != null
-
     override fun iterator(): Iterator<T> = ListNodeIterator(this as T)
 
     override fun equals(other: Any?): Boolean {
@@ -16,7 +14,7 @@ open class ListNode<T : ListNode<T>>(value: Int) :
         var node1: ListNode<T>? = this
         var node2: ListNode<T>? = other as? ListNode<T>
         while (node1 != null && node2 != null) {
-            if (node1.value != node2.value) {
+            if (node1.`val` != node2.`val`) {
                 return false
             }
             node1 = node1.next
@@ -25,7 +23,7 @@ open class ListNode<T : ListNode<T>>(value: Int) :
         return node1 == null && node2 == null
     }
 
-    override fun hashCode(): Int = value.hashCode()
+    override fun hashCode(): Int = `val`.hashCode()
 
     private inner class ListNodeIterator(private var current: T?) : Iterator<T> {
         override fun hasNext(): Boolean = current != null

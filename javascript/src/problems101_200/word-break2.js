@@ -14,7 +14,7 @@ class Default extends Problem {
       return map[s];
     }
     let result = [];
-    for (let word of wordDict) {
+    for (const word of wordDict) {
       if (!s.startsWith(word)) {
         continue;
       }
@@ -23,7 +23,7 @@ class Default extends Problem {
         result.push(word);
         continue;
       }
-      for (let sub of this.recursiveWordBreak(next, wordDict, map)) {
+      for (const sub of this.recursiveWordBreak(next, wordDict, map)) {
         result.push(word + ' ' + sub);
       }
     }

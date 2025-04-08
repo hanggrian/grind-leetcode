@@ -9,7 +9,7 @@ enum SingleNumber {
                 if (!result.contains(num)) {
                     result.add(num)
                 } else {
-                    result.remove(num.toInteger())
+                    result.remove((Object) num)
                 }
             }
             return result[0]

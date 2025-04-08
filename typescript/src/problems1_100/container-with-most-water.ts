@@ -6,11 +6,11 @@ class Problem {
 
 class Default extends Problem {
   maxArea(height: number[]): number {
-    let start = 0;
-    let end = height.length - 1;
-    let maxArea = Number.MIN_SAFE_INTEGER - 1;
+    let start: number = 0;
+    let end: number = height.length - 1;
+    let maxArea: number = Number.MIN_SAFE_INTEGER - 1;
     while (start < end) {
-      const wall = Math.min(height[start], height[end]);
+      const wall: number = Math.min(height[start], height[end]);
       maxArea = Math.max(maxArea, (end - start) * wall);
       if (height[start] < height[end]) {
         start++;

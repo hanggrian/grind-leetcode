@@ -14,17 +14,17 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def zigzag_level_order(self, root: TreeNode | None) -> list[list[int]]:
-        lists = []
+        lists: list[list[int]] = []
         if not root:
             return lists
 
-        queue = deque([root])
+        queue: deque[TreeNode] = deque([root])
         while len(queue) > 0:
-            size = len(queue)
-            level = []
+            size: int = len(queue)
+            level: list[int] = []
             for i in range(size):
                 node = queue.popleft()
-                level.append(node.value)
+                level.append(node.val)
                 if node.left:
                     queue.append(node.left)
                 if node.right:

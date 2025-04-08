@@ -22,14 +22,6 @@ public class TreeNode extends Node {
         this.right = right;
     }
 
-    public final boolean hasLeft() {
-        return left != null;
-    }
-
-    public final boolean hasRight() {
-        return right != null;
-    }
-
     public final boolean isLeaf() {
         return left == null && right == null;
     }
@@ -41,7 +33,7 @@ public class TreeNode extends Node {
         if (node1 == null || node2 == null) {
             return false;
         }
-        return node1.value == node2.value
+        return node1.val == node2.val
             && recursiveEquals(node1.left, node2.left)
             && recursiveEquals(node1.right, node2.right);
     }
@@ -56,27 +48,31 @@ public class TreeNode extends Node {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(value);
+        return Objects.hashCode(val);
     }
 
-    public static TreeNode of(Integer... values) {
-        if (values == null || values.length == 0) {
+    public static TreeNode of(Integer... vals) {
+        if (vals == null || vals.length == 0) {
             return null;
         }
-        TreeNode root = new TreeNode(values[0]);
+        TreeNode root = new TreeNode(vals[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int i = 1;
-        while (!queue.isEmpty() && i < values.length) {
+        while (!queue.isEmpty() && i < vals.length) {
             TreeNode node = queue.poll();
-            if (i < values.length && values[i] != null) {
-                node.left = new TreeNode(values[i]);
+            Integer val = vals[i];
+            if (val != null) {
+                node.left = new TreeNode(val);
                 queue.add(node.left);
             }
             i++;
-            if (i < values.length && values[i] != null) {
-                node.right = new TreeNode(values[i]);
-                queue.add(node.right);
+            if (i < vals.length) {
+                val = vals[i];
+                if (val != null) {
+                    node.right = new TreeNode(val);
+                    queue.add(node.right);
+                }
             }
             i++;
         }

@@ -6,8 +6,8 @@ enum WordBreak {
         boolean wordBreak(String s, List<String> wordDict) {
             boolean[] dp = new boolean[s.length() + 1]
             dp[0] = true
-            for (int right = 1; right < dp.length; right++) {
-                for (int left = 0; left < right; left++) {
+            for (var right = 1; right < dp.length; right++) {
+                for (var left = 0; left < right; left++) {
                     if (!(dp[left] && wordDict.contains(s.substring(left, right)))) {
                         continue
                     }

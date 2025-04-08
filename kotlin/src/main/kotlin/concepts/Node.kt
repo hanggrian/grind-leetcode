@@ -1,3 +1,3 @@
 package concepts
 
-open class Node(var value: Int)
+open class Node(var `val`: Int)

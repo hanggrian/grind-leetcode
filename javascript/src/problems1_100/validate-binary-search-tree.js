@@ -13,14 +13,14 @@ class Default extends Problem {
     if (!node) {
       return true;
     }
-    if (left && node.value <= left) {
+    if (left && node.val <= left) {
       return false;
     }
-    if (right && node.value >= right) {
+    if (right && node.val >= right) {
       return false;
     }
-    return this.recursiveValid(node.left, left, node.value) &&
-        this.recursiveValid(node.right, node.value, right);
+    return this.recursiveValid(node.left, left, node.val) &&
+        this.recursiveValid(node.right, node.val, right);
   }
 }
 

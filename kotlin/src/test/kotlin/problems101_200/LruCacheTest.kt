@@ -10,9 +10,9 @@ import kotlin.test.Test
 
 class LruCacheTest : SampledTest() {
     @Test
-    fun test() {
+    fun test() =
         getSamples<Array<LruCacheSample>>().forEach { (input, output, _) ->
-            var cache: LruCache? = null
+            lateinit var cache: LruCache
             for (i in input.moveNames.indices) {
                 val values = input.moveValues[i]
                 when (input.moveNames[i]) {
@@ -21,16 +21,17 @@ class LruCacheTest : SampledTest() {
                         assertThat(output[i])
                             .isNull()
                     }
+
                     "put" -> {
-                        cache!![values[0]] = values[1]
+                        cache[values[0]] = values[1]
                         assertThat(output[i])
                             .isNull()
                     }
+
                     "get" ->
                         assertThat(output[i])
-                            .isEqualTo(cache!![values[0]])
+                            .isEqualTo(cache[values[0]])
                 }
             }
         }
-    }
 }

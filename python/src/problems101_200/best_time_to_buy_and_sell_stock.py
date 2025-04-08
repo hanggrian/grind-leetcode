@@ -12,8 +12,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def max_profit(self, prices: list[int]) -> int:
-        min_price = maxsize
-        max_profit = 0
+        min_price: int = maxsize
+        max_profit: int = 0
         for price in prices:
             if price < min_price:
                 min_price = price

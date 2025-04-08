@@ -10,8 +10,8 @@ class LruCacheTest extends SampledTest {
     void test() {
         getSamples(LruCacheSample[].class).each { sample ->
             LruCache cache = null
-            for (int i = 0; i < sample.input.moveNames.length; i++) {
-                int[] values = sample.input.moveValues[i]
+            for (var i = 0; i < sample.input.moveNames.length; i++) {
+                var values = sample.input.moveValues[i]
                 switch (sample.input.moveNames[i]) {
                     case "LRUCache":
                         cache = new LruCache(values[0])

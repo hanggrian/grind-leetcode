@@ -16,8 +16,8 @@ class Default(Problem):
         if len(preorder) == 0 or len(inorder) == 0:
             return None
 
-        root = TreeNode(preorder[0])
-        mid = -1
+        root: TreeNode = TreeNode(preorder[0])
+        mid: int = -1
         for i, order in enumerate(inorder):
             if order != preorder[0]:
                 continue

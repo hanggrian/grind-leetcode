@@ -3,7 +3,7 @@ package problems1_100
 import concepts.SinglyListNode
 
 enum ReverseLinkedList2 {
-    DEFAULT {
+    DEFAULT{
         @Override
         SinglyListNode reverseBetween(SinglyListNode head, int left, int right) {
             if (left == right) {
@@ -41,7 +41,7 @@ enum ReverseLinkedList2 {
 
         SinglyListNode traverseUntilEnd(SinglyListNode node) {
             var current = node
-            while (current.next != null) {
+            while (current.next) {
                 current = current.next
             }
             return current
@@ -50,7 +50,7 @@ enum ReverseLinkedList2 {
         SinglyListNode reverse(SinglyListNode node) {
             var current = node
             var previous = null
-            while (current != null) {
+            while (current) {
                 SinglyListNode temp = current.next
                 current.next = previous
                 previous = current

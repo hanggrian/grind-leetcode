@@ -7,7 +7,7 @@ enum BinaryTreeLevelOrderTraversal {
         @Override
         List<List<Integer>> levelOrder(TreeNode root) {
             ArrayList<List<Integer>> lists = []
-            if (root == null) {
+            if (!root) {
                 return lists
             }
 
@@ -18,11 +18,11 @@ enum BinaryTreeLevelOrderTraversal {
                 ArrayList<Integer> level = []
                 for (var i = 0; i < size; i++) {
                     var current = queue.remove()
-                    level.add(current.value)
-                    if (current.left != null) {
+                    level.add(current.val)
+                    if (current.left) {
                         queue.add(current.left)
                     }
-                    if (current.right != null) {
+                    if (current.right) {
                         queue.add(current.right)
                     }
                 }

@@ -6,8 +6,8 @@ class Problem {
 
 class Default extends Problem {
   removeElement(nums: number[], val: number): number {
-    let start = 0;
-    let end = 0;
+    let start: number = 0;
+    let end: number = 0;
     while (start < nums.length) {
       if (nums[start] !== val) {
         nums[end++] = nums[start];

@@ -11,20 +11,12 @@ enum class ValidParentheses {
 
             val symbols = Stack<Char>()
             for (c in s.toCharArray()) {
-                if (c != ')' && c != '}' && c != ']') {
+                if (!PARENTHESES.containsValue(c)) {
                     symbols.push(c)
                     continue
                 }
 
-                if (!symbols.isEmpty() &&
-                    symbols.peek().let {
-                        (
-                            (it == '(' && c == ')') ||
-                                (it == '{' && c == '}') ||
-                                (it == '[' && c == ']')
-                        )
-                    }
-                ) {
+                if (!symbols.isEmpty() && PARENTHESES[symbols.peek()] == c) {
                     symbols.pop()
                     continue
                 }
@@ -36,4 +28,13 @@ enum class ValidParentheses {
     ;
 
     abstract fun isValid(s: String): Boolean
+
+    companion object {
+        private val PARENTHESES =
+            hashMapOf(
+                '(' to ')',
+                '{' to '}',
+                '[' to ']',
+            )
+    }
 }

@@ -6,7 +6,7 @@ enum InvertBinaryTree {
     DEFAULT {
         @Override
         TreeNode invertTree(TreeNode root) {
-            if (root == null) {
+            if (!root) {
                 return null
             }
             var temp = root.left

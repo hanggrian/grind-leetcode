@@ -19,11 +19,11 @@ class Default extends Problem {
 
     // when both items are there
     while (l1 && l2) {
-      if (l1.value < l2.value) {
-        current.next = new SinglyListNode(l1.value);
+      if (l1.val < l2.val) {
+        current.next = new SinglyListNode(l1.val);
         l1 = l1.next;
       } else {
-        current.next = new SinglyListNode(l2.value);
+        current.next = new SinglyListNode(l2.val);
         l2 = l2.next;
       }
       current = current.next;

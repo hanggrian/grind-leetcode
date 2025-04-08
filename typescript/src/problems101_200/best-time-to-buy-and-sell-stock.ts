@@ -6,14 +6,14 @@ class Problem {
 
 class Default extends Problem {
   maxProfit(prices: number[]): number {
-    let minPrice = Number.MAX_SAFE_INTEGER;
-    let maxProfit = 0;
+    let minPrice: number = Number.MAX_SAFE_INTEGER;
+    let maxProfit: number = 0;
     for (let price of prices) {
       if (price < minPrice) {
         minPrice = price;
         continue;
       }
-      const profit = price - minPrice;
+      const profit: number = price - minPrice;
       maxProfit = Math.max(profit, maxProfit);
     }
     return maxProfit;

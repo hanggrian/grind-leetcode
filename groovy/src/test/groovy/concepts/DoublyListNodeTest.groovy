@@ -17,23 +17,23 @@ class DoublyListNodeTest {
             DoublyListNode
                 .of(1, 3, 5, 7)
                 .stream()
-                .mapToInt(n -> n.value)
+                .mapToInt(n -> n.val)
                 .sum(),
         ).isEqualTo(16)
     }
 
     @Test
     void traverse() {
-        DoublyListNode node = DoublyListNode.of(2, 4, 6, 8)
-        assertThat(node.value).isEqualTo(2)
+        var node = DoublyListNode.of(2, 4, 6, 8)
+        assertThat(node.val).isEqualTo(2)
 
         node = node.next.next
-        assertThat(node.value).isEqualTo(6)
+        assertThat(node.val).isEqualTo(6)
 
         node = node.prev
-        assertThat(node.value).isEqualTo(4)
+        assertThat(node.val).isEqualTo(4)
 
         node = node.next.next
-        assertThat(node.value).isEqualTo(8)
+        assertThat(node.val).isEqualTo(8)
     }
 }

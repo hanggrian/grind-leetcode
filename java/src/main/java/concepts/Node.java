@@ -1,9 +1,9 @@
 package concepts;
 
 public abstract class Node {
-    public int value;
+    public int val;
 
-    public Node(int value) {
-        this.value = value;
+    public Node(int val) {
+        this.val = val;
     }
 }

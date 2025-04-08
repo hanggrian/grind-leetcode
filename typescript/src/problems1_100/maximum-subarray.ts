@@ -6,8 +6,8 @@ class Problem {
 
 class Default extends Problem {
   maxSubArray(nums: number[]): number {
-    let current = 0;
-    let arraySum = nums[0];
+    let current: number = 0;
+    let arraySum: number = nums[0];
     for (const num of nums) {
       current = Math.max(current, 0);
       current += num;

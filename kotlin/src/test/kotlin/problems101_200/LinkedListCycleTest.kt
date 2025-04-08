@@ -15,13 +15,16 @@ class LinkedListCycleTest : SampledTest() {
     fun test() =
         LinkedListCycle.entries.forEach { solution ->
             getSamples<Array<LinkedListCycleSample>>().forEach { (input, output, message) ->
-                val inp = SinglyListNode.of(*input!!.head)!!
-                if (input.pos > -1) {
-                    Iterables.getLast(inp).next = Iterables.get(inp, input.pos)
-                }
                 assertWithMessage(message)
-                    .that(solution.hasCycle(inp))
-                    .isEqualTo(output)
+                    .that(
+                        solution.hasCycle(
+                            SinglyListNode.of(*input!!.head)!!.also {
+                                if (input.pos > -1) {
+                                    Iterables.getLast(it).next = Iterables.get(it, input.pos)
+                                }
+                            },
+                        ),
+                    ).isEqualTo(output)
             }
         }
 }

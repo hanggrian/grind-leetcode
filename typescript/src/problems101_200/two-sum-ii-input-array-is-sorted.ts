@@ -6,10 +6,10 @@ class Problem {
 
 class Default extends Problem {
   twoSum(numbers: number[], target: number): number[] {
-    let start = 0;
-    let end = numbers.length - 1;
+    let start: number = 0;
+    let end: number = numbers.length - 1;
     while (start < end) {
-      const sum = numbers[start] + numbers[end];
+      const sum: number = numbers[start] + numbers[end];
       if (sum > target) {
         end--;
       } else if (sum < target) {

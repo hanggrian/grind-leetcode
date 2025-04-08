@@ -1,0 +1,23 @@
+[
+  {
+    "input": {
+      "s": "3[a]2[bc]"
+    },
+    "output": "aaabcbc",
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "3[a2[c]]"
+    },
+    "output": "accaccacc",
+    "explanation": []
+  },
+  {
+    "input": {
+      "s": "2[abc]3[cd]ef"
+    },
+    "output": "abcabccdcdcdef",
+    "explanation": []
+  }
+]

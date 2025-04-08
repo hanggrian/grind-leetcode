@@ -12,7 +12,7 @@ class WordBreak2Test : SampledTest() {
     override fun getSampleFilename(): String = "word-break-ii.json"
 
     @Test
-    fun test() {
+    fun test() =
         WordBreak2.entries.forEach { solution ->
             getSamples<Array<WordBreak2Sample>>().forEach { (input, output, message) ->
                 assertWithMessage(message)
@@ -20,5 +20,4 @@ class WordBreak2Test : SampledTest() {
                     .containsAtLeastElementsIn(output)
             }
         }
-    }
 }

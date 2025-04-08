@@ -19,7 +19,7 @@ enum class BinaryTreeZigzagLevelOrderTraversal {
                 val level = arrayListOf<Int>()
                 for (i in 0 until size) {
                     val node = queue.remove()
-                    level += node!!.value
+                    level += node!!.`val`
                     if (node!!.left != null) {
                         queue += node.left
                     }

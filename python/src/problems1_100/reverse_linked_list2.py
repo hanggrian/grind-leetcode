@@ -26,17 +26,17 @@ class Default(Problem):
         if left == right:
             return head
 
-        root = SinglyListNode(0, head)
-        center_start = root
-        center_start_previous = None
-        center_end = root
+        root: SinglyListNode = SinglyListNode(0, head)
+        center_start: SinglyListNode | None = root
+        center_start_previous: SinglyListNode | None = None
+        center_end: SinglyListNode | None = root
         for i in range(right):
             if i < left:
                 center_start_previous = center_start
                 center_start = center_start.next
             center_end = center_end.next
 
-        excess = center_end.next
+        excess: SinglyListNode | None = center_end.next
         center_start_previous.next = None
         center_end.next = None
 
@@ -47,19 +47,19 @@ class Default(Problem):
             current = self.traverse_until_end(head)
             current.next = self.reverse(center_start)
 
-        current = self.traverse_until_end(current)
+        current: SinglyListNode = self.traverse_until_end(current)
         current.next = excess
         return head
 
     def traverse_until_end(self, node: SinglyListNode | None) -> SinglyListNode | None:
-        current = node
+        current: SinglyListNode = node
         while current.next:
             current = current.next
         return current
 
     def reverse(self, node: SinglyListNode) -> SinglyListNode:
-        current = node
-        previous = None
+        current: SinglyListNode = node
+        previous: SinglyListNode | None = None
         while current:
             temp = current.next
             current.next = previous

@@ -6,17 +6,17 @@ class Problem {
 
 class Default extends Problem {
   generate(numRows: number): number[][] {
-    const rows = new Array<number[]>(numRows);
+    const rows: number[][] = new Array(numRows);
     rows[0] = [1];
     for (let i = 1; i < numRows; i++) {
-      const numColumns = i + 1;
-      const columns = new Array<number>(numColumns);
+      const numColumns: number = i + 1;
+      const columns: number[] = new Array(numColumns);
       for (let j = 0; j < numColumns; j++) {
         if (j === 0 || j === numColumns - 1) {
           columns[j] = 1;
           continue;
         }
-        const prevColumns = rows[i - 1];
+        const prevColumns: number[] = rows[i - 1];
         columns[j] = prevColumns[j - 1] + prevColumns[j];
       }
       rows[i] = columns;

@@ -11,8 +11,8 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def reverse(self, x: int) -> int:
-        negate = False
-        s = str(x)
+        negate: bool = False
+        s: str = str(x)
         if s[0] == '-':
             s = s[1:]
             negate = True

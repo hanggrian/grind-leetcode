@@ -13,13 +13,13 @@ class Default(Problem):
     def longest_palindrome(self, s: str) -> str:
         if len(s) == 1:
             return s
-        longest_palindrome = ''
+        longest_palindrome: str = ''
         for i in range(len(s)):
             palindrome: str
 
             # check odd
-            start = i
-            end = i
+            start: int = i
+            end: int = i
             while start >= 0 and end < len(s) and s[start] == s[end]:
                 palindrome = s[start:end + 1]
                 if len(palindrome) > len(longest_palindrome):

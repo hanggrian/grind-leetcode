@@ -10,7 +10,7 @@ import kotlin.test.Test
 
 class WordBreakTest : SampledTest() {
     @Test
-    fun test() {
+    fun test() =
         WordBreak.entries.forEach { solution ->
             getSamples<Array<WordBreakSample>>().forEach { (input, output, message) ->
                 assertWithMessage(message)
@@ -18,5 +18,4 @@ class WordBreakTest : SampledTest() {
                     .isEqualTo(output)
             }
         }
-    }
 }

@@ -4,8 +4,8 @@ from .node import Node
 
 
 class ListNode(Node, Iterable):
-    def __init__(self, value: int):
-        super().__init__(value)
+    def __init__(self, val: int):
+        super().__init__(val)
         self.next: ListNode | None = None
 
     def has_next(self) -> bool:
@@ -34,14 +34,14 @@ class ListNode(Node, Iterable):
         node1: ListNode = self
         node2: ListNode = other
         while node1 and node2:
-            if node1.value != node2.value:
+            if node1.val != node2.val:
                 return False
             node1 = node1.next
             node2 = node2.next
         return not node1 and not node2
 
     def __hash__(self) -> int:
-        return hash(self.value)
+        return hash(self.val)
 
     class ListNodeIterator(Iterator['ListNode']):
         def __init__(self, node: 'ListNode'):

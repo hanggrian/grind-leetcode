@@ -7,7 +7,7 @@ class Problem {
 class BruteForce extends Problem {
   twoSum(nums: number[], target: number): number[] {
     for (let i = 0; i < nums.length; i++) {
-      const complement = target - nums[i];
+      const complement: number = target - nums[i];
       if (nums.slice(i + 1).includes(complement)) {
         return [i, nums.indexOf(complement, i + 1)];
       }
@@ -21,7 +21,7 @@ class SinglePass extends Problem {
     // remaining to index mapping
     const seen = {};
     for (let i = 0; i < nums.length; i++) {
-      const complement = target - nums[i];
+      const complement: number = target - nums[i];
       if (complement in seen) {
         return [seen[complement], i];
       }

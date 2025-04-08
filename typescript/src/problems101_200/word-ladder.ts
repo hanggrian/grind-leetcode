@@ -10,24 +10,24 @@ class Default extends Problem {
       return 0;
     }
 
-    const wordSet = new Set(wordList);
+    const wordSet: Set<string> = new Set(wordList);
 
-    const queue = [];
+    const queue: string[] = [];
     queue.push(beginWord);
     let steps = 0;
 
     while (queue.length > 0) {
-      const size = queue.length;
+      const size: number = queue.length;
       for (let i = 0; i < size; i++) {
-        const s = queue.shift();
+        const s: string = queue.shift();
         if (s === endWord) {
           return steps + 1;
         }
         for (let j = 0; j < s.length; j++) {
-          const word = s.split('');
+          const word: string[] = s.split('');
           for (let c = 'a'.charCodeAt(0); c <= 'z'.charCodeAt(0); c++) {
             word[j] = String.fromCharCode(c);
-            const newWord = word.join('');
+            const newWord: string = word.join('');
             if (s === newWord || !wordSet.has(newWord)) {
               continue;
             }

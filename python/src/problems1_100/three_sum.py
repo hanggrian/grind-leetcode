@@ -11,17 +11,17 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def three_sum(self, nums: list[int]) -> list[list[int]]:
-        results = []
+        results: list[list[int]] = []
         if len(nums) < 3:
             return results
         nums.sort()
         for i in range(len(nums) - 2):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue  # skip same result
-            j = i + 1
-            k = len(nums) - 1
+            j: int = i + 1
+            k: int = len(nums) - 1
             while j < k:
-                three_sum = nums[i] + nums[j] + nums[k]
+                three_sum: int = nums[i] + nums[j] + nums[k]
                 if three_sum == 0:
                     results.append([nums[i], nums[j], nums[k]])
                     j += 1

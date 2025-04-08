@@ -13,10 +13,8 @@ class SortColorsTest : SampledTest() {
     fun test() =
         SortColors.entries.forEach { solution ->
             getSamples<Array<SortColorsSample>>().forEach { (input, output, message) ->
-                val nums = input.nums
-                solution.sortColors(nums)
                 assertWithMessage(message)
-                    .that(nums)
+                    .that(input.nums.also { solution.sortColors(it) })
                     .asList()
                     .containsExactlyElementsIn(output.toList())
                     .inOrder()

@@ -23,20 +23,20 @@ enum MergeKSortedLists {
                 var lowest =
                     nodes
                         .stream()
-                        .min(Comparator.comparingInt(n -> n.value))
+                        .min(Comparator.comparingInt(n -> n.val))
                         .get()
 
                 // append lowest to current
-                current.next = new SinglyListNode(lowest.value)
+                current.next = new SinglyListNode(lowest.val)
                 current = current.next
 
                 // remove the lowest node within list
-                if (lowest.next == null) {
+                if (!lowest.next) {
                     nodes.remove(lowest)
                     continue
                 }
                 var next = lowest.next
-                lowest.value = next.value
+                lowest.val = next.val
                 lowest.next = next.next
             }
             return root.next

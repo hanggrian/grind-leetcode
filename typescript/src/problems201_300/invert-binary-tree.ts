@@ -11,7 +11,7 @@ class Default extends Problem {
     if (!root) {
       return undefined;
     }
-    let temp = root.left;
+    const temp: TreeNode = root.left;
     root.left = this.invertTree(root.right);
     root.right = this.invertTree(temp);
     return root;

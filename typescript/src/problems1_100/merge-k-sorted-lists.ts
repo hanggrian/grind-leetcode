@@ -8,20 +8,20 @@ class Problem {
 
 class Default extends Problem {
   mergeKLists(lists: SinglyListNode[]): SinglyListNode | undefined {
-    const nodes = lists.filter(n => n);
+    const nodes: SinglyListNode[] = lists.filter(n => n);
     if (nodes.length === 0) {
       return undefined;
     }
 
-    const root = new SinglyListNode();
-    let current = root;
+    const root: SinglyListNode = new SinglyListNode();
+    let current: SinglyListNode = root;
     while (nodes.length > 0) {
       // find lowest
-      const lowest =
-          nodes.reduce((previous, current) => current.value < previous.value ? current : previous);
+      const lowest: SinglyListNode =
+          nodes.reduce((previous, current) => current.val < previous.val ? current : previous);
 
       // append lowest to current
-      current.next = new SinglyListNode(lowest.value);
+      current.next = new SinglyListNode(lowest.val);
       current = current.next;
 
       // remove the lowest node within list
@@ -29,8 +29,8 @@ class Default extends Problem {
         nodes.splice(nodes.indexOf(lowest), 1);
         continue;
       }
-      const nxt = lowest.next;
-      lowest.value = nxt.value;
+      const nxt: SinglyListNode = lowest.next;
+      lowest.val = nxt.val;
       lowest.next = nxt.next;
     }
     return root.next;

@@ -10,16 +10,12 @@ enum ValidParentheses {
 
             Stack<Character> symbols = []
             for (var c : s.toCharArray()) {
-                if (c != ')' as char && c != '}' as char && c != ']' as char) {
+                if (!PARENTHESES.containsValue(c)) {
                     symbols.push(c)
                     continue
                 }
 
-                if (!symbols.isEmpty() &&
-                    ((symbols.peek() == '(' as char && c == ')' as char) ||
-                        (symbols.peek() == '{' as char && c == '}' as char) ||
-                        (symbols.peek() == '[' as char && c == ']' as char))
-                ) {
+                if (!symbols.isEmpty() && PARENTHESES.get(symbols.peek()) == c) {
                     symbols.pop()
                     continue
                 }
@@ -30,4 +26,10 @@ enum ValidParentheses {
     }
 
     abstract boolean isValid(String s)
+
+    private static final Map<Character, Character> PARENTHESES = [
+        ('(' as char): ')' as char,
+        ('{' as char): '}' as char,
+        ('[' as char): ']' as char,
+    ]
 }

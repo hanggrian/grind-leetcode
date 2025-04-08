@@ -13,12 +13,12 @@ class Problem(ABC):
 class Default(Problem):
     @override
     def delete_duplicates(self, head: SinglyListNode | None) -> SinglyListNode | None:
-        root = SinglyListNode(-101, head)
-        previous = root
-        current = head
+        root: SinglyListNode = SinglyListNode(-101, head)
+        previous: SinglyListNode | None = root
+        current: SinglyListNode | None = head
         while current:
-            if current.next and current.value == current.next.value:
-                while current.next and current.value == current.next.value:
+            if current.next and current.val == current.next.val:
+                while current.next and current.val == current.next.val:
                     current = current.next
                 previous.next = current.next
             else:

@@ -11,7 +11,7 @@ class ReorderListTest extends SampledTest {
     void test() {
         ReorderList.values().each { solution ->
             getSamples(ReorderListSample[].class).each { sample ->
-                SinglyListNode input = SinglyListNode.of(sample.input.head)
+                var input = SinglyListNode.of(sample.input.head)
                 solution.reorderList(input)
                 assertWithMessage(sample.getMessage())
                     .that(input)

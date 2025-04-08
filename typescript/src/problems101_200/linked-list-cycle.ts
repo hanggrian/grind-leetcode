@@ -9,7 +9,7 @@ class Problem {
 class RememberVisits extends Problem {
   hasCycle(head: SinglyListNode | undefined): boolean {
     // visited nodes
-    const visits = new Set<SinglyListNode>();
+    const visits: Set<SinglyListNode> = new Set();
     for (const node of head) {
       if (visits.has(node)) {
         return true;
@@ -25,8 +25,8 @@ class FastFlowPointer extends Problem {
     if (!head || !head.hasNext()) {
       return false;
     }
-    let slow = head.next;
-    let fast = head.next.next;
+    let slow: SinglyListNode = head.next;
+    let fast: SinglyListNode | undefined = head.next.next;
     while (fast && fast.hasNext() && slow !== fast) {
       slow = slow.next;
       fast = fast.next.next;

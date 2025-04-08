@@ -9,7 +9,7 @@ class RememberVisits extends Problem {
     // visited nodes
     const visits = new Set();
     let current = head;
-    for (let node of head) {
+    for (const node of head) {
       if (visits.has(node)) {
         return current;
       }

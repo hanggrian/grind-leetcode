@@ -10,7 +10,7 @@ enum class TwoSum {
                     }
                 }
             }
-            return intArrayOf()
+            return intArrayOf(-1, -1)
         }
     },
     SINGLE_PASS {

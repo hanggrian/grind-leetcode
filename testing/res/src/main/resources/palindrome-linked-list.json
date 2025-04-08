@@ -1,0 +1,16 @@
+[
+  {
+    "input": {
+      "head": [1, 2, 2, 1]
+    },
+    "output": true,
+    "explanation": []
+  },
+  {
+    "input": {
+      "head": [1, 2]
+    },
+    "output": false,
+    "explanation": []
+  }
+]

@@ -12,7 +12,7 @@ class Default extends Problem {
     if (!p || !q) {
       return false;
     }
-    if (p.value !== q.value) {
+    if (p.val !== q.val) {
       return false;
     }
     return this.isSameTree(p.left, q.left)

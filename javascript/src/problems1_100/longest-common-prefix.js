@@ -12,7 +12,7 @@ class Default extends Problem {
     if (strs.length === 1) {
       return strs[0];
     }
-    let longestStr =
+    const longestStr =
         strs.reduce((previous, current) => current.length > previous.length ? current : previous);
     let end = -1;
     loop:

@@ -9,8 +9,8 @@ class Problem {
 class RememberVisits extends Problem {
   detectCycle(head: SinglyListNode | undefined): SinglyListNode | undefined {
     // visited nodes
-    const visits = new Set();
-    let current = head;
+    const visits: Set<SinglyListNode> = new Set();
+    let current: SinglyListNode = head;
     for (let node of head) {
       if (visits.has(node)) {
         return current;
@@ -27,8 +27,8 @@ class FastFlowPointer extends Problem {
     if (!head || !head.next) {
       return undefined;
     }
-    let slow = head.next;
-    let fast = head.next.next;
+    let slow: SinglyListNode = head.next;
+    let fast: SinglyListNode | undefined = head.next.next;
     while (fast && fast.next) {
       slow = slow.next;
       fast = fast.next.next;
@@ -40,8 +40,8 @@ class FastFlowPointer extends Problem {
     if (!slow || !slow.next) {
       return undefined;
     }
-    let left = head;
-    let right = slow;
+    let left: SinglyListNode = head;
+    let right: SinglyListNode = slow;
     while (left !== right) {
       left = left.next;
       right = right.next;

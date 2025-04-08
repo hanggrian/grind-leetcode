@@ -7,11 +7,11 @@ from .node import Node
 class TreeNode(Node):
     def __init__(
         self,
-        value: int,
+        val: int,
         left: Optional['TreeNode'] = None,
         right: Optional['TreeNode'] = None,
     ):
-        super().__init__(value)
+        super().__init__(val)
         self.left: TreeNode | None = left
         self.right: TreeNode | None = right
 
@@ -24,12 +24,12 @@ class TreeNode(Node):
     def is_leaf(self) -> bool:
         return self.right is None and self.right is None
 
-    def recursive_eq(self, node1: Optional['TreeNode'], node2: Optional['TreeNode']):
+    def recursive_eq(self, node1: Optional['TreeNode'], node2: Optional['TreeNode']) -> bool:
         if not node1 and not node2:
             return True
         if not node1 or not node2:
             return False
-        return node1.value == node2.value and \
+        return node1.val == node2.val and \
             self.recursive_eq(node1.left, node2.left) and \
             self.recursive_eq(node1.right, node2.right)
 
@@ -41,23 +41,23 @@ class TreeNode(Node):
         return self.recursive_eq(self, other)
 
     def __hash__(self) -> int:
-        return hash(self.value)
+        return hash(self.val)
 
     @staticmethod
-    def of(*values: int | None) -> Optional['TreeNode']:
-        if len(values) == 0:
+    def of(*vals: int | None) -> Optional['TreeNode']:
+        if len(vals) == 0:
             return None
-        root = TreeNode(values[0])
+        root = TreeNode(vals[0])
         queue = deque([root])
         i = 1
         while queue:
             node = queue.popleft()
-            if i < len(values) and values[i]:
-                node.left = TreeNode(values[i])
+            if i < len(vals) and vals[i]:
+                node.left = TreeNode(vals[i])
                 queue.append(node.left)
             i += 1
-            if i < len(values) and values[i]:
-                node.right = TreeNode(values[i])
+            if i < len(vals) and vals[i]:
+                node.right = TreeNode(vals[i])
                 queue.append(node.right)
             i += 1
         return root

@@ -7,7 +7,7 @@ enum BinaryTreeZigzagLevelOrderTraversal {
         @Override
         List<List<Integer>> zigzagLevelOrder(TreeNode root) {
             ArrayList<List<Integer>> lists = []
-            if (root == null) {
+            if (!root) {
                 return lists
             }
 
@@ -18,11 +18,11 @@ enum BinaryTreeZigzagLevelOrderTraversal {
                 ArrayList<Integer> level = []
                 for (var i = 0; i < size; i++) {
                     var node = queue.remove()
-                    level.add(node.value)
-                    if (node.left != null) {
+                    level.add(node.val)
+                    if (node.left) {
                         queue.add(node.left)
                     }
-                    if (node.right != null) {
+                    if (node.right) {
                         queue.add(node.right)
                     }
                 }

@@ -1,5 +1,5 @@
 export default class Node {
-  constructor(value) {
-    this.value = value;
+  constructor(val) {
+    this.val = val;
   }
 }
