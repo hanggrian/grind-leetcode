@@ -13,10 +13,7 @@ jobs:
     executor: linux
     steps:
       - checkout
-      - run: |
-          ./gradlew checkstyleMain checkstyleTest \
-            codenarcMain codenarcTest \
-            ktlintCheck test jacocoTestReport koverXmlReport
+      - run: ./gradlew check jacocoTestReport koverXmlReport
       - run: pip install -r requirements.txt && pytest --cov .
       - run: npm install && npm test
       - codecov/upload

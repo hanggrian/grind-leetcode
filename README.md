@@ -118,7 +118,7 @@ official sample test cases that are not locked behind a paywall.
     1.  Spiral Matrix<sup for="medium"></sup>
     1.  Subsets<sup for="medium"></sup>
     1.  [Binary Tree Right Side View<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/binary-tree-right-side-view)
-    1.  [Longest Palindromic Substring<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring)
+    1.  [**Longest Palindromic Substring**<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring)
     1.  Unique Paths<sup for="medium"></sup>
     1.  [Construct Binary Tree from Preorder and Inorder Traversal<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/construct-binary-tree-from-preorder-and-inorder-traversal)
   - Week 7
@@ -265,7 +265,7 @@ official sample test cases that are not locked behind a paywall.
     1.  Min Cost Climbing Stairs<sup for="easy"></sup>
     1.  [House Robber<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/house-robber)
     1.  [House Robber II<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/house-robber-ii)
-    1.  [Longest Palindromic Substring<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring)
+    1.  [**Longest Palindromic Substring**<sup for="medium"></sup>](https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring)
     1.  Palindromic Substrings<sup for="medium"></sup>
     1.  Decode Ways<sup for="medium"></sup>
     1.  Coin Change<sup for="medium"></sup>
@@ -372,7 +372,7 @@ official sample test cases that are not locked behind a paywall.
     <tr>
       <td>
         <a href="https://hanggrian.github.io/grind-leetcode/longest-palindromic-substring">
-          5. Longest Palindromic Substring<sup for="medium"></sup>
+          <b>5. Longest Palindromic Substring</b><sup for="medium"></sup>
         </a>
       </td>
       <td>

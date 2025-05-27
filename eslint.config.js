@@ -1,18 +1,18 @@
 import globals from 'globals';
-import eslintJs from '@eslint/js';
-import eslintJsPlugin from '@stylistic/eslint-plugin-js';
-import eslintTsPlugin from '@typescript-eslint/eslint-plugin';
-import eslintTsParser from '@typescript-eslint/parser';
+import js from '@eslint/js';
+import eslintPluginJs from '@stylistic/eslint-plugin-js';
+import eslintPlugin from '@typescript-eslint/eslint-plugin';
+import parser from '@typescript-eslint/parser';
 
 export default [
   {
     files: ['**/*.js'],
     plugins: {
-      '@stylistic/js': eslintJsPlugin,
+      '@stylistic/js': eslintPluginJs,
     },
     rules: {
-      ...eslintJs.configs.recommended.rules,
-      '@stylistic/js/semi': ['error'],
+      ...js.configs.recommended.rules,
+      '@stylistic/js/semi': 'error',
     },
     languageOptions: {
       ecmaVersion: 2022,
@@ -20,21 +20,21 @@ export default [
       globals: {
         ...globals.node,
       },
-    }
+    },
   },
   {
     files: ['**/*.ts'],
     plugins: {
-      '@typescript-eslint': eslintTsPlugin,
+      '@typescript-eslint': eslintPlugin,
     },
-    rules: eslintTsPlugin.configs.recommended.rules,
+    rules: eslintPlugin.configs.recommended.rules,
     languageOptions: {
-      parser: eslintTsParser,
+      parser: parser,
       ecmaVersion: 2022,
       sourceType: 'module',
       globals: {
         ...globals.node,
       },
     },
-  }
-];
+  },
+]
